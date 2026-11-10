@@ -968,7 +968,9 @@ async function refreshWorkspace(reloadUi) {
   updatePill();
   renderProblems();
   await refreshFiles();
-  if (reloadUi && S.ws.version !== lastVersion) { lastVersion = S.ws.version; reloadPreview(); }
+  // not while a debugged run is under way: a reload would drop the request the debugger holds (its result is lost)
+  const debugging = S.dbg && ['paused', 'running'].includes(S.dbg.status);
+  if (reloadUi && S.ws.version !== lastVersion && !debugging) { lastVersion = S.ws.version; reloadPreview(); }
   if (S.tab === 'data') loadTables(true);
   if (S.tab === 'console') loadClasses();
 }
