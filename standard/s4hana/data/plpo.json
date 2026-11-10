@@ -1,0 +1,5 @@
+[
+  {"plnty": "N", "plnnr": "50000001", "plnkn": "00000001", "zaehl": "00000001", "vornr": "0010", "arbid": "10000001", "steus": "PP01", "ltxa1": "Assemble", "bmsch": 0, "datuv": "20250601", "vge01": "MIN", "vge02": "MIN", "vgw01": 30.0, "vgw02": 15.0, "werks": "1010"},
+  {"plnty": "N", "plnnr": "50000001", "plnkn": "00000002", "zaehl": "00000001", "vornr": "0020", "arbid": "10000002", "steus": "PP01", "ltxa1": "Pack", "bmsch": 0, "datuv": "20250601", "vge01": "MIN", "vge02": "MIN", "vgw01": 30.0, "vgw02": 15.0, "werks": "1010"},
+  {"plnty": "N", "plnnr": "50000002", "plnkn": "00000001", "zaehl": "00000001", "vornr": "0010", "arbid": "10000001", "steus": "PP01", "ltxa1": "Pre-assemble", "bmsch": 0, "datuv": "20250601", "vge01": "MIN", "vge02": "MIN", "vgw01": 30.0, "vgw02": 15.0, "werks": "1010"}
+]

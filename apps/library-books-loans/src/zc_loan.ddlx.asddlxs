@@ -1,0 +1,57 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { typeName: 'Loan', typeNamePlural: 'Loans',
+                  title: { type: #STANDARD, value: 'MemberName' },
+                  description: { value: 'BookTitle' } }
+@UI.presentationVariant: [{ sortOrder: [{ by: 'LoanDate', direction: #DESC }] }]
+annotate entity ZC_Loan with
+{
+  @UI.facet: [ { id: 'Loan', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'Loan', position: 10 } ]
+  @UI.hidden: true
+  LoanUUID;
+  @UI.hidden: true
+  BookUUID;
+  @UI.hidden: true
+  BookTitle;
+
+  @UI: { lineItem: [ { position: 10, importance: #HIGH } ], identification: [ { position: 10 } ] }
+  @EndUserText.label: 'Member'
+  MemberName;
+
+  @UI: { lineItem: [ { position: 15, importance: #MEDIUM } ], identification: [ { position: 15 } ] }
+  @EndUserText.label: 'Member Email'
+  MemberEmail;
+
+  @UI: { lineItem: [ { position: 20, importance: #HIGH } ], identification: [ { position: 20 } ] }
+  @EndUserText.label: 'Loan Date'
+  LoanDate;
+
+  @UI: { lineItem: [ { position: 30, importance: #HIGH } ], identification: [ { position: 30 } ] }
+  @EndUserText.label: 'Due Date'
+  DueDate;
+
+  @UI: { lineItem: [ { position: 40 } ], identification: [ { position: 40 } ] }
+  @EndUserText.label: 'Return Date'
+  ReturnDate;
+
+  @UI: { lineItem:       [ { position: 50, importance: #HIGH, criticality: 'StatusCriticality' },
+                           { type: #FOR_ACTION, dataAction: 'returnBook', label: 'Return Book' },
+                           { type: #FOR_ACTION, dataAction: 'printReceipt', label: 'Print Receipt' } ],
+         identification: [ { position: 50, criticality: 'StatusCriticality' },
+                           { type: #FOR_ACTION, dataAction: 'returnBook', label: 'Return Book' },
+                           { type: #FOR_ACTION, dataAction: 'printReceipt', label: 'Print Receipt' } ] }
+  @EndUserText.label: 'Status'
+  LoanStatus;
+
+  @UI: { identification: [ { position: 60 } ] }
+  @EndUserText.label: 'Receipt (PDF)'
+  ReceiptPdf;
+  @UI.hidden: true
+  ReceiptMimeType;
+  @UI.hidden: true
+  ReceiptFileName;
+
+  @UI.hidden: true
+  StatusCriticality;
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

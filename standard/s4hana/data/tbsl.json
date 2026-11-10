@@ -1,0 +1,16 @@
+[
+  {"bschl": "01", "shkzg": "S", "koart": "D", "ltext": "Invoice"},
+  {"bschl": "11", "shkzg": "H", "koart": "D", "ltext": "Credit memo"},
+  {"bschl": "15", "shkzg": "H", "koart": "D", "ltext": "Incoming payment"},
+  {"bschl": "21", "shkzg": "S", "koart": "K", "ltext": "Credit memo"},
+  {"bschl": "25", "shkzg": "S", "koart": "K", "ltext": "Outgoing payment"},
+  {"bschl": "31", "shkzg": "H", "koart": "K", "ltext": "Invoice"},
+  {"bschl": "40", "shkzg": "S", "koart": "S", "ltext": "Debit entry"},
+  {"bschl": "50", "shkzg": "H", "koart": "S", "ltext": "Credit entry"},
+  {"bschl": "70", "shkzg": "S", "koart": "A", "ltext": "Debit asset"},
+  {"bschl": "75", "shkzg": "H", "koart": "A", "ltext": "Credit asset"},
+  {"bschl": "86", "shkzg": "S", "koart": "S", "ltext": "GR/IR debit"},
+  {"bschl": "96", "shkzg": "H", "koart": "S", "ltext": "GR/IR credit"},
+  {"bschl": "89", "shkzg": "S", "koart": "M", "ltext": "Stock inward movement"},
+  {"bschl": "99", "shkzg": "H", "koart": "M", "ltext": "Stock outward movement"}
+]

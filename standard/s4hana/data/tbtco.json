@@ -1,0 +1,5 @@
+[
+  {"jobname": "SAP_REORG_JOBS", "jobcount": "10000001", "status": "F", "sdlstrtdt": "20261103", "strtdate": "20261103", "enddate": "20261103", "sdluname": "CB9980000020", "endtime": "020500", "progname": "RSBTCDEL2", "reluname": "CB9980000020", "sdlstrttm": "020000", "strttime": "020000"},
+  {"jobname": "Z_DAILY_BILLING", "jobcount": "10000002", "status": "F", "sdlstrtdt": "20261103", "strtdate": "20261103", "enddate": "20261103", "sdluname": "CB9980000020", "endtime": "020500", "progname": "SDBILLDL", "reluname": "CB9980000020", "sdlstrttm": "020000", "strttime": "020000"},
+  {"jobname": "Z_PAYMENT_RUN", "jobcount": "10000003", "status": "F", "sdlstrtdt": "20261103", "strtdate": "20261103", "enddate": "20261103", "sdluname": "CB9980000020", "endtime": "020500", "progname": "SAPF110S", "reluname": "CB9980000020", "sdlstrttm": "020000", "strttime": "020000"}
+]

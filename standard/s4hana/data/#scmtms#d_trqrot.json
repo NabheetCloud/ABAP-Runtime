@@ -1,0 +1,11 @@
+[
+  {"db_key": "A5E600589E9AB4566A181373F424E9AD", "trq_id": "00000000000000000001", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000001", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260112"},
+  {"db_key": "2CFC55F01134D1C715132998F1C5B3C0", "trq_id": "00000000000000000002", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000002", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260315"},
+  {"db_key": "E438162546C9767A917409B932240D56", "trq_id": "00000000000000000003", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000003", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260518"},
+  {"db_key": "B6728FA89522792EAFB2E13DEE790838", "trq_id": "00000000000000000004", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000004", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260212"},
+  {"db_key": "72B0441D0C97EDF098A8725D251E3E9A", "trq_id": "00000000000000000005", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000005", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260415"},
+  {"db_key": "E948F618D1245938F39537426B87CCC3", "trq_id": "00000000000000000006", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000006", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260618"},
+  {"db_key": "FB006C03C3C34D5F97863E9C0B35C4BE", "trq_id": "00000000000000000007", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000007", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260312"},
+  {"db_key": "DD9839E6E2E355F53F6772ACDF0BDAB0", "trq_id": "00000000000000000008", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000008", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260515"},
+  {"db_key": "16582AB9072D1865A37D6F38CE338B99", "trq_id": "00000000000000000009", "trq_type": "OTR1", "trq_cat": "03", "base_btd_id": "0080000009", "base_btd_tco": "73", "lifecycle": "02", "created_on": "20260718"}
+]

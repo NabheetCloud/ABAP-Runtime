@@ -1,0 +1,13 @@
+[
+  {"spras": "E", "inco1": "EXW", "bezei": "Ex Works"},
+  {"spras": "E", "inco1": "FCA", "bezei": "Free Carrier"},
+  {"spras": "E", "inco1": "CPT", "bezei": "Carriage Paid To"},
+  {"spras": "E", "inco1": "CIP", "bezei": "Carriage and Insurance Paid To"},
+  {"spras": "E", "inco1": "DAP", "bezei": "Delivered at Place"},
+  {"spras": "E", "inco1": "DPU", "bezei": "Delivered at Place Unloaded"},
+  {"spras": "E", "inco1": "DDP", "bezei": "Delivered Duty Paid"},
+  {"spras": "E", "inco1": "FAS", "bezei": "Free Alongside Ship"},
+  {"spras": "E", "inco1": "FOB", "bezei": "Free on Board"},
+  {"spras": "E", "inco1": "CFR", "bezei": "Cost and Freight"},
+  {"spras": "E", "inco1": "CIF", "bezei": "Cost, Insurance and Freight"}
+]

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="RAP Studio" APIVersion="3.6.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+<subform name="Form" layout="tb" locale="en_US" restoreState="auto">
+<pageSet>
+<pageArea name="Page1" id="Page1">
+<contentArea x="20mm" y="34mm" w="170mm" h="243mm"/>
+<medium stock="a4" short="210mm" long="297mm"/>
+<draw name="Library" x="20mm" y="10mm" w="170mm" h="6mm">
+  <ui><textEdit/></ui><value><text>City Library - Lending Desk</text></value>
+  <font typeface="Arial" size="9pt"><fill><color value="90,100,115"/></fill></font><para vAlign="middle"/>
+</draw>
+<draw name="Title" x="20mm" y="16mm" w="170mm" h="12mm">
+  <ui><textEdit/></ui><value><text>Loan Receipt</text></value>
+  <font typeface="Arial" size="18pt" weight="bold"><fill><color value="10,61,122"/></fill></font><para vAlign="middle"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="1pt"><color value="10,61,122"/></edge><edge presence="hidden"/></border>
+</draw>
+<field name="PageNumber" w="15mm" h="5mm" presence="hidden" id="PageNumber"><ui><numericEdit/></ui><value><integer/></value><calculate><script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);</script></calculate><bind match="none"/></field>
+<field name="PageCount" w="15mm" h="5mm" presence="hidden" id="PageCount"><ui><numericEdit/></ui><value><integer/></value><calculate><script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();</script></calculate><bind match="none"/></field>
+<draw name="FooterLine" x="20mm" y="281mm" w="170mm" h="0mm">
+  <value><line><edge thickness="0.5pt"><color value="148,163,184"/></edge></line></value>
+</draw>
+<draw name="FooterText" x="20mm" y="283mm" w="120mm" h="6mm">
+  <ui><textEdit/></ui><value><text>Please return the book by the due date. Late fee: 0.50 EUR per day overdue.</text></value>
+  <font typeface="Arial" size="8pt"/><para vAlign="middle"/>
+</draw>
+<draw name="PageOfPages" x="150mm" y="283mm" w="40mm" h="6mm">
+  <ui><textEdit/></ui>
+  <value><exData contentType="text/html"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-align:right">Page <span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#PageNumber"/> of <span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#PageCount"/></p></body></exData></value>
+  <font typeface="Arial" size="8pt"/><para hAlign="right" vAlign="middle"/>
+</draw>
+</pageArea>
+</pageSet>
+
+<!-- Book -->
+<subform name="Book" layout="tb" w="170mm"><bind match="none"/>
+<draw name="BookHeading" w="170mm" h="8mm">
+  <ui><textEdit/></ui><value><text>Book</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><para vAlign="bottom"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"><color value="148,163,184"/></edge><edge presence="hidden"/></border>
+</draw>
+<field name="BookTitle" w="170mm" minH="7mm" access="readOnly">
+  <ui><textEdit multiLine="1"><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="10pt" weight="bold"/>
+  <margin topInset="1mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Title</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.BookTitle"/>
+</field>
+<field name="Author" w="170mm" h="6mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Author</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.Author"/>
+</field>
+<field name="ISBN" w="170mm" h="6mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>ISBN</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.ISBN"/>
+</field>
+<field name="Genre" w="170mm" h="6mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Genre</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.Genre"/>
+</field>
+</subform>
+
+<!-- Borrower -->
+<subform name="Borrower" layout="tb" w="170mm"><bind match="none"/>
+<draw name="BorrowerHeading" w="170mm" h="10mm">
+  <ui><textEdit/></ui><value><text>Borrower</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><para vAlign="bottom"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"><color value="148,163,184"/></edge><edge presence="hidden"/></border>
+</draw>
+<field name="MemberName" w="170mm" h="7mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="1mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Name</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.MemberName"/>
+</field>
+<field name="MemberEmail" w="170mm" h="6mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Email</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.MemberEmail"/>
+</field>
+</subform>
+
+<!-- Loan dates -->
+<subform name="Loan" layout="tb" w="170mm"><bind match="none"/>
+<draw name="LoanHeading" w="170mm" h="10mm">
+  <ui><textEdit/></ui><value><text>Loan</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><para vAlign="bottom"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"><color value="148,163,184"/></edge><edge presence="hidden"/></border>
+</draw>
+<field name="LoanDate" w="170mm" h="7mm" access="readOnly">
+  <ui><dateTimeEdit><border presence="hidden"/><margin/></dateTimeEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="1mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Loan date</text></value></caption>
+  <value><date/></value>
+  <format><picture>date{DD MMM YYYY}</picture></format>
+  <bind match="dataRef" ref="$.LoanReceipt.LoanDate"/>
+</field>
+<field name="DueDate" w="170mm" h="6mm" access="readOnly">
+  <ui><dateTimeEdit><border presence="hidden"/><margin/></dateTimeEdit></ui>
+  <font typeface="Arial" size="9pt" weight="bold"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Due date</text></value></caption>
+  <value><date/></value>
+  <format><picture>date{DD MMM YYYY}</picture></format>
+  <bind match="dataRef" ref="$.LoanReceipt.DueDate"/>
+</field>
+<field name="ReturnDate" w="170mm" h="6mm" access="readOnly">
+  <ui><dateTimeEdit><border presence="hidden"/><margin/></dateTimeEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Returned on</text></value></caption>
+  <value><date/></value>
+  <format><picture>date{DD MMM YYYY}</picture></format>
+  <bind match="dataRef" ref="$.LoanReceipt.ReturnDate"/>
+</field>
+<field name="LoanStatus" w="170mm" h="6mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Status</text></value></caption>
+  <value><text/></value>
+  <calculate><script>if (HasValue(ReturnDate)) then
+  "Returned"
+elseif (Date2Num(ReferenceDate, "YYYY-MM-DD") > Date2Num(DueDate, "YYYY-MM-DD")) then
+  "Overdue"
+else
+  "On loan"
+endif</script></calculate>
+  <bind match="none"/>
+</field>
+<!-- the return date, or today while the book is out: overdue days are counted up to this date -->
+<field name="ReferenceDate" w="170mm" h="6mm" presence="hidden" access="readOnly">
+  <ui><dateTimeEdit/></ui><value><date/></value>
+  <bind match="dataRef" ref="$.LoanReceipt.ReferenceDate"/>
+</field>
+</subform>
+
+<!-- Fees: calculated in the form -->
+<subform name="Fees" layout="tb" w="170mm"><bind match="none"/>
+<draw name="FeesHeading" w="170mm" h="10mm">
+  <ui><textEdit/></ui><value><text>Overdue and fees</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><para vAlign="bottom"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"><color value="148,163,184"/></edge><edge presence="hidden"/></border>
+</draw>
+<field name="DaysOverdue" w="170mm" h="7mm" access="readOnly">
+  <ui><numericEdit><border presence="hidden"/><margin/></numericEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="1mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Days overdue</text></value></caption>
+  <value><integer/></value>
+  <format><picture>num{z,zz9}</picture></format>
+  <calculate><script>Max(0, Date2Num(Loan.ReferenceDate, "YYYY-MM-DD") - Date2Num(Loan.DueDate, "YYYY-MM-DD"))</script></calculate>
+  <bind match="none"/>
+</field>
+<field name="LateFee" w="170mm" h="7mm" access="readOnly">
+  <ui><numericEdit><border presence="hidden"/><margin/></numericEdit></ui>
+  <font typeface="Arial" size="10pt" weight="bold"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <caption reserve="40mm"><font typeface="Arial" size="9pt"/><para vAlign="middle"/><value><text>Late fee (EUR)</text></value></caption>
+  <value><decimal fracDigits="2"/></value>
+  <format><picture>num{z,zz9.99}</picture></format>
+  <!-- 0.50 EUR per day overdue -->
+  <calculate><script>Round(DaysOverdue * 0.50, 2)</script></calculate>
+  <bind match="none"/>
+</field>
+</subform>
+
+<!-- Remarks: fillable in the interactive PDF -->
+<subform name="RemarksBlock" layout="tb" w="170mm"><bind match="none"/>
+<draw name="RemarksHeading" w="170mm" h="10mm">
+  <ui><textEdit/></ui><value><text>Remarks</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><para vAlign="bottom"/>
+</draw>
+<field name="Remarks" w="170mm" h="30mm">
+  <ui><textEdit multiLine="1"><border><edge thickness="0.5pt"><color value="148,163,184"/></edge></border><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="1.5mm" bottomInset="1.5mm" leftInset="1.5mm" rightInset="1.5mm"/><para vAlign="top"/>
+  <value><text maxChars="500"/></value>
+  <bind match="none"/>
+</field>
+</subform>
+</subform>
+</template>
+<config xmlns="http://www.xfa.org/schema/xci/3.1/">
+<present><pdf><interactive>1</interactive></pdf></present>
+</config>
+</xdp:xdp>

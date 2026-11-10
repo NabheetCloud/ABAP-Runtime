@@ -1,0 +1,277 @@
+/* RAP Studio look for classic ABAP programs (reports, selection screens, lists, dynpros, ALV, trees, dialogs).
+   Overrides the SAP GUI styling of the open-abap report framework; the launcher uses the rl-* classes. */
+:root {
+  --rx-bg: #f4f5f7; --rx-panel: #ffffff; --rx-panel-2: #f7f8fa; --rx-text: #1c2733; --rx-muted: #5d6b7a;
+  --rx-border: #e1e4e8; --rx-strong: #c9d1d9; --rx-accent: #0a6ed1; --rx-accent-soft: #e8f1fb; --rx-accent-text: #ffffff;
+  --rx-hover: #f0f3f6; --rx-focus: 0 0 0 3px rgba(10, 110, 209, .25); --rx-radius: 10px; --rx-shadow: 0 1px 2px rgba(16, 24, 40, .06), 0 1px 3px rgba(16, 24, 40, .08);
+  --rx-error: #bb0000; --rx-error-bg: #fdecec; --rx-warn: #8a5300; --rx-warn-bg: #fff4e0; --rx-ok: #146c2e; --rx-ok-bg: #e7f6ec; --rx-info-bg: #e8f1fb;
+  --rx-font: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --rx-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --rx-bg: #0e1116; --rx-panel: #161b22; --rx-panel-2: #1c222b; --rx-text: #e6edf3; --rx-muted: #9aa7b4; --rx-border: #2a313b; --rx-strong: #3a434f;
+    --rx-accent: #4ea1f3; --rx-accent-soft: #15283d; --rx-accent-text: #0b1520; --rx-hover: #1f2630; --rx-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    --rx-error: #ff7b72; --rx-error-bg: #3a1618; --rx-warn: #f0b45c; --rx-warn-bg: #33260f; --rx-ok: #56d364; --rx-ok-bg: #12301b; --rx-info-bg: #15283d;
+  }
+}
+
+/* ---------------------------------------------------------------- page and shell */
+html.rap-theme, html.rap-theme body { background: var(--rx-bg) !important; color: var(--rx-text) !important; font-family: var(--rx-font) !important; color-scheme: light dark; }
+html.rap-theme body { margin: 0; font-size: 14px; line-height: 1.45; }
+html.rap-theme .wb-shell { display: flex !important; flex-direction: column; min-height: 100vh; height: auto !important; background: var(--rx-bg) !important; }
+html.rap-theme .wb-menubar, html.rap-theme .wb-commandbar, html.rap-theme .wb-appbar, html.rap-theme .wb-statusbar, html.rap-theme .wb-skip-link { display: none !important; }
+
+.rx-head { position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: 12px; padding: 10px 20px; background: var(--rx-panel); border-bottom: 1px solid var(--rx-border); }
+.rx-home { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 8px; color: var(--rx-text); text-decoration: none; border: 1px solid var(--rx-border); }
+.rx-home:hover { background: var(--rx-hover); }
+.rx-home svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.rx-titles { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.rx-app { font-size: 12px; color: var(--rx-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rx-titles h1 { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rx-actions { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+html.rap-theme .rx-icon-btn { display: inline-grid !important; place-items: center; width: 34px !important; height: 34px !important; padding: 0 !important; border-radius: 8px !important; border: 1px solid transparent !important; background: transparent !important; color: var(--rx-muted) !important; cursor: pointer; box-shadow: none !important; }
+html.rap-theme .rx-icon-btn:hover { background: var(--rx-hover) !important; color: var(--rx-text) !important; }
+html.rap-theme .rx-icon-btn:focus-visible { outline: none; box-shadow: var(--rx-focus) !important; }
+html.rap-theme .rx-icon-btn .wb-icon { width: 18px; height: 18px; }
+
+/* menus of the program's GUI status (List, Edit, ...) */
+html.rap-theme .wb-status-menu-items { display: flex; gap: 2px; padding: 6px 20px 0; background: transparent !important; border: 0 !important; }
+html.rap-theme .wb-status-menu-items .wb-menu { padding: 5px 10px !important; border-radius: 6px; color: var(--rx-muted) !important; background: transparent !important; border: 0 !important; font: 500 13px var(--rx-font) !important; cursor: pointer; }
+html.rap-theme .wb-status-menu-items .wb-menu:hover { background: var(--rx-hover) !important; color: var(--rx-text) !important; }
+html.rap-theme .wb-menu-popup { background: var(--rx-panel) !important; color: var(--rx-text) !important; border: 1px solid var(--rx-border) !important; border-radius: 10px !important; box-shadow: 0 10px 30px rgba(16, 24, 40, .18) !important; padding: 4px !important; }
+html.rap-theme .wb-menu-popup li, html.rap-theme .wb-menu-popup button, html.rap-theme .wb-menu-popup a { border-radius: 6px; color: var(--rx-text) !important; background: transparent !important; }
+html.rap-theme .wb-menu-popup li:hover, html.rap-theme .wb-menu-popup button:hover { background: var(--rx-hover) !important; }
+
+/* action row (Execute and the program's function keys) */
+html.rap-theme .wb-app-toolbar { display: flex !important; flex-wrap: wrap; gap: 8px; padding: 14px 20px 0 !important; background: transparent !important; border: 0 !important; box-shadow: none !important; }
+html.rap-theme .wb-toolbar-button, html.rap-theme .gg-alv-tool-button, html.rap-theme .gg-selection button:not(.gg-help-button):not(.rx-f4), html.rap-theme .gg-dynpro button:not(.rx-f4), html.rap-theme .gg-modal-footer button, html.rap-theme .gg-free-selection-actions button {
+  display: inline-flex !important; align-items: center; gap: 6px; height: 34px; min-height: 34px; padding: 0 14px !important; border-radius: 8px !important;
+  border: 1px solid var(--rx-strong) !important; background: var(--rx-panel) !important; color: var(--rx-text) !important; font: 500 13px var(--rx-font) !important; cursor: pointer; box-shadow: var(--rx-shadow) !important; }
+html.rap-theme .wb-toolbar-button:hover, html.rap-theme .gg-alv-tool-button:hover, html.rap-theme .gg-dynpro button:not(.rx-f4):hover, html.rap-theme .gg-selection button:not(.rx-f4):hover { background: var(--rx-hover) !important; }
+html.rap-theme .wb-toolbar-button--execute, html.rap-theme button[type=submit].gg-primary { background: var(--rx-accent) !important; border-color: var(--rx-accent) !important; color: var(--rx-accent-text) !important; }
+html.rap-theme .wb-toolbar-button--execute:hover { filter: brightness(1.08); background: var(--rx-accent) !important; }
+html.rap-theme .wb-toolbar-button .wb-icon { width: 16px; height: 16px; }
+html.rap-theme .wb-toolbar-label, html.rap-theme .wb-toolbar-separator { color: var(--rx-muted) !important; }
+
+/* ---------------------------------------------------------------- content */
+html.rap-theme .wb-runtime-content { flex: 1; padding: 16px 20px 28px !important; background: transparent !important; border: 0 !important; box-shadow: none !important; overflow: visible !important; }
+html.rap-theme #gg-main-content { max-width: 1280px; margin: 0 auto; }
+html.rap-theme .gg-page { gap: 14px !important; }
+html.rap-theme .gg-work-area, html.rap-theme .gg-selection > form, html.rap-theme .gg-dynpro { background: var(--rx-panel) !important; border: 1px solid var(--rx-border) !important; border-radius: var(--rx-radius) !important; box-shadow: var(--rx-shadow) !important; color: var(--rx-text) !important; }
+html.rap-theme .gg-selection > form { padding: 18px 20px !important; gap: 6px !important; }
+html.rap-theme .gg-selection, html.rap-theme .gg-dynpro, html.rap-theme .gg-list, html.rap-theme .gg-alv { color: var(--rx-text) !important; }
+
+/* banners (status messages) */
+.rx-banner { max-width: 1280px; margin: 0 auto 14px; padding: 10px 14px; border-radius: 8px; border: 1px solid; font-weight: 500; }
+.rx-banner--info { background: var(--rx-info-bg); border-color: transparent; color: var(--rx-text); }
+.rx-banner--success { background: var(--rx-ok-bg); border-color: transparent; color: var(--rx-ok); }
+.rx-banner--warning { background: var(--rx-warn-bg); border-color: transparent; color: var(--rx-warn); }
+.rx-banner--error { background: var(--rx-error-bg); border-color: transparent; color: var(--rx-error); }
+html.rap-theme .gg-message { border-radius: 8px !important; border: 0 !important; padding: 10px 14px !important; background: var(--rx-info-bg) !important; color: var(--rx-text) !important; }
+html.rap-theme .gg-error { background: var(--rx-error-bg) !important; color: var(--rx-error) !important; }
+html.rap-theme .gg-warning { background: var(--rx-warn-bg) !important; color: var(--rx-warn) !important; }
+html.rap-theme .gg-success { background: var(--rx-ok-bg) !important; color: var(--rx-ok) !important; }
+
+/* ---------------------------------------------------------------- selection screens and dynpro fields */
+html.rap-theme .gg-selection fieldset, html.rap-theme .gg-dynpro fieldset { margin: 6px 0 12px !important; padding: 14px 16px !important; border: 1px solid var(--rx-border) !important; border-radius: 10px !important; background: var(--rx-panel-2) !important; box-shadow: none !important; }
+html.rap-theme .gg-selection fieldset > legend, html.rap-theme .gg-dynpro fieldset > legend { padding: 0 6px !important; color: var(--rx-muted) !important; font: 600 12px var(--rx-font) !important; text-transform: uppercase; letter-spacing: .04em; }
+html.rap-theme .gg-field { gap: 12px !important; min-height: 38px !important; }
+html.rap-theme .gg-selection .gg-field label, html.rap-theme .gg-field > label, html.rap-theme .gg-dynpro label { min-width: 11rem; color: var(--rx-muted) !important; font: 500 13px var(--rx-font) !important; }
+html.rap-theme input[type=text], html.rap-theme input[type=search], html.rap-theme input[type=password], html.rap-theme input[type=number], html.rap-theme input[type=date], html.rap-theme input:not([type]), html.rap-theme select, html.rap-theme textarea {
+  height: 34px; padding: 0 10px !important; border: 1px solid var(--rx-strong) !important; border-radius: 8px !important; background: var(--rx-panel) !important; color: var(--rx-text) !important; font: 14px var(--rx-font) !important; box-shadow: none !important; box-sizing: border-box; }
+html.rap-theme textarea { height: auto; padding: 8px 10px !important; }
+html.rap-theme input:focus, html.rap-theme select:focus, html.rap-theme textarea:focus { outline: none !important; border-color: var(--rx-accent) !important; box-shadow: var(--rx-focus) !important; background: var(--rx-panel) !important; }
+html.rap-theme input[readonly], html.rap-theme .gg-state-readonly input, html.rap-theme input:disabled, html.rap-theme select:disabled { background: var(--rx-panel-2) !important; color: var(--rx-muted) !important; border-color: var(--rx-border) !important; }
+html.rap-theme input[type=checkbox], html.rap-theme input[type=radio] { width: 16px; height: 16px; accent-color: var(--rx-accent); }
+html.rap-theme .gg-help-button { width: 30px; height: 30px; border-radius: 8px !important; border: 1px solid var(--rx-border) !important; background: var(--rx-panel) !important; color: var(--rx-muted) !important; }
+html.rap-theme .gg-selection-comment { color: var(--rx-muted) !important; }
+html.rap-theme .gg-selection-uline { border-top-color: var(--rx-border) !important; }
+html.rap-theme .gg-format, html.rap-theme .gg-external { color: var(--rx-text) !important; }
+
+/* ---------------------------------------------------------------- tabs, dialogs */
+html.rap-theme [role=tablist], html.rap-theme .gg-tabstrip > [role=tablist] { display: flex; gap: 4px; border-bottom: 1px solid var(--rx-border) !important; background: transparent !important; padding: 0 !important; }
+html.rap-theme [role=tab] { padding: 8px 14px !important; border: 0 !important; border-bottom: 2px solid transparent !important; border-radius: 0 !important; background: transparent !important; color: var(--rx-muted) !important; font: 500 13px var(--rx-font) !important; box-shadow: none !important; }
+html.rap-theme [role=tab][aria-selected=true] { color: var(--rx-accent) !important; border-bottom-color: var(--rx-accent) !important; }
+html.rap-theme .gg-tab-panel { border: 0 !important; background: transparent !important; padding: 14px 0 0 !important; }
+html.rap-theme .wb-dialog-panel, html.rap-theme .gg-modal, html.rap-theme .gg-modal-panel, html.rap-theme .gg-free-selection-panel, html.rap-theme dialog { background: var(--rx-panel) !important; color: var(--rx-text) !important; border: 1px solid var(--rx-border) !important; border-radius: 14px !important; box-shadow: 0 24px 60px rgba(16, 24, 40, .28) !important; }
+html.rap-theme .wb-dialog-header, html.rap-theme .gg-modal-header, html.rap-theme .gg-free-selection-header { background: transparent !important; border-bottom: 1px solid var(--rx-border) !important; color: var(--rx-text) !important; }
+html.rap-theme .gg-modal-footer, html.rap-theme .gg-free-selection-actions { background: var(--rx-panel-2) !important; border-top: 1px solid var(--rx-border) !important; }
+html.rap-theme .gg-free-selection-tree, html.rap-theme .gg-free-selection-body { background: var(--rx-panel-2) !important; }
+
+/* ---------------------------------------------------------------- lists (WRITE output keeps its columns) */
+html.rap-theme .gg-list { padding: 18px 20px !important; font: 13.5px/1.55 var(--rx-mono) !important; color: var(--rx-text) !important; background: var(--rx-panel) !important; border-radius: var(--rx-radius); }
+html.rap-theme .gg-list-line { min-height: 21px !important; line-height: 21px !important; }
+html.rap-theme .gg-list-page-header { border-bottom: 1px solid var(--rx-border) !important; color: var(--rx-accent) !important; font-weight: 600 !important; margin-bottom: 4px !important; padding-bottom: 4px !important; }
+html.rap-theme .gg-list .gg-color-heading { background: var(--rx-accent-soft) !important; color: var(--rx-text) !important; }
+html.rap-theme .gg-list .gg-color-key { color: var(--rx-accent) !important; }
+html.rap-theme .gg-list-line button:hover { background: var(--rx-hover) !important; }
+
+/* ---------------------------------------------------------------- ALV grids, table controls, trees */
+html.rap-theme .gg-alv-toolbar { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 12px !important; background: transparent !important; border: 0 !important; border-bottom: 1px solid var(--rx-border) !important; }
+html.rap-theme .gg-alv-tool-button { height: 30px; min-height: 30px; padding: 0 10px !important; box-shadow: none !important; }
+html.rap-theme .gg-alv, html.rap-theme .gg-alv-grid-area { background: var(--rx-panel) !important; border-color: var(--rx-border) !important; border-radius: var(--rx-radius); }
+html.rap-theme table { border-collapse: separate !important; border-spacing: 0 !important; width: 100%; font: 13px var(--rx-font) !important; color: var(--rx-text) !important; }
+html.rap-theme th, html.rap-theme .gg-grid-column { position: sticky; top: 0; z-index: 1; padding: 9px 12px !important; background: var(--rx-panel-2) !important; color: var(--rx-muted) !important; font-weight: 600 !important; text-align: left; border: 0 !important; border-bottom: 1px solid var(--rx-border) !important; white-space: nowrap; }
+html.rap-theme td, html.rap-theme .gg-grid-cell { padding: 8px 12px !important; border: 0 !important; border-bottom: 1px solid var(--rx-border) !important; background: transparent !important; color: var(--rx-text) !important; }
+html.rap-theme tbody tr:hover td, html.rap-theme .gg-grid-row:hover .gg-grid-cell { background: var(--rx-hover) !important; }
+html.rap-theme .gg-state-selected td, html.rap-theme tr.gg-state-selected > *, html.rap-theme .gg-grid-row.gg-state-selected .gg-grid-cell { background: var(--rx-accent-soft) !important; }
+html.rap-theme .gg-grid-total-cell, html.rap-theme .gg-state-total td { background: var(--rx-panel-2) !important; font-weight: 600 !important; }
+html.rap-theme td input[type=text], html.rap-theme .gg-grid-cell input { height: 30px; }
+html.rap-theme .gg-tree, html.rap-theme .gg-column-tree { background: var(--rx-panel) !important; border: 1px solid var(--rx-border) !important; border-radius: var(--rx-radius) !important; padding: 6px !important; color: var(--rx-text) !important; }
+html.rap-theme .gg-tree-node, html.rap-theme .gg-tree-item { border-radius: 6px; color: var(--rx-text) !important; }
+html.rap-theme .gg-tree-node:hover, html.rap-theme .gg-tree-item:hover { background: var(--rx-hover) !important; }
+html.rap-theme .gg-tree-node.gg-state-selected, html.rap-theme .gg-tree-item.gg-state-selected { background: var(--rx-accent-soft) !important; }
+html.rap-theme .gg-splitter-layout, html.rap-theme .gg-container, html.rap-theme .gg-control-host { border-color: var(--rx-border) !important; background: transparent !important; }
+
+/* ---------------------------------------------------------------- launcher */
+body.rl-page { margin: 0; min-height: 100vh; background: var(--rx-bg); color: var(--rx-text); font: 14px/1.45 var(--rx-font); }
+.rl-head { padding: 28px 24px 8px; max-width: 1100px; margin: 0 auto; }
+.rl-eyebrow { margin: 0 0 4px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--rx-accent); }
+.rl-head h1 { margin: 0; font-size: 26px; letter-spacing: -.02em; }
+.rl-sub { margin: 6px 0 0; color: var(--rx-muted); max-width: 60ch; }
+.rl-main { max-width: 1100px; margin: 0 auto; padding: 18px 24px 40px; }
+.rl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.rl-tile { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; background: var(--rx-panel); border: 1px solid var(--rx-border); border-radius: 12px; box-shadow: var(--rx-shadow); color: var(--rx-text); text-decoration: none; transition: border-color .12s, transform .12s; }
+.rl-tile:hover { border-color: var(--rx-accent); transform: translateY(-1px); }
+.rl-tile strong { font-size: 15px; }
+.rl-tile code { font: 12px var(--rx-mono); color: var(--rx-muted); }
+.rl-tile-kind { align-self: flex-start; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--rx-accent-soft); color: var(--rx-accent); }
+.rl-card { background: var(--rx-panel); border: 1px solid var(--rx-border); border-radius: 12px; padding: 22px; box-shadow: var(--rx-shadow); }
+.rl-empty h2 { margin: 0 0 6px; font-size: 16px; }
+.rl-empty p { margin: 0; color: var(--rx-muted); }
+.rl-error { white-space: pre-wrap; color: var(--rx-error); background: var(--rx-error-bg); padding: 12px; border-radius: 8px; }
+.rl-btn { display: inline-block; margin-top: 10px; padding: 8px 14px; border-radius: 8px; background: var(--rx-accent); color: var(--rx-accent-text); text-decoration: none; }
+@media (max-width: 640px) {
+  .rx-head { padding: 8px 12px; flex-wrap: wrap; } html.rap-theme .wb-runtime-content { padding: 12px !important; }
+  .rx-head .rx-titles { flex: 1 1 0; min-width: 0; }
+  .rx-head .rx-actions { order: 3; flex: 1 0 100%; margin-left: 0 !important; overflow-x: auto; justify-content: flex-start !important; }
+  html.rap-theme .gg-selection .gg-field { flex-wrap: wrap; } html.rap-theme .gg-selection .gg-field label { min-width: 100%; }
+  html.rap-theme .gg-selection .gg-choice { display: flex !important; flex-wrap: nowrap; align-items: center; gap: 10px !important; }
+  html.rap-theme .gg-selection .gg-choice label { min-width: 0; }
+  /* select-options: name above, "low to high [multiple]" on one line that fills the width */
+  html.rap-theme .gg-range { display: flex !important; flex-direction: column; align-items: stretch !important; gap: 6px !important; }
+  html.rap-theme .gg-range-list { width: 100%; }
+  html.rap-theme .gg-range-row { display: flex !important; flex-wrap: nowrap !important; align-items: center; gap: 6px; }
+  html.rap-theme .gg-range-row .gg-range-input { flex: 1 1 0; min-width: 0; width: auto !important; }
+}
+/* one card per screen: the work area around a selection screen or dynpro is only a container */
+html.rap-theme .gg-page--selection .gg-work-area, html.rap-theme .gg-page--dynpro .gg-work-area { background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0 !important; }
+
+/* ---------------------------------------------------------------- system pages (jobs, logs, output, forms, tables) */
+.rs-nav { display: flex; gap: 4px; margin-top: 14px; flex-wrap: wrap; }
+.rs-nav a { padding: 6px 12px; border-radius: 8px; color: var(--rx-muted); text-decoration: none; font-weight: 500; }
+.rs-nav a:hover { background: var(--rx-hover); color: var(--rx-text); }
+.rs-nav a[aria-current="page"] { background: var(--rx-accent-soft); color: var(--rx-accent); }
+.rl-main a { color: var(--rx-accent); }
+.rl-main a.rl-btn { color: var(--rx-accent-text); }
+.rl-main h2 { margin: 0 0 12px; font-size: 16px; } .rl-main h2 small, .rl-main h3 small { color: var(--rx-muted); font-weight: 500; }
+.rl-main h3 { margin: 14px 0 6px; font-size: 13px; color: var(--rx-muted); text-transform: uppercase; letter-spacing: .05em; }
+.rl-main section + section, .rl-main section + details, .rl-main details + section { margin-top: 14px; }
+.rs-split { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
+@media (max-width: 900px) { .rs-split { grid-template-columns: 1fr; } }
+.rs-scroll { overflow-x: auto; border: 1px solid var(--rx-border); border-radius: 10px; background: var(--rx-panel); }
+.rs-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.rs-table th { text-align: left; font-weight: 600; color: var(--rx-muted); background: var(--rx-panel-2); padding: 8px 12px; border-bottom: 1px solid var(--rx-border); white-space: nowrap; }
+.rs-table td { padding: 8px 12px; border-bottom: 1px solid var(--rx-border); vertical-align: top; }
+.rs-table tr:last-child td { border-bottom: 0; }
+.rs-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.rs-filter-row th { padding: 4px 6px; } .rs-filter-row input { width: 100%; min-width: 70px; box-sizing: border-box; font: 12px var(--rx-font); padding: 4px 6px; border: 1px solid var(--rx-border); border-radius: 6px; background: var(--rx-panel); color: var(--rx-text); }
+.rs-chip { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.rs-chip--ok { background: var(--rx-ok-bg); color: var(--rx-ok); } .rs-chip--error { background: var(--rx-error-bg); color: var(--rx-error); }
+.rs-chip--warn { background: var(--rx-warn-bg); color: var(--rx-warn); } .rs-chip--info { background: var(--rx-info-bg); color: var(--rx-accent); }
+.rs-chip--muted { background: var(--rx-panel-2); color: var(--rx-muted); }
+.rs-form form { display: grid; gap: 10px; }
+.rs-form label { display: grid; gap: 4px; font-size: 13px; font-weight: 500; }
+.rs-form small, .rs-muted { color: var(--rx-muted); font-weight: 400; }
+.rs-form { min-width: 0; } .rs-form label { min-width: 0; }
+.rs-form input, .rs-form select, .rs-form textarea { width: 100%; box-sizing: border-box; min-width: 0; font: 13px var(--rx-font); padding: 7px 9px; border: 1px solid var(--rx-strong); border-radius: 8px; background: var(--rx-panel); color: var(--rx-text); }
+.rs-form textarea { font-family: var(--rx-mono); resize: vertical; }
+.rs-actions { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.rs-actions form { margin: 0; }
+.rs-fs { border: 1px solid var(--rx-strong); border-radius: 10px; padding: 10px 12px 12px; margin: 0; display: grid; gap: 10px; min-width: 0; }
+.rs-fs legend { font-size: 12px; font-weight: 600; color: var(--rx-muted); padding: 0 6px; text-transform: uppercase; letter-spacing: .04em; }
+.rs-param { margin: 8px 0 14px; } .rs-param > strong { display: block; margin-bottom: 6px; font-family: var(--rx-mono); font-size: 13px; }
+.rs-val { font: 14px var(--rx-mono); background: var(--rx-panel); border: 1px solid var(--rx-strong); border-radius: 6px; padding: 3px 8px; }
+.rs-btn { font: 600 13px var(--rx-font); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--rx-accent); background: var(--rx-accent); color: var(--rx-accent-text); cursor: pointer; }
+.rs-btn:disabled { opacity: .5; cursor: default; }
+.rs-btn--ghost { background: transparent; color: var(--rx-accent); }
+.rs-link { border: 0; background: none; color: var(--rx-accent); cursor: pointer; font: inherit; padding: 0; }
+.rs-notice { padding: 10px 14px; border-radius: 8px; background: var(--rx-ok-bg); color: var(--rx-ok); margin: 0 0 14px; }
+.rs-dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 0; font-size: 13px; } .rs-dl dt { color: var(--rx-muted); } .rs-dl dd { margin: 0; }
+.rs-spool { margin: 0; padding: 14px; background: var(--rx-panel-2); border: 1px solid var(--rx-border); border-radius: 8px; font: 12.5px/1.5 var(--rx-mono); overflow-x: auto; white-space: pre; }
+.rs-tables { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.rs-tables a { display: flex; justify-content: space-between; gap: 8px; padding: 9px 12px; border: 1px solid var(--rx-border); border-radius: 8px; text-decoration: none; color: var(--rx-text); background: var(--rx-panel-2); }
+.rs-tables a:hover { border-color: var(--rx-accent); } .rs-tables small { color: var(--rx-muted); }
+.rs-details summary { cursor: pointer; font-weight: 600; } .rs-details[open] summary { margin-bottom: 12px; }
+
+/* dynpros: theme.js re-spaces the screen rows (inline pixel positions) for the larger fields of this theme */
+html.rap-theme .gg-dynpro { padding: 12px 16px !important; }
+html.rap-theme .gg-dynpro .gg-dynpro-control input[type=text], html.rap-theme .gg-dynpro .gg-dynpro-control input[type=password] { height: 32px !important; }
+html.rap-theme .gg-dynpro .gg-dynpro-control { display: flex; align-items: center; }
+.rs-pdf { display: grid; gap: 14px; justify-items: center; overflow-x: auto; }
+.rs-pdf canvas { max-width: 100%; height: auto; box-shadow: 0 1px 4px rgba(0, 0, 0, .18); background: #fff; }
+.rs-dl-btn { float: right; font-size: 12px; padding: 5px 10px; text-decoration: none; }
+
+/* table controls: the table starts at the top of its scroll box (a centered table taller than the box hid its first
+   row under the sticky header) */
+html.rap-theme .gg-dynpro [data-table-control] { display: block !important; align-items: initial !important; }
+/* WRITE lists wider than the page scroll sideways instead of being cut off */
+html.rap-theme .gg-list { overflow-x: auto !important; max-width: 100%; }
+html.rap-theme .gg-list-page { min-width: max-content; }
+/* PDFs a print program asked for (getpdf = 'X'): links above the list */
+.rx-pdf { margin: 0 0 12px; padding: 10px 14px; border: 1px solid var(--rx-border); border-left: 3px solid var(--rx-accent); border-radius: var(--rx-radius); background: var(--rx-panel); font: 13px var(--rx-font); color: var(--rx-text); }
+.rx-pdf ul { margin: 6px 0 0; padding-left: 18px; } .rx-pdf a { color: var(--rx-accent); } .rx-pdf small { color: var(--rx-muted); }
+/* a dynpro tabstrip is a box as high as the strip: its tabs go on top (the subscreen of the tab is below them) */
+html.rap-theme .gg-dynpro [role=tablist] { align-items: flex-start !important; align-content: flex-start !important; border: 1px solid var(--rx-border) !important; border-radius: 8px; padding: 0 6px !important; }
+html.rap-theme .gg-dynpro [role=tablist] [role=tab] { flex: none; }
+/* function module test: a structure as component inputs, a table as rows */
+.rs-param-form { display: grid; gap: 6px; }
+.rs-param-form .rs-pname { font-size: 13px; font-weight: 500; }
+.rs-comps { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 6px 10px; align-items: start; }
+.rs-grid { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.rs-grid th { text-align: left; font-weight: 600; color: var(--rx-muted); padding: 2px 4px; }
+.rs-grid td { padding: 2px; } .rs-grid input { width: 100%; box-sizing: border-box; }
+.rs-small { padding: 4px 10px !important; font-size: 12px !important; justify-self: start; }
+.rs-param-form details summary { font-size: 12px; color: var(--rx-muted); cursor: pointer; }
+.rs-form [aria-invalid="true"] { border-color: var(--rx-error); outline: 1px solid var(--rx-error); background: var(--rx-error-bg); }
+.rs-field-error { display: block; font-size: 12px; color: var(--rx-error); margin-top: 2px; }
+.rs-field-errors { margin: 0 0 8px; padding-left: 20px; color: var(--rx-error); font-size: 13px; }
+/* FORMAT COLOR / INTENSIFIED / INVERSE in WRITE lists (SAP's list colours, softened for the theme) */
+html.rap-theme .gg-list .gg-color-normal { background: color-mix(in srgb, var(--rx-panel-2) 70%, transparent) !important; }
+html.rap-theme .gg-list .gg-color-total { background: #fff4c2 !important; color: #5c4600 !important; }
+html.rap-theme .gg-list .gg-color-positive { background: #dcf3e2 !important; color: #145c2c !important; }
+html.rap-theme .gg-list .gg-color-negative { background: #fbe0e0 !important; color: #8a1c1c !important; }
+html.rap-theme .gg-list .gg-color-group { background: #fde6d2 !important; color: #7a3d00 !important; }
+html.rap-theme .gg-list .gg-intensified { font-weight: 600 !important; }
+html.rap-theme .gg-list .gg-inverse { filter: invert(1) hue-rotate(180deg); }
+
+/* ---------------------------------------------------------------- F4 value help */
+.rx-f4-wrap { position: relative; display: inline-block; max-width: 100%; vertical-align: middle; }
+html.rap-theme .rx-f4-wrap > input[name] { width: 100% !important; padding-right: 28px !important; }
+html.rap-theme .rx-f4, .rx-f4 { position: absolute; right: 3px; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 22px; height: 22px;
+  padding: 0; border: 0; border-radius: 5px; background: transparent; color: var(--rx-muted); cursor: pointer; }
+html.rap-theme .rx-f4:hover, .rx-f4:hover { background: var(--rx-hover); color: var(--rx-accent); }
+.rx-f4 svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.rx-f4-dialog { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: flex-start; justify-content: center; padding: 8vh 16px 16px;
+  background: rgba(15, 23, 42, .35); font-family: var(--rx-font); }
+.rx-f4-panel { width: min(640px, 100%); max-height: 76vh; display: flex; flex-direction: column; background: var(--rx-panel); color: var(--rx-text);
+  border: 1px solid var(--rx-border); border-radius: 12px; box-shadow: 0 18px 50px rgba(15, 23, 42, .25); overflow: hidden; }
+.rx-f4-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px 6px; }
+.rx-f4-head h2 { margin: 0; font-size: 16px; font-weight: 650; }
+.rx-f4-close { width: 30px; height: 30px; border: 0; border-radius: 8px; background: transparent; color: var(--rx-muted); font-size: 20px; cursor: pointer; }
+.rx-f4-close:hover { background: var(--rx-hover); color: var(--rx-text); }
+.rx-f4-search { margin: 4px 16px 10px; padding: 8px 10px; border: 1px solid var(--rx-strong); border-radius: 8px; background: var(--rx-panel-2);
+  color: var(--rx-text); font: inherit; outline: none; }
+.rx-f4-search:focus { box-shadow: var(--rx-focus); border-color: var(--rx-accent); }
+.rx-f4-body { overflow: auto; border-top: 1px solid var(--rx-border); }
+.rx-f4-body table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.rx-f4-body th { position: sticky; top: 0; background: var(--rx-panel-2); text-align: left; font-weight: 600; color: var(--rx-muted); padding: 7px 12px;
+  border-bottom: 1px solid var(--rx-border); white-space: nowrap; }
+.rx-f4-body td { padding: 7px 12px; border-bottom: 1px solid var(--rx-border); white-space: nowrap; }
+.rx-f4-body td.key { font-family: var(--rx-mono); font-weight: 600; }
+.rx-f4-body tbody tr { cursor: pointer; }
+.rx-f4-body tbody tr:hover { background: var(--rx-hover); }
+.rx-f4-body tbody tr.active { background: var(--rx-accent-soft); }
+.rx-f4-msg { padding: 18px 16px; color: var(--rx-muted); }
+.rx-f4-foot { padding: 8px 16px; font-size: 12px; color: var(--rx-muted); border-top: 1px solid var(--rx-border); }
+.rx-f4-foot:empty { display: none; }

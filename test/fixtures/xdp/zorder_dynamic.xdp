@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0" APIVersion="3.6.13324.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+  <subform name="data" layout="tb" locale="en_US">
+    <pageSet>
+      <pageArea name="First" id="First">
+        <occur max="1"/>
+        <contentArea x="20mm" y="40mm" w="170mm" h="230mm"/>
+        <medium stock="a4" short="210mm" long="297mm"/>
+        <draw name="Logo" x="20mm" y="12mm" w="120mm" h="10mm"><value><text>ACME Order</text></value><font size="18pt" weight="bold"/></draw>
+      </pageArea>
+      <pageArea name="Rest" id="Rest">
+        <contentArea x="20mm" y="25mm" w="170mm" h="245mm"/>
+        <medium stock="a4" short="210mm" long="297mm"/>
+        <draw name="Small" x="20mm" y="10mm" w="120mm" h="6mm"><value><text>ACME Order (continued)</text></value></draw>
+        <draw name="Foot" x="20mm" y="282mm" w="170mm" h="6mm"><value><text>Orders are subject to our terms</text></value></draw>
+      </pageArea>
+    </pageSet>
+    <subform name="Head" layout="lr-tb" w="170mm">
+      <field name="OrderNo" w="85mm"><ui><textEdit/></ui><caption><value><text>Order</text></value></caption><bind match="dataRef" ref="$.ORDERNO"/></field>
+      <field name="Customer" w="85mm"><ui><textEdit/></ui><caption><value><text>Customer</text></value></caption><bind match="dataRef" ref="$.CUSTOMER"/></field>
+      <field name="Note" w="170mm"><ui><textEdit/></ui><bind match="dataRef" ref="$.NOTE"/>
+        <event activity="initialize"><script contentType="application/x-javascript">
+          if (this.rawValue == null || this.rawValue == "") { this.presence = "hidden"; } else { this.presence = "visible"; }
+        </script></event></field>
+    </subform>
+    <subform name="Discount" layout="tb">
+      <occur min="0" max="1"/>
+      <bind match="dataRef" ref="$.DISCOUNT"/>
+      <field name="Rate"><ui><numericEdit/></ui><caption><value><text>Discount %</text></value></caption><bind match="dataRef" ref="$.RATE"/></field>
+    </subform>
+    <subform name="Lines" layout="tb">
+      <subform name="Line" layout="lr-tb" w="170mm">
+        <occur max="-1"/>
+        <bind match="dataRef" ref="$.ITEMS.DATA[*]"/>
+        <keep intact="contentArea"/>
+        <field name="Material" w="60mm"><ui><textEdit/></ui><bind match="dataRef" ref="$.MATNR"/></field>
+        <field name="Qty" w="30mm"><ui><numericEdit/></ui><bind match="dataRef" ref="$.QTY"/></field>
+        <field name="Price" w="40mm"><ui><numericEdit/></ui><bind match="dataRef" ref="$.PRICE"/></field>
+        <field name="Net" w="40mm"><ui><numericEdit/></ui><bind match="none"/>
+          <calculate><script contentType="application/x-javascript">this.rawValue = Qty.rawValue * Price.rawValue;</script></calculate></field>
+      </subform>
+    </subform>
+    <subform name="Totals" layout="tb">
+      <breakBefore targetType="pageArea"/>
+      <field name="Total"><ui><numericEdit/></ui><caption><value><text>Total</text></value></caption><bind match="none"/>
+        <format><picture>num{z,zzz,zz9.99}</picture></format>
+        <calculate><script contentType="application/x-javascript">
+          var t = 0;
+          for (var i = 0; i &lt; Lines.Line.all.length; i++) { t += Lines.Line.all.item(i).Qty.rawValue * Lines.Line.all.item(i).Price.rawValue; }
+          this.rawValue = t;
+        </script></calculate></field>
+      <draw name="BigOrder"><value><text>Large order: approval needed</text></value></draw>
+      <field name="Check" access="open"><ui><textEdit/></ui><caption><value><text>Approved amount</text></value></caption><bind match="none"/></field>
+      <field name="Copy" access="open"><ui><textEdit/></ui><caption><value><text>Copy</text></value></caption><bind match="none"/></field>
+      <field name="Trigger" access="open"><ui><checkButton/></ui><caption><value><text>Same</text></value></caption><bind match="none"/>
+        <event activity="click"><script contentType="application/x-javascript">Copy.rawValue = Check.rawValue;</script></event></field>
+      <draw name="Hidden" relevant="-print"><value><text>Screen only</text></value></draw>
+      <variables><script name="utils" contentType="application/x-javascript">function f() { return 1; }</script></variables>
+    </subform>
+    <event activity="ready" ref="$form"><script contentType="application/x-javascript">
+      BigOrder.presence = (Total.rawValue &gt; 1000) ? "visible" : "hidden";
+    </script></event>
+  </subform>
+</template>
+</xdp:xdp>

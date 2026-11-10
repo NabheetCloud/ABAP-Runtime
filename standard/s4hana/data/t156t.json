@@ -1,0 +1,12 @@
+[
+  {"spras": "E", "bwart": "101", "btext": "GR goods receipt"},
+  {"spras": "E", "bwart": "102", "btext": "GR for PO reversal"},
+  {"spras": "E", "bwart": "201", "btext": "GI for cost center"},
+  {"spras": "E", "bwart": "261", "btext": "GI for order"},
+  {"spras": "E", "bwart": "311", "btext": "TF trfr within plant"},
+  {"spras": "E", "bwart": "551", "btext": "GI scrapping"},
+  {"spras": "E", "bwart": "561", "btext": "Initial entry of sto"},
+  {"spras": "E", "bwart": "601", "btext": "GD goods issue: delv"},
+  {"spras": "E", "bwart": "701", "btext": "GR phys. inv: whse"},
+  {"spras": "E", "bwart": "702", "btext": "GI phys. inv: whse"}
+]

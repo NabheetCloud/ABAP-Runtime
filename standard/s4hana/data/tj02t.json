@@ -1,0 +1,12 @@
+[
+  {"istat": "I0001", "spras": "E", "txt04": "CRTD", "txt30": "Created"},
+  {"istat": "I0002", "spras": "E", "txt04": "REL", "txt30": "Released"},
+  {"istat": "I0009", "spras": "E", "txt04": "CNF", "txt30": "Confirmed"},
+  {"istat": "I0010", "spras": "E", "txt04": "PCNF", "txt30": "Partially confirmed"},
+  {"istat": "I0012", "spras": "E", "txt04": "DLV", "txt30": "Delivered"},
+  {"istat": "I0045", "spras": "E", "txt04": "TECO", "txt30": "Technically completed"},
+  {"istat": "I0046", "spras": "E", "txt04": "CLSD", "txt30": "Closed"},
+  {"istat": "I0068", "spras": "E", "txt04": "OSNO", "txt30": "Outstanding notification"},
+  {"istat": "I0070", "spras": "E", "txt04": "OSTS", "txt30": "Outstanding task"},
+  {"istat": "I0072", "spras": "E", "txt04": "NOCO", "txt30": "Notification completed"}
+]

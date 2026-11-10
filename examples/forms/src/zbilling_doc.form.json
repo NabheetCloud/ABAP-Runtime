@@ -1,0 +1,76 @@
+{
+  "title": "Invoice {billingdoc:alpha}",
+  "dataProvider": "ZFDP_BILLINGDOC",
+  "locale": "de_DE",
+  "page": { "size": "A4", "margin": { "top": "15mm", "right": "18mm", "bottom": "18mm", "left": "20mm" } },
+  "variables": {
+    "net": "Sum(_item.netvalue)",
+    "tax": "Round(net * taxrate / 100, 2)",
+    "gross": "net + tax",
+    "overdue": "DaysBetween(duedate, sy.datum) > 0 and status <> 'P'"
+  },
+  "styles": {
+    "h1": { "size": 18, "bold": true, "color": "#0a3d7a" },
+    "small": { "size": 7.5, "color": "#64748b" }
+  },
+  "texts": {
+    "terms": {
+      "en": "Payable within 30 days without deduction. Please quote the invoice number **{billingdoc:alpha}** with your payment.",
+      "de": "Zahlbar innerhalb von 30 Tagen ohne Abzug. Bitte geben Sie bei der Zahlung die Rechnungsnummer **{billingdoc:alpha}** an."
+    }
+  },
+  "watermark": { "text": "DRAFT", "if": "status = 'D'" },
+  "firstHeader": [
+    { "columns": [
+      { "width": 3, "items": [ { "text": "ACME Trading GmbH", "style": "h1" }, { "text": "Dietmar-Hopp-Allee 16 · 69190 Walldorf", "style": "small" } ] },
+      { "width": 2, "items": [ { "fields": [["Invoice", "{billingdoc:alpha}"], ["Date", "{billingdate:date}"], ["Due", "{duedate:date}"]], "size": 9 } ] }
+    ] }
+  ],
+  "header": [ { "text": "ACME Trading GmbH · Invoice {billingdoc:alpha} of {billingdate:date}", "style": "small" } ],
+  "footer": [ { "text": "ACME Trading GmbH · IBAN DE12 5001 0517 0648 4898 90 · BIC INGDDEFFXXX · Page {page} of {pages}", "style": "small", "align": "center" } ],
+  "content": [
+    { "box": [
+        { "text": "ACME Trading GmbH · Dietmar-Hopp-Allee 16 · 69190 Walldorf", "size": 6.5, "color": "#64748b" },
+        { "text": "**{customername}**\n{street}\n{postalcode} {city}\n{country}", "size": 10 }
+      ], "x": "20mm", "y": "45mm", "width": "85mm" },
+    { "space": "62mm" },
+    { "text": "Invoice {billingdoc:alpha}", "style": "h1" },
+    { "text": "Payment overdue since {duedate:date}", "if": "overdue", "bold": true, "color": "#b91c1c" },
+    { "space": 6 },
+    { "table": "_item", "groupBy": "category", "groupHeader": "{category}", "subtotal": true, "stripes": true,
+      "columns": [
+        { "title": "Item", "field": "itemno", "width": 8, "format": "alpha" },
+        { "title": "Material", "field": "material", "width": 14 },
+        { "title": "Description", "field": "description", "width": 38 },
+        { "title": "Quantity", "value": "{quantity:number} {unit}", "width": 12, "align": "right" },
+        { "title": "Unit price", "field": "unitprice", "width": 13, "align": "right", "format": "amount" },
+        { "title": "Net value", "field": "netvalue", "calc": "Round(quantity * unitprice, 2)", "width": 15, "align": "right", "format": "amount" }
+      ],
+      "total": { "netvalue": "sum" }, "totalLabel": "Net total" },
+    { "keepTogether": true, "columns": [
+      { "width": 3, "items": [
+        { "barcode": "qr", "size": 82, "value": "BCD\n002\n1\nSCT\nINGDDEFFXXX\nACME Trading GmbH\nDE12500105170648489890\n{currency}{=Str(gross, 2)}\n\n\nInvoice {billingdoc:alpha}" },
+        { "text": "Scan to pay (SEPA)", "style": "small" }
+      ] },
+      { "width": 4, "items": [
+        { "fields": [
+          ["Net", "{=net:currency:{currency}}"],
+          ["VAT {=taxrate:number} %", "{=tax:currency:{currency}}"],
+          ["Total", "{=gross:currency:{currency}}"]
+        ] },
+        { "text": "In words: {=AmountInWords(gross, currency)}", "style": "small" },
+        { "text": "Tax-free intra-community supply.", "if": "taxrate = 0", "style": "small" }
+      ] }
+    ] },
+    { "space": 8 },
+    { "textModule": "terms", "size": 9 }
+  ],
+  "sample": {
+    "billingdoc": "0090000099", "status": "D", "customername": "Sample Customer AG", "street": "Musterweg 1", "postalcode": "10115", "city": "Berlin", "country": "DE",
+    "billingdate": "20260101", "duedate": "20260131", "currency": "EUR", "taxrate": 19,
+    "_item": [
+      { "itemno": "000010", "category": "Hardware", "material": "NB-1400", "description": "Notebook", "quantity": 1, "unit": "PC", "unitprice": 1249 },
+      { "itemno": "000020", "category": "Services", "material": "SV-SETUP", "description": "Setup", "quantity": 2, "unit": "H", "unitprice": 95 }
+    ]
+  }
+}

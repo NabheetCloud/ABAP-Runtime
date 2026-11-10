@@ -1,0 +1,17 @@
+[
+  {"matnr": "TG11", "meinh": "PC", "lfnum": "1", "ean11": "4006381333930", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG12", "meinh": "PC", "lfnum": "1", "ean11": "4006381333931", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG13", "meinh": "PC", "lfnum": "1", "ean11": "4006381333932", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG14", "meinh": "PC", "lfnum": "1", "ean11": "4006381333933", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG15", "meinh": "PC", "lfnum": "1", "ean11": "4006381333934", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG16", "meinh": "PC", "lfnum": "1", "ean11": "4006381333935", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG17", "meinh": "PC", "lfnum": "1", "ean11": "4006381333936", "eantp": "HE", "hpean": "X"},
+  {"matnr": "TG18", "meinh": "PC", "lfnum": "1", "ean11": "4006381333937", "eantp": "HE", "hpean": "X"},
+  {"matnr": "FG126", "meinh": "PC", "lfnum": "1", "ean11": "4006381333938", "eantp": "HE", "hpean": "X"},
+  {"matnr": "SG23", "meinh": "PC", "lfnum": "1", "ean11": "4006381634339", "eantp": "HE", "hpean": "X"},
+  {"matnr": "RM12", "meinh": "PC", "lfnum": "1", "ean11": "4006381589997", "eantp": "HE", "hpean": "X"},
+  {"matnr": "RM13", "meinh": "PC", "lfnum": "1", "ean11": "4006381695146", "eantp": "HE", "hpean": "X"},
+  {"matnr": "OS01", "meinh": "BOX", "lfnum": "1", "ean11": "4006381333942", "eantp": "HE", "hpean": "X"},
+  {"matnr": "PK01", "meinh": "PC", "lfnum": "1", "ean11": "4006381248669", "eantp": "HE", "hpean": "X"},
+  {"matnr": "SV01", "meinh": "H", "lfnum": "1", "ean11": "4006381331952", "eantp": "HE", "hpean": "X"}
+]

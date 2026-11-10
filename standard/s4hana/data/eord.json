@@ -1,0 +1,14 @@
+[
+  {"matnr": "RM12", "werks": "1010", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0010300001", "ekorg": "1010", "ebeln": "", "ebelp": "", "flifn": "X", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "RM13", "werks": "1010", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0010300002", "ekorg": "1010", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "TG11", "werks": "1010", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0010300001", "ekorg": "1010", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "PK01", "werks": "1010", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0010300002", "ekorg": "1010", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "RM12", "werks": "1710", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0017300001", "ekorg": "1710", "ebeln": "", "ebelp": "", "flifn": "X", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "TG12", "werks": "1710", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0017300002", "ekorg": "1710", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "TG13", "werks": "1710", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0017300001", "ekorg": "1710", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "OS01", "werks": "1710", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0017300002", "ekorg": "1710", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "RM13", "werks": "4110", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0041300001", "ekorg": "4110", "ebeln": "", "ebelp": "", "flifn": "X", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "TG14", "werks": "4110", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0041300002", "ekorg": "4110", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "TG15", "werks": "4110", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0041300003", "ekorg": "4110", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"},
+  {"matnr": "OS01", "werks": "4110", "zeord": "00001", "vdatu": "20260101", "bdatu": "99991231", "lifnr": "0041300001", "ekorg": "4110", "ebeln": "", "ebelp": "", "flifn": "", "notkz": "", "erdat": "20251201", "ernam": "CB9980000010"}
+]

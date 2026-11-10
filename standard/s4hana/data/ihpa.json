@@ -1,0 +1,10 @@
+[
+  {"objnr": "OR000004000001", "parvw": "VW", "counter": "000001", "parnr": "0000001002", "erdat": "20260805", "ernam": "JOHN.MILLER"},
+  {"objnr": "OR000004000001", "parvw": "AB", "counter": "000002", "parnr": "0050000002", "erdat": "20260805", "ernam": "JOHN.MILLER"},
+  {"objnr": "OR000004000002", "parvw": "VW", "counter": "000001", "parnr": "0000001002", "erdat": "20260806", "ernam": "JOHN.MILLER"},
+  {"objnr": "OR000004000002", "parvw": "AB", "counter": "000002", "parnr": "0050000002", "erdat": "20260806", "ernam": "JOHN.MILLER"},
+  {"objnr": "QM000010000001", "parvw": "VU", "counter": "000001", "parnr": "JOHN.MILLE", "erdat": "20260803", "ernam": "JOHN.MILLER"},
+  {"objnr": "QM000010000002", "parvw": "VU", "counter": "000001", "parnr": "JOHN.MILLE", "erdat": "20260804", "ernam": "JOHN.MILLER"},
+  {"objnr": "QM000010000003", "parvw": "VU", "counter": "000001", "parnr": "JOHN.MILLE", "erdat": "20260805", "ernam": "JOHN.MILLER"},
+  {"objnr": "QM000010000004", "parvw": "LF", "counter": "000001", "parnr": "0010300001", "erdat": "20260806", "ernam": "JOHN.MILLER"}
+]

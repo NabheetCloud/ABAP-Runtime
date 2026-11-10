@@ -1,0 +1,8 @@
+[
+  { "customer_id": "000001", "first_name": "Theresia", "last_name": "Buchholm", "city": "Walldorf", "country_code": "DE", "email": "theresia.buchholm@example.com" },
+  { "customer_id": "000002", "first_name": "Johannes", "last_name": "Buchholm", "city": "Walldorf", "country_code": "DE", "email": "johannes.buchholm@example.com" },
+  { "customer_id": "000003", "first_name": "James", "last_name": "Buchholm", "city": "Vienna", "country_code": "AT", "email": "james.buchholm@example.com" },
+  { "customer_id": "000004", "first_name": "Thomas", "last_name": "Prinz", "city": "Mumbai", "country_code": "IN", "email": "thomas.prinz@example.com" },
+  { "customer_id": "000005", "first_name": "Anna", "last_name": "Kowalski", "city": "Bangalore", "country_code": "IN", "email": "anna.kowalski@example.com" },
+  { "customer_id": "000006", "first_name": "Ravi", "last_name": "Sharma", "city": "Delhi", "country_code": "IN", "email": "ravi.sharma@example.com" }
+]

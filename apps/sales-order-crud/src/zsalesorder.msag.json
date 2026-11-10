@@ -1,0 +1,6 @@
+{
+  "001": "Customer &1 does not exist",
+  "002": "Product &1 does not exist",
+  "003": "Sales order &1 released",
+  "004": "Sales order &1 cancelled"
+}

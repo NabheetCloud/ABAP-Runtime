@@ -1,0 +1,7 @@
+[
+  {"plvar": "01", "otype": "O", "objid": "50000001", "istat": "1", "begda": "20250101", "endda": "99991231", "langu": "E", "seqnr": "000", "short": "Sales German", "stext": "Sales Germany"},
+  {"plvar": "01", "otype": "O", "objid": "50000002", "istat": "1", "begda": "20250101", "endda": "99991231", "langu": "E", "seqnr": "000", "short": "Purchasing", "stext": "Purchasing"},
+  {"plvar": "01", "otype": "S", "objid": "50000101", "istat": "1", "begda": "20250101", "endda": "99991231", "langu": "E", "seqnr": "000", "short": "Sales Manage", "stext": "Sales Manager"},
+  {"plvar": "01", "otype": "S", "objid": "50000102", "istat": "1", "begda": "20250101", "endda": "99991231", "langu": "E", "seqnr": "000", "short": "Buyer", "stext": "Buyer"},
+  {"plvar": "01", "otype": "C", "objid": "50000201", "istat": "1", "begda": "20250101", "endda": "99991231", "langu": "E", "seqnr": "000", "short": "Manager", "stext": "Manager"}
+]

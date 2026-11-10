@@ -1,0 +1,12 @@
+[
+  {"kunnr": "0010100001", "banks": "DE", "bankl": "10070000", "bankn": "845719301", "bkont": "01", "bkref": ""},
+  {"kunnr": "0010100002", "banks": "DE", "bankl": "10070000", "bankn": "484696003", "bkont": "01", "bkref": ""},
+  {"kunnr": "0010100003", "banks": "DE", "bankl": "10070000", "bankn": "422262095", "bkont": "01", "bkref": ""},
+  {"kunnr": "0017100001", "banks": "US", "bankl": "10070000", "bankn": "419577480", "bkont": "01", "bkref": ""},
+  {"kunnr": "0017100002", "banks": "US", "bankl": "10070000", "bankn": "878651351", "bkont": "01", "bkref": ""},
+  {"kunnr": "0017100003", "banks": "US", "bankl": "10070000", "bankn": "430758806", "bkont": "01", "bkref": ""},
+  {"kunnr": "0041100001", "banks": "IN", "bankl": "10070000", "bankn": "139091538", "bkont": "01", "bkref": ""},
+  {"kunnr": "0041100002", "banks": "IN", "bankl": "10070000", "bankn": "501560118", "bkont": "01", "bkref": ""},
+  {"kunnr": "0041100003", "banks": "IN", "bankl": "10070000", "bankn": "768108630", "bkont": "01", "bkref": ""},
+  {"kunnr": "0010100004", "banks": "NL", "bankl": "10070000", "bankn": "395335068", "bkont": "01", "bkref": ""}
+]

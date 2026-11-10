@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAP Studio</title>
+  <link rel="stylesheet" href="/studio/studio.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/"><span class="logo">R</span><span class="brand-name">RAP Studio</span><span class="ver">v{{VERSION}}</span></a>
+    <div class="app-switch" id="appSwitch" hidden>
+      <button class="chip" id="appBtn" aria-haspopup="true"><span id="appName"></span> ▾</button>
+      <div class="menu" id="appMenu" hidden></div>
+    </div>
+    <span class="pill" id="statusPill" hidden></span>
+    <span class="spacer"></span>
+    <a class="chip learn-link" href="#/learn" title="ABAP exercises with unit tests">Practice ABAP</a>
+    <button class="chip" id="userBtn" title="Current user (draft locks are per user)">👤 <span id="userName">…</span></button>
+    <div class="more" id="moreWrap" hidden>
+      <button class="chip" id="moreBtn" aria-haspopup="true" aria-label="More: open, download, export" title="Open, download, export">⋯</button>
+      <div class="menu" id="moreMenu" hidden>
+        <a id="openApp" target="_blank">Open app in a new tab ↗<small>The app's start page, full screen</small></a>
+        <a id="download">Download sources<small>A .zip of the app folder</small></a>
+        <a id="abapgit">Export for abapGit<small>A repository to pull into an SAP system</small></a>
+        <a id="archiveApp" href="javascript:void 0" hidden>Archive app<small>Hide it from Your apps; nothing is deleted</small></a>
+        <a id="restoreApp" href="javascript:void 0" hidden>Restore app<small>Back to Your apps</small></a>
+        <a id="deleteApp" class="danger" href="javascript:void 0" hidden>Delete app…<small>Remove sources, data and chat for good</small></a>
+      </div>
+    </div>
+    <a class="btn" href="#/" id="newApp">+ New app</a>
+  </header>
+  <div id="root"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/studio/studio.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+  {"inco1": "EXW", "ortob": "X"},
+  {"inco1": "FCA", "ortob": "X"},
+  {"inco1": "CPT", "ortob": "X"},
+  {"inco1": "CIP", "ortob": "X"},
+  {"inco1": "DAP", "ortob": "X"},
+  {"inco1": "DPU", "ortob": "X"},
+  {"inco1": "DDP", "ortob": "X"},
+  {"inco1": "FAS", "ortob": "X"},
+  {"inco1": "FOB", "ortob": "X"},
+  {"inco1": "CFR", "ortob": "X"},
+  {"inco1": "CIF", "ortob": "X"}
+]

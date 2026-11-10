@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_INVOICE'
+define service ZFDP_INVOICE {
+  expose ZI_Invoice as Invoice;
+  expose ZI_InvoiceItem as InvoiceItem;
+}

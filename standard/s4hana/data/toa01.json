@@ -1,0 +1,6 @@
+[
+  {"sap_object": "VBRK", "object_id": "0090000001", "archiv_id": "A1", "arc_doc_id": "8CE047EB7B8674CC52570A5CCB2BA007", "ar_object": "SDOINVOICE", "ar_date": "20260116", "reserve": "PDF"},
+  {"sap_object": "VBRK", "object_id": "0090000002", "archiv_id": "A1", "arc_doc_id": "2A8D7670DF89A8605641155D827735D0", "ar_object": "SDOINVOICE", "ar_date": "20260319", "reserve": "PDF"},
+  {"sap_object": "VBRK", "object_id": "0090000003", "archiv_id": "A1", "arc_doc_id": "5A2697CFC99138B44C972F01B7A7EDF3", "ar_object": "SDOINVOICE", "ar_date": "20260522", "reserve": "PDF"},
+  {"sap_object": "VBRK", "object_id": "0090000004", "archiv_id": "A1", "arc_doc_id": "D3F4327EA647C04F2936C2DAA0BF6FA1", "ar_object": "SDOINVOICE", "ar_date": "20260216", "reserve": "PDF"}
+]

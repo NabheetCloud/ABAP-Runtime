@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZPO_STAT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>ZPO_STATUS</DOMNAME>
+    <REFKIND>D</REFKIND>
+    <HEADLEN>9</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>PO status</DDTEXT>
+    <REPTEXT>PO status</REPTEXT>
+    <SCRTEXT_S>PO status</SCRTEXT_S>
+    <SCRTEXT_M>PO status</SCRTEXT_M>
+    <SCRTEXT_L>PO status</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

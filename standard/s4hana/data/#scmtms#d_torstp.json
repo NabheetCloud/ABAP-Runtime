@@ -1,0 +1,17 @@
+[
+  {"db_key": "A2E2063DBCC5E02C65662E402361E10F", "parent_key": "F0EFFE67B8DD0F02FB85A4704F2258C0", "stop_id": "0000000010", "stop_cat": "O", "log_locid": "SP_1010", "plan_trans_time": "20260114", "acc_start": "20260114"},
+  {"db_key": "7351E9C9B5DD12A0274CAA53DB50DEC9", "parent_key": "F0EFFE67B8DD0F02FB85A4704F2258C0", "stop_id": "0000000020", "stop_cat": "I", "log_locid": "BP_0010100001", "plan_trans_time": "20260116", "acc_start": "20260116"},
+  {"db_key": "E00B0C97314DC00A8DFF31EDE76D1EB4", "parent_key": "F0EFFE67B8DD0F02FB85A4704F2258C0", "stop_id": "0000000030", "stop_cat": "I", "log_locid": "BP_0010100002", "plan_trans_time": "20260319", "acc_start": "20260319"},
+  {"db_key": "42A1DEB24F8A92F1F0F807A25FB357C2", "parent_key": "3E3E44D08975AA5BD2B4F76A035C190E", "stop_id": "0000000010", "stop_cat": "O", "log_locid": "SP_1010", "plan_trans_time": "20260520", "acc_start": "20260520"},
+  {"db_key": "E4B850D025901FEB3253A821F8C0FE1C", "parent_key": "3E3E44D08975AA5BD2B4F76A035C190E", "stop_id": "0000000020", "stop_cat": "I", "log_locid": "BP_0010100003", "plan_trans_time": "20260522", "acc_start": "20260522"},
+  {"db_key": "32A4A3AB3C3E991FECDBF92D9F8B4054", "parent_key": "80060DE12B468A951E7EDC6F1189AE76", "stop_id": "0000000010", "stop_cat": "O", "log_locid": "SP_1710", "plan_trans_time": "20260214", "acc_start": "20260214"},
+  {"db_key": "5975028CA576346186EB6D0ABBAF1E8D", "parent_key": "80060DE12B468A951E7EDC6F1189AE76", "stop_id": "0000000020", "stop_cat": "I", "log_locid": "BP_0017100001", "plan_trans_time": "20260216", "acc_start": "20260216"},
+  {"db_key": "8C0C8A53125645B85C33DA0C80CAC20A", "parent_key": "80060DE12B468A951E7EDC6F1189AE76", "stop_id": "0000000030", "stop_cat": "I", "log_locid": "BP_0017100002", "plan_trans_time": "20260419", "acc_start": "20260419"},
+  {"db_key": "0D40F373790146E360E7A9A03F8E4707", "parent_key": "06D330E43146E0D73C96DA118665DCE3", "stop_id": "0000000010", "stop_cat": "O", "log_locid": "SP_1710", "plan_trans_time": "20260620", "acc_start": "20260620"},
+  {"db_key": "1BF52B3B3297BCFD6F83071EC74BB152", "parent_key": "06D330E43146E0D73C96DA118665DCE3", "stop_id": "0000000020", "stop_cat": "I", "log_locid": "BP_0017100003", "plan_trans_time": "20260622", "acc_start": "20260622"},
+  {"db_key": "8165402DAEC5615AE0775BD53769060A", "parent_key": "05E2477452501B08A9AD3043776A58A9", "stop_id": "0000000010", "stop_cat": "O", "log_locid": "SP_4110", "plan_trans_time": "20260314", "acc_start": "20260314"},
+  {"db_key": "71417ECF6923A3488759A50F32A949B8", "parent_key": "05E2477452501B08A9AD3043776A58A9", "stop_id": "0000000020", "stop_cat": "I", "log_locid": "BP_0041100001", "plan_trans_time": "20260316", "acc_start": "20260316"},
+  {"db_key": "2F7A376A2B388FEDE9F5449FEBF2411C", "parent_key": "05E2477452501B08A9AD3043776A58A9", "stop_id": "0000000030", "stop_cat": "I", "log_locid": "BP_0041100002", "plan_trans_time": "20260519", "acc_start": "20260519"},
+  {"db_key": "56766072F6D16258F84E9C58AC65EC9D", "parent_key": "A1474ADE5964B945E63998D54F4D40E5", "stop_id": "0000000010", "stop_cat": "O", "log_locid": "SP_4110", "plan_trans_time": "20260720", "acc_start": ""},
+  {"db_key": "FD717460FDF0C6B2E329C95B38023730", "parent_key": "A1474ADE5964B945E63998D54F4D40E5", "stop_id": "0000000020", "stop_cat": "I", "log_locid": "BP_0041100003", "plan_trans_time": "20260722", "acc_start": ""}
+]

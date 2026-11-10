@@ -1,0 +1,7 @@
+{
+  "001": "No copy of \"&1\" is available - all &2 copies are on loan",
+  "002": "Due date must not be before the loan date",
+  "003": "Number of copies must be at least 1",
+  "004": "ISBN &1 must have 10 or 13 digits",
+  "005": "Email address &1 is not valid (missing @)"
+}

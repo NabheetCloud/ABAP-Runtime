@@ -1,0 +1,15 @@
+[
+  {"lgnum": "1010", "guid_stock": "00EFC3F84F8636655E4F36D5BE98B0D9", "lgpla": "0010-01-01-A", "matnr": "TG12", "charg": "", "cat": "F1", "quan": 200.0, "unit": "PC", "owner": "1010", "entitled": "1010", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1010", "guid_stock": "FD87ECC5A5DD4960DE875B075CB6E944", "lgpla": "0010-01-02-A", "matnr": "TG13", "charg": "", "cat": "F1", "quan": 225.0, "unit": "PC", "owner": "1010", "entitled": "1010", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1010", "guid_stock": "0D0005C45392539E466339E3BF865F37", "lgpla": "0010-02-03-A", "matnr": "TG15", "charg": "", "cat": "F1", "quan": 250.0, "unit": "PC", "owner": "1010", "entitled": "1010", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1710", "guid_stock": "5A07CCD448DB4E6BB0169045DE24F7A0", "lgpla": "0010-01-01-A", "matnr": "FG126", "charg": "", "cat": "F1", "quan": 200.0, "unit": "PC", "owner": "1710", "entitled": "1710", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1710", "guid_stock": "51E157031D7B7D31753FB1DB8C8B435A", "lgpla": "0010-01-02-A", "matnr": "TG13", "charg": "", "cat": "F1", "quan": 225.0, "unit": "PC", "owner": "1710", "entitled": "1710", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1710", "guid_stock": "B875F284000688858D119DC2AB9728F7", "lgpla": "0010-02-03-A", "matnr": "TG15", "charg": "", "cat": "F1", "quan": 250.0, "unit": "PC", "owner": "1710", "entitled": "1710", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1710", "guid_stock": "35C4F1B77C2102AE05A15E00F0D9DE41", "lgpla": "0010-02-04-A", "matnr": "TG17", "charg": "", "cat": "F1", "quan": 275.0, "unit": "PC", "owner": "1710", "entitled": "1710", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "1710", "guid_stock": "A82DC95679E814EA805CA11EF98FB19E", "lgpla": "0010-03-05-A", "matnr": "TG18", "charg": "", "cat": "F1", "quan": 300.0, "unit": "PC", "owner": "1710", "entitled": "1710", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "4110", "guid_stock": "12EED0F8BA082DE9F5199E38D4EC27E9", "lgpla": "0010-01-01-A", "matnr": "FG126", "charg": "", "cat": "F1", "quan": 200.0, "unit": "PC", "owner": "4110", "entitled": "4110", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "4110", "guid_stock": "C533708929EF1EAF54F3C0E0C0075FC0", "lgpla": "0010-01-02-A", "matnr": "TG11", "charg": "", "cat": "F1", "quan": 225.0, "unit": "PC", "owner": "4110", "entitled": "4110", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "4110", "guid_stock": "5E576EBC96E005CE10677D637A955356", "lgpla": "0010-02-03-A", "matnr": "TG13", "charg": "", "cat": "F1", "quan": 250.0, "unit": "PC", "owner": "4110", "entitled": "4110", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "4110", "guid_stock": "13754039B32480DA6F6A1D44BB6D0EB3", "lgpla": "0010-02-04-A", "matnr": "TG15", "charg": "", "cat": "F1", "quan": 275.0, "unit": "PC", "owner": "4110", "entitled": "4110", "huident": "", "wdatu": "20260601"},
+  {"lgnum": "4110", "guid_stock": "A180CDF86F0C3285DD3F7CAF4EEADDD9", "lgpla": "0010-03-05-A", "matnr": "TG16", "charg": "", "cat": "F1", "quan": 300.0, "unit": "PC", "owner": "4110", "entitled": "4110", "huident": "", "wdatu": "20260601"}
+]

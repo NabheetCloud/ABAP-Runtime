@@ -1,0 +1,14 @@
+[
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300001", "matnr": "RM12", "ekorg": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000011"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300002", "matnr": "RM13", "ekorg": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000013"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300001", "matnr": "TG11", "ekorg": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000015"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300002", "matnr": "PK01", "ekorg": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000017"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300001", "matnr": "RM12", "ekorg": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000019"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300002", "matnr": "TG12", "ekorg": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000021"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300001", "matnr": "TG13", "ekorg": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000023"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300002", "matnr": "OS01", "ekorg": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000025"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300001", "matnr": "RM13", "ekorg": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000027"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300002", "matnr": "TG14", "ekorg": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000029"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300003", "matnr": "TG15", "ekorg": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000031"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300001", "matnr": "OS01", "ekorg": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000033"}
+]

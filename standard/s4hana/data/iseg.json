@@ -1,0 +1,8 @@
+[
+  {"iblnr": "0100000001", "gjahr": "2026", "zeili": "001", "matnr": "TG12", "charg": "", "buchm": 27.0, "menge": 27.0, "differenz": "", "xzael": "X", "xdiff": "", "dmbtr": 0.0, "lgort": "101A", "meins": "PC", "waers": "EUR", "werks": "1010", "xnull": ""},
+  {"iblnr": "0100000001", "gjahr": "2026", "zeili": "002", "matnr": "TG14", "charg": "", "buchm": 41.0, "menge": 40.0, "differenz": "", "xzael": "X", "xdiff": "X", "dmbtr": 389.98, "lgort": "101A", "meins": "PC", "waers": "EUR", "werks": "1010", "xnull": ""},
+  {"iblnr": "0100000002", "gjahr": "2026", "zeili": "001", "matnr": "TG12", "charg": "", "buchm": 27.0, "menge": 27.0, "differenz": "", "xzael": "X", "xdiff": "", "dmbtr": 0.0, "lgort": "171A", "meins": "PC", "waers": "USD", "werks": "1710", "xnull": ""},
+  {"iblnr": "0100000002", "gjahr": "2026", "zeili": "002", "matnr": "TG14", "charg": "", "buchm": 41.0, "menge": 40.0, "differenz": "", "xzael": "X", "xdiff": "X", "dmbtr": 421.18, "lgort": "171A", "meins": "PC", "waers": "USD", "werks": "1710", "xnull": ""},
+  {"iblnr": "0100000003", "gjahr": "2026", "zeili": "001", "matnr": "TG12", "charg": "", "buchm": 27.0, "menge": 27.0, "differenz": "", "xzael": "X", "xdiff": "", "dmbtr": 0.0, "lgort": "411A", "meins": "PC", "waers": "INR", "werks": "4110", "xnull": ""},
+  {"iblnr": "0100000003", "gjahr": "2026", "zeili": "002", "matnr": "TG14", "charg": "", "buchm": 41.0, "menge": 40.0, "differenz": "", "xzael": "X", "xdiff": "X", "dmbtr": 35137.2, "lgort": "411A", "meins": "PC", "waers": "INR", "werks": "4110", "xnull": ""}
+]

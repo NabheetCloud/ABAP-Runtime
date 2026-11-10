@@ -1,0 +1,8 @@
+[
+  {"versn": "YCOA", "ergsl": "YCOA_BS", "txt45": "Balance sheet"},
+  {"versn": "YCOA", "ergsl": "ASSETS", "txt45": "Assets"},
+  {"versn": "YCOA", "ergsl": "LIABS", "txt45": "Liabilities"},
+  {"versn": "YCOA", "ergsl": "YCOA_PL", "txt45": "Profit and loss"},
+  {"versn": "YCOA", "ergsl": "REVENUE", "txt45": "Revenue"},
+  {"versn": "YCOA", "ergsl": "EXPENSES", "txt45": "Expenses"}
+]

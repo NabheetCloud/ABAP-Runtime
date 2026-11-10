@@ -1,0 +1,5 @@
+[
+  {"lgnum": "4110", "tanum": "000000000003", "tapos": "0001", "who": "0000000003", "procty": "2010", "tostat": "", "matnr": "FG126", "charg": "", "vsolm": 8.0, "meins": "PC", "vlpla": "0010-01-01-A", "nlpla": "GI-ZONE", "vlenr": "", "rdoccat": "PDO", "rdocno": "3080000009", "created_at": "20260718"},
+  {"lgnum": "4110", "tanum": "000000000004", "tapos": "0001", "who": "0000000003", "procty": "2010", "tostat": "", "matnr": "TG13", "charg": "", "vsolm": 15.0, "meins": "PC", "vlpla": "0010-02-03-A", "nlpla": "GI-ZONE", "vlenr": "", "rdoccat": "PDO", "rdocno": "3080000009", "created_at": "20260718"},
+  {"lgnum": "4110", "tanum": "000000000005", "tapos": "0001", "who": "0000000003", "procty": "2010", "tostat": "", "matnr": "TG16", "charg": "", "vsolm": 20.0, "meins": "PC", "vlpla": "0010-03-05-A", "nlpla": "GI-ZONE", "vlenr": "", "rdoccat": "PDO", "rdocno": "3080000009", "created_at": "20260718"}
+]

@@ -1,0 +1,5 @@
+[
+  {"ident": "DE", "vjahr": "2000", "bjahr": "2099", "ltext": "Germany calendar"},
+  {"ident": "US", "vjahr": "2000", "bjahr": "2099", "ltext": "USA calendar"},
+  {"ident": "IN", "vjahr": "2000", "bjahr": "2099", "ltext": "India calendar"}
+]

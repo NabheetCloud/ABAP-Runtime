@@ -1,0 +1,17 @@
+[
+  {"guid_parent": "9A401A3B27CE7BB5FCF1466B1C7CE39C", "guid_stock": "386000120673C95BA3C18CDC201B3B17", "matnr": "TG15", "charg": "", "quan": 15.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "1650DCF964B4F3015D43CA26797A5D46", "guid_stock": "14578E0AD0B62CDB2302D26DD3FC1A40", "matnr": "TG12", "charg": "", "quan": 12.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "8D98DD319D4D4D83CCE674DEF2328DC5", "guid_stock": "79066EE2A81BB9BD3203E44BA0572B4B", "matnr": "TG13", "charg": "", "quan": 16.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "8D98DD319D4D4D83CCE674DEF2328DC5", "guid_stock": "C1F502550D0CFA972305D120B0D964EE", "matnr": "TG12", "charg": "", "quan": 18.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "18F7CF437F2522CD6273261FC2950C83", "guid_stock": "5F56A6B760988D642A696BC3CAB62823", "matnr": "FG126", "charg": "", "quan": 7.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "18F7CF437F2522CD6273261FC2950C83", "guid_stock": "3FB33FEF85FD4FA54A21650952702B4F", "matnr": "TG13", "charg": "", "quan": 5.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "6BD6117EB5C8A4D452D0F8F353148CD8", "guid_stock": "4DBA2220EA5538ED2C445E6A5E712E1A", "matnr": "TG15", "charg": "", "quan": 18.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "903985B96977C91236B07DF796EFEEC9", "guid_stock": "480AFE5C876325F12BC4B2D8231B6E5C", "matnr": "TG18", "charg": "", "quan": 20.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "903985B96977C91236B07DF796EFEEC9", "guid_stock": "FC5BCAD79A3A8F6147660F61C11C1050", "matnr": "TG17", "charg": "", "quan": 6.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "903985B96977C91236B07DF796EFEEC9", "guid_stock": "56AFAB2B68A9005A4783B3CED768F363", "matnr": "TG15", "charg": "", "quan": 5.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "164561D95C960584901B1E10D988FA7B", "guid_stock": "2A55CFCA32834D8B2E8FE91979855969", "matnr": "TG15", "charg": "", "quan": 20.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "5255192A7C6A58FAF8CDA40B70FAE158", "guid_stock": "B42C8DE94A14D91AA9F7E6C729827E0F", "matnr": "TG11", "charg": "", "quan": 6.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "2D613DEB4BE2AF76C34ECBF9247D2531", "guid_stock": "4EFE1DA0BA84EE2241D0FA70B6AB9638", "matnr": "FG126", "charg": "", "quan": 8.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "2D613DEB4BE2AF76C34ECBF9247D2531", "guid_stock": "32A3F4B392C22304EC0DDDEFB217068C", "matnr": "TG13", "charg": "", "quan": 15.0, "unit": "PC", "cat": "F1"},
+  {"guid_parent": "2D613DEB4BE2AF76C34ECBF9247D2531", "guid_stock": "C30030E2901EE917856E5FA410F219F8", "matnr": "TG16", "charg": "", "quan": 20.0, "unit": "PC", "cat": "F1"}
+]

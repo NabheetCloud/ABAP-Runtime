@@ -1,0 +1,15 @@
+[
+  {"spras": "E", "waers": "EUR", "ltext": "European Euro", "ktext": "Euro"},
+  {"spras": "E", "waers": "USD", "ltext": "United States Dollar", "ktext": "US Dollar"},
+  {"spras": "E", "waers": "INR", "ltext": "Indian Rupee", "ktext": "Rupee"},
+  {"spras": "E", "waers": "GBP", "ltext": "British Pound", "ktext": "Pound"},
+  {"spras": "E", "waers": "CHF", "ltext": "Swiss Franc", "ktext": "Franc"},
+  {"spras": "E", "waers": "JPY", "ltext": "Japanese Yen", "ktext": "Yen"},
+  {"spras": "E", "waers": "CNY", "ltext": "Chinese Renminbi", "ktext": "Renminbi"},
+  {"spras": "E", "waers": "AUD", "ltext": "Australian Dollar", "ktext": "Austr. Dollar"},
+  {"spras": "E", "waers": "CAD", "ltext": "Canadian Dollar", "ktext": "Canadian Dollar"},
+  {"spras": "E", "waers": "BRL", "ltext": "Brazilian Real", "ktext": "Real"},
+  {"spras": "E", "waers": "SGD", "ltext": "Singapore Dollar", "ktext": "Sing. Dollar"},
+  {"spras": "E", "waers": "AED", "ltext": "UAE Dirham", "ktext": "Dirham"},
+  {"spras": "E", "waers": "MXN", "ltext": "Mexican Peso", "ktext": "Peso"}
+]

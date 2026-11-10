@@ -1,0 +1,4 @@
+[{ "emp_id": "E1", "manager_id": "", "name": "Ada" },
+ { "emp_id": "E2", "manager_id": "E1", "name": "Ben" },
+ { "emp_id": "E3", "manager_id": "E1", "name": "Ann" },
+ { "emp_id": "E4", "manager_id": "E3", "name": "Cy" }]

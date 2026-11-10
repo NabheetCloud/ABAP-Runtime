@@ -1,0 +1,8 @@
+[
+  {"venum": "0000000001", "vepos": "", "exidv": "008868033114936234", "vhilm": "PK01", "brgew": 25.0, "vbeln": "", "posnr": "", "matnr": "", "vemng": 0, "gewei": "KG", "vpobj": "01", "vpobjkey": "0080000001", "werks": "1010"},
+  {"venum": "0000000002", "vepos": "", "exidv": "001624274707754244", "vhilm": "PK01", "brgew": 25.0, "vbeln": "", "posnr": "", "matnr": "", "vemng": 0, "gewei": "KG", "vpobj": "01", "vpobjkey": "0080000002", "werks": "1010"},
+  {"venum": "0000000003", "vepos": "", "exidv": "003644722454968139", "vhilm": "PK01", "brgew": 25.0, "vbeln": "", "posnr": "", "matnr": "", "vemng": 0, "gewei": "KG", "vpobj": "01", "vpobjkey": "0080000004", "werks": "1710"},
+  {"venum": "0000000004", "vepos": "", "exidv": "006828212957486462", "vhilm": "PK01", "brgew": 25.0, "vbeln": "", "posnr": "", "matnr": "", "vemng": 0, "gewei": "KG", "vpobj": "01", "vpobjkey": "0080000005", "werks": "1710"},
+  {"venum": "0000000005", "vepos": "", "exidv": "004113087805178217", "vhilm": "PK01", "brgew": 25.0, "vbeln": "", "posnr": "", "matnr": "", "vemng": 0, "gewei": "KG", "vpobj": "01", "vpobjkey": "0080000007", "werks": "4110"},
+  {"venum": "0000000006", "vepos": "", "exidv": "003936278949703836", "vhilm": "PK01", "brgew": 25.0, "vbeln": "", "posnr": "", "matnr": "", "vemng": 0, "gewei": "KG", "vpobj": "01", "vpobjkey": "0080000008", "werks": "4110"}
+]

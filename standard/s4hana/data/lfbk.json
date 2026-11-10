@@ -1,0 +1,9 @@
+[
+  {"lifnr": "0010300001", "banks": "DE", "bankl": "10020030", "bankn": "978786506", "bkont": "01", "bvtyp": ""},
+  {"lifnr": "0010300002", "banks": "DE", "bankl": "10020030", "bankn": "117175169", "bkont": "01", "bvtyp": ""},
+  {"lifnr": "0017300001", "banks": "US", "bankl": "10020030", "bankn": "935200891", "bkont": "01", "bvtyp": ""},
+  {"lifnr": "0017300002", "banks": "US", "bankl": "10020030", "bankn": "247636778", "bkont": "01", "bvtyp": ""},
+  {"lifnr": "0041300001", "banks": "IN", "bankl": "10020030", "bankn": "237388528", "bkont": "01", "bvtyp": ""},
+  {"lifnr": "0041300002", "banks": "IN", "bankl": "10020030", "bankn": "204857671", "bkont": "01", "bvtyp": ""},
+  {"lifnr": "0041300003", "banks": "IN", "bankl": "10020030", "bankn": "804669215", "bkont": "01", "bvtyp": ""}
+]

@@ -1,0 +1,5 @@
+[
+  {"tplnr": "1010-PROD", "spras": "E", "pltxt": "Production plant Hamburg"},
+  {"tplnr": "1010-PROD-L01", "spras": "E", "pltxt": "Assembly line 1"},
+  {"tplnr": "1010-UTIL", "spras": "E", "pltxt": "Utilities"}
+]

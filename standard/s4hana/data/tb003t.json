@@ -1,0 +1,7 @@
+[
+  {"spras": "E", "role": "000000", "rltitl": "Business Partner (Gen.)"},
+  {"spras": "E", "role": "FLCU00", "rltitl": "FI Customer"},
+  {"spras": "E", "role": "FLCU01", "rltitl": "Customer"},
+  {"spras": "E", "role": "FLVN00", "rltitl": "FI Vendor"},
+  {"spras": "E", "role": "FLVN01", "rltitl": "Supplier"}
+]

@@ -1,0 +1,7 @@
+[
+  {"banks": "DE", "bankl": "10070000", "banka": "Deutsche Bank Berlin", "ort01": "Berlin", "stras": "Otto-Suhr-Allee 6-16", "swift": "DEUTDEBBXXX", "loevm": ""},
+  {"banks": "DE", "bankl": "20040000", "banka": "Commerzbank Hamburg", "ort01": "Hamburg", "stras": "Ness 7-9", "swift": "COBADEHHXXX", "loevm": ""},
+  {"banks": "US", "bankl": "121000248", "banka": "Wells Fargo Bank", "ort01": "San Francisco", "stras": "420 Montgomery St", "swift": "WFBIUS6SXXX", "loevm": ""},
+  {"banks": "IN", "bankl": "HDFC0000001", "banka": "HDFC Bank", "ort01": "Mumbai", "stras": "Senapati Bapat Marg", "swift": "HDFCINBBXXX", "loevm": ""},
+  {"banks": "IN", "bankl": "SBIN0000813", "banka": "State Bank of India", "ort01": "Pune", "stras": "Shivajinagar", "swift": "SBININBB813", "loevm": ""}
+]

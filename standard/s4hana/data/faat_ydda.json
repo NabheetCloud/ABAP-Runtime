@@ -1,0 +1,20 @@
+[
+  {"bukrs": "1010", "anln1": "000010000001", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 91792.66, "knafa": -18358.53, "nafag": -9179.27, "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000001", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 91792.66, "knafa": -18358.53, "nafag": -9179.27, "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000002", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 45356.37, "knafa": -15118.79, "nafag": -7559.4, "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000002", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 45356.37, "knafa": -15118.79, "nafag": -7559.4, "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000003", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 19438.44, "knafa": -9719.22, "nafag": -4859.61, "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000003", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 19438.44, "knafa": -9719.22, "nafag": -4859.61, "waers": "EUR"},
+  {"bukrs": "1710", "anln1": "000010000001", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 85000.0, "knafa": -17000.0, "nafag": -8500.0, "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000001", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 85000.0, "knafa": -17000.0, "nafag": -8500.0, "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000002", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 42000.0, "knafa": -14000.0, "nafag": -7000.0, "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000002", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 42000.0, "knafa": -14000.0, "nafag": -7000.0, "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000003", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 18000.0, "knafa": -9000.0, "nafag": -4500.0, "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000003", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 18000.0, "knafa": -9000.0, "nafag": -4500.0, "waers": "USD"},
+  {"bukrs": "4110", "anln1": "000010000001", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 1019.18, "knafa": -203.84, "nafag": -101.92, "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000001", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 1019.18, "knafa": -203.84, "nafag": -101.92, "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000002", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 503.6, "knafa": -167.87, "nafag": -83.93, "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000002", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 503.6, "knafa": -167.87, "nafag": -83.93, "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000003", "anln2": "0000", "gjahr": "2026", "afabe": "01", "kansw": 215.83, "knafa": -107.92, "nafag": -53.96, "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000003", "anln2": "0000", "gjahr": "2026", "afabe": "15", "kansw": 215.83, "knafa": -107.92, "nafag": -53.96, "waers": "INR"}
+]

@@ -1,0 +1,11 @@
+[
+  {"kappl": "V", "kschl": "K007", "vkorg": "1010", "vtweg": "10", "kunnr": "0010100001", "matnr": "TG11", "datbi": "99991231", "datab": "20260101", "knumh": "0000000001"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "1010", "vtweg": "10", "kunnr": "0010100001", "matnr": "TG12", "datbi": "99991231", "datab": "20260101", "knumh": "0000000002"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "1010", "vtweg": "10", "kunnr": "0010100001", "matnr": "TG13", "datbi": "99991231", "datab": "20260101", "knumh": "0000000003"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "1710", "vtweg": "10", "kunnr": "0017100001", "matnr": "TG11", "datbi": "99991231", "datab": "20260101", "knumh": "0000000004"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "1710", "vtweg": "10", "kunnr": "0017100001", "matnr": "TG12", "datbi": "99991231", "datab": "20260101", "knumh": "0000000005"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "1710", "vtweg": "10", "kunnr": "0017100001", "matnr": "TG13", "datbi": "99991231", "datab": "20260101", "knumh": "0000000006"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "4110", "vtweg": "10", "kunnr": "0041100001", "matnr": "TG11", "datbi": "99991231", "datab": "20260101", "knumh": "0000000007"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "4110", "vtweg": "10", "kunnr": "0041100001", "matnr": "TG12", "datbi": "99991231", "datab": "20260101", "knumh": "0000000008"},
+  {"kappl": "V", "kschl": "K007", "vkorg": "4110", "vtweg": "10", "kunnr": "0041100001", "matnr": "TG13", "datbi": "99991231", "datab": "20260101", "knumh": "0000000009"}
+]

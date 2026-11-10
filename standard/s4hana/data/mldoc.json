@@ -1,0 +1,11 @@
+[
+  {"docref": "F3E1451960B7B9116EC92AFFC99F9EF5", "curtp": "10", "kalnr": "000000000001", "jahrper": "", "quant": 10.0, "stval": 7130.0, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "EUR"},
+  {"docref": "410D334524F9A0F191334E684652436B", "curtp": "10", "kalnr": "000000000002", "jahrper": "", "quant": 10.0, "stval": 11718.0, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "EUR"},
+  {"docref": "7B0CF3C144D16772D5F683F671787B20", "curtp": "10", "kalnr": "000000000003", "jahrper": "", "quant": 10.0, "stval": 6076.0, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "EUR"},
+  {"docref": "4D0D5C4429BAEC117E11325DACBBAD4C", "curtp": "10", "kalnr": "000000000004", "jahrper": "", "quant": 10.0, "stval": 7700.4, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "USD"},
+  {"docref": "E8EA47B532F0D3C6F1BA0049894817E0", "curtp": "10", "kalnr": "000000000005", "jahrper": "", "quant": 10.0, "stval": 12655.4, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "USD"},
+  {"docref": "1EEC214DC24B0FD55422B0CE333D3290", "curtp": "10", "kalnr": "000000000006", "jahrper": "", "quant": 10.0, "stval": 6562.1, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "USD"},
+  {"docref": "971C301A8C2E293402592A428011899E", "curtp": "10", "kalnr": "000000000007", "jahrper": "", "quant": 10.0, "stval": 642413.0, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "INR"},
+  {"docref": "2092555A558E90460E0A3B20D3AFE76A", "curtp": "10", "kalnr": "000000000008", "jahrper": "", "quant": 10.0, "stval": 1055791.8, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "INR"},
+  {"docref": "92F3D7BF3ABAABCAEB0238964579B83E", "curtp": "10", "kalnr": "000000000009", "jahrper": "", "quant": 10.0, "stval": 547447.6, "bdatj": "2026", "categ": "ZU", "meins": "PC", "poper": "009", "waers": "INR"}
+]

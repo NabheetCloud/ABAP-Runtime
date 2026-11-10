@@ -1,0 +1,7 @@
+[
+  {"objectclas": "VERKBELEG", "objectid": "0000001001", "changenr": "0000000001", "tabname": "VBAK", "tabkey": "1000000001001", "fname": "BSTNK", "chngind": "U", "value_old": "", "value_new": "PO-0001-01", "unit_new": "", "cuky_new": ""},
+  {"objectclas": "VERKBELEG", "objectid": "0000001002", "changenr": "0000000002", "tabname": "VBAK", "tabkey": "1000000001002", "fname": "BSTNK", "chngind": "U", "value_old": "", "value_new": "PO-0002-02", "unit_new": "", "cuky_new": ""},
+  {"objectclas": "VERKBELEG", "objectid": "0000001003", "changenr": "0000000003", "tabname": "VBAK", "tabkey": "1000000001003", "fname": "BSTNK", "chngind": "U", "value_old": "", "value_new": "PO-0003-03", "unit_new": "", "cuky_new": ""},
+  {"objectclas": "VERKBELEG", "objectid": "0000001004", "changenr": "0000000004", "tabname": "VBAK", "tabkey": "1000000001004", "fname": "BSTNK", "chngind": "U", "value_old": "", "value_new": "PO-0004-04", "unit_new": "", "cuky_new": ""},
+  {"objectclas": "VERKBELEG", "objectid": "0000001005", "changenr": "0000000005", "tabname": "VBAK", "tabkey": "1000000001005", "fname": "BSTNK", "chngind": "U", "value_old": "", "value_new": "PO-0001-01", "unit_new": "", "cuky_new": ""}
+]

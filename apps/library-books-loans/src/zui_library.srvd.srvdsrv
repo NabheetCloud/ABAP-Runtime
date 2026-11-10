@@ -1,0 +1,5 @@
+@EndUserText.label: 'Library Service'
+define service ZUI_LIBRARY {
+  expose ZC_Book as Book;
+  expose ZC_Loan as Loan;
+}

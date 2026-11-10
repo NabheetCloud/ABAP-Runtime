@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="RAP Studio" APIVersion="3.6.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+<subform name="Form" layout="tb" locale="en_US">
+<pageSet>
+<pageArea name="Page1" id="Page1">
+<contentArea x="15mm" y="22mm" w="180mm" h="258mm"/>
+<medium stock="a4" short="210mm" long="297mm"/>
+<draw name="Title" x="15mm" y="8mm" w="180mm" h="10mm"><ui><textEdit/></ui><value><text>Purchase order</text></value><font typeface="Arial" size="16pt" weight="bold"/></draw>
+</pageArea>
+</pageSet>
+<subform name="Header" layout="tb" w="180mm"><bind match="none"/>
+<field name="Ebeln" x="0mm" w="180mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><caption reserve="35mm"><font typeface="Arial" size="9pt" weight="bold"/><value><text>PO number</text></value></caption><bind match="dataRef" ref="$.IS_HEADER.EBELN"/></field>
+<field name="Lifnr" x="0mm" w="180mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><caption reserve="35mm"><font typeface="Arial" size="9pt" weight="bold"/><value><text>Vendor</text></value></caption><bind match="dataRef" ref="$.IS_HEADER.LIFNR"/></field>
+<field name="Bedat" x="0mm" w="180mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><caption reserve="35mm"><font typeface="Arial" size="9pt" weight="bold"/><value><text>Order date</text></value></caption><bind match="dataRef" ref="$.IS_HEADER.BEDAT"/></field>
+<field name="Status" x="0mm" w="180mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><caption reserve="35mm"><font typeface="Arial" size="9pt" weight="bold"/><value><text>Status</text></value></caption><bind match="dataRef" ref="$.IS_HEADER.STATUS"/></field>
+<field name="Netwr" x="0mm" w="180mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><caption reserve="35mm"><font typeface="Arial" size="9pt" weight="bold"/><value><text>Net value</text></value></caption><format><picture>num{z,zzz,zz9.99}</picture></format><bind match="dataRef" ref="$.IS_HEADER.NETWR"/></field>
+<field name="Waers" x="0mm" w="180mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><caption reserve="35mm"><font typeface="Arial" size="9pt" weight="bold"/><value><text>Currency</text></value></caption><bind match="dataRef" ref="$.IS_HEADER.WAERS"/></field>
+</subform>
+<subform name="Items" layout="tb" w="180mm"><bind match="none"/>
+<subform name="HeadRow" layout="lr-tb" w="180mm"><draw name="HItem" x="0mm" w="20mm" h="7mm"><ui><textEdit/></ui><value><text>Item</text></value><font typeface="Arial" size="9pt" weight="bold"/><border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border></draw><draw name="HMaterial" x="0mm" w="35mm" h="7mm"><ui><textEdit/></ui><value><text>Material</text></value><font typeface="Arial" size="9pt" weight="bold"/><border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border></draw><draw name="HDescription" x="0mm" w="65mm" h="7mm"><ui><textEdit/></ui><value><text>Description</text></value><font typeface="Arial" size="9pt" weight="bold"/><border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border></draw><draw name="HQty" x="0mm" w="20mm" h="7mm"><ui><textEdit/></ui><value><text>Qty</text></value><font typeface="Arial" size="9pt" weight="bold"/><border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border></draw><draw name="HUnit" x="0mm" w="15mm" h="7mm"><ui><textEdit/></ui><value><text>Unit</text></value><font typeface="Arial" size="9pt" weight="bold"/><border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border></draw><draw name="HPrice" x="0mm" w="25mm" h="7mm"><ui><textEdit/></ui><value><text>Price</text></value><font typeface="Arial" size="9pt" weight="bold"/><border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border></draw></subform>
+<subform name="Row" layout="lr-tb" w="180mm"><occur min="0" max="-1"/><bind match="dataRef" ref="$.IT_ITEMS.DATA[*]"/>
+<field name="Ebelp" x="0mm" w="20mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><bind match="dataRef" ref="$.EBELP"/></field><field name="Matnr" x="0mm" w="35mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><bind match="dataRef" ref="$.MATNR"/></field><field name="Txz01" x="0mm" w="65mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><bind match="dataRef" ref="$.TXZ01"/></field><field name="Menge" x="0mm" w="20mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><bind match="dataRef" ref="$.MENGE"/></field><field name="Meins" x="0mm" w="15mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><bind match="dataRef" ref="$.MEINS"/></field><field name="Netpr" x="0mm" w="25mm" h="7mm" access="readOnly"><ui><textEdit><border presence="hidden"/></textEdit></ui><font typeface="Arial" size="9pt"/><bind match="dataRef" ref="$.NETPR"/></field>
+</subform>
+</subform>
+</subform>
+</template>
+</xdp:xdp>

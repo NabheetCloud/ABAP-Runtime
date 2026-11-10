@@ -1,0 +1,12 @@
+[
+  {"partner": "0010100001", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0010100002", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0010100003", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0017100001", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0017100002", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0017100003", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0041100001", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0041100002", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0041100003", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"},
+  {"partner": "0010100004", "risk_class": "B", "check_rule": "01", "credit_score": "", "credit_group": "Z001"}
+]

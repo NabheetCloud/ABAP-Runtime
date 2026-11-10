@@ -1,0 +1,14 @@
+[
+  {"pnum1": "0000000001", "hsnum": "0", "versp": "0", "perio": "202607", "matnr": "TG11", "werks": "1010", "prwrt": 44.0},
+  {"pnum1": "0000000001", "hsnum": "0", "versp": "0", "perio": "202608", "matnr": "TG11", "werks": "1010", "prwrt": 32.0},
+  {"pnum1": "0000000001", "hsnum": "0", "versp": "0", "perio": "202609", "matnr": "TG11", "werks": "1010", "prwrt": 40.0},
+  {"pnum1": "0000000001", "hsnum": "0", "versp": "0", "perio": "202610", "matnr": "TG11", "werks": "1010", "prwrt": 38.0},
+  {"pnum1": "0000000001", "hsnum": "0", "versp": "0", "perio": "202611", "matnr": "TG11", "werks": "1010", "prwrt": 51.0},
+  {"pnum1": "0000000001", "hsnum": "0", "versp": "0", "perio": "202612", "matnr": "TG11", "werks": "1010", "prwrt": 52.0},
+  {"pnum1": "0000000002", "hsnum": "0", "versp": "0", "perio": "202607", "matnr": "FG126", "werks": "1010", "prwrt": 32.0},
+  {"pnum1": "0000000002", "hsnum": "0", "versp": "0", "perio": "202608", "matnr": "FG126", "werks": "1010", "prwrt": 42.0},
+  {"pnum1": "0000000002", "hsnum": "0", "versp": "0", "perio": "202609", "matnr": "FG126", "werks": "1010", "prwrt": 34.0},
+  {"pnum1": "0000000002", "hsnum": "0", "versp": "0", "perio": "202610", "matnr": "FG126", "werks": "1010", "prwrt": 48.0},
+  {"pnum1": "0000000002", "hsnum": "0", "versp": "0", "perio": "202611", "matnr": "FG126", "werks": "1010", "prwrt": 49.0},
+  {"pnum1": "0000000002", "hsnum": "0", "versp": "0", "perio": "202612", "matnr": "FG126", "werks": "1010", "prwrt": 26.0}
+]

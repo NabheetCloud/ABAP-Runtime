@@ -1,0 +1,6 @@
+@EndUserText.label: 'Purchase order (form data provider)'
+@ObjectModel.leadingEntity.name: 'ZI_PURCHASEORDERDOC'
+define service ZFDP_PURCHASEORDER {
+  expose ZI_PurchaseOrderDoc as PurchaseOrder;
+  expose ZI_PurchaseOrderDocItem as PurchaseOrderItem;
+}

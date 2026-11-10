@@ -1,0 +1,9 @@
+[
+  {"venum": "0000000001", "vepos": "000010", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000001", "posnr": "000010", "matnr": "TG15", "vemng": 15, "vemeh": "PC", "werks": "1010"},
+  {"venum": "0000000002", "vepos": "000010", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000002", "posnr": "000010", "matnr": "TG12", "vemng": 12, "vemeh": "PC", "werks": "1010"},
+  {"venum": "0000000003", "vepos": "000010", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000004", "posnr": "000010", "matnr": "FG126", "vemng": 7, "vemeh": "PC", "werks": "1710"},
+  {"venum": "0000000003", "vepos": "000020", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000004", "posnr": "000020", "matnr": "TG13", "vemng": 5, "vemeh": "PC", "werks": "1710"},
+  {"venum": "0000000004", "vepos": "000010", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000005", "posnr": "000010", "matnr": "TG15", "vemng": 18, "vemeh": "PC", "werks": "1710"},
+  {"venum": "0000000005", "vepos": "000010", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000007", "posnr": "000010", "matnr": "TG15", "vemng": 20, "vemeh": "PC", "werks": "4110"},
+  {"venum": "0000000006", "vepos": "000010", "exidv": "", "vhilm": "", "brgew": 0, "vbeln": "0080000008", "posnr": "000010", "matnr": "TG11", "vemng": 6, "vemeh": "PC", "werks": "4110"}
+]

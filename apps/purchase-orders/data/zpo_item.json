@@ -1,0 +1,7 @@
+[
+ { "ebeln": "4500000001", "ebelp": "00010", "matnr": "PUMP-01", "menge": 2, "meins": "PC", "netpr": 800.00, "waers": "EUR" },
+ { "ebeln": "4500000001", "ebelp": "00020", "matnr": "VALVE-07", "menge": 5, "meins": "PC", "netpr": 100.00, "waers": "EUR" },
+ { "ebeln": "4500000002", "ebelp": "00010", "matnr": "GASKET-12", "menge": 40, "meins": "PC", "netpr": 16.00, "waers": "EUR" },
+ { "ebeln": "4500000003", "ebelp": "00010", "matnr": "MOTOR-3KW", "menge": 1, "meins": "PC", "netpr": 1250.00, "waers": "USD" },
+ { "ebeln": "4500000003", "ebelp": "00020", "matnr": "CABLE-10M", "menge": 3, "meins": "PC", "netpr": 108.50, "waers": "USD" }
+]

@@ -1,0 +1,11 @@
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:asx="http://www.sap.com/abapxml">
+  <xsl:output method="html"/>
+  <xsl:template match="/">
+    <ul>
+      <xsl:for-each select="asx:abap/asx:values/ROWS/item">
+        <xsl:sort select="NAME"/>
+        <li id="r{ID}"><xsl:value-of select="NAME"/><xsl:if test="position() = last()"> (last)</xsl:if></li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
+</xsl:transform>

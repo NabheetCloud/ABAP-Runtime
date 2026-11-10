@@ -1,0 +1,11 @@
+[
+  {"bukrs": "1010", "anln1": "000010000001", "anln2": "0000", "gjahr": "2024", "awref": "AA000001", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 91792.66, "anbwa": "100", "budat": "20240201", "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000002", "anln2": "0000", "gjahr": "2024", "awref": "AA000002", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 45356.37, "anbwa": "100", "budat": "20240301", "waers": "EUR"},
+  {"bukrs": "1010", "anln1": "000010000003", "anln2": "0000", "gjahr": "2024", "awref": "AA000003", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 19438.44, "anbwa": "100", "budat": "20240401", "waers": "EUR"},
+  {"bukrs": "1710", "anln1": "000010000001", "anln2": "0000", "gjahr": "2024", "awref": "AA000001", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 85000.0, "anbwa": "100", "budat": "20240201", "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000002", "anln2": "0000", "gjahr": "2024", "awref": "AA000002", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 42000.0, "anbwa": "100", "budat": "20240301", "waers": "USD"},
+  {"bukrs": "1710", "anln1": "000010000003", "anln2": "0000", "gjahr": "2024", "awref": "AA000003", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 18000.0, "anbwa": "100", "budat": "20240401", "waers": "USD"},
+  {"bukrs": "4110", "anln1": "000010000001", "anln2": "0000", "gjahr": "2024", "awref": "AA000001", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 1019.18, "anbwa": "100", "budat": "20240201", "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000002", "anln2": "0000", "gjahr": "2024", "awref": "AA000002", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 503.6, "anbwa": "100", "budat": "20240301", "waers": "INR"},
+  {"bukrs": "4110", "anln1": "000010000003", "anln2": "0000", "gjahr": "2024", "awref": "AA000003", "awitem": "000001", "afabe": "01", "subta": "000001", "anbtr": 215.83, "anbwa": "100", "budat": "20240401", "waers": "INR"}
+]

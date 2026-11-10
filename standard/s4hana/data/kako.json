@@ -1,0 +1,5 @@
+[
+  {"kapid": "10000001", "kapar": "001", "begzt": 28800.0, "endzt": 61200.0, "ngrad": 85, "aznor": 2, "ktext": "Assembly line", "name": "ASSEMBLY"},
+  {"kapid": "10000002", "kapar": "001", "begzt": 28800.0, "endzt": 61200.0, "ngrad": 85, "aznor": 2, "ktext": "Packing station", "name": "PACKING"},
+  {"kapid": "10000003", "kapar": "001", "begzt": 28800.0, "endzt": 61200.0, "ngrad": 85, "aznor": 2, "ktext": "Maintenance workshop", "name": "MAINT"}
+]

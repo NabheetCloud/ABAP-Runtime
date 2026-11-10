@@ -1,0 +1,14 @@
+[
+  {"matnr": "TG11", "lgnum": "101", "lgtyp": "001", "lgpla": "01-10-04", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG12", "lgnum": "101", "lgtyp": "001", "lgpla": "01-14-02", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG13", "lgnum": "101", "lgtyp": "001", "lgpla": "01-17-02", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG14", "lgnum": "101", "lgtyp": "001", "lgpla": "01-01-02", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG15", "lgnum": "101", "lgtyp": "001", "lgpla": "01-08-04", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG16", "lgnum": "101", "lgtyp": "001", "lgpla": "01-14-02", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG17", "lgnum": "101", "lgtyp": "001", "lgpla": "01-20-01", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "TG18", "lgnum": "101", "lgtyp": "001", "lgpla": "01-18-04", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "FG126", "lgnum": "101", "lgtyp": "001", "lgpla": "01-03-04", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "RM12", "lgnum": "101", "lgtyp": "001", "lgpla": "01-10-01", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "RM13", "lgnum": "101", "lgtyp": "001", "lgpla": "01-03-04", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0},
+  {"matnr": "OS01", "lgnum": "101", "lgtyp": "001", "lgpla": "01-13-04", "minbe": 0, "maxbe": "", "lpmax": 200.0, "lpmin": 10.0}
+]

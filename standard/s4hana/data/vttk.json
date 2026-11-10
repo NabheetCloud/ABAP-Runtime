@@ -1,0 +1,5 @@
+[
+  {"tknum": "0000000001", "tpnum": "", "shtyp": "0001", "tdlnr": "0010300001", "dtabf": "", "vbeln": "", "erdat": "20260310", "ernam": "CB9980000020", "stabf": "C", "stdis": "C", "stlbg": "C", "streg": "C", "tplst": "1010"},
+  {"tknum": "0000000002", "tpnum": "", "shtyp": "0001", "tdlnr": "0017300001", "dtabf": "", "vbeln": "", "erdat": "20260310", "ernam": "CB9980000020", "stabf": "C", "stdis": "C", "stlbg": "C", "streg": "C", "tplst": "1710"},
+  {"tknum": "0000000003", "tpnum": "", "shtyp": "0001", "tdlnr": "0041300001", "dtabf": "", "vbeln": "", "erdat": "20260310", "ernam": "CB9980000020", "stabf": "C", "stdis": "C", "stlbg": "C", "streg": "C", "tplst": "4110"}
+]

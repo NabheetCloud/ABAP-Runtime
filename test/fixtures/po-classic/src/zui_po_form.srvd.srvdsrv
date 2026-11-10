@@ -1,0 +1,4 @@
+@EndUserText.label: 'Po Form'
+define service ZUI_PO_FORM {
+  expose ZI_PO_HEAD as PoHead;
+}

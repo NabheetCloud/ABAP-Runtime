@@ -1,0 +1,6 @@
+[
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-ADM", "lineid": "0000000001", "valfrom": "10101201", "valto": "10101201", "valsign": "I", "valoption": "EQ"},
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-ADM", "lineid": "0000000002", "valfrom": "17101201", "valto": "17101201", "valsign": "I", "valoption": "EQ"},
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-PRD", "lineid": "0000000003", "valfrom": "10101301", "valto": "10101301", "valsign": "I", "valoption": "EQ"},
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-PRD", "lineid": "0000000004", "valfrom": "41101301", "valto": "41101301", "valsign": "I", "valoption": "EQ"}
+]

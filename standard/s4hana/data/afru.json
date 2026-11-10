@@ -1,0 +1,6 @@
+[
+  {"rueck": "0000000001", "rmzhl": "00000001", "aufnr": "000001000001", "vornr": "0010", "arbid": "10000001", "budat": "20260305", "lmnga": 50.0, "xmnga": 1.0, "aueru": "X", "stokz": "", "stzhl": "", "ernam": "PRIYA.SHARMA", "ersda": "20260305", "gmein": "PC", "ile01": "MIN", "ism01": 25.0, "ltxa1": "Confirmed", "werks": "1010"},
+  {"rueck": "0000000002", "rmzhl": "00000001", "aufnr": "000001000001", "vornr": "0020", "arbid": "10000002", "budat": "20260305", "lmnga": 50.0, "xmnga": 0.0, "aueru": "X", "stokz": "", "stzhl": "", "ernam": "PRIYA.SHARMA", "ersda": "20260305", "gmein": "PC", "ile01": "MIN", "ism01": 25.0, "ltxa1": "Confirmed", "werks": "1010"},
+  {"rueck": "0000000003", "rmzhl": "00000001", "aufnr": "000001000002", "vornr": "0010", "arbid": "10000001", "budat": "20260605", "lmnga": 15.0, "xmnga": 1.0, "aueru": "", "stokz": "", "stzhl": "", "ernam": "PRIYA.SHARMA", "ersda": "20260605", "gmein": "PC", "ile01": "MIN", "ism01": 7.5, "ltxa1": "Confirmed", "werks": "1010"},
+  {"rueck": "0000000004", "rmzhl": "00000001", "aufnr": "000001000002", "vornr": "0020", "arbid": "10000002", "budat": "20260605", "lmnga": 15.0, "xmnga": 0.0, "aueru": "", "stokz": "", "stzhl": "", "ernam": "PRIYA.SHARMA", "ersda": "20260605", "gmein": "PC", "ile01": "MIN", "ism01": 7.5, "ltxa1": "Confirmed", "werks": "1010"}
+]

@@ -1,0 +1,5 @@
+[
+  {"brelguid": "0DD906D452FB7C79A66C3D17D611ABE1", "instid_a": "4500000001", "typeid_a": "BUS2012", "instid_b": "FOLEXT26000000000001", "typeid_b": "MESSAGE", "catid_a": "BO", "catid_b": "BO", "reltype": "ATTA", "utctime": "20260205100000"},
+  {"brelguid": "C8296AA299E0305B124048E2ED0D121A", "instid_a": "4500000002", "typeid_a": "BUS2012", "instid_b": "FOLEXT26000000000002", "typeid_b": "MESSAGE", "catid_a": "BO", "catid_b": "BO", "reltype": "ATTA", "utctime": "20260406100000"},
+  {"brelguid": "F4BB17A5D6F3319A20671098C6BC1E69", "instid_a": "4500000003", "typeid_a": "BUS2012", "instid_b": "FOLEXT26000000000003", "typeid_b": "MESSAGE", "catid_a": "BO", "catid_b": "BO", "reltype": "ATTA", "utctime": "20260607100000"}
+]

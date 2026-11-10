@@ -1,0 +1,7 @@
+[
+  {"agr_name": "Z_SALES_CLERK", "counter": "000001", "object": "S_TCODE", "auth": "Z_SALES_CL00", "low": "VA01", "high": "VF01", "field": "TCD"},
+  {"agr_name": "Z_BUYER", "counter": "000001", "object": "S_TCODE", "auth": "Z_BUYER00", "low": "ME21N", "high": "MIRO", "field": "TCD"},
+  {"agr_name": "Z_ACCOUNTANT", "counter": "000001", "object": "S_TCODE", "auth": "Z_ACCOUNTA00", "low": "FB01", "high": "FBL1N", "field": "TCD"},
+  {"agr_name": "Z_PLANNER", "counter": "000001", "object": "S_TCODE", "auth": "Z_PLANNER00", "low": "CO01", "high": "MD04", "field": "TCD"},
+  {"agr_name": "Z_MAINTENANCE", "counter": "000001", "object": "S_TCODE", "auth": "Z_MAINTENA00", "low": "IW21", "high": "IE03", "field": "TCD"}
+]

@@ -1,0 +1,37 @@
+{
+ "created": "2026-11-05T17:07:59.435Z",
+ "title": "Loan receipt from the Fiori app and a classic driver report",
+ "folder": "docs/2026-11-05-loan-receipt-fiori-classic",
+ "files": [
+  "ATC_Check_Report.docx",
+  "ATC_Check_Report.pdf",
+  "QA_Test_Report.docx",
+  "QA_Test_Report.pdf",
+  "Technical_Specification.docx",
+  "Technical_Specification.pdf"
+ ],
+ "atc": {
+  "before": {
+   "error": 0,
+   "warning": 0,
+   "info": 7,
+   "fixable": 0
+  },
+  "after": {
+   "error": 0,
+   "warning": 0,
+   "info": 7,
+   "fixable": 0
+  },
+  "fixed": 0,
+  "fixedFiles": []
+ },
+ "tests": {
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "skipped": 0,
+  "screenshots": 4
+ },
+ "described": true
+}

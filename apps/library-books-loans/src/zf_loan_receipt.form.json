@@ -1,0 +1,5 @@
+{
+ "title": "Loan Receipt",
+ "layout": "zf_loan_receipt.xdp",
+ "dataProvider": "ZFDP_LOAN_RECEIPT"
+}

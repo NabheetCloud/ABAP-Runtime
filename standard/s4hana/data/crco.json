@@ -1,0 +1,5 @@
+[
+  {"objty": "A", "objid": "10000001", "laset": "000001", "endda": "99991231", "lanum": "0001", "kostl": "10101301", "lstar": "LAB001", "begda": "20250101", "kokrs": "A000"},
+  {"objty": "A", "objid": "10000002", "laset": "000001", "endda": "99991231", "lanum": "0001", "kostl": "10101301", "lstar": "LAB001", "begda": "20250101", "kokrs": "A000"},
+  {"objty": "A", "objid": "10000003", "laset": "000001", "endda": "99991231", "lanum": "0001", "kostl": "10101201", "lstar": "LAB001", "begda": "20250101", "kokrs": "A000"}
+]

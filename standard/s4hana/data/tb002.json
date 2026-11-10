@@ -1,0 +1,5 @@
+[
+  {"spras": "E", "bu_group": "BP02", "txt40": "Customer (int.no.assgnmt)"},
+  {"spras": "E", "bu_group": "BP03", "txt40": "Supplier (int.no.assgnmt)"},
+  {"spras": "E", "bu_group": "BP01", "txt40": "Business partner (int.no.assgnmt)"}
+]

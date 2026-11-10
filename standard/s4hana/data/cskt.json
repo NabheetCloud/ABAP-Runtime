@@ -1,0 +1,9 @@
+[
+  {"spras": "E", "kokrs": "A000", "kostl": "10101101", "datbi": "99991231", "ktext": "Sales DE", "ltext": "Sales Germany"},
+  {"spras": "E", "kokrs": "A000", "kostl": "10101201", "datbi": "99991231", "ktext": "Admin DE", "ltext": "Administration Germany"},
+  {"spras": "E", "kokrs": "A000", "kostl": "10101301", "datbi": "99991231", "ktext": "Production DE", "ltext": "Production Hamburg"},
+  {"spras": "E", "kokrs": "A000", "kostl": "17101101", "datbi": "99991231", "ktext": "Sales US", "ltext": "Sales United States"},
+  {"spras": "E", "kokrs": "A000", "kostl": "17101201", "datbi": "99991231", "ktext": "Admin US", "ltext": "Administration United States"},
+  {"spras": "E", "kokrs": "A000", "kostl": "41101101", "datbi": "99991231", "ktext": "Sales IN", "ltext": "Sales India"},
+  {"spras": "E", "kokrs": "A000", "kostl": "41101301", "datbi": "99991231", "ktext": "Services IN", "ltext": "Professional services India"}
+]

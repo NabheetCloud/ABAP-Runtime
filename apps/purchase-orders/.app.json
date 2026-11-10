@@ -1,0 +1,5 @@
+{
+ "title": "Purchase Orders (built by hand)",
+ "prompt": "Built by hand in the studio: domains, data elements, tables, a lock object, function modules, a service class, a report with ALV, an Adobe form with its print program and the module pool transaction ZPO1.",
+ "flavor": "classic"
+}

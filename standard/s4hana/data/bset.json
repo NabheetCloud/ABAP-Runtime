@@ -1,0 +1,16 @@
+[
+  {"bukrs": "1010", "belnr": "9400000001", "gjahr": "2026", "buzei": "003", "mwskz": "A1", "hwbas": 312.6, "fwbas": 312.6, "hwste": 59.39, "fwste": 59.39, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "1010", "belnr": "9400000002", "gjahr": "2026", "buzei": "003", "mwskz": "A1", "hwbas": 18983.16, "fwbas": 18983.16, "hwste": 3606.8, "fwste": 3606.8, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "1010", "belnr": "9400000003", "gjahr": "2026", "buzei": "004", "mwskz": "A1", "hwbas": 33684.18, "fwbas": 33684.18, "hwste": 6399.99, "fwste": 6399.99, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "1710", "belnr": "9400000001", "gjahr": "2026", "buzei": "004", "mwskz": "A1", "hwbas": 7959.31, "fwbas": 7959.31, "hwste": 577.05, "fwste": 577.05, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "1710", "belnr": "9400000002", "gjahr": "2026", "buzei": "003", "mwskz": "A1", "hwbas": 405.0, "fwbas": 405.0, "hwste": 29.36, "fwste": 29.36, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "1710", "belnr": "9400000003", "gjahr": "2026", "buzei": "005", "mwskz": "A1", "hwbas": 3072.04, "fwbas": 3072.04, "hwste": 222.72, "fwste": 222.72, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "4110", "belnr": "9400000001", "gjahr": "2026", "buzei": "003", "mwskz": "A1", "hwbas": 37556.0, "fwbas": 37556.0, "hwste": 6760.08, "fwste": 6760.08, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "4110", "belnr": "9400000002", "gjahr": "2026", "buzei": "003", "mwskz": "A1", "hwbas": 520354.56, "fwbas": 520354.56, "hwste": 93663.82, "fwste": 93663.82, "ktosl": "MWS", "hkont": "0022000000", "kschl": "MWST", "shkzg": "H"},
+  {"bukrs": "1010", "belnr": "5100000001", "gjahr": "2026", "buzei": "002", "mwskz": "V1", "hwbas": 1178.0, "fwbas": 1178.0, "hwste": 223.82, "fwste": 223.82, "ktosl": "VST", "hkont": "0016100000", "kschl": "VST", "shkzg": "S"},
+  {"bukrs": "1010", "belnr": "5100000002", "gjahr": "2026", "buzei": "002", "mwskz": "V1", "hwbas": 7936.0, "fwbas": 7936.0, "hwste": 1507.84, "fwste": 1507.84, "ktosl": "VST", "hkont": "0016100000", "kschl": "VST", "shkzg": "S"},
+  {"bukrs": "1710", "belnr": "5100000001", "gjahr": "2026", "buzei": "002", "mwskz": "V1", "hwbas": 5088.0, "fwbas": 5088.0, "hwste": 368.88, "fwste": 368.88, "ktosl": "VST", "hkont": "0016100000", "kschl": "VST", "shkzg": "S"},
+  {"bukrs": "1710", "belnr": "5100000002", "gjahr": "2026", "buzei": "002", "mwskz": "V1", "hwbas": 189831.0, "fwbas": 189831.0, "hwste": 13762.75, "fwste": 13762.75, "ktosl": "VST", "hkont": "0016100000", "kschl": "VST", "shkzg": "S"},
+  {"bukrs": "4110", "belnr": "5100000001", "gjahr": "2026", "buzei": "002", "mwskz": "V1", "hwbas": 536275.5, "fwbas": 536275.5, "hwste": 96529.59, "fwste": 96529.59, "ktosl": "VST", "hkont": "0016100000", "kschl": "VST", "shkzg": "S"},
+  {"bukrs": "4110", "belnr": "5100000002", "gjahr": "2026", "buzei": "002", "mwskz": "V1", "hwbas": 3513720.0, "fwbas": 3513720.0, "hwste": 632469.6, "fwste": 632469.6, "ktosl": "VST", "hkont": "0016100000", "kschl": "VST", "shkzg": "S"}
+]

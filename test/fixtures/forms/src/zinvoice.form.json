@@ -1,0 +1,16 @@
+{
+  "title": "Invoice {invoiceid:alpha}",
+  "dataProvider": "ZFDP_INVOICE",
+  "header": [ { "text": "Invoice {invoiceid:alpha}", "size": 16, "bold": true } ],
+  "footer": [ { "text": "Page {page} of {pages}", "size": 8, "align": "center" } ],
+  "content": [
+    { "fields": [["Customer", "{customer}"], ["Date", "{invoicedate}", "date"]] },
+    { "table": "_item", "columns": [
+        { "title": "Item", "field": "description", "width": 60 },
+        { "title": "Qty", "field": "quantity", "width": 15, "align": "right" },
+        { "title": "Amount", "field": "amount", "width": 25, "align": "right", "format": "currency:{currency}" } ],
+      "total": { "amount": "sum" } },
+    { "barcode": "qr", "value": "INVOICE {invoiceid}", "size": 60 }
+  ],
+  "sample": { "invoiceid": "0000000001", "customer": "Sample", "invoicedate": "20260101", "currency": "EUR", "_item": [ { "description": "A", "quantity": 1, "amount": 10 } ] }
+}

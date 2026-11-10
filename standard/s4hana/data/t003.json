@@ -1,0 +1,15 @@
+[
+  {"blart": "SA", "numkr": "01", "koars": "S", "ltext": "G/L account document"},
+  {"blart": "RV", "numkr": "01", "koars": "D", "ltext": "Billing document transfer"},
+  {"blart": "DZ", "numkr": "01", "koars": "D", "ltext": "Customer payment"},
+  {"blart": "DR", "numkr": "01", "koars": "D", "ltext": "Customer invoice"},
+  {"blart": "KZ", "numkr": "01", "koars": "K", "ltext": "Vendor payment"},
+  {"blart": "KR", "numkr": "01", "koars": "K", "ltext": "Vendor invoice"},
+  {"blart": "RE", "numkr": "01", "koars": "K", "ltext": "Invoice - gross"},
+  {"blart": "WE", "numkr": "01", "koars": "S", "ltext": "Goods receipt"},
+  {"blart": "WA", "numkr": "01", "koars": "S", "ltext": "Goods issue"},
+  {"blart": "WL", "numkr": "01", "koars": "S", "ltext": "Goods issue/delivery"},
+  {"blart": "AA", "numkr": "01", "koars": "A", "ltext": "Asset posting"},
+  {"blart": "AF", "numkr": "01", "koars": "A", "ltext": "Depreciation postings"},
+  {"blart": "AB", "numkr": "01", "koars": "S", "ltext": "Accounting document"}
+]

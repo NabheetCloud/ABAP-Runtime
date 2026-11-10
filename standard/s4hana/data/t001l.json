@@ -1,0 +1,11 @@
+[
+  {"werks": "1010", "lgort": "101A", "lgobe": "Std. storage 1", "vkorg": "1010", "vtweg": "10"},
+  {"werks": "1010", "lgort": "101B", "lgobe": "Std. storage 2", "vkorg": "1010", "vtweg": "10"},
+  {"werks": "1010", "lgort": "101Q", "lgobe": "Quality inspection", "vkorg": "", "vtweg": ""},
+  {"werks": "1710", "lgort": "171A", "lgobe": "Std. storage 1", "vkorg": "1710", "vtweg": "10"},
+  {"werks": "1710", "lgort": "171B", "lgobe": "Std. storage 2", "vkorg": "1710", "vtweg": "10"},
+  {"werks": "1710", "lgort": "171Q", "lgobe": "Quality inspection", "vkorg": "", "vtweg": ""},
+  {"werks": "4110", "lgort": "411A", "lgobe": "Std. storage 1", "vkorg": "4110", "vtweg": "10"},
+  {"werks": "4110", "lgort": "411B", "lgobe": "Std. storage 2", "vkorg": "4110", "vtweg": "10"},
+  {"werks": "4110", "lgort": "411Q", "lgobe": "Quality inspection", "vkorg": "", "vtweg": ""}
+]

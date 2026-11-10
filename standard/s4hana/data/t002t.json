@@ -1,0 +1,10 @@
+[
+  {"spras": "E", "sprsl": "E", "sptxt": "English"},
+  {"spras": "E", "sprsl": "D", "sptxt": "German"},
+  {"spras": "E", "sprsl": "F", "sptxt": "French"},
+  {"spras": "E", "sprsl": "S", "sptxt": "Spanish"},
+  {"spras": "E", "sprsl": "I", "sptxt": "Italian"},
+  {"spras": "E", "sprsl": "J", "sptxt": "Japanese"},
+  {"spras": "E", "sprsl": "1", "sptxt": "Chinese"},
+  {"spras": "E", "sprsl": "H", "sptxt": "Hindi"}
+]

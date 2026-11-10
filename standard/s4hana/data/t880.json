@@ -1,0 +1,5 @@
+[
+  {"rcomp": "1010", "name1": "Company 1010", "cntry": "DE", "curr": "EUR"},
+  {"rcomp": "1710", "name1": "Company 1710", "cntry": "US", "curr": "USD"},
+  {"rcomp": "4110", "name1": "Company 4110", "cntry": "IN", "curr": "INR"}
+]

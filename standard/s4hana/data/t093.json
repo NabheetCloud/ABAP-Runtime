@@ -1,0 +1,8 @@
+[
+  {"afapl": "YDE", "afaber": "01", "bukrs": "", "afbez": "Book depreciation"},
+  {"afapl": "YDE", "afaber": "15", "bukrs": "", "afbez": "Tax depreciation"},
+  {"afapl": "YUS", "afaber": "01", "bukrs": "", "afbez": "Book depreciation"},
+  {"afapl": "YUS", "afaber": "15", "bukrs": "", "afbez": "Tax depreciation"},
+  {"afapl": "YIN", "afaber": "01", "bukrs": "", "afbez": "Book depreciation"},
+  {"afapl": "YIN", "afaber": "15", "bukrs": "", "afbez": "Tax depreciation"}
+]

@@ -1,0 +1,5 @@
+[
+  {"lognumber": "00000000000000000001", "object": "BKPF", "subobject": "POSTING", "extnumber": "Journal entries post", "aldate": "20261001", "aluser": "CB9980000020", "altcode": "SM37", "altime": "020000", "msg_cnt_al": 12},
+  {"lognumber": "00000000000000000002", "object": "MATDOC", "subobject": "GOODSMVT", "extnumber": "Goods movements post", "aldate": "20261001", "aluser": "CB9980000020", "altcode": "SM37", "altime": "020000", "msg_cnt_al": 13},
+  {"lognumber": "00000000000000000003", "object": "ZHR", "subobject": "RAISE", "extnumber": "Yearly raise run", "aldate": "20261001", "aluser": "CB9980000020", "altcode": "SM37", "altime": "020000", "msg_cnt_al": 14}
+]

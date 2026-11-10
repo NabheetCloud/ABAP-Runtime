@@ -1,0 +1,8 @@
+[
+  {"spras": "E", "mtart": "FERT", "mtbez": "Finished Product"},
+  {"spras": "E", "mtart": "HAWA", "mtbez": "Trading Goods"},
+  {"spras": "E", "mtart": "ROH", "mtbez": "Raw Material"},
+  {"spras": "E", "mtart": "HALB", "mtbez": "Semifinished Product"},
+  {"spras": "E", "mtart": "DIEN", "mtbez": "Service"},
+  {"spras": "E", "mtart": "VERP", "mtbez": "Packaging"}
+]

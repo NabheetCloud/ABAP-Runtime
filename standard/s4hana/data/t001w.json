@@ -1,0 +1,5 @@
+[
+  {"werks": "1010", "name1": "Plant 1010 Hamburg", "bwkey": "1010", "kunnr": "", "lifnr": "", "fabkl": "DE", "stras": "Hafenstraße 12", "pstlz": "20457", "ort01": "Hamburg", "land1": "DE", "regio": "HH", "ekorg": "1010", "vkorg": "1010", "vtweg": "10", "spart": "00", "spras": "D", "adrnr": "", "vlfkz": "A"},
+  {"werks": "1710", "name1": "Plant 1710 Palo Alto", "bwkey": "1710", "kunnr": "", "lifnr": "", "fabkl": "US", "stras": "3410 Hillview Ave", "pstlz": "94304", "ort01": "Palo Alto", "land1": "US", "regio": "CA", "ekorg": "1710", "vkorg": "1710", "vtweg": "10", "spart": "00", "spras": "E", "adrnr": "", "vlfkz": "A"},
+  {"werks": "4110", "name1": "Plant 4110 Pune", "bwkey": "4110", "kunnr": "", "lifnr": "", "fabkl": "IN", "stras": "Plot 14, Hinjewadi Phase 2", "pstlz": "411057", "ort01": "Pune", "land1": "IN", "regio": "13", "ekorg": "4110", "vkorg": "4110", "vtweg": "10", "spart": "00", "spras": "E", "adrnr": "", "vlfkz": "A"}
+]

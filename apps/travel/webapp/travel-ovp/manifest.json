@@ -1,0 +1,114 @@
+{
+  "_version": "1.59.0",
+  "sap.app": {
+    "id": "z.travelovp",
+    "type": "application",
+    "title": "Travels",
+    "description": "Overview Page",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "../../odata/zui_travel/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    },
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:ovp",
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ovp": {},
+        "sap.ui.layout": {},
+        "sap.f": {},
+        "sap.viz": {},
+        "sap.suite.ui.microchart": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      },
+      "mainService": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true,
+          "groupId": "$auto"
+        }
+      }
+    }
+  },
+  "sap.ovp": {
+    "globalFilterModel": "mainService",
+    "globalFilterEntitySet": "Travel",
+    "containerLayout": "resizable",
+    "enableLiveFilter": true,
+    "considerAnalyticalParameters": false,
+    "cards": {
+      "Travel_list": {
+        "model": "mainService",
+        "template": "sap.ovp.cards.v4.list",
+        "settings": {
+          "title": "Travels",
+          "subTitle": "Latest",
+          "entitySet": "Travel",
+          "listType": "extended",
+          "listFlavor": "standard",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem",
+          "addODataSelect": true
+        }
+      },
+      "Travel_table": {
+        "model": "mainService",
+        "template": "sap.ovp.cards.v4.table",
+        "settings": {
+          "title": "Travels (table)",
+          "entitySet": "Travel",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem",
+          "addODataSelect": true
+        }
+      },
+      "TravelAnalytics_ByCustomer": {
+        "model": "mainService",
+        "template": "sap.ovp.cards.v4.charts.analytical",
+        "settings": {
+          "title": "Total price by customer",
+          "entitySet": "TravelAnalytics",
+          "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#ByCustomer",
+          "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant"
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "analytical"
+  }
+}

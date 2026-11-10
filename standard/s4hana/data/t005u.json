@@ -1,0 +1,21 @@
+[
+  {"spras": "E", "land1": "DE", "bland": "BW", "bezei": "Baden-Württemberg"},
+  {"spras": "E", "land1": "DE", "bland": "BY", "bezei": "Bavaria"},
+  {"spras": "E", "land1": "DE", "bland": "BE", "bezei": "Berlin"},
+  {"spras": "E", "land1": "DE", "bland": "HH", "bezei": "Hamburg"},
+  {"spras": "E", "land1": "DE", "bland": "NW", "bezei": "North Rhine-Westphal"},
+  {"spras": "E", "land1": "US", "bland": "CA", "bezei": "California"},
+  {"spras": "E", "land1": "US", "bland": "NY", "bezei": "New York"},
+  {"spras": "E", "land1": "US", "bland": "TX", "bezei": "Texas"},
+  {"spras": "E", "land1": "US", "bland": "IL", "bezei": "Illinois"},
+  {"spras": "E", "land1": "US", "bland": "PA", "bezei": "Pennsylvania"},
+  {"spras": "E", "land1": "IN", "bland": "13", "bezei": "Maharashtra"},
+  {"spras": "E", "land1": "IN", "bland": "10", "bezei": "Karnataka"},
+  {"spras": "E", "land1": "IN", "bland": "07", "bezei": "Delhi"},
+  {"spras": "E", "land1": "IN", "bland": "22", "bezei": "Tamil Nadu"},
+  {"spras": "E", "land1": "IN", "bland": "06", "bezei": "Haryana"},
+  {"spras": "E", "land1": "IN", "bland": "11", "bezei": "Kerala"},
+  {"spras": "E", "land1": "GB", "bland": "LDN", "bezei": "London"},
+  {"spras": "E", "land1": "CA", "bland": "ON", "bezei": "Ontario"},
+  {"spras": "E", "land1": "AU", "bland": "NSW", "bezei": "New South Wales"}
+]

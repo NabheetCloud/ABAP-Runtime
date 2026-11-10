@@ -1,0 +1,75 @@
+{
+  "name": "rap-studio",
+  "version": "1.0.0",
+  "description": "Build, run and debug SAP ABAP RAP and classic ABAP applications on your laptop: CDS, behavior definitions, ABAP classes, reports, module pools, function modules, Adobe forms, served as OData V4/V2 for SAP Fiori elements and SAPUI5. No SAP server required.",
+  "keywords": [
+    "abap",
+    "sap",
+    "rap",
+    "cds",
+    "odata",
+    "fiori",
+    "sapui5",
+    "abap-cloud",
+    "classic-abap",
+    "adobe-forms",
+    "local-development",
+    "runtime"
+  ],
+  "author": "Nabheet Madan",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/NabheetCloud/ABAP-Runtime#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NabheetCloud/ABAP-Runtime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NabheetCloud/ABAP-Runtime/issues"
+  },
+  "type": "module",
+  "bin": {
+    "rap": "bin/rap.js",
+    "rap-studio": "bin/rap.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "standard/",
+    "knowledge/",
+    "examples/",
+    "scripts/",
+    "README.md",
+    "!**/.rap/**",
+    "!**/*.db",
+    "!**/*.db-shm",
+    "!**/*.db-wal",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "start": "node bin/rap.js serve examples/travel",
+    "test": "node --test \"test/*.test.mjs\"",
+    "test:pg": "RAP_DB=pglite:memory node --test \"test/*.test.mjs\"",
+    "studio": "node bin/rap.js studio apps",
+    "setup:open-abap": "node scripts/setup-open-abap.mjs",
+    "setup:abap-cleaner": "node scripts/setup-abap-cleaner.mjs",
+    "conformance:exercism": "node scripts/conformance-exercism.mjs",
+    "conformance:cheatsheets": "node scripts/conformance-cheatsheets.mjs",
+    "setup": "node bin/rap.js setup"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "@abaplint/core": "^2.120.92",
+    "@abaplint/runtime": "2.14.16",
+    "@abaplint/transpiler-cli": "2.14.16",
+    "@electric-sql/pglite": "^0.5.14",
+    "@expo-google-fonts/arimo": "0.4.3",
+    "bwip-js": "4.11.4",
+    "express": "^4.22.3",
+    "pg": "^8.23.1",
+    "qrcode-generator": "^2.0.4"
+  }
+}

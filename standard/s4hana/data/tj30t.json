@@ -1,0 +1,5 @@
+[
+  {"stsma": "ZSTATUS", "estat": "E0001", "spras": "E", "txt04": "INIT", "txt30": "Initial"},
+  {"stsma": "ZSTATUS", "estat": "E0002", "spras": "E", "txt04": "APPR", "txt30": "Approved"},
+  {"stsma": "ZSTATUS", "estat": "E0003", "spras": "E", "txt04": "REJ", "txt30": "Rejected"}
+]

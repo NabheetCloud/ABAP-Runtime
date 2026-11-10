@@ -1,0 +1,6 @@
+[
+  {"wi_id": "000000000001", "wi_type": "W", "wi_stat": "COMPLETED", "wi_cd": "20260203", "wi_ct": "090000", "wi_aagent": "", "top_wi_id": "", "wi_creator": "PRIYA.SHARMA", "wi_prio": 5, "wi_rh_task": "WS00000038", "wi_text": "Release purchase requisition 0010000001"},
+  {"wi_id": "000000000002", "wi_type": "W", "wi_stat": "COMPLETED", "wi_cd": "20260404", "wi_ct": "090000", "wi_aagent": "", "top_wi_id": "", "wi_creator": "MARCO.ROSSI", "wi_prio": 5, "wi_rh_task": "WS00000038", "wi_text": "Release purchase requisition 0010000002"},
+  {"wi_id": "000000000003", "wi_type": "W", "wi_stat": "READY", "wi_cd": "20260605", "wi_ct": "090000", "wi_aagent": "", "top_wi_id": "", "wi_creator": "PRIYA.SHARMA", "wi_prio": 5, "wi_rh_task": "WS00000038", "wi_text": "Release purchase requisition 0010000003"},
+  {"wi_id": "000000000004", "wi_type": "W", "wi_stat": "READY", "wi_cd": "20260806", "wi_ct": "090000", "wi_aagent": "", "top_wi_id": "", "wi_creator": "CB9980000010", "wi_prio": 5, "wi_rh_task": "WS00000038", "wi_text": "Release purchase requisition 0010000004"}
+]

@@ -1,0 +1,14 @@
+[
+  {"matnr": "RM12", "werks": "1010", "charg": "1010120001", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "1010", "charg": "1010120002", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1010", "charg": "1010130001", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1010", "charg": "1010130002", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "1710", "charg": "1710120001", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "1710", "charg": "1710120002", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1710", "charg": "1710130001", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1710", "charg": "1710130002", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "4110", "charg": "4110120001", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "4110", "charg": "4110120002", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "4110", "charg": "4110130001", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "4110", "charg": "4110130002", "vfdat": "20271231", "hsdat": "", "ernam": "CB9980000010", "ersda": "20260115"}
+]

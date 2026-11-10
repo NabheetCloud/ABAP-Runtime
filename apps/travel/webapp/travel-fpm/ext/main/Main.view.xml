@@ -1,0 +1,10 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+  xmlns:macros="sap.fe.macros" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="z.travelfpm.ext.main.Main">
+  <Page id="Main" title="Travels">
+    <content>
+      <macros:FilterBar metaPath="@com.sap.vocabularies.UI.v1.SelectionFields" id="FilterBar" liveMode="true"/>
+      <macros:Table metaPath="@com.sap.vocabularies.UI.v1.LineItem" id="Table" filterBar="FilterBar"
+        readOnly="true" type="ResponsiveTable" variantManagement="None"/>
+    </content>
+  </Page>
+</mvc:View>

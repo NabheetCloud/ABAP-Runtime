@@ -1,0 +1,6 @@
+[
+  {"qmnum": "000010000001", "fenum": "0001", "fekat": "C", "fegrp": "PM-DAMG", "fecod": "0001", "otgrp": "PM-PART", "oteil": "0002", "erzdatum": "20260803", "fetxt": "Hydraulic oil leak at press", "otkat": "B"},
+  {"qmnum": "000010000002", "fenum": "0001", "fekat": "C", "fegrp": "PM-DAMG", "fecod": "0001", "otgrp": "PM-PART", "oteil": "0002", "erzdatum": "20260804", "fetxt": "Belt tension too low", "otkat": "B"},
+  {"qmnum": "000010000003", "fenum": "0001", "fekat": "C", "fegrp": "PM-DAMG", "fecod": "0001", "otgrp": "PM-PART", "oteil": "0002", "erzdatum": "20260805", "fetxt": "Compressor noise", "otkat": "B"},
+  {"qmnum": "000010000004", "fenum": "0001", "fekat": "C", "fegrp": "PM-DAMG", "fecod": "0001", "otgrp": "PM-PART", "oteil": "0002", "erzdatum": "20260806", "fetxt": "Damaged goods at goods receipt", "otkat": "B"}
+]

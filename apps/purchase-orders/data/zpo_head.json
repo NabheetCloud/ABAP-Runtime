@@ -1,0 +1,5 @@
+[
+ { "ebeln": "4500000001", "bukrs": "1000", "lifnr": "V100", "bedat": "20261103", "netwr": 2100.00, "waers": "EUR", "status": "R", "ernam": "DEVELOPER" },
+ { "ebeln": "4500000002", "bukrs": "1000", "lifnr": "V200", "bedat": "20261106", "netwr": 640.00, "waers": "EUR", "status": "N", "ernam": "DEVELOPER" },
+ { "ebeln": "4500000003", "bukrs": "2000", "lifnr": "V300", "bedat": "20261109", "netwr": 1575.50, "waers": "USD", "status": "O", "ernam": "DEVELOPER" }
+]

@@ -1,0 +1,5 @@
+[
+  {"prueflos": "010000000001", "kzart": "L", "zaehler": "00000001", "vcode": "A", "vcodegrp": "01", "vbewertung": "A", "vdatum": "20260221", "vname": "JOHN.MILLER", "vauswahlmg": "01", "vezeiterf": "160000"},
+  {"prueflos": "010000000002", "kzart": "L", "zaehler": "00000001", "vcode": "A", "vcodegrp": "01", "vbewertung": "A", "vdatum": "20260422", "vname": "JOHN.MILLER", "vauswahlmg": "01", "vezeiterf": "160000"},
+  {"prueflos": "010000000003", "kzart": "L", "zaehler": "00000001", "vcode": "R", "vcodegrp": "01", "vbewertung": "R", "vdatum": "20260623", "vname": "JOHN.MILLER", "vauswahlmg": "01", "vezeiterf": "160000"}
+]

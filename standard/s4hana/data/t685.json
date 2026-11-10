@@ -1,0 +1,8 @@
+[
+  {"kvewe": "A", "kappl": "M", "kschl": "PR00", "krech": "", "koaid": "", "vtext": "Price"},
+  {"kvewe": "A", "kappl": "V", "kschl": "K004", "krech": "", "koaid": "", "vtext": "Material discount"},
+  {"kvewe": "A", "kappl": "V", "kschl": "K007", "krech": "", "koaid": "", "vtext": "Customer discount"},
+  {"kvewe": "A", "kappl": "V", "kschl": "MWST", "krech": "", "koaid": "", "vtext": "Output tax"},
+  {"kvewe": "A", "kappl": "M", "kschl": "PB00", "krech": "", "koaid": "", "vtext": "Gross price"},
+  {"kvewe": "A", "kappl": "M", "kschl": "NAVS", "krech": "", "koaid": "", "vtext": "Non-deductible input tax"}
+]

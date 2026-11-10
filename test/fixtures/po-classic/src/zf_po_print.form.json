@@ -1,0 +1,5 @@
+{
+ "title": "Purchase order",
+ "layout": "zf_po_print.xdp",
+ "dataProvider": "ZUI_PO_FORM"
+}

@@ -1,0 +1,7 @@
+[
+  { "billing_doc": "0090000001", "item_no": "000010", "category": "Hardware", "material": "NB-1400", "description": "Notebook 14\" business, 32 GB, 1 TB SSD", "quantity": 3, "unit": "PC", "unit_price": 1249.00 },
+  { "billing_doc": "0090000001", "item_no": "000020", "category": "Hardware", "material": "DK-200", "description": "Docking station USB-C", "quantity": 3, "unit": "PC", "unit_price": 189.90 },
+  { "billing_doc": "0090000001", "item_no": "000030", "category": "Services", "material": "SV-SETUP", "description": "Setup and data migration per device, including transport of the old devices and certified data erasure", "quantity": 3, "unit": "H", "unit_price": 95.00 },
+  { "billing_doc": "0090000001", "item_no": "000040", "category": "Services", "material": "SV-TRAIN", "description": "On-site training", "quantity": 1, "unit": "DAY", "unit_price": 780.00 },
+  { "billing_doc": "0090000002", "item_no": "000010", "category": "Licences", "material": "LIC-ANALYT", "description": "Analytics licence, 12 months", "quantity": 25, "unit": "EA", "unit_price": 42.00 }
+]

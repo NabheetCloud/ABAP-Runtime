@@ -1,0 +1,21 @@
+[
+  {"addrnumber": "0010100001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 5077139", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0010100002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 3028068", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0010100003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 8084136", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0017100001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 4976788", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0017100002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 4723446", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0017100003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 7026062", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0041100001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 6477595", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0041100002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 9853514", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0041100003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 4527065", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0010100004", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 6086261", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0010300001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 2235499", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0010300002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 5170517", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0017300001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 9462707", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0017300002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 5399848", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0041300001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 1709096", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0041300002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 9455196", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0041300003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 6398889", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0000900001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 5594247", "r3_user": "", "flgdefault": "X"},
+  {"addrnumber": "0000900002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "tel_number": "+49 30 6638029", "r3_user": "", "flgdefault": "X"}
+]

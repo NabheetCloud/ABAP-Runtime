@@ -1,0 +1,11 @@
+[
+  {"bukrs": "1010", "anln1": "000010000001", "anlhtxt": "CNC machine", "lanep": 1},
+  {"bukrs": "1010", "anln1": "000010000002", "anlhtxt": "Delivery van", "lanep": 1},
+  {"bukrs": "1010", "anln1": "000010000003", "anlhtxt": "Server rack", "lanep": 1},
+  {"bukrs": "1710", "anln1": "000010000001", "anlhtxt": "CNC machine", "lanep": 1},
+  {"bukrs": "1710", "anln1": "000010000002", "anlhtxt": "Delivery van", "lanep": 1},
+  {"bukrs": "1710", "anln1": "000010000003", "anlhtxt": "Server rack", "lanep": 1},
+  {"bukrs": "4110", "anln1": "000010000001", "anlhtxt": "CNC machine", "lanep": 1},
+  {"bukrs": "4110", "anln1": "000010000002", "anlhtxt": "Delivery van", "lanep": 1},
+  {"bukrs": "4110", "anln1": "000010000003", "anlhtxt": "Server rack", "lanep": 1}
+]

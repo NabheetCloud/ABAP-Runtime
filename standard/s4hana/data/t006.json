@@ -1,0 +1,21 @@
+[
+  {"msehi": "EA", "dimid": "AAAADL", "isocode": "EA", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "PC", "dimid": "AAAADL", "isocode": "H87", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "KG", "dimid": "MASS", "isocode": "KGM", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "G", "dimid": "MASS", "isocode": "GRM", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "TO", "dimid": "MASS", "isocode": "TNE", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "L", "dimid": "VOLUME", "isocode": "LTR", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "ML", "dimid": "VOLUME", "isocode": "MLT", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "M3", "dimid": "VOLUME", "isocode": "MTQ", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "M", "dimid": "LENGTH", "isocode": "MTR", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "CM", "dimid": "LENGTH", "isocode": "CMT", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "MM", "dimid": "LENGTH", "isocode": "MMT", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "M2", "dimid": "SURFAC", "isocode": "MTK", "andec": 3, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "H", "dimid": "TIME", "isocode": "HUR", "andec": 2, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "MIN", "dimid": "TIME", "isocode": "MIN", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "DAY", "dimid": "TIME", "isocode": "DAY", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "BOX", "dimid": "AAAADL", "isocode": "BX", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "CS", "dimid": "AAAADL", "isocode": "CS", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "PAL", "dimid": "AAAADL", "isocode": "PF", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""},
+  {"msehi": "PAA", "dimid": "AAAADL", "isocode": "PR", "andec": 0, "primary": "X", "zaehl": "", "nennr": ""}
+]

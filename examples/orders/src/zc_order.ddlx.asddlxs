@@ -1,0 +1,32 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { typeName: 'Sales Order', typeNamePlural: 'Sales Orders',
+                  title: { value: 'OrderID' }, description: { value: 'Customer' } }
+@UI.presentationVariant: [{ sortOrder: [{ by: 'OrderID', direction: #DESC }] }]
+annotate entity ZC_Order with
+{
+  @UI.facet: [ { id: 'Order', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'Order', position: 10 },
+               { id: 'Items', purpose: #STANDARD, type: #LINEITEM_REFERENCE, label: 'Items', position: 20, targetElement: '_Item' } ]
+  @UI: { lineItem: [ { position: 10 } ], identification: [ { position: 10 } ], selectionField: [ { position: 10 } ] }
+  @EndUserText.label: 'Order'
+  OrderID;
+  @UI: { lineItem: [ { position: 20 } ], identification: [ { position: 20 } ], selectionField: [ { position: 20 } ] }
+  Customer;
+  @UI: { lineItem: [ { position: 30 } ], identification: [ { position: 30 } ] }
+  OrderDate;
+  @UI: { lineItem: [ { position: 40 } ], identification: [ { position: 40 } ] }
+  Total;
+  @UI.identification: [ { position: 50 } ]
+  Currency;
+  @UI: { lineItem: [ { position: 60, criticality: 'StatusCriticality' },
+                     { type: #FOR_ACTION, dataAction: 'release', label: 'Release' } ],
+         identification: [ { position: 60, criticality: 'StatusCriticality' },
+                           { type: #FOR_ACTION, dataAction: 'release', label: 'Release' } ] }
+  @EndUserText.label: 'Status'
+  Status;
+  @UI.hidden: true
+  StatusCriticality;
+  @UI.hidden: true
+  StatusText;
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

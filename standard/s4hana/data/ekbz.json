@@ -1,0 +1,5 @@
+[
+  {"ebeln": "4500000002", "ebelp": "00010", "stunr": "020", "zaehk": "001", "vgabe": "1", "gjahr": "2026", "belnr": "4900000010", "buzei": "001", "bewtp": "F", "dmbtr": 238.08, "menge": 200, "waers": "EUR"},
+  {"ebeln": "4500000005", "ebelp": "00010", "stunr": "020", "zaehk": "001", "vgabe": "1", "gjahr": "2026", "belnr": "4900000013", "buzei": "001", "bewtp": "F", "dmbtr": 5694.93, "menge": 150, "waers": "USD"},
+  {"ebeln": "4500000008", "ebelp": "00010", "stunr": "020", "zaehk": "001", "vgabe": "1", "gjahr": "2026", "belnr": "4900000016", "buzei": "001", "bewtp": "F", "dmbtr": 105411.6, "menge": 100, "waers": "INR"}
+]

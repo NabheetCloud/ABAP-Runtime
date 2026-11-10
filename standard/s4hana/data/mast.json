@@ -1,0 +1,6 @@
+[
+  {"matnr": "FG126", "werks": "1010", "stlan": "1", "stlnr": "00000001", "stlal": "01", "losvn": "", "losbs": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"matnr": "FG126", "werks": "1710", "stlan": "1", "stlnr": "00000001", "stlal": "01", "losvn": "", "losbs": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"matnr": "SG23", "werks": "1010", "stlan": "1", "stlnr": "00000002", "stlal": "01", "losvn": "", "losbs": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"matnr": "SG23", "werks": "1710", "stlan": "1", "stlnr": "00000002", "stlal": "01", "losvn": "", "losbs": "", "andat": "20250601", "annam": "CB9980000010"}
+]

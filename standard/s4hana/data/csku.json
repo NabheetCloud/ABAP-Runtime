@@ -1,0 +1,10 @@
+[
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0041000000", "ktext": "Revenue domestic", "ltext": "Revenue domestic - product"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0041000100", "ktext": "Revenue foreign", "ltext": "Revenue foreign - product"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0050000100", "ktext": "COGS", "ltext": "Cost of goods sold"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0061000000", "ktext": "Office supplies", "ltext": "Office supplies expense"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0061003000", "ktext": "IT services", "ltext": "IT services expense"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0063000000", "ktext": "Salaries", "ltext": "Salaries and wages"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0065000000", "ktext": "Rent", "ltext": "Rent and leases"},
+  {"spras": "E", "ktopl": "YCOA", "kstar": "0065300000", "ktext": "Travel", "ltext": "Travel expenses"}
+]

@@ -1,0 +1,5 @@
+[
+  {"zaehler": "00001010", "mkmnr": "DIM-01", "version": "000001", "kurztext": "Length", "steuerkz": "", "gueltigab": "20250101", "loekz": ""},
+  {"zaehler": "00001010", "mkmnr": "VIS-01", "version": "000001", "kurztext": "Visual inspection", "steuerkz": "", "gueltigab": "20250101", "loekz": ""},
+  {"zaehler": "00001010", "mkmnr": "WGT-01", "version": "000001", "kurztext": "Weight", "steuerkz": "", "gueltigab": "20250101", "loekz": ""}
+]

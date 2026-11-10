@@ -1,0 +1,5 @@
+{
+ "title": "Adobe Print Form",
+ "prompt": "A purchase order print form: vendor address window, items grouped by material group, subtotals, totals with tax, rendered from a form data provider.",
+ "flavor": "rap"
+}

@@ -1,0 +1,5 @@
+[
+  {"objty": "A", "objid": "10000001", "canum": "1", "kapid": "10000001", "fork1": "SAP006", "fork2": "SAP008"},
+  {"objty": "A", "objid": "10000002", "canum": "1", "kapid": "10000002", "fork1": "SAP006", "fork2": "SAP008"},
+  {"objty": "A", "objid": "10000003", "canum": "1", "kapid": "10000003", "fork1": "SAP006", "fork2": "SAP008"}
+]

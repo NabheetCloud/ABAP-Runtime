@@ -1,0 +1,12 @@
+[
+  {"partner": "0010100001", "taxtype": "DE0", "taxnum": "DE100001123"},
+  {"partner": "0010100002", "taxtype": "DE0", "taxnum": "DE100002123"},
+  {"partner": "0010100003", "taxtype": "DE0", "taxnum": "DE100003123"},
+  {"partner": "0017100001", "taxtype": "US0", "taxnum": "US17100001"},
+  {"partner": "0017100002", "taxtype": "US0", "taxnum": "US17100002"},
+  {"partner": "0017100003", "taxtype": "US0", "taxnum": "US17100003"},
+  {"partner": "0041100001", "taxtype": "IN0", "taxnum": "IN41100001"},
+  {"partner": "0041100002", "taxtype": "IN0", "taxnum": "IN41100002"},
+  {"partner": "0041100003", "taxtype": "IN0", "taxnum": "IN41100003"},
+  {"partner": "0010100004", "taxtype": "NL0", "taxnum": "NL100004123"}
+]

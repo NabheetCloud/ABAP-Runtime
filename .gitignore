@@ -1,0 +1,35 @@
+node_modules/
+# local runtime state: databases, chat history, build output of each app
+.rap/
+*.db
+*.db-shm
+*.db-wal
+# users and passwords of a local system
+.rap-users.json
+# videos and other local media
+media/
+# editor / OS / local tool settings
+.DS_Store
+.claude/
+.vscode/
+# agent instructions generated per machine (absolute paths); recreated by the studio
+apps/*/CLAUDE.md
+vendor/
+# a learner's work and progress on the ABAP exercises (Practice ABAP)
+.exercises/
+# moved to github.com/NabheetCloud/GenUI5 (local copies only)
+/packages/
+/prototypes/
+# tech specs, QA and ATC reports: kept locally, not published
+/deliverables/
+.rap-user-settings.json
+# apps: only the demo apps ship; apps you build stay local
+/apps/*
+!/apps/.rap-system.json
+!/apps/travel/
+!/apps/classic-showcase/
+!/apps/adobe-print-form/
+!/apps/library-books-loans/
+!/apps/sales-order-crud/
+!/apps/purchase-orders/
+.rap-secret

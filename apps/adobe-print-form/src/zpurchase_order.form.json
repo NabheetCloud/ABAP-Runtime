@@ -1,0 +1,101 @@
+{
+  "title": "Purchase order {ponumber:alpha}",
+  "dataProvider": "ZFDP_PURCHASEORDER",
+  "locale": "de_DE",
+  "page": { "size": "A4", "orientation": "portrait", "margin": { "top": "15mm", "right": "18mm", "bottom": "18mm", "left": "20mm" } },
+  "variables": {
+    "net": "Sum(_item.netvalue)",
+    "tax": "Round(net * 0.19, 2)",
+    "gross": "net + tax"
+  },
+  "styles": {
+    "h1": { "size": 18, "bold": true, "color": "#0a3d7a" },
+    "h2": { "size": 11, "bold": true, "color": "#0a3d7a" },
+    "small": { "size": 7.5, "color": "#64748b" }
+  },
+  "texts": {
+    "terms": {
+      "en": "Please confirm this order within 3 working days and quote the purchase order number **{ponumber:alpha}** on the delivery note and the invoice. Our general terms and conditions of purchase apply. Payment within 30 days net.",
+      "de": "Bitte bestätigen Sie diese Bestellung innerhalb von 3 Werktagen und geben Sie die Bestellnummer **{ponumber:alpha}** auf Lieferschein und Rechnung an. Es gelten unsere Allgemeinen Einkaufsbedingungen. Zahlung innerhalb von 30 Tagen netto."
+    }
+  },
+  "watermark": { "text": "DRAFT", "if": "status = 'D'" },
+  "firstHeader": [
+    { "columns": [
+      { "width": 3, "items": [
+        { "text": "{companycodename}", "style": "h1" },
+        { "text": "Purchasing · {companycity} · VAT ID {companyvatregistration}", "style": "small" }
+      ] },
+      { "width": 1, "items": [
+        { "barcode": "qr", "value": "{ponumber}", "size": 62, "align": "right" },
+        { "text": "PO {ponumber:alpha}", "style": "small", "align": "right" }
+      ] }
+    ] }
+  ],
+  "header": [ { "text": "{companycodename} · Purchase order {ponumber:alpha} of {orderdate:date}", "style": "small" } ],
+  "footer": [ { "text": "{companycodename} · {companycity} · VAT ID {companyvatregistration} · Page {page} of {pages}", "style": "small", "align": "center" } ],
+  "content": [
+    { "box": [
+        { "text": "{companycodename} · Purchasing · {companycity}", "size": 6.5, "color": "#64748b" },
+        { "text": "**{suppliername}**\n{supplierstreet}\n{supplierpostalcode} {suppliercity}\n{suppliercountry}", "size": 10 }
+      ], "x": "20mm", "y": "45mm", "width": "85mm", "height": "40mm" },
+    { "box": [
+        { "fields": [
+          ["PO number", "{ponumber:alpha}"],
+          ["Order date", "{orderdate:date}"],
+          ["Delivery date", "{deliverydate:date}"],
+          ["Supplier no.", "{supplier:alpha}"],
+          ["Buyer", "{buyername}"],
+          ["Purch. group", "{purchasinggroup} {purchasinggroupname}"],
+          ["Phone", "{buyerphone}"],
+          ["E-mail", "{buyeremail}"]
+        ], "size": 8.5 }
+      ], "x": "120mm", "y": "45mm", "width": "72mm" },
+    { "space": "60mm" },
+    { "text": "Purchase order {ponumber:alpha}", "style": "h1" },
+    { "text": "Please deliver to: **{plantname}**, {plantstreet}, {plantpostalcode} {plantcity}, {plantcountry} by {deliverydate:date}.", "size": 9 },
+    { "space": 6 },
+    { "table": "_item", "groupBy": "materialgroup", "groupHeader": "Material group {materialgroup} – {materialgrouptext}",
+      "subtotal": true, "subtotalLabel": "Subtotal {materialgrouptext}", "stripes": true, "headerColor": "#0a3d7a", "size": 8.5,
+      "columns": [
+        { "title": "Item", "field": "itemno", "width": 7, "format": "alpha" },
+        { "title": "Material", "field": "product", "width": 10 },
+        { "title": "Description", "field": "description", "width": 33 },
+        { "title": "Quantity", "value": "{quantity:number} {unit}", "width": 14, "align": "right" },
+        { "title": "Unit price", "field": "unitprice", "width": 15, "align": "right", "format": "amount" },
+        { "title": "Net value", "field": "netvalue", "calc": "Round(quantity * unitprice, 2)", "width": 16, "align": "right", "format": "amount" }
+      ],
+      "total": { "netvalue": "sum" }, "totalLabel": "Total net value" },
+    { "space": 6 },
+    { "keepTogether": true, "columns": [
+      { "width": 3, "items": [
+        { "text": "Delivery date {deliverydate:date}, free domicile to plant {plant}.", "size": 9 }
+      ] },
+      { "width": 4, "items": [
+        { "fields": [
+          ["Net value", "{=net:currency:{currency}}"],
+          ["VAT 19 %", "{=tax:currency:{currency}}"]
+        ] },
+        { "line": true },
+        { "fields": [ ["Total amount", "{=gross:currency:{currency}}"] ], "bold": true },
+        { "text": "In words: {=AmountInWords(gross, currency)}", "style": "small" }
+      ] }
+    ] },
+    { "space": 10 },
+    { "textModule": "terms", "size": 9 },
+    { "space": 14 },
+    { "text": "{buyername}\nPurchasing group {purchasinggroupname}", "size": 9 }
+  ],
+  "sample": {
+    "ponumber": "4500009999", "companycode": "1010", "companycodename": "Company Code 1010", "companycity": "Berlin", "companyvatregistration": "DE10109988776",
+    "plant": "1010", "plantname": "Plant 1010 Hamburg", "plantstreet": "Hafenstraße 12", "plantpostalcode": "20457", "plantcity": "Hamburg", "plantcountry": "DE",
+    "supplier": "0010300001", "suppliername": "Inlandslieferant DE 1", "supplierstreet": "Am Hafen 3", "supplierpostalcode": "20457", "suppliercity": "Hamburg", "suppliercountry": "DE", "suppliervatregistration": "DE300001123",
+    "purchasinggroup": "001", "purchasinggroupname": "Group 001 IT", "buyerphone": "+49 30 1234 100", "buyeremail": "purchasing.it@example.com", "buyername": "Anna Becker",
+    "orderdate": "20261102", "deliverydate": "20261116", "currency": "EUR", "status": "D",
+    "_item": [
+      { "ponumber": "4500009999", "itemno": "00010", "product": "TG11", "description": "Laptop Pro 14", "materialgroup": "L001", "materialgrouptext": "Laptops & notebooks", "quantity": 2, "unit": "PC", "unitprice": 713 },
+      { "ponumber": "4500009999", "itemno": "00020", "product": "TG13", "description": "Monitor 27\" 4K", "materialgroup": "L002", "materialgrouptext": "Monitors & displays", "quantity": 2, "unit": "PC", "unitprice": 241.18 },
+      { "ponumber": "4500009999", "itemno": "00030", "product": "TG15", "description": "Wireless Mouse", "materialgroup": "L003", "materialgrouptext": "Accessories", "quantity": 4, "unit": "PC", "unitprice": 15.44 }
+    ]
+  }
+}

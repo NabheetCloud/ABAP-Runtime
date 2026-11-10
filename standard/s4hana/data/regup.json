@@ -1,0 +1,5 @@
+[
+  {"laufd": "20260321", "laufi": "10PAY1", "xvorl": "", "zbukr": "1010", "lifnr": "0010300001", "kunnr": "", "empfg": "", "vblnr": "1500000001", "bukrs": "1010", "belnr": "5100000001", "gjahr": "2026", "buzei": "003", "dmbtr": 1401.82, "wrbtr": 1401.82, "blart": "RE", "shkzg": "H", "xblnr": "INV-001-0001"},
+  {"laufd": "20260321", "laufi": "17PAY1", "xvorl": "", "zbukr": "1710", "lifnr": "0017300001", "kunnr": "", "empfg": "", "vblnr": "1500000001", "bukrs": "1710", "belnr": "5100000001", "gjahr": "2026", "buzei": "003", "dmbtr": 5456.88, "wrbtr": 5456.88, "blart": "RE", "shkzg": "H", "xblnr": "INV-001-0003"},
+  {"laufd": "20260321", "laufi": "41PAY1", "xvorl": "", "zbukr": "4110", "lifnr": "0041300001", "kunnr": "", "empfg": "", "vblnr": "1500000001", "bukrs": "4110", "belnr": "5100000001", "gjahr": "2026", "buzei": "003", "dmbtr": 632805.09, "wrbtr": 632805.09, "blart": "RE", "shkzg": "H", "xblnr": "INV-001-0005"}
+]

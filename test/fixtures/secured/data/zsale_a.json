@@ -1,0 +1,4 @@
+[{ "sale_id": "S1", "region": "EMEA", "amount": 100, "owner": "CAROL" },
+ { "sale_id": "S2", "region": "APJ", "amount": 200, "owner": "BOB" },
+ { "sale_id": "S3", "region": "AMER", "amount": 300, "owner": "CAROL" },
+ { "sale_id": "S4", "region": "EMEA", "amount": 400, "owner": "BOB" }]

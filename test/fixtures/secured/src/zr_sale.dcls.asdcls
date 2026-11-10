@@ -1,0 +1,7 @@
+@EndUserText.label: 'Sales: by region or own sales'
+@MappingRole: true
+define role ZR_SALE {
+  grant select on ZR_Sale
+    where ( Region ) = aspect pfcg_auth( ZSALES, ZREGION, ACTVT = '03' )
+       or Owner = aspect user;
+}

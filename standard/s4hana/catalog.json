@@ -1,0 +1,1295 @@
+{
+ "areas": [
+  {
+   "id": "organisation",
+   "title": "Organisation",
+   "description": "Company codes, plants, sales and purchasing organisations",
+   "objects": [
+    {
+     "view": "I_CompanyCode",
+     "label": "Company Code",
+     "table": "t001",
+     "texts": []
+    },
+    {
+     "view": "I_Plant",
+     "label": "Plant",
+     "table": "t001w",
+     "texts": []
+    },
+    {
+     "view": "I_StorageLocation",
+     "label": "Storage Location",
+     "table": "t001l",
+     "texts": []
+    },
+    {
+     "view": "I_ValuationArea",
+     "label": "Valuation Area",
+     "table": "t001k",
+     "texts": []
+    },
+    {
+     "view": "I_SalesOrganization",
+     "label": "Sales Organization",
+     "table": "tvko",
+     "texts": [
+      "I_SalesOrganizationText"
+     ]
+    },
+    {
+     "view": "I_DistributionChannel",
+     "label": "Distribution Channel",
+     "table": "tvtw",
+     "texts": [
+      "I_DistributionChannelText"
+     ]
+    },
+    {
+     "view": "I_Division",
+     "label": "Division",
+     "table": "tspa",
+     "texts": [
+      "I_DivisionText"
+     ]
+    },
+    {
+     "view": "I_SalesArea",
+     "label": "Sales Area",
+     "table": "tvta",
+     "texts": []
+    },
+    {
+     "view": "I_PurchasingOrganization",
+     "label": "Purchasing Organization",
+     "table": "t024e",
+     "texts": []
+    },
+    {
+     "view": "I_PurchasingGroup",
+     "label": "Purchasing Group",
+     "table": "t024",
+     "texts": []
+    },
+    {
+     "view": "I_ControllingArea",
+     "label": "Controlling Area",
+     "table": "tka01",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "partners",
+   "title": "Business partners",
+   "description": "Customers, suppliers, addresses and banks",
+   "objects": [
+    {
+     "view": "I_BusinessPartner",
+     "label": "Business Partner",
+     "table": "but000",
+     "texts": []
+    },
+    {
+     "view": "I_Customer",
+     "label": "Customer",
+     "table": "kna1",
+     "texts": []
+    },
+    {
+     "view": "I_CustomerCompany",
+     "label": "Customer Company",
+     "table": "knb1",
+     "texts": []
+    },
+    {
+     "view": "I_CustomerSalesArea",
+     "label": "Customer Sales Area",
+     "table": "knvv",
+     "texts": []
+    },
+    {
+     "view": "I_Supplier",
+     "label": "Supplier",
+     "table": "lfa1",
+     "texts": []
+    },
+    {
+     "view": "I_SupplierCompany",
+     "label": "Supplier Company",
+     "table": "lfb1",
+     "texts": []
+    },
+    {
+     "view": "I_SupplierPurchasingOrg",
+     "label": "Supplier Purchasing Organization",
+     "table": "lfm1",
+     "texts": []
+    },
+    {
+     "view": "I_BusinessPartnerRole",
+     "label": "Business Partner Role",
+     "table": "but100",
+     "texts": []
+    },
+    {
+     "view": "I_Address_2",
+     "label": "Address",
+     "table": "adrc",
+     "texts": []
+    },
+    {
+     "view": "I_Bank_2",
+     "label": "Bank",
+     "table": "bnka",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "products",
+   "title": "Products",
+   "description": "Products with plant, stock, valuation and sales data",
+   "objects": [
+    {
+     "view": "I_Product",
+     "label": "Product",
+     "table": "mara",
+     "texts": [
+      "I_ProductDescription",
+      "I_ProductText"
+     ]
+    },
+    {
+     "view": "I_ProductPlantBasic",
+     "label": "Product Plant",
+     "table": "marc",
+     "texts": []
+    },
+    {
+     "view": "I_ProductStorageLocationBasic",
+     "label": "Product Storage Location",
+     "table": "mard",
+     "texts": []
+    },
+    {
+     "view": "I_ProductValuationBasic",
+     "label": "Product Valuation",
+     "table": "mbew",
+     "texts": []
+    },
+    {
+     "view": "I_ProductSalesDelivery",
+     "label": "Product Sales Delivery",
+     "table": "mvke",
+     "texts": []
+    },
+    {
+     "view": "I_ProductUnitsOfMeasure",
+     "label": "Product Units of Measure",
+     "table": "marm",
+     "texts": []
+    },
+    {
+     "view": "I_ProductType",
+     "label": "Product Type",
+     "table": "t134",
+     "texts": [
+      "I_ProductTypeText"
+     ]
+    },
+    {
+     "view": "I_ProductGroup_2",
+     "label": "Product Group",
+     "table": "t023",
+     "texts": [
+      "I_ProductGroupText_2"
+     ]
+    },
+    {
+     "view": "I_MRPType",
+     "label": "MRP Type",
+     "table": "t438a",
+     "texts": [
+      "I_MRPTypeText"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "finance",
+   "title": "Finance",
+   "description": "Chart of accounts, G/L accounts, cost and profit centers",
+   "objects": [
+    {
+     "view": "I_ChartOfAccounts",
+     "label": "Chart of Accounts",
+     "table": "t004",
+     "texts": [
+      "I_ChartOfAccountsText"
+     ]
+    },
+    {
+     "view": "I_GLAccountInChartOfAccounts",
+     "label": "G/L Account in Chart of Accounts",
+     "table": "ska1",
+     "texts": [
+      "I_GLAccountText"
+     ]
+    },
+    {
+     "view": "I_GLAccountInCompanyCode",
+     "label": "G/L Account in Company Code",
+     "table": "skb1",
+     "texts": []
+    },
+    {
+     "view": "I_GLAccountGroup",
+     "label": "G/L Account Group",
+     "table": "t077s",
+     "texts": [
+      "I_GLAccountGroupText"
+     ]
+    },
+    {
+     "view": "I_CostCenter",
+     "label": "Cost Center",
+     "table": "csks",
+     "texts": [
+      "I_CostCenterText"
+     ]
+    },
+    {
+     "view": "I_ProfitCenter",
+     "label": "Profit Center",
+     "table": "cepc",
+     "texts": [
+      "I_ProfitCenterText"
+     ]
+    },
+    {
+     "view": "I_FiscalYearVariant",
+     "label": "Fiscal Year Variant",
+     "table": "t009",
+     "texts": [
+      "I_FiscalYearVariantText"
+     ]
+    },
+    {
+     "view": "I_PaymentTerms",
+     "label": "Payment Terms",
+     "table": "t052",
+     "texts": [
+      "I_PaymentTermsText"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "config",
+   "title": "Configuration",
+   "description": "Countries, currencies, exchange rates, units and other settings",
+   "objects": [
+    {
+     "view": "I_Country",
+     "label": "Country",
+     "table": "t005",
+     "texts": [
+      "I_CountryText"
+     ]
+    },
+    {
+     "view": "I_Region",
+     "label": "Region",
+     "table": "t005s",
+     "texts": [
+      "I_RegionText"
+     ]
+    },
+    {
+     "view": "I_Currency",
+     "label": "Currency",
+     "table": "tcurc",
+     "texts": [
+      "I_CurrencyText"
+     ]
+    },
+    {
+     "view": "I_ExchangeRateRawData",
+     "label": "Exchange Rate",
+     "table": "tcurr",
+     "texts": []
+    },
+    {
+     "view": "I_ExchangeRateType",
+     "label": "Exchange Rate Type",
+     "table": "tcurv",
+     "texts": [
+      "I_ExchangeRateTypeText"
+     ]
+    },
+    {
+     "view": "I_UnitOfMeasure",
+     "label": "Unit of Measure",
+     "table": "t006",
+     "texts": [
+      "I_UnitOfMeasureText"
+     ]
+    },
+    {
+     "view": "I_Language",
+     "label": "Language",
+     "table": "t002",
+     "texts": [
+      "I_LanguageText"
+     ]
+    },
+    {
+     "view": "I_TimeZone",
+     "label": "Time Zone",
+     "table": "ttzz",
+     "texts": [
+      "I_TimeZoneText"
+     ]
+    },
+    {
+     "view": "I_IncotermsClassification",
+     "label": "Incoterms Classification",
+     "table": "tinc",
+     "texts": [
+      "I_IncotermsClassificationText"
+     ]
+    },
+    {
+     "view": "I_ShippingCondition",
+     "label": "Shipping Condition",
+     "table": "tvsb",
+     "texts": [
+      "I_ShippingConditionText"
+     ]
+    },
+    {
+     "view": "I_CustomerAccountGroup",
+     "label": "Customer Account Group",
+     "table": "t077d",
+     "texts": [
+      "I_CustomerAccountGroupText"
+     ]
+    },
+    {
+     "view": "I_SupplierAccountGroup",
+     "label": "Supplier Account Group",
+     "table": "t077k",
+     "texts": [
+      "I_SupplierAccountGroupText"
+     ]
+    },
+    {
+     "view": "I_BusinessPartnerGrouping",
+     "label": "Business Partner Grouping",
+     "table": "tb001",
+     "texts": [
+      "I_BusinessPartnerGroupingText"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sales",
+   "title": "Sales and billing",
+   "description": "Sales orders, deliveries, billing documents, pricing and document flow",
+   "objects": [
+    {
+     "view": "I_SalesDocument",
+     "label": "Sales Document",
+     "table": "vbak",
+     "texts": []
+    },
+    {
+     "view": "I_SalesDocumentItem",
+     "label": "Sales Document Item",
+     "table": "vbap",
+     "texts": []
+    },
+    {
+     "view": "I_SalesOrder",
+     "label": "Sales Order",
+     "table": "vbak",
+     "texts": []
+    },
+    {
+     "view": "I_SalesOrderItem",
+     "label": "Sales Order Item",
+     "table": "vbap",
+     "texts": []
+    },
+    {
+     "view": "I_SalesOrderScheduleLine",
+     "label": "Sales Order Schedule Line",
+     "table": "vbep",
+     "texts": []
+    },
+    {
+     "view": "I_SalesOrderPartner",
+     "label": "Sales Order Partner",
+     "table": "vbpa",
+     "texts": []
+    },
+    {
+     "view": "I_SalesOrderItemPricingElement",
+     "label": "Sales Order Item Pricing Element",
+     "table": "prcd_elements",
+     "texts": []
+    },
+    {
+     "view": "I_DeliveryDocument",
+     "label": "Delivery Document",
+     "table": "likp",
+     "texts": []
+    },
+    {
+     "view": "I_DeliveryDocumentItem",
+     "label": "Delivery Document Item",
+     "table": "lips",
+     "texts": []
+    },
+    {
+     "view": "I_BillingDocument",
+     "label": "Billing Document",
+     "table": "vbrk",
+     "texts": []
+    },
+    {
+     "view": "I_BillingDocumentItem",
+     "label": "Billing Document Item",
+     "table": "vbrp",
+     "texts": []
+    },
+    {
+     "view": "I_BillingDocumentItemPrcgElmnt",
+     "label": "Billing Document Item Pricing Element",
+     "table": "prcd_elements",
+     "texts": []
+    },
+    {
+     "view": "I_SDDocumentProcessFlow",
+     "label": "SD Document Process Flow",
+     "table": "vbfa",
+     "texts": []
+    },
+    {
+     "view": "I_SDDocumentMultiLevelProcFlow",
+     "label": "SD Document Multi-Level Process Flow",
+     "table": "vbfa",
+     "texts": []
+    },
+    {
+     "view": "I_OutboundDelivery",
+     "label": "Outbound Delivery",
+     "table": "likp",
+     "texts": []
+    },
+    {
+     "view": "I_OutboundDeliveryItem",
+     "label": "Outbound Delivery Item",
+     "table": "lips",
+     "texts": []
+    },
+    {
+     "view": "I_BillingDocumentItemBasic",
+     "label": "Billing Document Item (Basic)",
+     "table": "vbrp",
+     "texts": []
+    },
+    {
+     "view": "I_SalesDocumentFlow",
+     "label": "Sales Document Flow",
+     "table": "vbfa",
+     "texts": []
+    },
+    {
+     "view": "I_PricingConditionRecord",
+     "label": "Pricing Condition Record",
+     "table": "konp",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "procurement",
+   "title": "Procurement",
+   "description": "Purchase requisitions and orders, PO history, supplier invoices, info records and source lists",
+   "objects": [
+    {
+     "view": "I_PurchaseRequisitionItem",
+     "label": "Purchase Requisition Item",
+     "table": "eban",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseRequisitionItemAPI01",
+     "label": "Purchase Requisition Item (API)",
+     "table": "eban",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderAPI01",
+     "label": "Purchase Order (API)",
+     "table": "ekko",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderItemAPI01",
+     "label": "Purchase Order Item (API)",
+     "table": "ekpo",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderScheduleLineAPI01",
+     "label": "Purchase Order Schedule Line (API)",
+     "table": "eket",
+     "texts": []
+    },
+    {
+     "view": "I_PurOrdScheduleLineAPI01",
+     "label": "Purchase Order Schedule Line (API)",
+     "table": "eket",
+     "texts": []
+    },
+    {
+     "view": "I_PurOrdAccountAssignmentAPI01",
+     "label": "Purchase Order Account Assignment (API)",
+     "table": "ekkn",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderHistoryAPI01",
+     "label": "Purchase Order History (API)",
+     "table": "ekbe",
+     "texts": []
+    },
+    {
+     "view": "I_SupplierInvoiceAPI01",
+     "label": "Supplier Invoice (API)",
+     "table": "rbkp",
+     "texts": []
+    },
+    {
+     "view": "I_SuplrInvcItemPurOrdRefAPI01",
+     "label": "Supplier Invoice Item with Purchase Order Reference (API)",
+     "table": "rseg",
+     "texts": []
+    },
+    {
+     "view": "I_PurchasingInfoRecordApi01",
+     "label": "Purchasing Info Record (API)",
+     "table": "eina",
+     "texts": []
+    },
+    {
+     "view": "I_PurgInfoRecdOrgPlantDataApi01",
+     "label": "Purchasing Info Record Org Plant Data (API)",
+     "table": "eine",
+     "texts": []
+    },
+    {
+     "view": "I_PurchasingSourceList",
+     "label": "Purchasing Source List",
+     "table": "eord",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrder",
+     "label": "Purchase Order",
+     "table": "ekko",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderItem",
+     "label": "Purchase Order Item",
+     "table": "ekpo",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderScheduleLine",
+     "label": "Purchase Order Schedule Line",
+     "table": "eket",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseOrderHistory",
+     "label": "Purchase Order History",
+     "table": "ekbe",
+     "texts": []
+    },
+    {
+     "view": "I_PurchaseRequisition",
+     "label": "Purchase Requisition",
+     "table": "eban",
+     "texts": []
+    },
+    {
+     "view": "I_PurchasingInfoRecord",
+     "label": "Purchasing Info Record",
+     "table": "eina",
+     "texts": []
+    },
+    {
+     "view": "I_SupplierInvoice",
+     "label": "Supplier Invoice",
+     "table": "rbkp",
+     "texts": []
+    },
+    {
+     "view": "I_SupplierInvoiceItem",
+     "label": "Supplier Invoice Item",
+     "table": "rseg",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "inventory",
+   "title": "Inventory",
+   "description": "Material documents, stock, batches and reservations",
+   "objects": [
+    {
+     "view": "I_MaterialDocumentHeader_2",
+     "label": "Material Document Header",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "I_MaterialDocumentItem_2",
+     "label": "Material Document Item",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "I_MaterialStock_2",
+     "label": "Material Stock",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "I_StockQuantityCurrentValue_2",
+     "label": "Stock Quantity and Value",
+     "table": "matdoc_extract",
+     "texts": []
+    },
+    {
+     "view": "I_Batch",
+     "label": "Batch",
+     "table": "mch1",
+     "texts": []
+    },
+    {
+     "view": "I_Reservation",
+     "label": "Reservation",
+     "table": "rkpf",
+     "texts": []
+    },
+    {
+     "view": "I_ReservationDocumentItem",
+     "label": "Reservation Document Item",
+     "table": "resb",
+     "texts": []
+    },
+    {
+     "view": "I_Material",
+     "label": "Material",
+     "table": "mara",
+     "texts": []
+    },
+    {
+     "view": "I_ProductPlant",
+     "label": "Product Plant",
+     "table": "marc",
+     "texts": []
+    },
+    {
+     "view": "I_MaterialDocumentHeader",
+     "label": "Material Document Header",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "I_MaterialDocumentItem",
+     "label": "Material Document Item",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "I_StockQuantityCurrentValue",
+     "label": "Stock Quantity and Value",
+     "table": "matdoc_extract",
+     "texts": []
+    },
+    {
+     "view": "I_ProductStorageLocation",
+     "label": "Product Storage Location",
+     "table": "mard",
+     "texts": []
+    },
+    {
+     "view": "I_ProductValuation",
+     "label": "Product Valuation",
+     "table": "mbew",
+     "texts": []
+    },
+    {
+     "view": "I_ProductSales",
+     "label": "Product Sales",
+     "table": "mvke",
+     "texts": []
+    },
+    {
+     "view": "I_ProductUnitOfMeasure",
+     "label": "Product Unit of Measure",
+     "table": "marm",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "accounting",
+   "title": "Accounting",
+   "description": "Journal entries, line items, balances, ledgers, segments and fixed assets",
+   "objects": [
+    {
+     "view": "I_JournalEntry",
+     "label": "Journal Entry",
+     "table": "bkpf",
+     "texts": []
+    },
+    {
+     "view": "I_JournalEntryItem",
+     "label": "Journal Entry Item",
+     "table": "acdoca",
+     "texts": []
+    },
+    {
+     "view": "I_GLAccountLineItem",
+     "label": "G/L Account Line Item",
+     "table": "acdoca",
+     "texts": []
+    },
+    {
+     "view": "I_OperationalAcctgDocItem",
+     "label": "Operational Accounting Document Item",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "I_GLAcctBalanceCube",
+     "label": "G/L Account Balance",
+     "table": "acdoca",
+     "texts": []
+    },
+    {
+     "view": "I_Ledger",
+     "label": "Ledger",
+     "table": "finsc_ledger",
+     "texts": []
+    },
+    {
+     "view": "I_Segment",
+     "label": "Segment",
+     "table": "fagl_segm",
+     "texts": []
+    },
+    {
+     "view": "I_GLAccountTextRawData",
+     "label": "G/L Account Text (Raw Data)",
+     "table": "skat",
+     "texts": []
+    },
+    {
+     "view": "I_FiscalYearPeriodForVariant",
+     "label": "Fiscal Year Period for Fiscal Year Variant",
+     "table": "t009b",
+     "texts": []
+    },
+    {
+     "view": "I_InternalOrder",
+     "label": "Internal Order",
+     "table": "aufk",
+     "texts": []
+    },
+    {
+     "view": "I_AssetClass",
+     "label": "Asset Class",
+     "table": "anka",
+     "texts": []
+    },
+    {
+     "view": "I_FixedAsset",
+     "label": "Fixed Asset",
+     "table": "anla",
+     "texts": []
+    },
+    {
+     "view": "I_FixedAssetAssgmt",
+     "label": "Fixed Asset Assignment",
+     "table": "anlz",
+     "texts": []
+    },
+    {
+     "view": "I_Asset",
+     "label": "Asset",
+     "table": "anla",
+     "texts": []
+    },
+    {
+     "view": "I_AssetDepreciationArea",
+     "label": "Asset Depreciation Area",
+     "table": "anlb",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "production",
+   "title": "Production",
+   "description": "Planned and manufacturing orders, operations, confirmations, BOMs, work centers, production versions",
+   "objects": [
+    {
+     "view": "I_PlannedOrder",
+     "label": "Planned Order",
+     "table": "plaf",
+     "texts": []
+    },
+    {
+     "view": "I_ManufacturingOrder",
+     "label": "Manufacturing Order",
+     "table": "afko",
+     "texts": []
+    },
+    {
+     "view": "I_ManufacturingOrderItem",
+     "label": "Manufacturing Order Item",
+     "table": "afpo",
+     "texts": []
+    },
+    {
+     "view": "I_ManufacturingOrderOperation",
+     "label": "Manufacturing Order Operation",
+     "table": "afvc",
+     "texts": []
+    },
+    {
+     "view": "I_MfgOrderConfirmation",
+     "label": "Manufacturing Order Confirmation",
+     "table": "afru",
+     "texts": []
+    },
+    {
+     "view": "I_ProductionVersion",
+     "label": "Production Version",
+     "table": "mkal",
+     "texts": []
+    },
+    {
+     "view": "I_MaterialBOMLink",
+     "label": "Material BOM Link",
+     "table": "mast",
+     "texts": []
+    },
+    {
+     "view": "I_BillOfMaterial",
+     "label": "Bill of Material",
+     "table": "stko",
+     "texts": []
+    },
+    {
+     "view": "I_BillOfMaterialItemBasic",
+     "label": "Bill of Material Item",
+     "table": "stpo",
+     "texts": []
+    },
+    {
+     "view": "I_WorkCenter",
+     "label": "Work Center",
+     "table": "crhd",
+     "texts": []
+    },
+    {
+     "view": "I_ProductionOrder",
+     "label": "Production Order",
+     "table": "afko",
+     "texts": []
+    },
+    {
+     "view": "I_ProductionOrderItem",
+     "label": "Production Order Item",
+     "table": "afpo",
+     "texts": []
+    },
+    {
+     "view": "I_ProductionOrderOperation",
+     "label": "Production Order Operation",
+     "table": "afvc",
+     "texts": []
+    },
+    {
+     "view": "I_ProductionOrderComponent",
+     "label": "Production Order Component",
+     "table": "resb",
+     "texts": []
+    },
+    {
+     "view": "I_Routing",
+     "label": "Routing",
+     "table": "plko",
+     "texts": []
+    },
+    {
+     "view": "I_RoutingOperation",
+     "label": "Routing Operation",
+     "table": "plpo",
+     "texts": []
+    },
+    {
+     "view": "I_BillOfMaterialItem",
+     "label": "Bill of Material Item",
+     "table": "stpo",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "maintenance",
+   "title": "Maintenance and quality",
+   "description": "Equipment, functional locations, notifications, maintenance orders and plans, inspection lots",
+   "objects": [
+    {
+     "view": "I_Equipment",
+     "label": "Equipment",
+     "table": "equi",
+     "texts": []
+    },
+    {
+     "view": "I_FunctionalLocation",
+     "label": "Functional Location",
+     "table": "iflot",
+     "texts": []
+    },
+    {
+     "view": "I_MaintenanceNotification",
+     "label": "Maintenance Notification",
+     "table": "qmel",
+     "texts": []
+    },
+    {
+     "view": "I_MaintenanceOrder",
+     "label": "Maintenance Order",
+     "table": "aufk",
+     "texts": []
+    },
+    {
+     "view": "I_MaintenancePlan",
+     "label": "Maintenance Plan",
+     "table": "mpla",
+     "texts": []
+    },
+    {
+     "view": "I_MaintenanceItem",
+     "label": "Maintenance Item",
+     "table": "mpos",
+     "texts": []
+    },
+    {
+     "view": "I_InspectionLot",
+     "label": "Inspection Lot",
+     "table": "qals",
+     "texts": []
+    },
+    {
+     "view": "I_InspectionCharacteristic",
+     "label": "Inspection Characteristic",
+     "table": "qamv",
+     "texts": []
+    },
+    {
+     "view": "I_InspectionResult",
+     "label": "Inspection Result",
+     "table": "qamr",
+     "texts": []
+    },
+    {
+     "view": "I_InspLotUsageDecision",
+     "label": "Inspection Lot Usage Decision",
+     "table": "qave",
+     "texts": []
+    },
+    {
+     "view": "I_MaintenanceOrderOperation",
+     "label": "Maintenance Order Operation",
+     "table": "afvc",
+     "texts": []
+    },
+    {
+     "view": "I_MeasuringPoint",
+     "label": "Measuring Point",
+     "table": "imptt",
+     "texts": []
+    },
+    {
+     "view": "I_MeasurementDocument",
+     "label": "Measurement Document",
+     "table": "imrg",
+     "texts": []
+    },
+    {
+     "view": "I_QualityNotification",
+     "label": "Quality Notification",
+     "table": "qmel",
+     "texts": []
+    },
+    {
+     "view": "I_QualityNotificationItem",
+     "label": "Quality Notification Item",
+     "table": "qmfe",
+     "texts": []
+    },
+    {
+     "view": "I_QualityNotificationTask",
+     "label": "Quality Notification Task",
+     "table": "qmsm",
+     "texts": []
+    },
+    {
+     "view": "I_InspectionLotUsageDecision",
+     "label": "Inspection Lot Usage Decision",
+     "table": "qave",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "projects",
+   "title": "Projects and cross-application",
+   "description": "Projects, WBS elements, change documents, users and business partner details",
+   "objects": [
+    {
+     "view": "I_Project",
+     "label": "Project",
+     "table": "proj",
+     "texts": []
+    },
+    {
+     "view": "I_EnterpriseProject",
+     "label": "Enterprise Project",
+     "table": "proj",
+     "texts": []
+    },
+    {
+     "view": "I_WBSElement",
+     "label": "WBS Element",
+     "table": "prps",
+     "texts": []
+    },
+    {
+     "view": "I_WBSElementBasicData",
+     "label": "WBS Element Basic Data",
+     "table": "prps",
+     "texts": []
+    },
+    {
+     "view": "I_ChangeDocument",
+     "label": "Change Document",
+     "table": "cdhdr",
+     "texts": []
+    },
+    {
+     "view": "I_ChangeDocumentItem",
+     "label": "Change Document Item",
+     "table": "cdpos",
+     "texts": []
+    },
+    {
+     "view": "I_User",
+     "label": "User",
+     "table": "usr02",
+     "texts": []
+    },
+    {
+     "view": "I_BusinessUser",
+     "label": "Business User",
+     "table": "usr21",
+     "texts": []
+    },
+    {
+     "view": "I_BusinessPartnerAddress",
+     "label": "Business Partner Address",
+     "table": "but020",
+     "texts": []
+    },
+    {
+     "view": "I_BusinessPartnerAddressUsage",
+     "label": "Business Partner Address Usage",
+     "table": "but021_fs",
+     "texts": []
+    },
+    {
+     "view": "I_BusinessPartnerBank",
+     "label": "Business Partner Bank",
+     "table": "but0bk",
+     "texts": []
+    },
+    {
+     "view": "I_Network",
+     "label": "Network",
+     "table": "aufk",
+     "texts": []
+    },
+    {
+     "view": "I_NetworkActivity",
+     "label": "Network Activity",
+     "table": "afvc",
+     "texts": []
+    },
+    {
+     "view": "I_ProjectElement",
+     "label": "Project Element",
+     "table": "prps",
+     "texts": []
+    },
+    {
+     "view": "I_ProjectStatus",
+     "label": "Project Status",
+     "table": "jest",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "logistics",
+   "title": "Warehouse and transportation",
+   "description": "EWM storage bins and warehouse tasks, TM freight orders",
+   "objects": [
+    {
+     "view": "I_EWMStorageBin",
+     "label": "EWM Storage Bin",
+     "table": "/scwm/lagp",
+     "texts": []
+    },
+    {
+     "view": "I_EWMWarehouseTask",
+     "label": "EWM Warehouse Task (confirmed)",
+     "table": "/scwm/ordim_c",
+     "texts": []
+    },
+    {
+     "view": "I_FreightOrder",
+     "label": "Freight Order",
+     "table": "/scmtms/d_torrot",
+     "texts": []
+    }
+   ]
+  },
+  {
+   "id": "compat",
+   "title": "Compatibility views",
+   "description": "Old tables read from the S/4HANA ones (MKPF, MSEG, VBUK, VBUP, BSID/BSIK/BSIS, GLPCA, COSP/COSS, ANEP)",
+   "objects": [
+    {
+     "view": "MKPF",
+     "label": "Material document header (compatibility view of MATDOC)",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "MSEG",
+     "label": "Material document item (compatibility view of MATDOC)",
+     "table": "matdoc",
+     "texts": []
+    },
+    {
+     "view": "VBAKUK",
+     "label": "Sales document header with status (compatibility view)",
+     "table": "vbak",
+     "texts": []
+    },
+    {
+     "view": "VBAPUK",
+     "label": "Sales document item with status (compatibility view)",
+     "table": "vbap",
+     "texts": []
+    },
+    {
+     "view": "BSID",
+     "label": "Customer open items (compatibility view of BSEG)",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "BSAD",
+     "label": "Customer cleared items (compatibility view of BSEG)",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "BSIK",
+     "label": "Supplier open items (compatibility view of BSEG)",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "BSAK",
+     "label": "Supplier cleared items (compatibility view of BSEG)",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "BSIS",
+     "label": "G/L open items (compatibility view of BSEG)",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "BSAS",
+     "label": "G/L cleared items (compatibility view of BSEG)",
+     "table": "bseg",
+     "texts": []
+    },
+    {
+     "view": "GLPCA",
+     "label": "Profit center line items (compatibility view of ACDOCA)",
+     "table": "acdoca",
+     "texts": []
+    },
+    {
+     "view": "COSP",
+     "label": "Cost totals for external postings (compatibility view of ACDOCA)",
+     "table": "acdoca",
+     "texts": []
+    },
+    {
+     "view": "COSS",
+     "label": "Cost totals for internal postings (compatibility view of COEP)",
+     "table": "coep",
+     "texts": []
+    },
+    {
+     "view": "ANEK",
+     "label": "Asset document headers (compatibility view)",
+     "table": "faat_doc_it",
+     "texts": []
+    },
+    {
+     "view": "ANEP",
+     "label": "Asset line items (compatibility view)",
+     "table": "faat_doc_it",
+     "texts": []
+    },
+    {
+     "view": "ANLC",
+     "label": "Asset values per year (compatibility view)",
+     "table": "faat_ydda",
+     "texts": []
+    }
+   ]
+  }
+ ]
+}

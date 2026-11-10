@@ -1,0 +1,5 @@
+CLASS zcl_legacyorder_events DEFINITION PUBLIC ABSTRACT FINAL FOR EVENTS OF zr_legacyorder.
+ENDCLASS.
+
+CLASS zcl_legacyorder_events IMPLEMENTATION.
+ENDCLASS.

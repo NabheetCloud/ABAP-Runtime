@@ -1,0 +1,5 @@
+[
+  {"pernr": "00001001", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "nachn": "Becker", "vorna": "Anna", "gbdat": "19880515", "gesch": "", "natio": "DE", "sprsl": "E", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001002", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "nachn": "Miller", "vorna": "John", "gbdat": "19880515", "gesch": "", "natio": "US", "sprsl": "E", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001003", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "nachn": "Sharma", "vorna": "Priya", "gbdat": "19880515", "gesch": "", "natio": "IN", "sprsl": "E", "aedtm": "20250101", "uname": "CB9980000010"}
+]

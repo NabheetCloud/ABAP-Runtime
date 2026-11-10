@@ -1,0 +1,93 @@
+managed with unmanaged save implementation in class zbp_r_order unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZR_Order alias Order
+draft table zorder_hd
+late numbering
+lock master
+total etag LastChangedAt
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete;
+  association _Item { create; with draft; }
+
+  field ( readonly ) OrderID, Total, Status, CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+  field ( mandatory ) Customer;
+
+  action ( features : instance ) release result [1] $self;
+  internal action recalcTotal;
+
+  determination setDefaults on modify { create; }
+  determination calcTotal   on modify { field Currency; }
+
+  validation validateCustomer on save { create; field Customer; }
+
+  side effects
+  {
+    field Currency affects field Total;
+    action release affects $self;
+  }
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare
+  {
+    validation validateCustomer;
+    validation Item~validateQuantity;
+  }
+
+  mapping for zorder_h
+  {
+    OrderID            = order_id;
+    Customer           = customer;
+    OrderDate          = order_date;
+    Currency           = currency;
+    Total              = total;
+    Status             = status;
+    CreatedBy          = created_by;
+    CreatedAt          = created_at;
+    LastChangedBy      = last_changed_by;
+    LastChangedAt      = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for ZR_OrderItem alias Item
+draft table zorder_id
+late numbering
+lock dependent by _Order
+authorization dependent by _Order
+{
+  update;
+  delete;
+  association _Order { with draft; }
+
+  field ( readonly ) OrderID, ItemNo, Amount, Currency;
+  field ( mandatory ) Product, Quantity, UnitPrice;
+
+  determination calcAmount on modify { create; field Quantity, UnitPrice; }
+  validation validateQuantity on save { create; field Quantity; }
+
+  side effects
+  {
+    field Quantity affects field Amount, field _Order.Total;
+    field UnitPrice affects field Amount, field _Order.Total;
+  }
+
+  mapping for zorder_i
+  {
+    OrderID   = order_id;
+    ItemNo    = item_no;
+    Product   = product;
+    Quantity  = quantity;
+    UnitPrice = unit_price;
+    Currency  = currency;
+    Amount    = amount;
+  }
+}

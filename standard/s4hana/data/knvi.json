@@ -1,0 +1,12 @@
+[
+  {"kunnr": "0010100001", "aland": "DE", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0010100002", "aland": "DE", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0010100003", "aland": "DE", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0017100001", "aland": "US", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0017100002", "aland": "US", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0017100003", "aland": "US", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0041100001", "aland": "IN", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0041100002", "aland": "IN", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0041100003", "aland": "IN", "tatyp": "MWST", "taxkd": "1"},
+  {"kunnr": "0010100004", "aland": "NL", "tatyp": "MWST", "taxkd": "1"}
+]

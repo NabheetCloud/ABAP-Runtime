@@ -1,0 +1,5 @@
+[
+  {"iloan": "000000000001", "tplnr": "1010-PROD", "swerk": "1010", "stort": "HALL-1", "kostl": "10101201", "bukrs": "1010", "anlnr": "", "gsber": "", "msgrp": "M1", "beber": "001", "abckz": ""},
+  {"iloan": "000000000002", "tplnr": "1010-PROD-L01", "swerk": "1010", "stort": "HALL-1", "kostl": "10101201", "bukrs": "1010", "anlnr": "", "gsber": "", "msgrp": "M1", "beber": "001", "abckz": ""},
+  {"iloan": "000000000003", "tplnr": "1010-UTIL", "swerk": "1010", "stort": "HALL-1", "kostl": "10101201", "bukrs": "1010", "anlnr": "", "gsber": "", "msgrp": "M1", "beber": "001", "abckz": ""}
+]

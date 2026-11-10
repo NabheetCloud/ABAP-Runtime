@@ -1,0 +1,7 @@
+[
+  {"objectclas": "VERKBELEG", "objectid": "0000001001", "changenr": "0000000001", "username": "ANNA.BECKER", "udate": "20260106", "utime": "101010", "tcode": "VA02", "change_ind": "U"},
+  {"objectclas": "VERKBELEG", "objectid": "0000001002", "changenr": "0000000002", "username": "CB9980000010", "udate": "20260309", "utime": "101010", "tcode": "VA02", "change_ind": "U"},
+  {"objectclas": "VERKBELEG", "objectid": "0000001003", "changenr": "0000000003", "username": "PRIYA.SHARMA", "udate": "20260512", "utime": "101010", "tcode": "VA02", "change_ind": "U"},
+  {"objectclas": "VERKBELEG", "objectid": "0000001004", "changenr": "0000000004", "username": "ANNA.BECKER", "udate": "20260715", "utime": "101010", "tcode": "VA02", "change_ind": "U"},
+  {"objectclas": "VERKBELEG", "objectid": "0000001005", "changenr": "0000000005", "username": "MARCO.ROSSI", "udate": "20260206", "utime": "101010", "tcode": "VA02", "change_ind": "U"}
+]

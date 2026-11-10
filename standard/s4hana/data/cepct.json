@@ -1,0 +1,6 @@
+[
+  {"spras": "E", "prctr": "YB101", "datbi": "99991231", "kokrs": "A000", "ktext": "Sales", "ltext": "Sales and distribution"},
+  {"spras": "E", "prctr": "YB102", "datbi": "99991231", "kokrs": "A000", "ktext": "Products", "ltext": "Product line laptops"},
+  {"spras": "E", "prctr": "YB103", "datbi": "99991231", "kokrs": "A000", "ktext": "Services", "ltext": "Professional services"},
+  {"spras": "E", "prctr": "YB900", "datbi": "99991231", "kokrs": "A000", "ktext": "Admin", "ltext": "Administration"}
+]

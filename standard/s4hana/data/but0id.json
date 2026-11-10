@@ -1,0 +1,12 @@
+[
+  {"partner": "0010100001", "type": "H", "idnumber": "ID-100001", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0010100002", "type": "H", "idnumber": "ID-100002", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0010100003", "type": "H", "idnumber": "ID-100003", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0017100001", "type": "H", "idnumber": "ID-100001", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0017100002", "type": "H", "idnumber": "ID-100002", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0017100003", "type": "H", "idnumber": "ID-100003", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0041100001", "type": "H", "idnumber": "ID-100001", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0041100002", "type": "H", "idnumber": "ID-100002", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0041100003", "type": "H", "idnumber": "ID-100003", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"},
+  {"partner": "0010100004", "type": "H", "idnumber": "ID-100004", "valid_date_from": "20200101", "valid_date_to": "", "institute": "Registry"}
+]

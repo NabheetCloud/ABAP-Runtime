@@ -1,0 +1,7 @@
+[
+  {"auart": "OR", "vbtyp": "C", "numki": "01", "numke": "", "bezei": "Standard Order", "kalvg": "1"},
+  {"auart": "RE", "vbtyp": "H", "numki": "01", "numke": "", "bezei": "Returns", "kalvg": "1"},
+  {"auart": "QT", "vbtyp": "B", "numki": "01", "numke": "", "bezei": "Quotation", "kalvg": "1"},
+  {"auart": "CR", "vbtyp": "K", "numki": "01", "numke": "", "bezei": "Credit Memo Request", "kalvg": "1"},
+  {"auart": "CS", "vbtyp": "C", "numki": "01", "numke": "", "bezei": "Cash Sale", "kalvg": "1"}
+]

@@ -1,0 +1,5 @@
+[
+  {"objty": "A", "objid": "10000001", "arbpl": "ASSEMBLY", "werks": "1010", "verwe": "0001", "veran": "001", "begda": "20250101", "endda": "99991231", "kapid": "10000001", "ktext": "Assembly line"},
+  {"objty": "A", "objid": "10000002", "arbpl": "PACKING", "werks": "1010", "verwe": "0001", "veran": "001", "begda": "20250101", "endda": "99991231", "kapid": "10000002", "ktext": "Packing station"},
+  {"objty": "A", "objid": "10000003", "arbpl": "MAINT", "werks": "1010", "verwe": "0005", "veran": "001", "begda": "20250101", "endda": "99991231", "kapid": "10000003", "ktext": "Maintenance workshop"}
+]

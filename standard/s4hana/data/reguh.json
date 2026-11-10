@@ -1,0 +1,5 @@
+[
+  {"laufd": "20260321", "laufi": "10PAY1", "xvorl": "", "zbukr": "1010", "lifnr": "0010300001", "kunnr": "", "empfg": "", "vblnr": "1500000001", "rwbtr": -1401.82, "waers": "EUR", "zaldt": "", "rzawe": "T", "hbkid": "DEUT1", "hktid": "CHK01", "name1": "Inlandslieferant DE 1", "rbetr": -1401.82, "valut": "20260321"},
+  {"laufd": "20260321", "laufi": "17PAY1", "xvorl": "", "zbukr": "1710", "lifnr": "0017300001", "kunnr": "", "empfg": "", "vblnr": "1500000001", "rwbtr": -5456.88, "waers": "USD", "zaldt": "", "rzawe": "C", "hbkid": "CITI1", "hktid": "CHK01", "name1": "Domestic US Supplier 1", "rbetr": -5456.88, "valut": "20260321"},
+  {"laufd": "20260321", "laufi": "41PAY1", "xvorl": "", "zbukr": "4110", "lifnr": "0041300001", "kunnr": "", "empfg": "", "vblnr": "1500000001", "rwbtr": -632805.09, "waers": "INR", "zaldt": "", "rzawe": "T", "hbkid": "HDFC1", "hktid": "CHK01", "name1": "Domestic IN Supplier 1", "rbetr": -632805.09, "valut": "20260321"}
+]

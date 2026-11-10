@@ -1,0 +1,8 @@
+[
+  {"aufpl": "0000000001", "aplzl": "00000001", "mgvrg": 50.0, "lmnga": 50.0, "fsavd": "20260302", "fsedd": "20260307", "ism01": 25.0, "meinh": "PC", "vge01": "MIN", "vgw01": 30.0},
+  {"aufpl": "0000000001", "aplzl": "00000002", "mgvrg": 50.0, "lmnga": 50.0, "fsavd": "20260302", "fsedd": "20260307", "ism01": 25.0, "meinh": "PC", "vge01": "MIN", "vgw01": 30.0},
+  {"aufpl": "0000000002", "aplzl": "00000001", "mgvrg": 30.0, "lmnga": 15.0, "fsavd": "20260602", "fsedd": "20260607", "ism01": 7.5, "meinh": "PC", "vge01": "MIN", "vgw01": 30.0},
+  {"aufpl": "0000000002", "aplzl": "00000002", "mgvrg": 30.0, "lmnga": 15.0, "fsavd": "20260602", "fsedd": "20260607", "ism01": 7.5, "meinh": "PC", "vge01": "MIN", "vgw01": 30.0},
+  {"aufpl": "0000000003", "aplzl": "00000001", "mgvrg": 40.0, "lmnga": 0.0, "fsavd": "20260902", "fsedd": "20260907", "ism01": 0.0, "meinh": "PC", "vge01": "MIN", "vgw01": 30.0},
+  {"aufpl": "0000000003", "aplzl": "00000002", "mgvrg": 40.0, "lmnga": 0.0, "fsavd": "20260902", "fsedd": "20260907", "ism01": 0.0, "meinh": "PC", "vge01": "MIN", "vgw01": 30.0}
+]

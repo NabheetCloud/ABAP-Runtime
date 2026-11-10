@@ -1,0 +1,8 @@
+[
+  {"db_key": "C7624819988FE80808D20590AFBF6D8C", "host_key": "F0EFFE67B8DD0F02FB85A4704F2258C0", "net_amount": 188.1, "doc_currency": "EUR", "calc_status": "01", "calc_date": "20260112"},
+  {"db_key": "FD2B5C08F521D483941AB61660A84C8E", "host_key": "3E3E44D08975AA5BD2B4F76A035C190E", "net_amount": 190.2, "doc_currency": "EUR", "calc_status": "01", "calc_date": "20260518"},
+  {"db_key": "F5C869C69C71E575C8107D2BB7B8F73A", "host_key": "80060DE12B468A951E7EDC6F1189AE76", "net_amount": 189.0, "doc_currency": "USD", "calc_status": "01", "calc_date": "20260212"},
+  {"db_key": "8EB23E12E47C422D1F9FC7A698A0AF54", "host_key": "06D330E43146E0D73C96DA118665DCE3", "net_amount": 189.3, "doc_currency": "USD", "calc_status": "01", "calc_date": "20260618"},
+  {"db_key": "6CB8213657CAC863510B5CB5A455DE60", "host_key": "05E2477452501B08A9AD3043776A58A9", "net_amount": 187.8, "doc_currency": "INR", "calc_status": "01", "calc_date": "20260312"},
+  {"db_key": "C630493D436351214B8DE8A4656BF638", "host_key": "A1474ADE5964B945E63998D54F4D40E5", "net_amount": 192.9, "doc_currency": "INR", "calc_status": "01", "calc_date": "20260718"}
+]

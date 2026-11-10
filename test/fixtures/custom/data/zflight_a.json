@@ -1,0 +1,4 @@
+[{ "carrier_id": "LH", "connection_id": "0400", "city_from": "Frankfurt", "price": 600 },
+ { "carrier_id": "LH", "connection_id": "0401", "city_from": "New York", "price": 650 },
+ { "carrier_id": "AA", "connection_id": "0017", "city_from": "New York", "price": 420 },
+ { "carrier_id": "UA", "connection_id": "0941", "city_from": "San Francisco", "price": 380 }]

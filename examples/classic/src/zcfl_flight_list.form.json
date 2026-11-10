@@ -1,0 +1,27 @@
+{
+  "title": "Flight list",
+  "page": { "size": "A4", "margin": 40 },
+  "sample": {
+    "carrier": "LH", "carrier_name": "Lufthansa",
+    "flights": [
+      { "connection_id": "0400", "city_from": "Frankfurt", "price": 600 },
+      { "connection_id": "0401", "city_from": "New York", "price": 650 }
+    ]
+  },
+  "header": [
+    { "text": "Flight list {carrier}", "size": 18, "bold": true, "color": "#0a3d7a" },
+    { "text": "{carrier_name}", "size": 10, "color": "#64748b" }
+  ],
+  "content": [
+    { "fields": [["Airline", "{carrier} {carrier_name}"], ["Printed on", "{sy-datum:date}"], ["Printed by", "{sy-uname}"]] },
+    { "space": 8 },
+    { "table": "flights", "columns": [
+        { "title": "Flight", "field": "connection_id", "width": 15 },
+        { "title": "From", "field": "city_from", "width": 50 },
+        { "title": "Price", "field": "price", "width": 20, "align": "right", "format": "amount" }
+      ], "total": { "price": "sum" } },
+    { "space": 12 },
+    { "text": "All prices in EUR, including taxes.", "size": 9, "color": "#64748b" }
+  ],
+  "footer": [ { "text": "Page {page} of {pages}", "size": 8, "align": "center", "color": "#64748b" } ]
+}

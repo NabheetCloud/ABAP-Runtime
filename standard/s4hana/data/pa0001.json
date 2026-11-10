@@ -1,0 +1,5 @@
+[
+  {"pernr": "00001001", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "bukrs": "1010", "werks": "1010", "persg": "1", "persk": "DU", "kostl": "10101101", "orgeh": "50000001", "plans": "50000101", "stell": "50000201", "btrtl": "", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001002", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "bukrs": "1710", "werks": "1710", "persg": "1", "persk": "DU", "kostl": "17101101", "orgeh": "50000002", "plans": "50000102", "stell": "50000201", "btrtl": "", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001003", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "bukrs": "4110", "werks": "4110", "persg": "1", "persk": "DU", "kostl": "41101101", "orgeh": "50000001", "plans": "50000101", "stell": "50000201", "btrtl": "", "aedtm": "20250101", "uname": "CB9980000010"}
+]

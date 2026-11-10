@@ -1,0 +1,5 @@
+[
+  {"pernr": "00001001", "subty": "1", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "anssa": "1", "stras": "Hafenstrasse 12", "ort01": "Hamburg", "pstlz": "20457", "land1": "DE", "regio": "02", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001002", "subty": "1", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "anssa": "1", "stras": "500 Oak Avenue", "ort01": "Palo Alto", "pstlz": "94301", "land1": "US", "regio": "CA", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001003", "subty": "1", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "anssa": "1", "stras": "14 MG Road", "ort01": "Bangalore", "pstlz": "560001", "land1": "IN", "regio": "10", "aedtm": "20250101", "uname": "CB9980000010"}
+]

@@ -1,0 +1,16 @@
+RAP Studio
+Copyright 2026 Nabheet Madan
+
+RAP Studio is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It includes material from other projects, each under its own license
+(see also the Credits section of README.md):
+- knowledge/abap-cleaner/: SAP ABAP cleaner, Apache License 2.0
+- knowledge/abapopenchecks/: abapOpenChecks, MIT License
+- knowledge/sap/released-objects.json: derived from SAP's Cloudification Repository
+  (github.com/SAP/abap-atc-cr-cv-s4hc), Apache License 2.0
+- examples/adobe-forms/ and test/fixtures/xdp/: SAP samples (Copyright SAP SE or an SAP affiliate
+  company and contributors), Apache License 2.0
+
+"SAP", "ABAP", "Fiori", "SAPUI5" and other SAP product names are trademarks of SAP SE.
+This project is not affiliated with or endorsed by SAP.

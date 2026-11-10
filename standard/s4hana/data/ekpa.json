@@ -1,0 +1,20 @@
+[
+  {"ebeln": "4500000001", "ekorg": "1010", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0010300001"},
+  {"ebeln": "4500000001", "ekorg": "1010", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0010300001"},
+  {"ebeln": "4500000002", "ekorg": "1010", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0010300002"},
+  {"ebeln": "4500000002", "ekorg": "1010", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0010300002"},
+  {"ebeln": "4500000003", "ekorg": "1010", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0010300001"},
+  {"ebeln": "4500000003", "ekorg": "1010", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0010300001"},
+  {"ebeln": "4500000004", "ekorg": "1710", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0017300001"},
+  {"ebeln": "4500000004", "ekorg": "1710", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0017300001"},
+  {"ebeln": "4500000005", "ekorg": "1710", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0017300002"},
+  {"ebeln": "4500000005", "ekorg": "1710", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0017300002"},
+  {"ebeln": "4500000006", "ekorg": "1710", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0017300001"},
+  {"ebeln": "4500000006", "ekorg": "1710", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0017300001"},
+  {"ebeln": "4500000007", "ekorg": "4110", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0041300001"},
+  {"ebeln": "4500000007", "ekorg": "4110", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0041300001"},
+  {"ebeln": "4500000008", "ekorg": "4110", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0041300002"},
+  {"ebeln": "4500000008", "ekorg": "4110", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0041300002"},
+  {"ebeln": "4500000009", "ekorg": "4110", "ltsnr": "", "werks": "", "parvw": "LF", "parza": "000", "lifn2": "0041300003"},
+  {"ebeln": "4500000009", "ekorg": "4110", "ltsnr": "", "werks": "", "parvw": "RS", "parza": "000", "lifn2": "0041300003"}
+]

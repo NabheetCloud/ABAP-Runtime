@@ -1,0 +1,5 @@
+{
+ "title": "Classic ABAP Showcase",
+ "prompt": "Classic ABAP: reports, a module pool transaction with a lock object, a function group with dictionary objects, application logs, background jobs and a print form.",
+ "flavor": "classic"
+}

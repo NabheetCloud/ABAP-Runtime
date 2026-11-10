@@ -1,0 +1,5 @@
+[
+  {"rldnr": "Y1", "rvers": "Y10", "ryear": "2026", "docnr": "C10100001", "docln": "000001", "poper": "012", "rbunit": "1010", "ritem": "", "hsl": -100000.0, "kslu": -107991.36, "racct": "0041000000", "rhcur": "EUR", "rtcur": "EUR"},
+  {"rldnr": "Y1", "rvers": "Y10", "ryear": "2026", "docnr": "C17100001", "docln": "000001", "poper": "012", "rbunit": "1710", "ritem": "", "hsl": -100000.0, "kslu": -100000.0, "racct": "0041000000", "rhcur": "USD", "rtcur": "USD"},
+  {"rldnr": "Y1", "rvers": "Y10", "ryear": "2026", "docnr": "C41100001", "docln": "000001", "poper": "012", "rbunit": "4110", "ritem": "", "hsl": -100000.0, "kslu": -1199.04, "racct": "0041000000", "rhcur": "INR", "rtcur": "INR"}
+]

@@ -1,0 +1,53 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Material Document Item'
+@VDM.viewType: #BASIC
+@ObjectModel.usageType.dataClass: #MASTER
+define view entity I_MaterialDocumentItem
+  as select from matdoc
+{
+  key mjahr as MaterialDocumentYear,
+  key mblnr as MaterialDocument,
+  key zeile as MaterialDocumentItem,
+      bwart as GoodsMovementType,
+      matnr as Material,
+      werks as Plant,
+      lgort as StorageLocation,
+      charg as Batch,
+      menge as QuantityInBaseUnit,
+      meins as MaterialBaseUnit,
+      shkzg as DebitCreditCode,
+      sobkz as InventorySpecialStockType,
+      aufnr as OrderID,
+      budat as PostingDate,
+      xblnr as DocumentReferenceID,
+      lifnr as Supplier,
+      kunnr as Customer,
+      kdauf as SalesOrder,
+      kdpos as SalesOrderItem,
+      erfmg as QuantityInEntryUnit,
+      erfme as EntryUnit,
+      dmbtr as AmountInCompanyCodeCurrency,
+      waers as Currency,
+      bldat as DocumentDate,
+      cpudt as CreationDate,
+      usnam as CreatedByUser,
+      ebeln as PurchaseOrder,
+      ebelp as PurchaseOrderItem,
+      kostl as CostCenter,
+      rsnum as Reservation,
+      rspos as ReservationItem,
+      vbeln_im as DeliveryDocument,
+      vbelp_im as DeliveryDocumentItem,
+      sjahr as ReversedMaterialDocumentYear,
+      smbln as ReversedMaterialDocument,
+      smblp as ReversedMaterialDocumentItem,
+      stock_qty as MatlWrhsStkQtyInMatlBaseUnit,
+      cputm as CreationTime,
+      bktxt as AccountingDocumentHeaderText,
+      sgtxt as DocumentItemText,
+      matnr as Product,
+      insmk as InventoryStockType,
+      sobkz as SpecialStockType,
+      aufnr as ManufacturingOrder,
+      waers as CompanyCodeCurrency
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0" APIVersion="3.6.13324.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2026-11-04T10:00:00Z">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+  <subform name="data" layout="tb" locale="de_DE" restoreState="auto">
+    <pageSet>
+      <pageArea name="Page1" id="Page1">
+        <contentArea x="20mm" y="45mm" w="170mm" h="227mm"/>
+        <medium stock="a4" short="210mm" long="297mm"/>
+        <draw name="Company" x="20mm" y="12mm" w="120mm" h="10mm">
+          <value><text>ACME Trading GmbH</text></value>
+          <font typeface="Arial" size="16pt" weight="bold"/>
+        </draw>
+        <field name="InvoiceNo" x="140mm" y="12mm" w="50mm" h="8mm">
+          <ui><textEdit/></ui>
+          <caption><value><text>Invoice</text></value></caption>
+          <bind match="dataRef" ref="$.HEADER.VBELN"/>
+        </field>
+        <draw name="FooterText" x="20mm" y="280mm" w="170mm" h="6mm">
+          <value><text>ACME Trading GmbH · Musterstraße 1 · 12345 Berlin</text></value>
+          <font size="7pt"/><para hAlign="center"/>
+        </draw>
+      </pageArea>
+    </pageSet>
+    <subform name="Address" layout="tb" w="85mm">
+      <bind match="dataRef" ref="$.HEADER"/>
+      <field name="Name"><ui><textEdit/></ui><bind match="dataRef" ref="$.NAME1"/></field>
+      <field name="Street"><ui><textEdit/></ui><bind match="dataRef" ref="$.STRAS"/></field>
+      <field name="Date"><ui><dateTimeEdit/></ui><caption><value><text>Date</text></value></caption>
+        <format><picture>date{DD.MM.YYYY}</picture></format><bind match="dataRef" ref="$.FKDAT"/></field>
+    </subform>
+    <subform name="Items" layout="table" columnWidths="20mm 90mm 25mm 35mm">
+      <subform name="HeaderRow" layout="row">
+        <draw name="h1"><value><text>Pos</text></value></draw>
+        <draw name="h2"><value><text>Material</text></value></draw>
+        <draw name="h3"><value><text>Quantity</text></value></draw>
+        <draw name="h4"><value><text>Net value</text></value></draw>
+      </subform>
+      <subform name="Row1" layout="row">
+        <occur max="-1"/>
+        <bind match="dataRef" ref="$.ITEMS.DATA[*]"/>
+        <field name="POSNR"><ui><textEdit/></ui><bind match="dataRef" ref="$.POSNR"/></field>
+        <field name="ARKTX"><ui><textEdit/></ui><bind match="dataRef" ref="$.ARKTX"/></field>
+        <field name="FKIMG"><ui><numericEdit/></ui><format><picture>num{z,zz9}</picture></format><bind match="dataRef" ref="$.FKIMG"/></field>
+        <field name="NETWR"><ui><numericEdit/></ui><format><picture>num{z,zzz,zz9.99}</picture></format><bind match="dataRef" ref="$.NETWR"/></field>
+      </subform>
+    </subform>
+    <subform name="Totals" layout="tb">
+      <field name="Total"><ui><numericEdit/></ui><caption><value><text>Total</text></value></caption>
+        <format><picture>num{z,zzz,zz9.99}</picture></format>
+        <calculate><script contentType="application/x-formcalc">Sum(Items.Row1[*].NETWR)</script></calculate>
+      </field>
+      <field name="Barcode" w="30mm"><ui><barcode type="QRCode"/></ui><bind match="dataRef" ref="$.HEADER.VBELN"/></field>
+      <field name="Comment"><ui><textEdit multiLine="1"/></ui><caption><value><text>Comment</text></value></caption><bind match="none"/></field>
+      <field name="Sign" w="70mm"><ui><signature/></ui><caption><value><text>Approved by</text></value></caption></field>
+      <draw name="Js"><value><text>Thank you</text></value>
+        <event activity="initialize"><script contentType="application/x-javascript">this.rawValue = "x";</script></event></draw>
+    </subform>
+  </subform>
+</template>
+</xdp:xdp>

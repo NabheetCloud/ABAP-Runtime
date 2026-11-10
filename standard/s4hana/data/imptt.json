@@ -1,0 +1,6 @@
+[
+  {"point": "000000000001", "mpobj": "IE000000000010000001", "mptyp": "", "atinn": "0000000001", "pointt": "", "equnr": "", "tplnr": "", "unitc": "", "indct": "X", "mrmax": 99999.0, "mrmin": 0.0, "psort": "OPERATING-HOURS"},
+  {"point": "000000000002", "mpobj": "IE000000000010000002", "mptyp": "", "atinn": "0000000001", "pointt": "", "equnr": "", "tplnr": "", "unitc": "", "indct": "X", "mrmax": 99999.0, "mrmin": 0.0, "psort": "OPERATING-HOURS"},
+  {"point": "000000000003", "mpobj": "IE000000000010000003", "mptyp": "", "atinn": "0000000001", "pointt": "", "equnr": "", "tplnr": "", "unitc": "", "indct": "X", "mrmax": 99999.0, "mrmin": 0.0, "psort": "OPERATING-HOURS"},
+  {"point": "000000000004", "mpobj": "IE000000000010000004", "mptyp": "", "atinn": "0000000001", "pointt": "", "equnr": "", "tplnr": "", "unitc": "", "indct": "X", "mrmax": 99999.0, "mrmin": 0.0, "psort": "OPERATING-HOURS"}
+]

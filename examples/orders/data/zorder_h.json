@@ -1,0 +1,1 @@
+[ { "order_id": "0000000001", "customer": "Contoso Ltd.", "order_date": "20261101", "currency": "EUR", "total": 1500, "status": "R", "created_by": "DEVELOPER", "created_at": 20261101100000, "last_changed_by": "DEVELOPER", "last_changed_at": 20261101100000, "local_last_changed_at": 20261101100000 } ]

@@ -1,0 +1,5 @@
+[
+  { "po_number": "4500001001", "company_code": "1010", "plant": "1010", "supplier": "0010300001", "purchasing_group": "001", "buyer_name": "Anna Becker", "order_date": "20261102", "delivery_date": "20261116", "currency": "EUR", "status": "R" },
+  { "po_number": "4500001002", "company_code": "1010", "plant": "1010", "supplier": "0010300002", "purchasing_group": "003", "buyer_name": "Jonas Weber", "order_date": "20261103", "delivery_date": "20261124", "currency": "EUR", "status": "R" },
+  { "po_number": "4500001003", "company_code": "1010", "plant": "1010", "supplier": "0010300001", "purchasing_group": "002", "buyer_name": "Lena Fischer", "order_date": "20261104", "delivery_date": "20261111", "currency": "EUR", "status": "D" }
+]

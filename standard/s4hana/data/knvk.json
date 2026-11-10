@@ -1,0 +1,12 @@
+[
+  {"parnr": "0000000001", "kunnr": "0010100001", "namev": "Ben", "name1": "Lopez", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000002", "kunnr": "0010100002", "namev": "Eva", "name1": "Klein", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000003", "kunnr": "0010100003", "namev": "Clara", "name1": "Klein", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000004", "kunnr": "0017100001", "namev": "Anna", "name1": "Lopez", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000005", "kunnr": "0017100002", "namev": "Farid", "name1": "Rao", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000006", "kunnr": "0017100003", "namev": "Farid", "name1": "Weber", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000007", "kunnr": "0041100001", "namev": "Ben", "name1": "Smith", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000008", "kunnr": "0041100002", "namev": "Eva", "name1": "Weber", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000009", "kunnr": "0041100003", "namev": "Ben", "name1": "Lopez", "abtnr": "0001", "pafkt": "01"},
+  {"parnr": "0000000010", "kunnr": "0010100004", "namev": "Anna", "name1": "Smith", "abtnr": "0001", "pafkt": "01"}
+]

@@ -1,0 +1,5 @@
+[
+  {"pernr": "00001001", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "trfar": "01", "trfgb": "01", "betrg": 0, "trfgr": "E10", "trfst": "", "aedtm": "20250101", "bet01": 6500.0, "lga01": "1000", "uname": "CB9980000010", "waers": "EUR"},
+  {"pernr": "00001002", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "trfar": "01", "trfgb": "01", "betrg": 0, "trfgr": "E10", "trfst": "", "aedtm": "20250101", "bet01": 7200.0, "lga01": "1000", "uname": "CB9980000010", "waers": "USD"},
+  {"pernr": "00001003", "subty": "", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "trfar": "01", "trfgb": "01", "betrg": 0, "trfgr": "E10", "trfst": "", "aedtm": "20250101", "bet01": 180000.0, "lga01": "1000", "uname": "CB9980000010", "waers": "INR"}
+]

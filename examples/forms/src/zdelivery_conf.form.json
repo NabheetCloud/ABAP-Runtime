@@ -1,0 +1,80 @@
+{
+  "title": "Delivery confirmation {billingdoc:alpha}",
+  "page": {
+    "size": "A4",
+    "margin": "20mm"
+  },
+  "content": [
+    {
+      "text": "Delivery confirmation",
+      "size": 18,
+      "bold": true
+    },
+    {
+      "fields": [
+        [
+          "Invoice",
+          "{billingdoc:alpha}"
+        ],
+        [
+          "Customer",
+          "{customername}"
+        ],
+        [
+          "Items",
+          "{=Count(_item.itemno)}"
+        ]
+      ]
+    },
+    {
+      "line": true
+    },
+    {
+      "input": "received_by",
+      "label": "Received by",
+      "required": true,
+      "value": "{received_by}"
+    },
+    {
+      "input": "complete",
+      "label": "Delivery complete and undamaged",
+      "type": "checkbox",
+      "value": "{complete}"
+    },
+    {
+      "input": "condition",
+      "label": "Condition of the goods",
+      "type": "dropdown",
+      "options": [
+        "As ordered",
+        "Damaged",
+        "Incomplete"
+      ],
+      "value": "As ordered"
+    },
+    {
+      "input": "remarks",
+      "label": "Remarks",
+      "type": "multiline",
+      "value": "{remarks}"
+    },
+    {
+      "input": "signature",
+      "label": "Signature of the customer",
+      "type": "signature",
+      "width": "80mm"
+    }
+  ],
+  "sample": {
+    "billingdoc": "0090000001",
+    "customername": "Sample Customer AG",
+    "received_by": "",
+    "complete": "",
+    "_item": [
+      {
+        "itemno": "000010"
+      }
+    ],
+    "remarks": ""
+  }
+}

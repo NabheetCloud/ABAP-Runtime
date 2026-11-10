@@ -1,0 +1,5 @@
+[
+  {"bukrs": "1010", "belnr": "1800000001", "gjahr": "2026", "buzei": "001", "name1": "Walk-in Customer", "ort01": "Berlin", "stras": "Market Street 1", "bankn": "", "land1": "DE", "pstlz": "00000", "spras": "E"},
+  {"bukrs": "1710", "belnr": "1800000001", "gjahr": "2026", "buzei": "001", "name1": "Walk-in Customer", "ort01": "Palo Alto", "stras": "Market Street 1", "bankn": "", "land1": "US", "pstlz": "00000", "spras": "E"},
+  {"bukrs": "4110", "belnr": "1800000001", "gjahr": "2026", "buzei": "001", "name1": "Walk-in Customer", "ort01": "Bengaluru", "stras": "Market Street 1", "bankn": "", "land1": "IN", "pstlz": "00000", "spras": "E"}
+]

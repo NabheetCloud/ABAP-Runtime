@@ -1,0 +1,11 @@
+[
+  {"knumh": "0000000001", "kopos": "01", "kschl": "PR00", "kbetr": 926.9, "konwa": "EUR", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000002", "kopos": "01", "kschl": "PR00", "kbetr": 1523.34, "konwa": "EUR", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000003", "kopos": "01", "kschl": "PR00", "kbetr": 313.53, "konwa": "EUR", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000004", "kopos": "01", "kschl": "PR00", "kbetr": 1001.05, "konwa": "USD", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000005", "kopos": "01", "kschl": "PR00", "kbetr": 1645.2, "konwa": "USD", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000006", "kopos": "01", "kschl": "PR00", "kbetr": 338.61, "konwa": "USD", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000007", "kopos": "01", "kschl": "PR00", "kbetr": 83513.69, "konwa": "INR", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000008", "kopos": "01", "kschl": "PR00", "kbetr": 137252.93, "konwa": "INR", "kpein": 1, "kmein": "PC", "loevm_ko": ""},
+  {"knumh": "0000000009", "kopos": "01", "kschl": "PR00", "kbetr": 28249.42, "konwa": "INR", "kpein": 1, "kmein": "PC", "loevm_ko": ""}
+]

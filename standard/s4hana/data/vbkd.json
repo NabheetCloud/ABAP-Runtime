@@ -1,0 +1,14 @@
+[
+  {"vbeln": "0000001001", "posnr": "000000", "zterm": "0002", "inco1": "EXW", "inco2": "Berlin", "bstkd": "PO-0001-01", "kursk": 1.0, "prsdt": "20260105", "fkdat": "20260119", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001002", "posnr": "000000", "zterm": "0002", "inco1": "EXW", "inco2": "Berlin", "bstkd": "PO-0002-02", "kursk": 1.0, "prsdt": "20260308", "fkdat": "20260322", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001003", "posnr": "000000", "zterm": "0002", "inco1": "EXW", "inco2": "Berlin", "bstkd": "PO-0003-03", "kursk": 1.0, "prsdt": "20260511", "fkdat": "20260525", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001004", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Berlin", "bstkd": "PO-0004-04", "kursk": 1.0, "prsdt": "20260714", "fkdat": "20260728", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001005", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Palo Alto", "bstkd": "PO-0001-01", "kursk": 1.0, "prsdt": "20260205", "fkdat": "20260219", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001006", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Palo Alto", "bstkd": "PO-0002-02", "kursk": 1.0, "prsdt": "20260408", "fkdat": "20260422", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001007", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Palo Alto", "bstkd": "PO-0003-03", "kursk": 1.0, "prsdt": "20260611", "fkdat": "20260625", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001008", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Palo Alto", "bstkd": "PO-0001-04", "kursk": 1.0, "prsdt": "20260814", "fkdat": "20260828", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001009", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Bengaluru", "bstkd": "PO-0001-01", "kursk": 1.0, "prsdt": "20260305", "fkdat": "20260319", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001010", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Bengaluru", "bstkd": "PO-0002-02", "kursk": 1.0, "prsdt": "20260508", "fkdat": "20260522", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001011", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Bengaluru", "bstkd": "PO-0003-03", "kursk": 1.0, "prsdt": "20260711", "fkdat": "20260725", "kdgrp": "01", "konda": "01", "pltyp": "01"},
+  {"vbeln": "0000001012", "posnr": "000000", "zterm": "NT30", "inco1": "EXW", "inco2": "Bengaluru", "bstkd": "PO-0001-04", "kursk": 1.0, "prsdt": "20260914", "fkdat": "20260928", "kdgrp": "01", "konda": "01", "pltyp": "01"}
+]

@@ -1,0 +1,11 @@
+[
+  {"docnum": "0000000000000001", "logdat": "20260116", "logtim": "071601", "countr": "000001", "status": "01", "statxt": "IDoc generated", "uname": "CB9980000020"},
+  {"docnum": "0000000000000001", "logdat": "20260116", "logtim": "071602", "countr": "000002", "status": "30", "statxt": "IDoc ready for dispatch", "uname": "CB9980000020"},
+  {"docnum": "0000000000000001", "logdat": "20260116", "logtim": "071603", "countr": "000003", "status": "03", "statxt": "Data passed to port OK", "uname": "CB9980000020"},
+  {"docnum": "0000000000000002", "logdat": "20260319", "logtim": "071601", "countr": "000001", "status": "01", "statxt": "IDoc generated", "uname": "CB9980000020"},
+  {"docnum": "0000000000000002", "logdat": "20260319", "logtim": "071602", "countr": "000002", "status": "30", "statxt": "IDoc ready for dispatch", "uname": "CB9980000020"},
+  {"docnum": "0000000000000002", "logdat": "20260319", "logtim": "071603", "countr": "000003", "status": "03", "statxt": "Data passed to port OK", "uname": "CB9980000020"},
+  {"docnum": "0000000000000003", "logdat": "20260522", "logtim": "071601", "countr": "000001", "status": "01", "statxt": "IDoc generated", "uname": "CB9980000020"},
+  {"docnum": "0000000000000003", "logdat": "20260522", "logtim": "071602", "countr": "000002", "status": "30", "statxt": "IDoc ready for dispatch", "uname": "CB9980000020"},
+  {"docnum": "0000000000000003", "logdat": "20260522", "logtim": "071603", "countr": "000003", "status": "03", "statxt": "Data passed to port OK", "uname": "CB9980000020"}
+]

@@ -1,0 +1,5 @@
+[
+  {"pspnr": "00000001", "pspid": "P-1010-001", "vbukr": "1010", "objnr": "PD00000001", "erdat": "20251201", "ernam": "ANNA.BECKER", "plfaz": "20260101", "plsez": "20271231", "post1": "Berlin plant expansion", "prctr": "YB101", "verna": "Anna Becker", "vernr": "00000001", "vkokr": "A000", "waers": "EUR", "werks": "1010"},
+  {"pspnr": "00000011", "pspid": "P-1710-001", "vbukr": "1710", "objnr": "PD00000011", "erdat": "20251201", "ernam": "ANNA.BECKER", "plfaz": "20260101", "plsez": "20271231", "post1": "Palo Alto plant expansion", "prctr": "YB101", "verna": "Anna Becker", "vernr": "00000001", "vkokr": "A000", "waers": "USD", "werks": "1710"},
+  {"pspnr": "00000021", "pspid": "P-4110-001", "vbukr": "4110", "objnr": "PD00000021", "erdat": "20251201", "ernam": "ANNA.BECKER", "plfaz": "20260101", "plsez": "20271231", "post1": "Bengaluru plant expansion", "prctr": "YB101", "verna": "Anna Becker", "vernr": "00000001", "vkokr": "A000", "waers": "INR", "werks": "4110"}
+]

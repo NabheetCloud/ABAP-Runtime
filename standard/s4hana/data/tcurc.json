@@ -1,0 +1,15 @@
+[
+  {"waers": "EUR", "isocd": "EUR", "altwr": "", "xprimary": "X"},
+  {"waers": "USD", "isocd": "USD", "altwr": "", "xprimary": "X"},
+  {"waers": "INR", "isocd": "INR", "altwr": "", "xprimary": "X"},
+  {"waers": "GBP", "isocd": "GBP", "altwr": "", "xprimary": "X"},
+  {"waers": "CHF", "isocd": "CHF", "altwr": "", "xprimary": "X"},
+  {"waers": "JPY", "isocd": "JPY", "altwr": "", "xprimary": "X"},
+  {"waers": "CNY", "isocd": "CNY", "altwr": "", "xprimary": "X"},
+  {"waers": "AUD", "isocd": "AUD", "altwr": "", "xprimary": "X"},
+  {"waers": "CAD", "isocd": "CAD", "altwr": "", "xprimary": "X"},
+  {"waers": "BRL", "isocd": "BRL", "altwr": "", "xprimary": "X"},
+  {"waers": "SGD", "isocd": "SGD", "altwr": "", "xprimary": "X"},
+  {"waers": "AED", "isocd": "AED", "altwr": "", "xprimary": "X"},
+  {"waers": "MXN", "isocd": "MXN", "altwr": "", "xprimary": "X"}
+]

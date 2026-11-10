@@ -1,0 +1,20 @@
+[
+  {"kalnr": "000000000001", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 720.13, "stprs": 713.0, "salk3": 14260.0, "peinh": 1, "waers": "EUR"},
+  {"kalnr": "000000000001", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 720.13, "stprs": 713.0, "salk3": 14260.0, "peinh": 1, "waers": "EUR"},
+  {"kalnr": "000000000002", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 1183.52, "stprs": 1171.8, "salk3": 23436.0, "peinh": 1, "waers": "EUR"},
+  {"kalnr": "000000000002", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 1183.52, "stprs": 1171.8, "salk3": 23436.0, "peinh": 1, "waers": "EUR"},
+  {"kalnr": "000000000003", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 613.68, "stprs": 607.6, "salk3": 12152.0, "peinh": 1, "waers": "EUR"},
+  {"kalnr": "000000000003", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 613.68, "stprs": 607.6, "salk3": 12152.0, "peinh": 1, "waers": "EUR"},
+  {"kalnr": "000000000004", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 777.74, "stprs": 770.04, "salk3": 15400.8, "peinh": 1, "waers": "USD"},
+  {"kalnr": "000000000004", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 777.74, "stprs": 770.04, "salk3": 15400.8, "peinh": 1, "waers": "USD"},
+  {"kalnr": "000000000005", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 1278.2, "stprs": 1265.54, "salk3": 25310.8, "peinh": 1, "waers": "USD"},
+  {"kalnr": "000000000005", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 1278.2, "stprs": 1265.54, "salk3": 25310.8, "peinh": 1, "waers": "USD"},
+  {"kalnr": "000000000006", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 662.77, "stprs": 656.21, "salk3": 13124.2, "peinh": 1, "waers": "USD"},
+  {"kalnr": "000000000006", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 662.77, "stprs": 656.21, "salk3": 13124.2, "peinh": 1, "waers": "USD"},
+  {"kalnr": "000000000007", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 64883.71, "stprs": 64241.3, "salk3": 1284826.0, "peinh": 1, "waers": "INR"},
+  {"kalnr": "000000000007", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 64883.71, "stprs": 64241.3, "salk3": 1284826.0, "peinh": 1, "waers": "INR"},
+  {"kalnr": "000000000008", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 106634.97, "stprs": 105579.18, "salk3": 2111583.6, "peinh": 1, "waers": "INR"},
+  {"kalnr": "000000000008", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 106634.97, "stprs": 105579.18, "salk3": 2111583.6, "peinh": 1, "waers": "INR"},
+  {"kalnr": "000000000009", "bdatj": "2026", "poper": "009", "untper": "000", "curtp": "10", "pvprs": 55292.21, "stprs": 54744.76, "salk3": 1094895.2, "peinh": 1, "waers": "INR"},
+  {"kalnr": "000000000009", "bdatj": "2026", "poper": "010", "untper": "000", "curtp": "10", "pvprs": 55292.21, "stprs": 54744.76, "salk3": 1094895.2, "peinh": 1, "waers": "INR"}
+]

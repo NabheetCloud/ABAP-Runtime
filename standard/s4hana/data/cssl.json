@@ -1,0 +1,8 @@
+[
+  {"kokrs": "A000", "objnr": "KLA00010101101LAB001", "gjahr": "2026", "lstar": "LAB001", "tkg001": 55.0, "waers": "EUR"},
+  {"kokrs": "A000", "objnr": "KLA00010101101MCH001", "gjahr": "2026", "lstar": "MCH001", "tkg001": 80.0, "waers": "EUR"},
+  {"kokrs": "A000", "objnr": "KLA00017101101LAB001", "gjahr": "2026", "lstar": "LAB001", "tkg001": 55.0, "waers": "USD"},
+  {"kokrs": "A000", "objnr": "KLA00017101101MCH001", "gjahr": "2026", "lstar": "MCH001", "tkg001": 80.0, "waers": "USD"},
+  {"kokrs": "A000", "objnr": "KLA00041101101LAB001", "gjahr": "2026", "lstar": "LAB001", "tkg001": 55.0, "waers": "INR"},
+  {"kokrs": "A000", "objnr": "KLA00041101101MCH001", "gjahr": "2026", "lstar": "MCH001", "tkg001": 80.0, "waers": "INR"}
+]

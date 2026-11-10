@@ -1,0 +1,20 @@
+[
+  {"land1": "DE", "intca": "DE", "intca3": "DEU", "intcn3": "276", "waers": "EUR", "spras": "D", "xegld": "X"},
+  {"land1": "US", "intca": "US", "intca3": "USA", "intcn3": "840", "waers": "USD", "spras": "E", "xegld": ""},
+  {"land1": "IN", "intca": "IN", "intca3": "IND", "intcn3": "356", "waers": "INR", "spras": "E", "xegld": ""},
+  {"land1": "GB", "intca": "GB", "intca3": "GBR", "intcn3": "826", "waers": "GBP", "spras": "E", "xegld": ""},
+  {"land1": "FR", "intca": "FR", "intca3": "FRA", "intcn3": "250", "waers": "EUR", "spras": "F", "xegld": "X"},
+  {"land1": "NL", "intca": "NL", "intca3": "NLD", "intcn3": "528", "waers": "EUR", "spras": "E", "xegld": "X"},
+  {"land1": "IT", "intca": "IT", "intca3": "ITA", "intcn3": "380", "waers": "EUR", "spras": "I", "xegld": "X"},
+  {"land1": "ES", "intca": "ES", "intca3": "ESP", "intcn3": "724", "waers": "EUR", "spras": "S", "xegld": "X"},
+  {"land1": "AT", "intca": "AT", "intca3": "AUT", "intcn3": "040", "waers": "EUR", "spras": "D", "xegld": "X"},
+  {"land1": "CH", "intca": "CH", "intca3": "CHE", "intcn3": "756", "waers": "CHF", "spras": "D", "xegld": ""},
+  {"land1": "JP", "intca": "JP", "intca3": "JPN", "intcn3": "392", "waers": "JPY", "spras": "J", "xegld": ""},
+  {"land1": "CN", "intca": "CN", "intca3": "CHN", "intcn3": "156", "waers": "CNY", "spras": "1", "xegld": ""},
+  {"land1": "AU", "intca": "AU", "intca3": "AUS", "intcn3": "036", "waers": "AUD", "spras": "E", "xegld": ""},
+  {"land1": "CA", "intca": "CA", "intca3": "CAN", "intcn3": "124", "waers": "CAD", "spras": "E", "xegld": ""},
+  {"land1": "BR", "intca": "BR", "intca3": "BRA", "intcn3": "076", "waers": "BRL", "spras": "E", "xegld": ""},
+  {"land1": "SG", "intca": "SG", "intca3": "SGP", "intcn3": "702", "waers": "SGD", "spras": "E", "xegld": ""},
+  {"land1": "AE", "intca": "AE", "intca3": "ARE", "intcn3": "784", "waers": "AED", "spras": "E", "xegld": ""},
+  {"land1": "MX", "intca": "MX", "intca3": "MEX", "intcn3": "484", "waers": "MXN", "spras": "S", "xegld": ""}
+]

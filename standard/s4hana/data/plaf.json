@@ -1,0 +1,5 @@
+[
+  {"plnum": "0000000001", "matnr": "FG126", "plwrk": "1010", "pwwrk": "1010", "gsmng": 20.0, "psttr": "20261110", "pedtr": "20261114", "paart": "LA", "beskz": "E", "verid": "0001", "dispo": "001", "meins": "PC", "trmer": ""},
+  {"plnum": "0000000002", "matnr": "FG126", "plwrk": "1010", "pwwrk": "1010", "gsmng": 30.0, "psttr": "20261115", "pedtr": "20261119", "paart": "LA", "beskz": "E", "verid": "0001", "dispo": "001", "meins": "PC", "trmer": ""},
+  {"plnum": "0000000003", "matnr": "FG126", "plwrk": "1010", "pwwrk": "1010", "gsmng": 40.0, "psttr": "20261120", "pedtr": "20261124", "paart": "LA", "beskz": "E", "verid": "0001", "dispo": "001", "meins": "PC", "trmer": ""}
+]

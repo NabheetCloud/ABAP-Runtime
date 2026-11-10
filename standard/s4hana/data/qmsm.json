@@ -1,0 +1,6 @@
+[
+  {"qmnum": "000010000001", "manum": "0001", "mnkat": "2", "mngrp": "PM-TASK", "mncod": "0002", "pster": "20260806", "peter": "20260808", "matxt": "Replace part", "mngfa": ""},
+  {"qmnum": "000010000002", "manum": "0001", "mnkat": "2", "mngrp": "PM-TASK", "mncod": "0002", "pster": "20260807", "peter": "20260809", "matxt": "Replace part", "mngfa": "X"},
+  {"qmnum": "000010000003", "manum": "0001", "mnkat": "2", "mngrp": "PM-TASK", "mncod": "0002", "pster": "20260808", "peter": "20260810", "matxt": "Replace part", "mngfa": ""},
+  {"qmnum": "000010000004", "manum": "0001", "mnkat": "2", "mngrp": "PM-TASK", "mncod": "0002", "pster": "20260809", "peter": "20260811", "matxt": "Replace part", "mngfa": ""}
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="RAP Studio" APIVersion="3.6.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+<subform name="data" layout="tb" locale="en_US">
+<pageSet>
+<pageArea name="Page1"><contentArea x="20mm" y="20mm" w="170mm" h="250mm"/><medium stock="a4" short="210mm" long="297mm"/></pageArea>
+</pageSet>
+<draw name="Title" w="170mm" h="10mm"><ui><textEdit/></ui><value><text>Flight card (Adobe XDP form)</text></value><font typeface="Arial" size="16pt" weight="bold"/></draw>
+<field name="Carrier" w="170mm" h="8mm"><ui><textEdit/></ui><caption reserve="40mm"><value><text>Carrier</text></value></caption><bind match="dataRef" ref="$.IS_FLIGHT.CARRIER_ID"/></field>
+<field name="Connection" w="170mm" h="8mm"><ui><textEdit/></ui><caption reserve="40mm"><value><text>Connection</text></value></caption><bind match="dataRef" ref="$.IS_FLIGHT.CONNECTION_ID"/></field>
+<field name="From" w="170mm" h="8mm"><ui><textEdit/></ui><caption reserve="40mm"><value><text>From</text></value></caption><bind match="dataRef" ref="$.IS_FLIGHT.CITY_FROM"/></field>
+<field name="Price" w="170mm" h="8mm"><ui><numericEdit/></ui><caption reserve="40mm"><value><text>Price</text></value></caption><format><picture>num{z,zz9.99}</picture></format><bind match="dataRef" ref="$.IS_FLIGHT.PRICE"/></field>
+</subform>
+</template>
+</xdp:xdp>

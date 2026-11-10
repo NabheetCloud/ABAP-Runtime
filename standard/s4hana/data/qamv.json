@@ -1,0 +1,10 @@
+[
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0010", "verwmerkm": "DIM-01", "kurztext": "Length (mm)", "sollwert": 120.0, "toleranzob": 120.5, "toleranzun": 119.5, "masseinhsw": "MM", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0020", "verwmerkm": "VIS-01", "kurztext": "Visual inspection", "sollwert": 0.0, "toleranzob": 0.5, "toleranzun": -0.5, "masseinhsw": "", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0010", "verwmerkm": "DIM-01", "kurztext": "Length (mm)", "sollwert": 120.0, "toleranzob": 120.5, "toleranzun": 119.5, "masseinhsw": "MM", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0020", "verwmerkm": "VIS-01", "kurztext": "Visual inspection", "sollwert": 0.0, "toleranzob": 0.5, "toleranzun": -0.5, "masseinhsw": "", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0010", "verwmerkm": "DIM-01", "kurztext": "Length (mm)", "sollwert": 120.0, "toleranzob": 120.5, "toleranzun": 119.5, "masseinhsw": "MM", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0020", "verwmerkm": "VIS-01", "kurztext": "Visual inspection", "sollwert": 0.0, "toleranzob": 0.5, "toleranzun": -0.5, "masseinhsw": "", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0010", "verwmerkm": "DIM-01", "kurztext": "Length (mm)", "sollwert": 120.0, "toleranzob": 120.5, "toleranzun": 119.5, "masseinhsw": "MM", "steuerkz": "X", "stichprver": "SAMPLE5"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0020", "verwmerkm": "VIS-01", "kurztext": "Visual inspection", "sollwert": 0.0, "toleranzob": 0.5, "toleranzun": -0.5, "masseinhsw": "", "steuerkz": "X", "stichprver": "SAMPLE5"}
+]

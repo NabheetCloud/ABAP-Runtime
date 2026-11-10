@@ -1,0 +1,21 @@
+[
+  {"addrnumber": "0010100001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0010100002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"},
+  {"addrnumber": "0010100003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0003@example.com", "flgdefault": "X"},
+  {"addrnumber": "0017100001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0017100002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"},
+  {"addrnumber": "0017100003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0003@example.com", "flgdefault": "X"},
+  {"addrnumber": "0041100001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0041100002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"},
+  {"addrnumber": "0041100003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0003@example.com", "flgdefault": "X"},
+  {"addrnumber": "0010100004", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0004@example.com", "flgdefault": "X"},
+  {"addrnumber": "0010300001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0010300002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"},
+  {"addrnumber": "0017300001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0017300002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"},
+  {"addrnumber": "0041300001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0041300002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"},
+  {"addrnumber": "0041300003", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0003@example.com", "flgdefault": "X"},
+  {"addrnumber": "0000900001", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0001@example.com", "flgdefault": "X"},
+  {"addrnumber": "0000900002", "persnumber": "", "date_from": "20200101", "consnumber": "001", "smtp_addr": "info0002@example.com", "flgdefault": "X"}
+]

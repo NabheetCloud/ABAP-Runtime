@@ -1,0 +1,1 @@
+{ "title": "Cinema ticket", "layout": "zf_cine_ticket.xdp", "dataProvider": "ZCINE_TICKET_SRVD" }

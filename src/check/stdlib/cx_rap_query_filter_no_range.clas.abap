@@ -1,0 +1,4 @@
+CLASS cx_rap_query_filter_no_range DEFINITION PUBLIC INHERITING FROM cx_rap_query_provider.
+ENDCLASS.
+CLASS cx_rap_query_filter_no_range IMPLEMENTATION.
+ENDCLASS.

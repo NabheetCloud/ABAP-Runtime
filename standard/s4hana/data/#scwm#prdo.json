@@ -1,0 +1,11 @@
+[
+  {"docid": "DB302EF6DA4E18B36E00ECBA9226B6BA", "lgnum": "1010", "docno": "3080000001", "doctype": "OUTB", "refdocno_erp": "0080000001", "partyno_st": "0010100001", "status_gi": "9", "status_pick": "9", "created_at": "20260112"},
+  {"docid": "ACFFB869A1AFCB8308F4AA336B22AA75", "lgnum": "1010", "docno": "3080000002", "doctype": "OUTB", "refdocno_erp": "0080000002", "partyno_st": "0010100002", "status_gi": "9", "status_pick": "9", "created_at": "20260315"},
+  {"docid": "E74186E8B868D8BB9D5D787E9936FFFE", "lgnum": "1010", "docno": "3080000003", "doctype": "OUTB", "refdocno_erp": "0080000003", "partyno_st": "0010100003", "status_gi": "9", "status_pick": "9", "created_at": "20260518"},
+  {"docid": "8DE740CAC360933D0CB678560BDDC77F", "lgnum": "1710", "docno": "3080000004", "doctype": "OUTB", "refdocno_erp": "0080000004", "partyno_st": "0017100001", "status_gi": "9", "status_pick": "9", "created_at": "20260212"},
+  {"docid": "33FF7CCDB2925952753CC0FD4E271296", "lgnum": "1710", "docno": "3080000005", "doctype": "OUTB", "refdocno_erp": "0080000005", "partyno_st": "0017100002", "status_gi": "9", "status_pick": "9", "created_at": "20260415"},
+  {"docid": "C59488426E13659C1941A0C6678F5637", "lgnum": "1710", "docno": "3080000006", "doctype": "OUTB", "refdocno_erp": "0080000006", "partyno_st": "0017100003", "status_gi": "9", "status_pick": "9", "created_at": "20260618"},
+  {"docid": "B3657B7FB927769EE64E4D608945272E", "lgnum": "4110", "docno": "3080000007", "doctype": "OUTB", "refdocno_erp": "0080000007", "partyno_st": "0041100001", "status_gi": "9", "status_pick": "9", "created_at": "20260312"},
+  {"docid": "1463790C19F498452A45DF9C7C34C88D", "lgnum": "4110", "docno": "3080000008", "doctype": "OUTB", "refdocno_erp": "0080000008", "partyno_st": "0041100002", "status_gi": "9", "status_pick": "9", "created_at": "20260515"},
+  {"docid": "E1ACB0B0E435C47896E69434A2FFC377", "lgnum": "4110", "docno": "3080000009", "doctype": "OUTB", "refdocno_erp": "0080000009", "partyno_st": "0041100003", "status_gi": "1", "status_pick": "1", "created_at": "20260718"}
+]

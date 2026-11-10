@@ -1,0 +1,8 @@
+[
+  {"docnum": "0000000000000001", "counter": "000000", "segnum": "1", "segnam": "E1EDK01", "sdata": "header 0090000001 312.6 EUR"},
+  {"docnum": "0000000000000001", "counter": "000000", "segnum": "2", "segnam": "E1EDP01", "sdata": "item 0090000001 312.6 EUR"},
+  {"docnum": "0000000000000002", "counter": "000000", "segnum": "1", "segnam": "E1EDK01", "sdata": "header 0090000002 18983.16 EUR"},
+  {"docnum": "0000000000000002", "counter": "000000", "segnum": "2", "segnam": "E1EDP01", "sdata": "item 0090000002 18983.16 EUR"},
+  {"docnum": "0000000000000003", "counter": "000000", "segnum": "1", "segnam": "E1EDK01", "sdata": "header 0090000003 33684.18 EUR"},
+  {"docnum": "0000000000000003", "counter": "000000", "segnum": "2", "segnam": "E1EDP01", "sdata": "item 0090000003 33684.18 EUR"}
+]

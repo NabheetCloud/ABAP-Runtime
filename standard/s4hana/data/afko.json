@@ -1,0 +1,5 @@
+[
+  {"aufnr": "000001000001", "plnbez": "FG126", "gamng": 50.0, "gmein": "PC", "gstrp": "20260302", "gltrp": "20260307", "gstrs": "20260302", "gltrs": "20260307", "ftrmi": "20260302", "aufpl": "0000000001", "rsnum": "0000000001", "stlnr": "00000001", "plnnr": "50000001", "dispo": "001", "fevor": "001", "getri": "20260306", "igmng": 50.0, "plnal": "01", "plnty": "N", "stlal": "01"},
+  {"aufnr": "000001000002", "plnbez": "FG126", "gamng": 30.0, "gmein": "PC", "gstrp": "20260602", "gltrp": "20260607", "gstrs": "20260602", "gltrs": "20260607", "ftrmi": "20260602", "aufpl": "0000000002", "rsnum": "0000000002", "stlnr": "00000001", "plnnr": "50000001", "dispo": "001", "fevor": "001", "getri": "", "igmng": 15.0, "plnal": "01", "plnty": "N", "stlal": "01"},
+  {"aufnr": "000001000003", "plnbez": "FG126", "gamng": 40.0, "gmein": "PC", "gstrp": "20260902", "gltrp": "20260907", "gstrs": "20260902", "gltrs": "20260907", "ftrmi": "", "aufpl": "0000000003", "rsnum": "0000000003", "stlnr": "00000001", "plnnr": "50000001", "dispo": "001", "fevor": "001", "getri": "", "igmng": 0.0, "plnal": "01", "plnty": "N", "stlal": "01"}
+]

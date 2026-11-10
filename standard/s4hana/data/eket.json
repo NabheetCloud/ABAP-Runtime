@@ -1,0 +1,11 @@
+[
+  {"ebeln": "4500000001", "ebelp": "00010", "etenr": "0001", "eindt": "20260219", "menge": 50, "wemng": 50, "banfn": "0010000001", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260219"},
+  {"ebeln": "4500000002", "ebelp": "00010", "etenr": "0001", "eindt": "20260420", "menge": 200, "wemng": 200, "banfn": "0010000002", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260420"},
+  {"ebeln": "4500000003", "ebelp": "00010", "etenr": "0001", "eindt": "20260621", "menge": 150, "wemng": 150, "banfn": "0010000003", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260621"},
+  {"ebeln": "4500000004", "ebelp": "00010", "etenr": "0001", "eindt": "20260219", "menge": 200, "wemng": 200, "banfn": "0010000005", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260219"},
+  {"ebeln": "4500000005", "ebelp": "00010", "etenr": "0001", "eindt": "20260420", "menge": 150, "wemng": 150, "banfn": "0010000006", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260420"},
+  {"ebeln": "4500000006", "ebelp": "00010", "etenr": "0001", "eindt": "20260621", "menge": 150, "wemng": 150, "banfn": "0010000007", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260621"},
+  {"ebeln": "4500000007", "ebelp": "00010", "etenr": "0001", "eindt": "20260219", "menge": 150, "wemng": 150, "banfn": "0010000009", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260219"},
+  {"ebeln": "4500000008", "ebelp": "00010", "etenr": "0001", "eindt": "20260420", "menge": 100, "wemng": 100, "banfn": "0010000010", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260420"},
+  {"ebeln": "4500000009", "ebelp": "00010", "etenr": "0001", "eindt": "20260621", "menge": 50, "wemng": 50, "banfn": "0010000011", "bnfpo": "00010", "charg": "", "wamng": 0, "dabmg": "", "slfdt": "20260621"}
+]

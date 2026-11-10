@@ -1,0 +1,5 @@
+[
+  {"tplnr": "1010-PROD", "fltyp": "M", "iwerk": "1010", "swerk": "1010", "tplma": "", "objnr": "IF1010-PROD", "iloan": "000000000001", "stort": "", "beber": "", "ingrp": "", "erdat": "20250301", "ernam": "CB9980000010"},
+  {"tplnr": "1010-PROD-L01", "fltyp": "M", "iwerk": "1010", "swerk": "1010", "tplma": "1010-PROD", "objnr": "IF1010-PROD-L01", "iloan": "000000000002", "stort": "", "beber": "", "ingrp": "", "erdat": "20250301", "ernam": "CB9980000010"},
+  {"tplnr": "1010-UTIL", "fltyp": "M", "iwerk": "1010", "swerk": "1010", "tplma": "", "objnr": "IF1010-UTIL", "iloan": "000000000003", "stort": "", "beber": "", "ingrp": "", "erdat": "20250301", "ernam": "CB9980000010"}
+]

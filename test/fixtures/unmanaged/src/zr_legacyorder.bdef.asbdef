@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_r_legacyorder unique;
+strict ( 2 );
+
+define behavior for ZR_LegacyOrder alias Order
+lock master
+authorization master ( instance )
+etag master ChangedAt
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) OrderNo, Status, ChangedAt;
+  field ( mandatory ) Customer;
+  action close result [1] $self;
+  event Closed;
+}

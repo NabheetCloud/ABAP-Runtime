@@ -1,0 +1,5 @@
+[
+  {"sap_object": "BUS2081", "object_id": "51056000012026", "archiv_id": "A1", "arc_doc_id": "5BA225D5483F76511A141AF0A42321B0", "ar_object": "MMIFRINVOI", "ar_date": "20260224", "reserve": "PDF"},
+  {"sap_object": "BUS2081", "object_id": "51056000022026", "archiv_id": "A1", "arc_doc_id": "9E3EC654ADA3D5E94A118E50190B8602", "ar_object": "MMIFRINVOI", "ar_date": "20260425", "reserve": "PDF"},
+  {"sap_object": "BUS2081", "object_id": "51056000032026", "archiv_id": "A1", "arc_doc_id": "1EC001CEA4CE177213432112007A3C03", "ar_object": "MMIFRINVOI", "ar_date": "20260224", "reserve": "PDF"}
+]

@@ -1,0 +1,19 @@
+[
+  {"partner": "0010100001", "addrnumber": "9000000001", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0010100002", "addrnumber": "9000000002", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0010100003", "addrnumber": "9000000003", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0017100001", "addrnumber": "9000000004", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0017100002", "addrnumber": "9000000005", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0017100003", "addrnumber": "9000000006", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0041100001", "addrnumber": "9000000007", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0041100002", "addrnumber": "9000000008", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0041100003", "addrnumber": "9000000009", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0010100004", "addrnumber": "9000000010", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0010300001", "addrnumber": "9000000011", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0010300002", "addrnumber": "9000000012", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0017300001", "addrnumber": "9000000013", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0017300002", "addrnumber": "9000000014", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0041300001", "addrnumber": "9000000015", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0041300002", "addrnumber": "9000000016", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""},
+  {"partner": "0041300003", "addrnumber": "9000000017", "xdfadr": "X", "addr_valid_from": "", "addr_valid_to": ""}
+]

@@ -1,0 +1,24 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_Book alias Book
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Loan { create; }
+}
+
+define behavior for ZC_Loan alias Loan
+use etag
+{
+  use update;
+  use delete;
+
+  use action returnBook;
+  use action printReceipt;
+
+  use association _Book;
+}

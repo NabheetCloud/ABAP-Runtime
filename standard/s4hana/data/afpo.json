@@ -1,0 +1,5 @@
+[
+  {"aufnr": "000001000001", "posnr": "000001", "matnr": "FG126", "psmng": 50.0, "wemng": 50.0, "amein": "PC", "dwerk": "1010", "lgort": "101A", "charg": "", "kdauf": "", "kdpos": "", "verid": "0001", "elikz": "X", "dauat": "YBM1", "ltrmi": "20260306", "meins": "PC", "pwerk": "1010"},
+  {"aufnr": "000001000002", "posnr": "000001", "matnr": "FG126", "psmng": 30.0, "wemng": 15.0, "amein": "PC", "dwerk": "1010", "lgort": "101A", "charg": "", "kdauf": "", "kdpos": "", "verid": "0001", "elikz": "", "dauat": "YBM1", "ltrmi": "20260606", "meins": "PC", "pwerk": "1010"},
+  {"aufnr": "000001000003", "posnr": "000001", "matnr": "FG126", "psmng": 40.0, "wemng": 0.0, "amein": "PC", "dwerk": "1010", "lgort": "101A", "charg": "", "kdauf": "", "kdpos": "", "verid": "0001", "elikz": "", "dauat": "YBM1", "ltrmi": "", "meins": "PC", "pwerk": "1010"}
+]

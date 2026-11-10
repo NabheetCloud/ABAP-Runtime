@@ -1,0 +1,7 @@
+[
+  {"agr_name": "Z_SALES_CLERK", "uname": "ANNA.BECKER", "from_dat": "20250101", "to_dat": "99991231", "exclude": ""},
+  {"agr_name": "Z_BUYER", "uname": "JOHN.MILLER", "from_dat": "20250101", "to_dat": "99991231", "exclude": ""},
+  {"agr_name": "Z_ACCOUNTANT", "uname": "PRIYA.SHARMA", "from_dat": "20250101", "to_dat": "99991231", "exclude": ""},
+  {"agr_name": "Z_PLANNER", "uname": "MARCO.ROSSI", "from_dat": "20250101", "to_dat": "99991231", "exclude": ""},
+  {"agr_name": "Z_MAINTENANCE", "uname": "ANNA.BECKER", "from_dat": "20250101", "to_dat": "99991231", "exclude": ""}
+]

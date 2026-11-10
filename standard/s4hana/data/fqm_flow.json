@@ -1,0 +1,5 @@
+[
+  {"flow_id": "FQM10100001", "bukrs": "1010", "amount": 10000.0, "currency": "", "date": "", "flow_type": "AR", "waers": "EUR", "value_date": "20261130", "origin": "SD"},
+  {"flow_id": "FQM17100001", "bukrs": "1710", "amount": 10000.0, "currency": "", "date": "", "flow_type": "AR", "waers": "USD", "value_date": "20261130", "origin": "SD"},
+  {"flow_id": "FQM41100001", "bukrs": "4110", "amount": 10000.0, "currency": "", "date": "", "flow_type": "AR", "waers": "INR", "value_date": "20261130", "origin": "SD"}
+]

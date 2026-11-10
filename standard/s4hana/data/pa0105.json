@@ -1,0 +1,8 @@
+[
+  {"pernr": "00001001", "subty": "0001", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "usrid": "ANNA.BECKER", "usrid_long": "", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001001", "subty": "0010", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "usrid": "", "usrid_long": "anna.becker@example.com", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001002", "subty": "0001", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "usrid": "JOHN.MILLER", "usrid_long": "", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001002", "subty": "0010", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "usrid": "", "usrid_long": "john.miller@example.com", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001003", "subty": "0001", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "usrid": "PRIYA.SHARMA", "usrid_long": "", "aedtm": "20250101", "uname": "CB9980000010"},
+  {"pernr": "00001003", "subty": "0010", "objps": "", "sprps": "", "endda": "99991231", "begda": "20230101", "seqnr": "000", "usrid": "", "usrid_long": "priya.sharma@example.com", "aedtm": "20250101", "uname": "CB9980000010"}
+]

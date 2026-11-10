@@ -1,0 +1,13 @@
+diff --git a/src/zcl_open_abap_pdf.clas.abap b/src/zcl_open_abap_pdf.clas.abap
+index 630d7dd..f0b70e0 100644
+--- a/src/zcl_open_abap_pdf.clas.abap
++++ b/src/zcl_open_abap_pdf.clas.abap
+@@ -244,6 +244,8 @@ CLASS zcl_open_abap_pdf IMPLEMENTATION.
+     DATA(lv_b) = CONV f( iv_b / 255 ).
+ 
+     mv_fill_color = |{ format_number( lv_r ) } { format_number( lv_g ) } { format_number( lv_b ) } rg|.
++    " the fill color applies to the shapes drawn next (PDF: non-stroking color)
++    append_to_page( mv_fill_color ).
+ 
+     ro_pdf = me.
+   ENDMETHOD.

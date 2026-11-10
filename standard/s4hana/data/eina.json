@@ -1,0 +1,14 @@
+[
+  {"infnr": "5300000001", "matnr": "RM12", "lifnr": "0010300001", "matkl": "L005", "meins": "PC", "idnlf": "001-RM12", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000002", "matnr": "RM13", "lifnr": "0010300002", "matkl": "L005", "meins": "PC", "idnlf": "002-RM13", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000003", "matnr": "TG11", "lifnr": "0010300001", "matkl": "L001", "meins": "PC", "idnlf": "001-TG11", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000004", "matnr": "PK01", "lifnr": "0010300002", "matkl": "L006", "meins": "PC", "idnlf": "002-PK01", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000005", "matnr": "RM12", "lifnr": "0017300001", "matkl": "L005", "meins": "PC", "idnlf": "001-RM12", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000006", "matnr": "TG12", "lifnr": "0017300002", "matkl": "L001", "meins": "PC", "idnlf": "002-TG12", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000007", "matnr": "TG13", "lifnr": "0017300001", "matkl": "L002", "meins": "PC", "idnlf": "001-TG13", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000008", "matnr": "OS01", "lifnr": "0017300002", "matkl": "L004", "meins": "PC", "idnlf": "002-OS01", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000009", "matnr": "RM13", "lifnr": "0041300001", "matkl": "L005", "meins": "PC", "idnlf": "001-RM13", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000010", "matnr": "TG14", "lifnr": "0041300002", "matkl": "L002", "meins": "PC", "idnlf": "002-TG14", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000011", "matnr": "TG15", "lifnr": "0041300003", "matkl": "L003", "meins": "PC", "idnlf": "003-TG15", "erdat": "20250901", "ernam": "CB9980000010"},
+  {"infnr": "5300000012", "matnr": "OS01", "lifnr": "0041300001", "matkl": "L004", "meins": "PC", "idnlf": "001-OS01", "erdat": "20250901", "ernam": "CB9980000010"}
+]

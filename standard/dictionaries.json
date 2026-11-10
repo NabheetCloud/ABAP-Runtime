@@ -1,0 +1,8414 @@
+{
+ "tables": {
+  "A005": {
+   "description": "Condition tables (access keys)",
+   "keys": [
+    "KAPPL",
+    "KSCHL",
+    "DATBI"
+   ],
+   "fields": {
+    "KAPPL": "",
+    "KSCHL": "",
+    "DATBI": "",
+    "DATAB": "",
+    "KNUMH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "A017": {
+   "description": "Condition tables (access keys)",
+   "keys": [
+    "KAPPL",
+    "KSCHL",
+    "DATBI"
+   ],
+   "fields": {
+    "KAPPL": "",
+    "KSCHL": "",
+    "DATBI": "",
+    "DATAB": "",
+    "KNUMH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "A018": {
+   "description": "Condition tables (access keys)",
+   "keys": [
+    "KAPPL",
+    "KSCHL",
+    "DATBI"
+   ],
+   "fields": {
+    "KAPPL": "",
+    "KSCHL": "",
+    "DATBI": "",
+    "DATAB": "",
+    "KNUMH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "A305": {
+   "description": "Condition tables (access keys)",
+   "keys": [
+    "KAPPL",
+    "KSCHL",
+    "DATBI"
+   ],
+   "fields": {
+    "KAPPL": "",
+    "KSCHL": "",
+    "DATBI": "",
+    "DATAB": "",
+    "KNUMH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ACDOCA": {
+   "description": "Universal Journal",
+   "keys": [
+    "ACDOCA",
+    "RLDNR",
+    "RBUKRS",
+    "GJAHR",
+    "BELNR",
+    "DOCLN"
+   ],
+   "fields": {
+    "RLDNR": "Ledger",
+    "RBUKRS": "Company code",
+    "GJAHR": "Fiscal year",
+    "BELNR": "Accounting document",
+    "DOCLN": "Ledger line item",
+    "RACCT": "G/L account",
+    "KUNNR": "Customer",
+    "LIFNR": "Supplier",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "PRCTR": "Profit center",
+    "KOSTL": "Cost center",
+    "SEGMENT": "Segment",
+    "AUFNR": "Order",
+    "PS_PSP_PNR": "WBS element internal reference,",
+    "BUDAT": "Posting date",
+    "BLDAT": "Document date",
+    "HSL": "Company-code currency amount",
+    "KSL": "Global currency amount",
+    "TSL": "Transaction currency amount",
+    "RWCUR": "Transaction currency",
+    "RHCUR": "Company-code currency",
+    "RKCUR": "Global currency",
+    "DRCRK": "Debit/credit",
+    "BSCHL": "Posting key",
+    "KOART": "Account type",
+    "ANLN1": "",
+    "ANLN2": "",
+    "ANBWA": "",
+    "AFABE": "",
+    "ACDOCA": "",
+    "VBELN": "Sales document reference, where",
+    "POSNR": "Sales document item reference,",
+    "RCNTR": "Cost center",
+    "BLART": "Document type",
+    "POPER": "Posting period",
+    "RTCUR": "Transaction currency",
+    "MWSKZ": "Tax code",
+    "ZUONR": "Assignment",
+    "SGTXT": "Item text",
+    "AUGBL": "Clearing document",
+    "AUGDT": "Clearing date",
+    "KOKRS": "Controlling area",
+    "GSBER": "Business area",
+    "EBELN": "Purchasing document reference, where applicable",
+    "EBELP": "Purchasing item reference, where applicable"
+   },
+   "sources": [
+    "01_FI.md",
+    "02_CO.md",
+    "10_PS.md",
+    "S4HANA_Enterprise_Data_Dictionary_All_Modules.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ACDOCP": {
+   "description": "Plan data line items",
+   "keys": [
+    "RLDNR",
+    "CATEGORY"
+   ],
+   "fields": {
+    "RLDNR": "",
+    "CATEGORY": ""
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ACDOCU": {
+   "description": "Group reporting (consolidation) journal",
+   "keys": [],
+   "fields": {
+    "RVERS": "",
+    "RYEAR": "",
+    "POPER": "",
+    "RBUNIT": "",
+    "RITEM": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ADR2": {
+   "description": "Telephone numbers",
+   "keys": [
+    "ADDRNUMBER",
+    "PERSNUMBER",
+    "DATE_FROM",
+    "CONSNUMBER"
+   ],
+   "fields": {
+    "ADDRNUMBER": "",
+    "PERSNUMBER": "",
+    "DATE_FROM": "",
+    "CONSNUMBER": "",
+    "TEL_NUMBER": "",
+    "R3_USER": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ADR6": {
+   "description": "E-mail addresses",
+   "keys": [
+    "ADDRNUMBER",
+    "PERSNUMBER",
+    "DATE_FROM",
+    "CONSNUMBER"
+   ],
+   "fields": {
+    "ADDRNUMBER": "",
+    "PERSNUMBER": "",
+    "DATE_FROM": "",
+    "CONSNUMBER": "",
+    "SMTP_ADDR": "",
+    "FLGDEFAULT": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ADRC": {
+   "description": "Addresses",
+   "keys": [
+    "ADDRNUMBER",
+    "DATE_FROM",
+    "NATION"
+   ],
+   "fields": {
+    "ADDRNUMBER": "",
+    "DATE_FROM": "",
+    "NATION": "",
+    "NAME1": "",
+    "STREET": "",
+    "HOUSE_NUM1": "",
+    "CITY1": "",
+    "POST_CODE1": "",
+    "COUNTRY": "",
+    "REGION": "",
+    "TEL_NUMBER": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AFIH": {
+   "description": "Maintenance order header",
+   "keys": [
+    "AUFNR"
+   ],
+   "fields": {
+    "AUFNR": "",
+    "EQUNR": "",
+    "ILOAN": "",
+    "IWERK": "",
+    "INGPR": "",
+    "QMNUM": "",
+    "WARPL": "",
+    "ABNUM": "",
+    "PRIOK": "",
+    "ILART": "",
+    "TPLNR": "",
+    "INGRP": "",
+    "GEWRK": "",
+    "GSTRP": "",
+    "GLTRP": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AFKO": {
+   "description": "Production order header",
+   "keys": [
+    "AUFNR"
+   ],
+   "fields": {
+    "AUFNR": "",
+    "PLNBEZ": "",
+    "GAMNG": "",
+    "GMEIN": "",
+    "GSTRP": "",
+    "GLTRP": "",
+    "GSTRS": "",
+    "GLTRS": "",
+    "FTRMI": "",
+    "AUFPL": "",
+    "RSNUM": "",
+    "STLNR": "",
+    "PLNNR": "",
+    "DISPO": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AFPO": {
+   "description": "Production order item",
+   "keys": [
+    "AUFNR",
+    "POSNR"
+   ],
+   "fields": {
+    "AUFNR": "",
+    "POSNR": "",
+    "MATNR": "",
+    "PSMNG": "",
+    "WEMNG": "",
+    "AMEIN": "",
+    "DWERK": "",
+    "LGORT": "",
+    "CHARG": "",
+    "KDAUF": "",
+    "KDPOS": "",
+    "VERID": "",
+    "ELIKZ": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AFRU": {
+   "description": "Order confirmations",
+   "keys": [
+    "RUECK",
+    "RMZHL"
+   ],
+   "fields": {
+    "RUECK": "",
+    "RMZHL": "",
+    "AUFNR": "",
+    "VORNR": "",
+    "ARBID": "",
+    "BUDAT": "",
+    "LMNGA": "",
+    "XMNGA": "",
+    "AUERU": "",
+    "STOKZ": "",
+    "STZHL": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AFVC": {
+   "description": "Order operation",
+   "keys": [
+    "AUFPL",
+    "APLZL"
+   ],
+   "fields": {
+    "AUFPL": "",
+    "APLZL": "",
+    "VORNR": "",
+    "ARBID": "",
+    "STEUS": "",
+    "LTXA1": "",
+    "OBJNR": "",
+    "RUECK": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "07_PM_EAM.md",
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AFVU": {
+   "description": "",
+   "keys": [
+    "AUFPL",
+    "APLZL"
+   ],
+   "fields": {
+    "AUFPL": "",
+    "APLZL": ""
+   },
+   "sources": [
+    "10_PS.md"
+   ]
+  },
+  "AFVV": {
+   "description": "Operation quantities/dates/values",
+   "keys": [
+    "AUFPL",
+    "APLZL"
+   ],
+   "fields": {
+    "AUFPL": "",
+    "APLZL": "",
+    "MGVRG": "",
+    "LMNGA": "",
+    "FSAVD": "",
+    "FSEDD": ""
+   },
+   "sources": [
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AGR_1251": {
+   "description": "Role authorizations",
+   "keys": [
+    "AGR_NAME",
+    "COUNTER"
+   ],
+   "fields": {
+    "AGR_NAME": "",
+    "COUNTER": "",
+    "OBJECT": "",
+    "AUTH": "",
+    "LOW": "",
+    "HIGH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AGR_TCODES": {
+   "description": "Role transactions/apps",
+   "keys": [
+    "AGR_NAME",
+    "TYPE",
+    "TCODE"
+   ],
+   "fields": {
+    "AGR_NAME": "",
+    "TYPE": "",
+    "TCODE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AGR_USERS": {
+   "description": "Role ↔ user",
+   "keys": [
+    "AGR_NAME",
+    "UNAME",
+    "FROM_DAT",
+    "TO_DAT"
+   ],
+   "fields": {
+    "AGR_NAME": "",
+    "UNAME": "",
+    "FROM_DAT": "",
+    "TO_DAT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ANEK": {
+   "description": "Asset document header (legacy)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "ANEP": {
+   "description": "Asset line items (legacy)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "ANKA": {
+   "description": "Asset classes",
+   "keys": [
+    "ANLKL"
+   ],
+   "fields": {
+    "ANLKL": "",
+    "TXK20": "",
+    "KTOGR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ANLA": {
+   "description": "Asset master general",
+   "keys": [
+    "BUKRS",
+    "ANLN1",
+    "ANLN2"
+   ],
+   "fields": {
+    "BUKRS": "Company code",
+    "ANLN1": "Main asset number",
+    "ANLN2": "Asset subnumber",
+    "ANLKL": "Asset class",
+    "AKTIV": "Capitalization date",
+    "DEAKT": "Deactivation date",
+    "TXT50": "Asset description",
+    "INVNR": "Inventory number",
+    "MENGE": "",
+    "MEINS": "",
+    "LIFNR": "Supplier",
+    "SERNR": "Serial number",
+    "HERST": "Manufacturer",
+    "KOSTL": "Cost center",
+    "WERKS": "Plant",
+    "RAUMN": "Room"
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ANLB": {
+   "description": "Depreciation terms",
+   "keys": [
+    "BUKRS",
+    "ANLN1",
+    "ANLN2",
+    "AFABE",
+    "BDATU"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "ANLN1": "",
+    "ANLN2": "",
+    "AFABE": "",
+    "BDATU": "",
+    "AFASL": "",
+    "NDJAR": "",
+    "NDPER": "",
+    "AFABG": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ANLC": {
+   "description": "Asset values (legacy totals)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "ANLH": {
+   "description": "Main asset number",
+   "keys": [
+    "BUKRS",
+    "ANLN1"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "ANLN1": "",
+    "ANLHTXT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ANLZ": {
+   "description": "Time-dependent assignments",
+   "keys": [
+    "BUKRS",
+    "ANLN1",
+    "ANLN2",
+    "BDATU"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "ANLN1": "",
+    "ANLN2": "",
+    "BDATU": "",
+    "ADATU": "",
+    "KOSTL": "",
+    "WERKS": "",
+    "GSBER": "",
+    "PRCTR": "",
+    "STORT": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AUFK": {
+   "description": "Order master (internal, production, maintenance)",
+   "keys": [
+    "AUFNR"
+   ],
+   "fields": {
+    "AUFNR": "Order number",
+    "AUART": "Order type",
+    "AUTYP": "Order category",
+    "KOKRS": "Controlling area",
+    "BUKRS": "Company code",
+    "WERKS": "",
+    "KOSTV": "Responsible cost center",
+    "PRCTR": "Profit center",
+    "OBJNR": "Object number",
+    "ERDAT": "Created date",
+    "KTEXT": "",
+    "ERNAM": "Created by",
+    "AEDAT": "Changed date",
+    "ASTNR": "Status number / status-related field",
+    "WAERS": "Currency"
+   },
+   "sources": [
+    "02_CO.md",
+    "05_PP.md",
+    "07_PM_EAM.md",
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "AUSP": {
+   "description": "Characteristic values of object",
+   "keys": [
+    "OBJEK",
+    "ATINN",
+    "ATZHL",
+    "MAFID",
+    "KLART",
+    "ADZHL"
+   ],
+   "fields": {
+    "OBJEK": "",
+    "ATINN": "",
+    "ATZHL": "",
+    "MAFID": "",
+    "KLART": "",
+    "ADZHL": "",
+    "ATWRT": "",
+    "ATFLV": "",
+    "ATFLB": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BALHDR": {
+   "description": "Application log header",
+   "keys": [
+    "LOGNUMBER"
+   ],
+   "fields": {
+    "LOGNUMBER": "",
+    "OBJECT": "",
+    "SUBOBJECT": "",
+    "EXTNUMBER": "",
+    "ALDATE": "",
+    "ALUSER": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BKPF": {
+   "description": "Accounting document header",
+   "keys": [
+    "BUKRS",
+    "BELNR",
+    "GJAHR"
+   ],
+   "fields": {
+    "BUKRS": "Company code",
+    "BELNR": "Accounting document",
+    "GJAHR": "Fiscal year",
+    "BLART": "Document type",
+    "BLDAT": "Document date",
+    "BUDAT": "Posting date",
+    "MONAT": "Fiscal period",
+    "USNAM": "User",
+    "TCODE": "Transaction",
+    "WAERS": "Document currency",
+    "XBLNR": "Reference",
+    "BKTXT": "Header text",
+    "AWTYP": "Reference transaction",
+    "AWKEY": "Reference key",
+    "AWSYS": "Logical system",
+    "CPUDT": "Entry date",
+    "CPUTM": "Entry time",
+    "KURSF": "Exchange rate",
+    "STBLG": "Reversal document",
+    "STJAH": "Reversal fiscal year",
+    "BSTAT": "Document status",
+    "GLVOR": "",
+    "LDGRP": "Ledger group"
+   },
+   "sources": [
+    "01_FI.md",
+    "S4HANA_Enterprise_Data_Dictionary_All_Modules.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BNKA": {
+   "description": "Bank master",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BPGE": {
+   "description": "Project budget overall values (classic)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "10_PS.md"
+   ]
+  },
+  "BPJA": {
+   "description": "Project budget annual values (classic)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "10_PS.md"
+   ]
+  },
+  "BSAD": {
+   "description": "Customer cleared items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BSAK": {
+   "description": "Supplier cleared items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BSAS": {
+   "description": "G/L cleared items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BSEC": {
+   "description": "One-time account data",
+   "keys": [
+    "BUKRS",
+    "BELNR",
+    "GJAHR",
+    "BUZEI"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "BELNR": "",
+    "GJAHR": "",
+    "BUZEI": "",
+    "NAME1": "",
+    "ORT01": "",
+    "STRAS": "",
+    "BANKN": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BSEG": {
+   "description": "Entry view line items (open-item managed, still filled)",
+   "keys": [
+    "BUKRS",
+    "BELNR",
+    "GJAHR",
+    "BUZEI"
+   ],
+   "fields": {
+    "BUKRS": "Company code",
+    "BELNR": "Document",
+    "GJAHR": "Fiscal year",
+    "BUZEI": "Line item",
+    "BSCHL": "Posting key",
+    "KOART": "Account type",
+    "SHKZG": "Debit/credit",
+    "DMBTR": "Amount in local currency",
+    "WRBTR": "Amount in document currency",
+    "HKONT": "G/L account",
+    "KUNNR": "Customer",
+    "LIFNR": "Supplier",
+    "UMSKZ": "",
+    "MWSKZ": "Tax code",
+    "ZUONR": "Assignment",
+    "SGTXT": "Item text",
+    "KOSTL": "Cost center",
+    "AUFNR": "Order",
+    "PRCTR": "Profit center",
+    "AUGBL": "Clearing document",
+    "AUGDT": "Clearing date",
+    "ZFBDT": "Baseline date",
+    "ZTERM": "Payment terms",
+    "ZBD1T": "",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "MENGE": "",
+    "MEINS": "",
+    "EBELN": "",
+    "EBELP": "",
+    "ANLN1": "",
+    "ANLN2": "",
+    "ZLSCH": "Payment method",
+    "VBELN": "Sales document"
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BSET": {
+   "description": "Tax line items",
+   "keys": [
+    "BUKRS",
+    "BELNR",
+    "GJAHR",
+    "BUZEI"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "BELNR": "",
+    "GJAHR": "",
+    "BUZEI": "",
+    "MWSKZ": "",
+    "HWBAS": "",
+    "FWBAS": "",
+    "HWSTE": "",
+    "FWSTE": "",
+    "KTOSL": "",
+    "HKONT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BSID": {
+   "description": "Customer open items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BSIK": {
+   "description": "Supplier open items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BSIS": {
+   "description": "G/L open items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "BUT000": {
+   "description": "BP general data",
+   "keys": [
+    "PARTNER"
+   ],
+   "fields": {
+    "PARTNER": "Business Partner number",
+    "PARTNER_GUID": "",
+    "TYPE": "BP category (person, organization, group)",
+    "BU_GROUP": "BP grouping",
+    "NAME_FIRST": "First name",
+    "NAME_LAST": "Last name",
+    "BU_SORT1": "",
+    "XDELE": "Central deletion flag",
+    "XBLCK": "Central block",
+    "CRDAT": "",
+    "CRUSR": "",
+    "BIRTHDT": "Birth date (personal data; apply privacy controls)"
+   },
+   "sources": [
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BUT020": {
+   "description": "BP addresses",
+   "keys": [
+    "PARTNER",
+    "ADDRNUMBER"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "ADDRNUMBER": "",
+    "ADDR_VALID_FROM": "",
+    "ADDR_VALID_TO": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BUT021_FS": {
+   "description": "BP address usages",
+   "keys": [
+    "PARTNER",
+    "ADR_KIND",
+    "VALID_TO"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "ADR_KIND": "",
+    "VALID_TO": "",
+    "ADDRNUMBER": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BUT050": {
+   "description": "BP relationships",
+   "keys": [
+    "RELNR",
+    "PARTNER1",
+    "PARTNER2",
+    "DATE_TO"
+   ],
+   "fields": {
+    "RELNR": "",
+    "PARTNER1": "",
+    "PARTNER2": "",
+    "DATE_TO": "",
+    "RELTYP": "",
+    "DATE_FROM": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BUT0BK": {
+   "description": "BP bank details",
+   "keys": [
+    "PARTNER",
+    "BKVID"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "BKVID": "",
+    "BANKS": "",
+    "BANKL": "",
+    "BANKN": "",
+    "BKONT": "",
+    "IBAN": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BUT0ID": {
+   "description": "BP identification numbers",
+   "keys": [
+    "PARTNER",
+    "TYPE",
+    "IDNUMBER"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "TYPE": "",
+    "IDNUMBER": "",
+    "VALID_DATE_FROM": "",
+    "VALID_DATE_TO": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "BUT100": {
+   "description": "BP roles",
+   "keys": [
+    "PARTNER",
+    "RLTYP",
+    "DFVAL",
+    "DATE_FROM",
+    "TIME_FROM"
+   ],
+   "fields": {
+    "PARTNER": "Business Partner",
+    "RLTYP": "BP role",
+    "DFVAL": "",
+    "VALID_FROM": "",
+    "VALID_TO": "",
+    "DATE_FROM": "Valid from",
+    "TIME_FROM": "",
+    "DATE_TO": "Valid to"
+   },
+   "sources": [
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CABN": {
+   "description": "Characteristic",
+   "keys": [
+    "ATINN",
+    "ADZHL"
+   ],
+   "fields": {
+    "ATINN": "",
+    "ADZHL": "",
+    "ATNAM": "",
+    "ATFOR": "",
+    "ANZST": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CAWN": {
+   "description": "Characteristic values",
+   "keys": [
+    "ATINN",
+    "ATZHL",
+    "ADZHL"
+   ],
+   "fields": {
+    "ATINN": "",
+    "ATZHL": "",
+    "ADZHL": "",
+    "ATWRT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CDHDR": {
+   "description": "Change document header",
+   "keys": [
+    "OBJECTCLAS",
+    "OBJECTID",
+    "CHANGENR"
+   ],
+   "fields": {
+    "OBJECTCLAS": "",
+    "OBJECTID": "",
+    "CHANGENR": "",
+    "USERNAME": "",
+    "UDATE": "",
+    "UTIME": "",
+    "TCODE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CDPOS": {
+   "description": "Change document items",
+   "keys": [
+    "OBJECTCLAS",
+    "OBJECTID",
+    "CHANGENR",
+    "TABNAME",
+    "TABKEY",
+    "FNAME",
+    "CHNGIND"
+   ],
+   "fields": {
+    "OBJECTCLAS": "",
+    "OBJECTID": "",
+    "CHANGENR": "",
+    "TABNAME": "",
+    "TABKEY": "",
+    "FNAME": "",
+    "CHNGIND": "",
+    "VALUE_OLD": "",
+    "VALUE_NEW": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CEPC": {
+   "description": "Profit center master",
+   "keys": [
+    "PRCTR",
+    "DATBI",
+    "KOKRS"
+   ],
+   "fields": {
+    "PRCTR": "Profit center",
+    "DATBI": "Valid-to",
+    "KOKRS": "Controlling area",
+    "DATAB": "Valid-from",
+    "VERAK": "Person responsible",
+    "SEGMENT": "Segment",
+    "KHINR": "Profit center group",
+    "BUKRS": "Company code",
+    "ABTEI": "Department"
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CEPCT": {
+   "description": "Profit center texts",
+   "keys": [
+    "SPRAS",
+    "PRCTR",
+    "DATBI",
+    "KOKRS"
+   ],
+   "fields": {
+    "SPRAS": "Language",
+    "PRCTR": "Profit center",
+    "DATBI": "Valid-to",
+    "KOKRS": "Controlling area",
+    "KTEXT": "Short text",
+    "LTEXT": "Long text"
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CKMLCR": {
+   "description": "ML period totals by currency",
+   "keys": [
+    "KALNR",
+    "BDATJ",
+    "POPER",
+    "UNTPER",
+    "CURTP"
+   ],
+   "fields": {
+    "KALNR": "",
+    "BDATJ": "",
+    "POPER": "",
+    "UNTPER": "",
+    "CURTP": "",
+    "PVPRS": "",
+    "STPRS": "",
+    "SALK3": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CKMLHD": {
+   "description": "Material ledger header",
+   "keys": [
+    "KALNR"
+   ],
+   "fields": {
+    "KALNR": "",
+    "MATNR": "",
+    "BWKEY": "",
+    "BWTAR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "COBK": {
+   "description": "CO document header",
+   "keys": [
+    "KOKRS",
+    "BELNR"
+   ],
+   "fields": {
+    "KOKRS": "",
+    "BELNR": "",
+    "GJAHR": "",
+    "VRGNG": "",
+    "BLDAT": "",
+    "BUDAT": ""
+   },
+   "sources": [
+    "02_CO.md",
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "COEP": {
+   "description": "CO actual line items (classic)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "02_CO.md",
+    "10_PS.md"
+   ]
+  },
+  "COSP": {
+   "description": "External postings totals (classic)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "02_CO.md"
+   ]
+  },
+  "COSS": {
+   "description": "Internal postings totals (classic)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "02_CO.md"
+   ]
+  },
+  "CRCA": {
+   "description": "",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "05_PP.md"
+   ]
+  },
+  "CRCO": {
+   "description": "Work center ↔ cost center",
+   "keys": [
+    "OBJTY",
+    "OBJID",
+    "LASET",
+    "ENDDA",
+    "LANUM"
+   ],
+   "fields": {
+    "OBJTY": "",
+    "OBJID": "",
+    "LASET": "",
+    "ENDDA": "",
+    "LANUM": "",
+    "KOSTL": "",
+    "LSTAR": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CRHD": {
+   "description": "Work center header",
+   "keys": [
+    "OBJTY",
+    "OBJID"
+   ],
+   "fields": {
+    "OBJTY": "",
+    "OBJID": "",
+    "ARBPL": "",
+    "WERKS": "",
+    "VERWE": "",
+    "VERAN": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CSKS": {
+   "description": "Cost center master",
+   "keys": [
+    "KOKRS",
+    "KOSTL",
+    "DATBI"
+   ],
+   "fields": {
+    "KOKRS": "Controlling area",
+    "KOSTL": "Cost center",
+    "DATBI": "Valid-to date",
+    "DATAB": "Valid-from date",
+    "BUKRS": "Company code",
+    "PRCTR": "Profit center",
+    "KOSAR": "Cost center category",
+    "VERAK": "Person responsible",
+    "KHINR": "",
+    "FUNC_AREA": "",
+    "GSBER": "Business area",
+    "ABTEI": "Department",
+    "KTEXT": "Short text may be held in CSKT",
+    "WAERS": "Currency"
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CSKT": {
+   "description": "Cost center texts",
+   "keys": [
+    "SPRAS",
+    "KOKRS",
+    "KOSTL",
+    "DATBI"
+   ],
+   "fields": {
+    "SPRAS": "Language",
+    "KOKRS": "Controlling area",
+    "KOSTL": "Cost center",
+    "DATBI": "Valid-to date",
+    "KTEXT": "Short text",
+    "LTEXT": "Long text"
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CSKU": {
+   "description": "Cost element text (legacy/classic; cost elements are G/L accounts in S/4)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "02_CO.md"
+   ]
+  },
+  "CSLA": {
+   "description": "Activity types",
+   "keys": [
+    "KOKRS",
+    "LSTAR",
+    "DATBI"
+   ],
+   "fields": {
+    "KOKRS": "",
+    "LSTAR": "",
+    "DATBI": "",
+    "LEINH": "",
+    "KSTAR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CSSL": {
+   "description": "Cost center / activity type",
+   "keys": [
+    "KOKRS",
+    "OBJNR",
+    "GJAHR",
+    "LSTAR"
+   ],
+   "fields": {
+    "KOKRS": "",
+    "OBJNR": "",
+    "GJAHR": "",
+    "LSTAR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CVI_CUST_LINK": {
+   "description": "BP ↔ customer link",
+   "keys": [
+    "PARTNER_GUID"
+   ],
+   "fields": {
+    "PARTNER_GUID": "",
+    "CUSTOMER": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "CVI_VEND_LINK": {
+   "description": "BP ↔ supplier link",
+   "keys": [
+    "PARTNER_GUID"
+   ],
+   "fields": {
+    "PARTNER_GUID": "",
+    "VENDOR": ""
+   },
+   "sources": [
+    "12_BP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "DFKKBPTAXNUM": {
+   "description": "BP tax numbers",
+   "keys": [
+    "PARTNER",
+    "TAXTYPE"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "TAXTYPE": "",
+    "TAXNUM": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "DRAD": {
+   "description": "DMS object links",
+   "keys": [
+    "DOKAR",
+    "DOKNR",
+    "DOKVR",
+    "DOKTL",
+    "DOKOB",
+    "OBZAE"
+   ],
+   "fields": {
+    "DOKAR": "",
+    "DOKNR": "",
+    "DOKVR": "",
+    "DOKTL": "",
+    "DOKOB": "",
+    "OBZAE": "",
+    "OBJKY": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "DRAW": {
+   "description": "DMS document info record",
+   "keys": [
+    "DOKAR",
+    "DOKNR",
+    "DOKVR",
+    "DOKTL"
+   ],
+   "fields": {
+    "DOKAR": "",
+    "DOKNR": "",
+    "DOKVR": "",
+    "DOKTL": "",
+    "DKTXT": "",
+    "DOKST": "",
+    "DWNAM": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "D_TCC": {
+   "description": "Transportation charge calculation persistence",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "D_TOR": {
+   "description": "Transportation order root/item/stop-related persistence",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "D_TORITE": {
+   "description": "TOR item-related persistence candidate",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "D_TORROT": {
+   "description": "TOR root-related persistence candidate",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "D_TORSTP": {
+   "description": "Stop-related persistence candidate",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "D_TRQ": {
+   "description": "Transportation requirement persistence",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "EBAN": {
+   "description": "Purchase requisition (item level table)",
+   "keys": [
+    "BANFN",
+    "BNFPO"
+   ],
+   "fields": {
+    "BANFN": "Requisition",
+    "BNFPO": "Item",
+    "BSART": "Requisition document type",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "LGORT": "Storage location",
+    "MENGE": "Quantity",
+    "MEINS": "Unit",
+    "BADAT": "",
+    "LFDAT": "Delivery date",
+    "EKGRP": "Purchasing group",
+    "EKORG": "",
+    "FLIEF": "Fixed supplier",
+    "KNTTP": "Account assignment category",
+    "EBELN": "",
+    "EBELP": "",
+    "FRGKZ": "",
+    "LOEKZ": "Deletion indicator",
+    "TXZ01": "Short text",
+    "MATKL": "Material group"
+   },
+   "sources": [
+    "03_MM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EBKN": {
+   "description": "PR account assignment",
+   "keys": [
+    "BANFN",
+    "BNFPO",
+    "ZEBKN"
+   ],
+   "fields": {
+    "BANFN": "",
+    "BNFPO": "",
+    "ZEBKN": "",
+    "KOSTL": "",
+    "AUFNR": "",
+    "PS_PSP_PNR": "",
+    "SAKTO": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EDID4": {
+   "description": "IDoc data records",
+   "keys": [
+    "DOCNUM",
+    "COUNTER",
+    "SEGNUM"
+   ],
+   "fields": {
+    "DOCNUM": "",
+    "COUNTER": "",
+    "SEGNUM": "",
+    "SEGNAM": "",
+    "SDATA": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EDIDC": {
+   "description": "IDoc control record",
+   "keys": [
+    "DOCNUM"
+   ],
+   "fields": {
+    "DOCNUM": "",
+    "STATUS": "",
+    "DIRECT": "",
+    "MESTYP": "",
+    "IDOCTP": "",
+    "RCVPRN": "",
+    "SNDPRN": "",
+    "CREDAT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EDIDS": {
+   "description": "IDoc status records",
+   "keys": [
+    "DOCNUM",
+    "LOGDAT",
+    "LOGTIM",
+    "COUNTR"
+   ],
+   "fields": {
+    "DOCNUM": "",
+    "LOGDAT": "",
+    "LOGTIM": "",
+    "COUNTR": "",
+    "STATUS": "",
+    "STATXT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EINA": {
+   "description": "Purchasing info record general",
+   "keys": [
+    "INFNR"
+   ],
+   "fields": {
+    "INFNR": "",
+    "MATNR": "",
+    "LIFNR": "",
+    "MATKL": "",
+    "MEINS": "",
+    "IDNLF": ""
+   },
+   "sources": [
+    "03_MM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EINE": {
+   "description": "Info record purchasing org",
+   "keys": [
+    "INFNR",
+    "EKORG",
+    "ESOKZ",
+    "WERKS"
+   ],
+   "fields": {
+    "INFNR": "",
+    "EKORG": "",
+    "ESOKZ": "",
+    "WERKS": "",
+    "NETPR": "",
+    "PEINH": "",
+    "APLFZ": "",
+    "NORBM": "",
+    "MINBM": "",
+    "WAERS": ""
+   },
+   "sources": [
+    "03_MM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKBE": {
+   "description": "PO history",
+   "keys": [
+    "EBELN",
+    "EBELP",
+    "ZEKKN",
+    "VGABE",
+    "GJAHR",
+    "BELNR",
+    "BUZEI"
+   ],
+   "fields": {
+    "ZEKKN": "Account assignment sequence",
+    "VGABE": "Transaction/event category",
+    "BEWTP": "PO history category",
+    "GJAHR": "Referenced document year",
+    "BELNR": "Referenced document",
+    "BUZEI": "Referenced document item",
+    "BWART": "Movement type",
+    "BUDAT": "Posting date",
+    "MENGE": "Quantity",
+    "DMBTR": "Local currency amount",
+    "WRBTR": "Document currency amount",
+    "SHKZG": "Debit/credit indicator",
+    "EBELN": "PO",
+    "EBELP": "PO item",
+    "LFBNR": "",
+    "LFGJA": "",
+    "LFPOS": ""
+   },
+   "sources": [
+    "03_MM.md",
+    "S4HANA_Enterprise_Data_Dictionary_All_Modules.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKBZ": {
+   "description": "PO history delivery costs",
+   "keys": [
+    "EBELN",
+    "EBELP",
+    "STUNR",
+    "ZAEHK",
+    "VGABE",
+    "GJAHR",
+    "BELNR",
+    "BUZEI"
+   ],
+   "fields": {
+    "EBELN": "",
+    "EBELP": "",
+    "STUNR": "",
+    "ZAEHK": "",
+    "VGABE": "",
+    "GJAHR": "",
+    "BELNR": "",
+    "BUZEI": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKES": {
+   "description": "Vendor confirmations",
+   "keys": [
+    "EBELN",
+    "EBELP",
+    "ETENS"
+   ],
+   "fields": {
+    "EBELN": "",
+    "EBELP": "",
+    "ETENS": "",
+    "EBTYP": "",
+    "EINDT": "",
+    "MENGE": "",
+    "VBELN": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKET": {
+   "description": "Schedule lines",
+   "keys": [
+    "EBELN",
+    "EBELP",
+    "ETENR"
+   ],
+   "fields": {
+    "EBELN": "Purchase order",
+    "EBELP": "Item",
+    "ETENR": "Schedule line",
+    "EINDT": "Delivery date",
+    "MENGE": "Schedule quantity",
+    "WEMNG": "Goods receipt quantity",
+    "BANFN": "",
+    "BNFPO": "",
+    "CHARG": "Batch",
+    "WAMNG": "Issued quantity, context-dependent",
+    "DABMG": "Quantity reduced"
+   },
+   "sources": [
+    "03_MM.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKKN": {
+   "description": "PO account assignment",
+   "keys": [
+    "EBELN",
+    "EBELP",
+    "ZEKKN"
+   ],
+   "fields": {
+    "EBELN": "PO",
+    "EBELP": "Item",
+    "ZEKKN": "Account assignment sequence",
+    "SAKTO": "G/L account",
+    "KOSTL": "Cost center",
+    "AUFNR": "Order",
+    "PS_PSP_PNR": "WBS internal number",
+    "ANLN1": "Asset",
+    "VBELN": "",
+    "VBELP": "",
+    "PRCTR": "",
+    "ANLN2": "Asset subnumber",
+    "MENGE": "Assigned quantity",
+    "VPROZ": "Distribution percentage"
+   },
+   "sources": [
+    "03_MM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKKO": {
+   "description": "Purchasing document header (PO, contract, scheduling agreement, RFQ)",
+   "keys": [
+    "EBELN"
+   ],
+   "fields": {
+    "EBELN": "Purchase order",
+    "BUKRS": "Company code",
+    "BSTYP": "Purchasing document category",
+    "BSART": "Purchasing document type",
+    "LIFNR": "Supplier",
+    "EKORG": "Purchasing organization",
+    "EKGRP": "Purchasing group",
+    "BEDAT": "PO document date",
+    "WAERS": "Document currency",
+    "ZTERM": "Payment terms",
+    "INCO1": "Incoterms",
+    "KNUMV": "Pricing document number",
+    "FRGKE": "",
+    "STATU": "Status",
+    "LOEKZ": "Deletion indicator",
+    "AEDAT": "Created/changed date (document semantics)",
+    "ERNAM": "Created by",
+    "KDATB": "Validity start",
+    "KDATE": "Validity end",
+    "INCO2": "Incoterms location"
+   },
+   "sources": [
+    "03_MM.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKPA": {
+   "description": "Partner roles in purchasing",
+   "keys": [
+    "EBELN",
+    "EKORG",
+    "LTSNR",
+    "WERKS",
+    "PARVW",
+    "PARZA"
+   ],
+   "fields": {
+    "EBELN": "",
+    "EKORG": "",
+    "LTSNR": "",
+    "WERKS": "",
+    "PARVW": "",
+    "PARZA": "",
+    "LIFN2": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EKPO": {
+   "description": "Purchasing document item",
+   "keys": [
+    "EBELN",
+    "EBELP"
+   ],
+   "fields": {
+    "EBELN": "Purchase order",
+    "EBELP": "PO item",
+    "MATNR": "Material",
+    "TXZ01": "Short text",
+    "WERKS": "Plant",
+    "LGORT": "Storage location",
+    "MATKL": "Material group",
+    "MENGE": "PO quantity",
+    "MEINS": "Order unit",
+    "NETPR": "Net price",
+    "PEINH": "Price unit",
+    "NETWR": "Net item value",
+    "BRTWR": "",
+    "PSTYP": "Item category",
+    "KNTTP": "Account assignment category",
+    "ELIKZ": "Delivery completed indicator",
+    "EREKZ": "Final invoice indicator",
+    "WEPOS": "",
+    "REPOS": "Invoice receipt expected",
+    "WEBRE": "GR-based invoice verification",
+    "MWSKZ": "",
+    "BANFN": "Purchase requisition",
+    "BNFPO": "Requisition item",
+    "KONNR": "",
+    "KTPNR": "",
+    "INFNR": "Purchasing info record",
+    "LOEKZ": "Deletion indicator",
+    "BPRME": "Order price unit",
+    "EMATN": "Material number used by supplier",
+    "RETPO": "Returns item"
+   },
+   "sources": [
+    "03_MM.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EORD": {
+   "description": "Source list",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "ZEORD"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "ZEORD": "",
+    "VDATU": "",
+    "BDATU": "",
+    "LIFNR": "",
+    "EKORG": "",
+    "EBELN": "",
+    "EBELP": "",
+    "FLIFN": "",
+    "NOTKZ": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EQKT": {
+   "description": "Equipment texts",
+   "keys": [
+    "EQUNR",
+    "SPRAS"
+   ],
+   "fields": {
+    "EQUNR": "",
+    "SPRAS": "",
+    "EQKTX": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EQUI": {
+   "description": "Equipment master",
+   "keys": [
+    "EQUNR"
+   ],
+   "fields": {
+    "EQUNR": "",
+    "EQTYP": "",
+    "EQART": "",
+    "HERST": "",
+    "SERGE": "",
+    "MATNR": "",
+    "SERNR": "",
+    "BAUJJ": "",
+    "OBJNR": "",
+    "INBDT": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EQUK": {
+   "description": "Quota arrangement / condition records",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "EQUZ": {
+   "description": "Equipment time segment",
+   "keys": [
+    "EQUNR",
+    "DATBI",
+    "EQLFN"
+   ],
+   "fields": {
+    "EQUNR": "",
+    "DATBI": "",
+    "EQLFN": "",
+    "ILOAN": "",
+    "HEQUI": "",
+    "IWERK": "",
+    "GEWRK": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FAAT_DOC_IT": {
+   "description": "Statistical line items (asset)",
+   "keys": [
+    "BUKRS",
+    "ANLN1",
+    "ANLN2",
+    "GJAHR",
+    "AWREF",
+    "AWITEM",
+    "AFABE",
+    "SUBTA"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "ANLN1": "",
+    "ANLN2": "",
+    "GJAHR": "",
+    "AWREF": "",
+    "AWITEM": "",
+    "AFABE": "",
+    "SUBTA": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FAAT_PLAN_VALUES": {
+   "description": "Planned depreciation values",
+   "keys": [
+    "BUKRS",
+    "ANLN1",
+    "ANLN2",
+    "GJAHR",
+    "AFABE",
+    "POPER"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "ANLN1": "",
+    "ANLN2": "",
+    "GJAHR": "",
+    "AFABE": "",
+    "POPER": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FAAT_YDDA": {
+   "description": "Year-dependent depreciation data",
+   "keys": [
+    "BUKRS",
+    "ANLN1",
+    "ANLN2",
+    "GJAHR",
+    "AFABE"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "ANLN1": "",
+    "ANLN2": "",
+    "GJAHR": "",
+    "AFABE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FAGL_011PC": {
+   "description": "Financial statement version items",
+   "keys": [
+    "VERSN"
+   ],
+   "fields": {
+    "VERSN": "",
+    "ERGSL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FAGL_011ZC": {
+   "description": "Financial statement version items",
+   "keys": [
+    "VERSN"
+   ],
+   "fields": {
+    "VERSN": "",
+    "ERGSL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FAGL_SEGM": {
+   "description": "Segments",
+   "keys": [
+    "SEGMENT"
+   ],
+   "fields": {
+    "SEGMENT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FCLM_BAM_ACLINK2": {
+   "description": "Bank account master (BAM) ↔ house bank",
+   "keys": [],
+   "fields": {
+    "ACC_ID": "",
+    "BUKRS": "",
+    "HBKID": "",
+    "HKTID": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FEBEP": {
+   "description": "Bank statement items",
+   "keys": [
+    "KUKEY",
+    "ESNUM"
+   ],
+   "fields": {
+    "KUKEY": "",
+    "ESNUM": "",
+    "VALUT": "",
+    "BUDAT": "",
+    "KWBTR": "",
+    "VGINT": "",
+    "BELNR": "",
+    "NBBLN": "",
+    "SGTXT": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FEBKO": {
+   "description": "Bank statement header",
+   "keys": [
+    "KUKEY"
+   ],
+   "fields": {
+    "KUKEY": "",
+    "ANWND": "",
+    "ABSND": "",
+    "AZNUM": "",
+    "AZDAT": "",
+    "WAERS": "",
+    "SSBTR": "",
+    "ESBTR": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FEBRE": {
+   "description": "Bank statement note to payee",
+   "keys": [
+    "KUKEY",
+    "ESNUM",
+    "RSNUM"
+   ],
+   "fields": {
+    "KUKEY": "",
+    "ESNUM": "",
+    "RSNUM": "",
+    "VWEZW": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FINSC_LD_CMP": {
+   "description": "Ledger per company code",
+   "keys": [
+    "RLDNR",
+    "BUKRS"
+   ],
+   "fields": {
+    "RLDNR": "",
+    "BUKRS": "",
+    "CURTPH": "",
+    "CURTPK": "",
+    "CURTPO": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FINSC_LEDGER": {
+   "description": "Ledgers",
+   "keys": [
+    "RLDNR"
+   ],
+   "fields": {
+    "RLDNR": "",
+    "XLEADING": "",
+    "LEDGER_TYPE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FPLA": {
+   "description": "Billing plan header / dates",
+   "keys": [
+    "FPLNR",
+    "FPLTR"
+   ],
+   "fields": {
+    "FPLNR": "",
+    "FPLTR": "",
+    "AFDAT": "",
+    "FAKWR": "",
+    "FKSAF": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FPLT": {
+   "description": "Billing plan header / dates",
+   "keys": [
+    "FPLNR",
+    "FPLTR"
+   ],
+   "fields": {
+    "FPLNR": "",
+    "FPLTR": "",
+    "AFDAT": "",
+    "FAKWR": "",
+    "FKSAF": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "FQM_FLOW": {
+   "description": "One Exposure cash flows",
+   "keys": [],
+   "fields": {
+    "BUKRS": "",
+    "AMOUNT": "",
+    "CURRENCY": "",
+    "DATE": "",
+    "FLOW_TYPE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "GLPCA": {
+   "description": "Legacy PCA line items",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "02_CO.md"
+   ]
+  },
+  "HRP1000": {
+   "description": "OM objects",
+   "keys": [
+    "PLVAR",
+    "OTYPE",
+    "OBJID",
+    "ISTAT",
+    "BEGDA",
+    "ENDDA",
+    "LANGU",
+    "SEQNR"
+   ],
+   "fields": {
+    "PLVAR": "",
+    "OTYPE": "",
+    "OBJID": "",
+    "ISTAT": "",
+    "BEGDA": "",
+    "ENDDA": "",
+    "LANGU": "",
+    "SEQNR": "",
+    "SHORT": "",
+    "STEXT": ""
+   },
+   "sources": [
+    "11_HR_HCM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "HRP1001": {
+   "description": "OM relationships",
+   "keys": [
+    "OTYPE",
+    "OBJID",
+    "PLVAR",
+    "RSIGN",
+    "RELAT",
+    "ISTAT",
+    "PRIOX",
+    "BEGDA",
+    "ENDDA",
+    "VARYF",
+    "SEQNR",
+    "SCLAS",
+    "SOBID"
+   ],
+   "fields": {
+    "OTYPE": "",
+    "OBJID": "",
+    "PLVAR": "",
+    "RSIGN": "",
+    "RELAT": "",
+    "ISTAT": "",
+    "PRIOX": "",
+    "BEGDA": "",
+    "ENDDA": "",
+    "VARYF": "",
+    "SEQNR": "",
+    "SCLAS": "",
+    "SOBID": ""
+   },
+   "sources": [
+    "11_HR_HCM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "HUHDR": {
+   "description": "Handling unit header",
+   "keys": [
+    "HU"
+   ],
+   "fields": {
+    "HU": ""
+   },
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "HUITM": {
+   "description": "Handling unit items",
+   "keys": [
+    "HU"
+   ],
+   "fields": {
+    "HU": ""
+   },
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "IFLOT": {
+   "description": "Functional location",
+   "keys": [
+    "TPLNR"
+   ],
+   "fields": {
+    "TPLNR": "",
+    "FLTYP": "",
+    "IWERK": "",
+    "SWERK": "",
+    "TPLMA": "",
+    "OBJNR": "",
+    "ILOAN": "",
+    "STORT": "",
+    "BEBER": "",
+    "INGRP": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "IFLOTX": {
+   "description": "Functional location texts",
+   "keys": [
+    "TPLNR",
+    "SPRAS"
+   ],
+   "fields": {
+    "TPLNR": "",
+    "SPRAS": "",
+    "PLTXT": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "IHPA": {
+   "description": "",
+   "keys": [
+    "OBJNR",
+    "PARVW"
+   ],
+   "fields": {
+    "OBJNR": "",
+    "PARVW": ""
+   },
+   "sources": [
+    "07_PM_EAM.md"
+   ]
+  },
+  "IKPF": {
+   "description": "Physical inventory header",
+   "keys": [
+    "IBLNR",
+    "GJAHR"
+   ],
+   "fields": {
+    "IBLNR": "",
+    "GJAHR": "",
+    "WERKS": "",
+    "LGORT": "",
+    "GIDAT": "",
+    "ZLDAT": "",
+    "DSTAT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ILOA": {
+   "description": "Location / account assignment",
+   "keys": [
+    "ILOAN"
+   ],
+   "fields": {
+    "ILOAN": "",
+    "TPLNR": "",
+    "SWERK": "",
+    "STORT": "",
+    "KOSTL": "",
+    "BUKRS": "",
+    "ANLNR": "",
+    "GSBER": "",
+    "MSGRP": "",
+    "BEBER": "",
+    "ABCKZ": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "IMPTT": {
+   "description": "Measuring points",
+   "keys": [
+    "POINT"
+   ],
+   "fields": {
+    "POINT": "",
+    "MPOBJ": "",
+    "MPTYP": "",
+    "ATINN": "",
+    "POINTT": "",
+    "EQUNR": "",
+    "TPLNR": "",
+    "UNITC": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "IMRG": {
+   "description": "Measurement documents",
+   "keys": [
+    "MDOCM"
+   ],
+   "fields": {
+    "MDOCM": "",
+    "POINT": "",
+    "IDATE": "",
+    "ITIME": "",
+    "READG": "",
+    "RECDV": "",
+    "READR": "",
+    "UNITR": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "INOB": {
+   "description": "Classification: object ↔ internal number",
+   "keys": [
+    "CUOBJ"
+   ],
+   "fields": {
+    "CUOBJ": "",
+    "KLART": "",
+    "OBTAB": "",
+    "OBJEK": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ISEG": {
+   "description": "Physical inventory item",
+   "keys": [
+    "IBLNR",
+    "GJAHR",
+    "ZEILI"
+   ],
+   "fields": {
+    "IBLNR": "",
+    "GJAHR": "",
+    "ZEILI": "",
+    "MATNR": "",
+    "CHARG": "",
+    "BUCHM": "",
+    "MENGE": "",
+    "DIFFERENZ": "",
+    "XZAEL": "",
+    "XDIFF": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "IWFND": {
+   "description": "Gateway service registry",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "JCDS": {
+   "description": "Status change history",
+   "keys": [
+    "OBJNR",
+    "STAT",
+    "CHGNR"
+   ],
+   "fields": {
+    "OBJNR": "",
+    "STAT": "",
+    "CHGNR": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "07_PM_EAM.md",
+    "10_PS.md"
+   ]
+  },
+  "JEST": {
+   "description": "Object status",
+   "keys": [
+    "OBJNR",
+    "STAT"
+   ],
+   "fields": {
+    "OBJNR": "",
+    "STAT": "",
+    "INACT": "",
+    "CHGNR": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "07_PM_EAM.md",
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "JSTO": {
+   "description": "Status profile per object",
+   "keys": [
+    "OBJNR"
+   ],
+   "fields": {
+    "OBJNR": "",
+    "OBTYP": "",
+    "STSMA": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KAKO": {
+   "description": "Capacity header",
+   "keys": [
+    "KAPID"
+   ],
+   "fields": {
+    "KAPID": "",
+    "KAPAR": "",
+    "BEGZT": "",
+    "ENDZT": "",
+    "NGRAD": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KLAH": {
+   "description": "Class header",
+   "keys": [
+    "CLINT"
+   ],
+   "fields": {
+    "CLINT": "",
+    "KLART": "",
+    "CLASS": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNA1": {
+   "description": "Customer general",
+   "keys": [
+    "KUNNR"
+   ],
+   "fields": {
+    "KUNNR": "Customer number",
+    "NAME1": "Name",
+    "LAND1": "Country",
+    "ORT01": "City",
+    "PSTLZ": "Postal code",
+    "ADRNR": "Address number",
+    "KTOKD": "Customer account group",
+    "STCD1": "Tax number 1",
+    "STCD3": "",
+    "LOEVM": "Deletion flag",
+    "SPERR": "Central posting block",
+    "ERDAT": "",
+    "REGIO": "Region",
+    "STRAS": "Street",
+    "AUFSD": "Order block",
+    "LIFSD": "Delivery block",
+    "FAKSD": "Billing block",
+    "NAME2": "Additional name",
+    "TELF1": "Telephone"
+   },
+   "sources": [
+    "01_FI.md",
+    "04_SD.md",
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNB1": {
+   "description": "Customer company code",
+   "keys": [
+    "KUNNR",
+    "BUKRS"
+   ],
+   "fields": {
+    "KUNNR": "Customer",
+    "BUKRS": "Company code",
+    "AKONT": "Reconciliation account",
+    "ZTERM": "Payment terms",
+    "ZWELS": "Payment methods",
+    "FDGRV": "Planning group",
+    "LOEVM": "Deletion flag",
+    "ZUAWA": "Sort key",
+    "SPERR": "Company-code posting block",
+    "BUSAB": "Accounting clerk",
+    "ALTKN": "Previous account number"
+   },
+   "sources": [
+    "01_FI.md",
+    "04_SD.md",
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNBK": {
+   "description": "Customer bank details",
+   "keys": [
+    "KUNNR",
+    "BANKS",
+    "BANKL",
+    "BANKN"
+   ],
+   "fields": {
+    "KUNNR": "",
+    "BANKS": "",
+    "BANKL": "",
+    "BANKN": "",
+    "BKONT": "",
+    "BKREF": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNVI": {
+   "description": "Customer tax indicators",
+   "keys": [
+    "KUNNR",
+    "ALAND",
+    "TATYP"
+   ],
+   "fields": {
+    "KUNNR": "",
+    "ALAND": "",
+    "TATYP": "",
+    "TAXKD": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNVK": {
+   "description": "Contact persons",
+   "keys": [
+    "PARNR"
+   ],
+   "fields": {
+    "PARNR": "",
+    "KUNNR": "",
+    "NAMEV": "",
+    "NAME1": "",
+    "ABTNR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNVP": {
+   "description": "Customer partner functions",
+   "keys": [
+    "KUNNR",
+    "VKORG",
+    "VTWEG",
+    "SPART",
+    "PARVW",
+    "PARZA"
+   ],
+   "fields": {
+    "KUNNR": "",
+    "VKORG": "",
+    "VTWEG": "",
+    "SPART": "",
+    "PARVW": "",
+    "PARZA": "",
+    "KUNN2": "",
+    "LIFNR": "",
+    "PERNR": ""
+   },
+   "sources": [
+    "04_SD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KNVV": {
+   "description": "Customer sales area",
+   "keys": [
+    "KUNNR",
+    "VKORG",
+    "VTWEG",
+    "SPART"
+   ],
+   "fields": {
+    "KUNNR": "Customer",
+    "VKORG": "Sales organization",
+    "VTWEG": "Distribution channel",
+    "SPART": "Division",
+    "KDGRP": "Customer group",
+    "BZIRK": "Sales district",
+    "KONDA": "Price group",
+    "PLTYP": "Price list type",
+    "WAERS": "Currency",
+    "KALKS": "Pricing procedure indicator",
+    "VSBED": "Shipping conditions",
+    "INCO1": "Incoterms (part 1)",
+    "INCO2": "",
+    "ZTERM": "Payment terms",
+    "KTGRD": "",
+    "VKBUR": "Sales office",
+    "VKGRP": "Sales group",
+    "LOEVM": "Deletion flag",
+    "VERSG": "Statistics group"
+   },
+   "sources": [
+    "01_FI.md",
+    "04_SD.md",
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KONH": {
+   "description": "Quota arrangement / condition records",
+   "keys": [
+    "KNUMH"
+   ],
+   "fields": {
+    "KNUMH": "",
+    "KSCHL": "",
+    "KOTABNR": "",
+    "DATAB": "",
+    "DATBI": "",
+    "VAKEY": ""
+   },
+   "sources": [
+    "04_SD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KONM": {
+   "description": "Quantity / value scales",
+   "keys": [
+    "KNUMH",
+    "KOPOS",
+    "KLFN1"
+   ],
+   "fields": {
+    "KNUMH": "",
+    "KOPOS": "",
+    "KLFN1": "",
+    "KSTBM": "",
+    "KSTBW": "",
+    "KBETR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KONP": {
+   "description": "Quota arrangement / condition records",
+   "keys": [
+    "KNUMH",
+    "KOPOS"
+   ],
+   "fields": {
+    "KNUMH": "",
+    "KOPOS": "",
+    "KSCHL": "",
+    "KBETR": "",
+    "KONWA": "",
+    "KPEIN": "",
+    "KMEIN": "",
+    "LOEVM_KO": ""
+   },
+   "sources": [
+    "04_SD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KONW": {
+   "description": "Quantity / value scales",
+   "keys": [
+    "KNUMH",
+    "KOPOS",
+    "KLFN1"
+   ],
+   "fields": {
+    "KNUMH": "",
+    "KOPOS": "",
+    "KLFN1": "",
+    "KSTBM": "",
+    "KSTBW": "",
+    "KBETR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "KSSK": {
+   "description": "Object ↔ class allocation",
+   "keys": [
+    "OBJEK",
+    "MAFID",
+    "KLART",
+    "CLINT",
+    "ADZHL"
+   ],
+   "fields": {
+    "OBJEK": "",
+    "MAFID": "",
+    "KLART": "",
+    "CLINT": "",
+    "ADZHL": "",
+    "DATUV": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LAGP": {
+   "description": "Storage bins",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "LFA1": {
+   "description": "Supplier general",
+   "keys": [
+    "LIFNR"
+   ],
+   "fields": {
+    "LIFNR": "Supplier number",
+    "NAME1": "Name",
+    "LAND1": "Country",
+    "ORT01": "City",
+    "ADRNR": "Address number",
+    "KTOKK": "Supplier account group",
+    "STCD1": "Tax number 1",
+    "STCD3": "",
+    "LOEVM": "Deletion flag",
+    "SPERR": "Central posting block",
+    "KUNNR": "",
+    "PSTLZ": "Postal code",
+    "REGIO": "Region",
+    "STRAS": "Street",
+    "NAME2": "Additional name",
+    "TELF1": "Telephone"
+   },
+   "sources": [
+    "01_FI.md",
+    "03_MM.md",
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LFB1": {
+   "description": "Supplier company code",
+   "keys": [
+    "LIFNR",
+    "BUKRS"
+   ],
+   "fields": {
+    "LIFNR": "Supplier",
+    "BUKRS": "Company code",
+    "AKONT": "Reconciliation account",
+    "ZTERM": "Payment terms",
+    "ZWELS": "Payment methods",
+    "QSSKZ": "",
+    "REPRF": "Check double invoice",
+    "ZUAWA": "Sort key",
+    "SPERR": "Posting block",
+    "LOEVM": "Deletion flag",
+    "BUSAB": "Accounting clerk",
+    "ALTKN": "Previous account number"
+   },
+   "sources": [
+    "01_FI.md",
+    "03_MM.md",
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LFBK": {
+   "description": "Supplier bank details",
+   "keys": [
+    "LIFNR",
+    "BANKS",
+    "BANKL",
+    "BANKN"
+   ],
+   "fields": {
+    "LIFNR": "",
+    "BANKS": "",
+    "BANKL": "",
+    "BANKN": "",
+    "BKONT": "",
+    "BVTYP": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LFBW": {
+   "description": "Supplier withholding tax",
+   "keys": [
+    "LIFNR",
+    "BUKRS",
+    "WITHT"
+   ],
+   "fields": {
+    "LIFNR": "",
+    "BUKRS": "",
+    "WITHT": "",
+    "WT_WITHCD": "",
+    "WT_SUBJCT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LFM1": {
+   "description": "Supplier purchasing org",
+   "keys": [
+    "LIFNR",
+    "EKORG"
+   ],
+   "fields": {
+    "LIFNR": "Supplier",
+    "EKORG": "Purchasing organization",
+    "WAERS": "Order currency",
+    "ZTERM": "Payment terms",
+    "INCO1": "",
+    "WEBRE": "GR-based invoice verification indicator",
+    "KALSK": "",
+    "SPERM": "Purchasing block",
+    "LOEVM": "Deletion flag",
+    "VERKF": "Salesperson",
+    "TELF1": "Telephone"
+   },
+   "sources": [
+    "01_FI.md",
+    "12_BP.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LIKP": {
+   "description": "Delivery header",
+   "keys": [
+    "VBELN"
+   ],
+   "fields": {
+    "VBELN": "Delivery number",
+    "LFART": "Delivery type",
+    "VSTEL": "Shipping point",
+    "VKORG": "Sales organization",
+    "KUNNR": "Ship-to party / delivery customer context",
+    "KUNAG": "Sold-to party",
+    "WADAT": "Planned goods movement date",
+    "WADAT_IST": "Actual goods movement date",
+    "LFDAT": "Delivery date",
+    "ROUTE": "Route",
+    "BTGEW": "Total weight",
+    "NTGEW": "Net weight",
+    "GBSTK": "",
+    "WBSTK": "Overall goods movement status",
+    "KOSTK": "Overall picking status",
+    "FKSTK": "Overall billing status",
+    "TRSTA": "",
+    "ERDAT": "Created on",
+    "ERNAM": "Created by",
+    "VTWEG": "Distribution channel",
+    "TRAGR": "Transportation group",
+    "LIFSK": "Delivery block",
+    "GEWEI": "Weight unit",
+    "VOLUM": "Volume",
+    "VOLEH": "Volume unit",
+    "BOLNR": "Bill of lading",
+    "TRAID": "Shipment/tracking identifier, context-dependent",
+    "KODAT": "Picking date"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "LIPS": {
+   "description": "Delivery item",
+   "keys": [
+    "VBELN",
+    "POSNR"
+   ],
+   "fields": {
+    "VBELN": "Delivery",
+    "POSNR": "Delivery item",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "LGORT": "Storage location",
+    "CHARG": "Batch",
+    "LFIMG": "Actual delivery quantity in sales unit",
+    "VRKME": "Sales unit",
+    "LGMNG": "Delivery quantity in stockkeeping/base unit",
+    "MEINS": "Base unit",
+    "VGBEL": "Reference document",
+    "VGPOS": "Reference document item",
+    "PSTYV": "Delivery item category",
+    "KOSTA": "Picking status at item",
+    "WBSTA": "Goods movement status at item",
+    "UECHA": "Higher-level item for batch split",
+    "ARKTX": "Item description",
+    "VGTYP": "Reference document category",
+    "KCMENG": "Cumulative picked quantity, context-dependent",
+    "VKBUR": "Sales office, if populated"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MAKT": {
+   "description": "Material descriptions",
+   "keys": [
+    "MATNR",
+    "SPRAS"
+   ],
+   "fields": {
+    "MATNR": "Material",
+    "SPRAS": "Language",
+    "MAKTX": "Material description",
+    "MAKTG": "Uppercase description"
+   },
+   "sources": [
+    "03_MM.md",
+    "13_MD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MAPL": {
+   "description": "Material ↔ task list",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "PLNTY",
+    "PLNNR",
+    "PLNAL",
+    "ZKRIZ",
+    "ZAEHL"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "PLNTY": "",
+    "PLNNR": "",
+    "PLNAL": "",
+    "ZKRIZ": "",
+    "ZAEHL": "",
+    "DATUV": "",
+    "LOEKZ": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MAPR": {
+   "description": "Forecast data",
+   "keys": [
+    "MATNR",
+    "WERKS"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "PNUM1": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MARA": {
+   "description": "General material data",
+   "keys": [
+    "MATNR"
+   ],
+   "fields": {
+    "MATNR": "Material number",
+    "MTART": "Material type",
+    "MATKL": "Material group",
+    "MEINS": "Base unit of measure",
+    "BRGEW": "Gross weight",
+    "NTGEW": "Net weight",
+    "GEWEI": "Weight unit",
+    "VOLUM": "Volume",
+    "SPART": "Division",
+    "MSTAE": "Cross-plant material status",
+    "LVORM": "Cross-plant deletion flag",
+    "ERSDA": "Created date",
+    "ERNAM": "Created by",
+    "LAEDA": "Last changed date",
+    "EAN11": "International article number",
+    "XCHPF": "Batch management indicator",
+    "PRDHA": "",
+    "BISMT": "Old material number",
+    "VOLEH": "Volume unit",
+    "AENAM": "Changed by",
+    "VPSTA": "Maintenance status",
+    "PSTAT": "Maintenance status",
+    "MBRSH": "Industry sector",
+    "MHDHB": "Total shelf life"
+   },
+   "sources": [
+    "03_MM.md",
+    "13_MD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MARC": {
+   "description": "Plant data",
+   "keys": [
+    "MATNR",
+    "WERKS"
+   ],
+   "fields": {
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "DISMM": "MRP type",
+    "DISPO": "MRP controller",
+    "BESKZ": "Procurement type",
+    "SOBSL": "Special procurement type",
+    "EKGRP": "",
+    "PLIFZ": "Planned delivery time",
+    "WEBAZ": "GR processing time",
+    "MINBE": "Reorder point",
+    "EISBE": "Safety stock",
+    "BSTMI": "",
+    "BSTMA": "",
+    "PRCTR": "",
+    "XCHPF": "",
+    "MMSTA": "Plant-specific material status",
+    "LADGR": "",
+    "STAWN": "",
+    "LVORM": "Plant deletion flag"
+   },
+   "sources": [
+    "03_MM.md",
+    "13_MD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MARD": {
+   "description": "Storage location data",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "LGORT"
+   ],
+   "fields": {
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "LGORT": "Storage location",
+    "LGPBE": "Storage bin",
+    "LABST": "Unrestricted-use stock (verify",
+    "INSME": "Quality inspection stock",
+    "SPEME": "Blocked stock",
+    "UMLME": "Stock in transfer",
+    "LVORM": "Deletion flag",
+    "DISKZ": "MRP indicator",
+    "KZILL": "Physical inventory indicator"
+   },
+   "sources": [
+    "03_MM.md",
+    "13_MD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MARDH": {
+   "description": "History of valuation/stock",
+   "keys": [
+    "MATNR",
+    "BWKEY/WERKS",
+    "LFGJA",
+    "LFMON"
+   ],
+   "fields": {
+    "MATNR": "",
+    "BWKEY/WERKS": "",
+    "LFGJA": "",
+    "LFMON": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MARM": {
+   "description": "Alternative units of measure",
+   "keys": [
+    "MATNR",
+    "MEINH"
+   ],
+   "fields": {
+    "MATNR": "",
+    "MEINH": "",
+    "UMREZ": "",
+    "UMREN": "",
+    "EAN11": "",
+    "BRGEW": "",
+    "VOLUM": ""
+   },
+   "sources": [
+    "03_MM.md",
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MAST": {
+   "description": "Material ↔ BOM link",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "STLAN",
+    "STLNR",
+    "STLAL"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "STLAN": "",
+    "STLNR": "",
+    "STLAL": "",
+    "LOSVN": "",
+    "LOSBS": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MATDOC": {
+   "description": "Goods movement document",
+   "keys": [
+    "KEY1",
+    "KEY2",
+    "KEY3",
+    "KEY4",
+    "KEY5",
+    "KEY6",
+    "MBLNR",
+    "MJAHR",
+    "ZEILE"
+   ],
+   "fields": {
+    "MBLNR": "Material document",
+    "MJAHR": "Material document year",
+    "ZEILE": "Material document item",
+    "BWART": "Movement type",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "LGORT": "Storage location",
+    "CHARG": "Batch",
+    "MENGE": "Quantity",
+    "MEINS": "Base unit",
+    "SHKZG": "Debit/credit indicator",
+    "SOBKZ": "Special stock indicator",
+    "AUFNR": "Order reference where relevant",
+    "BUDAT": "Posting date (verify exact exposure)",
+    "XBLNR": "Reference document where populated",
+    "KEY1": "",
+    "KEY2": "",
+    "KEY3": "",
+    "KEY4": "",
+    "KEY5": "",
+    "KEY6": "",
+    "LIFNR": "Supplier",
+    "KUNNR": "Customer",
+    "KDAUF": "",
+    "KDPOS": "",
+    "ERFMG": "",
+    "ERFME": "",
+    "DMBTR": "Amount in local currency,",
+    "WAERS": "Currency, where exposed",
+    "BLDAT": "",
+    "CPUDT": "Entry date",
+    "USNAM": "User name",
+    "EBELN": "PO",
+    "EBELP": "PO item",
+    "KOSTL": "",
+    "RSNUM": "",
+    "RSPOS": "",
+    "VBELN_IM": "",
+    "VBELP_IM": "",
+    "SJAHR": "",
+    "SMBLN": "",
+    "SMBLP": "",
+    "RECORD_TYPE": "",
+    "STOCK_QTY": "",
+    "INSMK": "Stock type"
+   },
+   "sources": [
+    "03_MM.md",
+    "S4HANA_Enterprise_Data_Dictionary_All_Modules.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MATDOC_EXTRACT": {
+   "description": "Aggregated stock extract (performance)",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MBEW": {
+   "description": "Valuation data",
+   "keys": [
+    "MATNR",
+    "BWKEY",
+    "BWTAR"
+   ],
+   "fields": {
+    "MATNR": "Material",
+    "BWKEY": "Valuation area",
+    "BWTAR": "Valuation type",
+    "BKLAS": "Valuation class",
+    "VPRSV": "Price control",
+    "VERPR": "Moving average price",
+    "STPRS": "Standard price",
+    "PEINH": "Price unit",
+    "LBKUM": "Total valuated stock",
+    "SALK3": "Total valuated stock value"
+   },
+   "sources": [
+    "03_MM.md",
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MBEWH": {
+   "description": "History of valuation/stock",
+   "keys": [
+    "MATNR",
+    "BWKEY/WERKS",
+    "LFGJA",
+    "LFMON"
+   ],
+   "fields": {
+    "MATNR": "",
+    "BWKEY/WERKS": "",
+    "LFGJA": "",
+    "LFMON": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MCH1": {
+   "description": "Batch (cross-plant)",
+   "keys": [
+    "MATNR",
+    "CHARG"
+   ],
+   "fields": {
+    "MATNR": "",
+    "CHARG": "",
+    "VFDAT": "",
+    "HSDAT": "",
+    "LIFNR": "",
+    "LICHA": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MCHA": {
+   "description": "Batch (plant)",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "CHARG"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "CHARG": "",
+    "VFDAT": "",
+    "HSDAT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MCHB": {
+   "description": "Batch stocks",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "LGORT",
+    "CHARG"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "LGORT": "",
+    "CHARG": "",
+    "CLABS": "",
+    "CINSM": "",
+    "CSPEM": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MEAN": {
+   "description": "EANs/GTINs per unit",
+   "keys": [
+    "MATNR",
+    "MEINH",
+    "LFNUM"
+   ],
+   "fields": {
+    "MATNR": "",
+    "MEINH": "",
+    "LFNUM": "",
+    "EAN11": "",
+    "EANTP": "",
+    "HPEAN": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MHIS": {
+   "description": "Maintenance plan call history",
+   "keys": [
+    "WARPL",
+    "ABNUM"
+   ],
+   "fields": {
+    "WARPL": "",
+    "ABNUM": "",
+    "NPLDA": "",
+    "HORDA": "",
+    "LRMDT": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MKAL": {
+   "description": "Production versions",
+   "keys": [
+    "MATNR",
+    "WERKS",
+    "VERID"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "VERID": "",
+    "ADATU": "",
+    "BDATU": "",
+    "STLAL": "",
+    "STLAN": "",
+    "PLNTY": "",
+    "PLNNR": "",
+    "ALNAL": "",
+    "MDV01": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MKPF": {
+   "description": "Compat views of MATDOC",
+   "keys": [
+    "MBLNR",
+    "MJAHR"
+   ],
+   "fields": {
+    "MBLNR": "Material document",
+    "MJAHR": "Year",
+    "VGART": "Transaction/event type",
+    "BLART": "Document type",
+    "BUDAT": "Posting date",
+    "BLDAT": "Document date",
+    "CPUDT": "Entry date",
+    "CPUTM": "Entry time",
+    "USNAM": "User",
+    "XBLNR": "Reference",
+    "BKTXT": "Header text"
+   },
+   "sources": [
+    "03_MM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MLAN": {
+   "description": "Tax classification",
+   "keys": [
+    "MATNR",
+    "ALAND"
+   ],
+   "fields": {
+    "MATNR": "",
+    "ALAND": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MLDOC": {
+   "description": "ML document (S/4)",
+   "keys": [
+    "DOCREF",
+    "CURTP"
+   ],
+   "fields": {
+    "DOCREF": "",
+    "CURTP": "",
+    "KALNR": "",
+    "JAHRPER": "",
+    "QUANT": "",
+    "STVAL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MLGN": {
+   "description": "Warehouse number data",
+   "keys": [
+    "MATNR",
+    "LGNUM"
+   ],
+   "fields": {
+    "MATNR": "",
+    "LGNUM": "",
+    "LTKZE": "",
+    "LTKZA": "",
+    "LHMG1": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MLGT": {
+   "description": "Storage type data",
+   "keys": [
+    "MATNR",
+    "LGNUM",
+    "LGTYP"
+   ],
+   "fields": {
+    "MATNR": "",
+    "LGNUM": "",
+    "LGTYP": "",
+    "LGPLA": "",
+    "MINBE": "",
+    "MAXBE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MPLA": {
+   "description": "Maintenance plan",
+   "keys": [
+    "WARPL"
+   ],
+   "fields": {
+    "WARPL": "",
+    "WPTXT": "",
+    "STRAT": "",
+    "MPTYP": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MPOS": {
+   "description": "Maintenance item",
+   "keys": [
+    "WAPOS",
+    "WARPL"
+   ],
+   "fields": {
+    "WAPOS": "",
+    "WARPL": "",
+    "EQUNR": "",
+    "TPLNR": "",
+    "PLNTY": "",
+    "PLNNR": "",
+    "PLNAL": "",
+    "AUART": ""
+   },
+   "sources": [
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MSEG": {
+   "description": "Compat views of MATDOC",
+   "keys": [
+    "MBLNR",
+    "MJAHR"
+   ],
+   "fields": {
+    "MBLNR": "",
+    "MJAHR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "MVKE": {
+   "description": "Sales data",
+   "keys": [
+    "MATNR",
+    "VKORG",
+    "VTWEG"
+   ],
+   "fields": {
+    "MATNR": "Material",
+    "VKORG": "Sales organization",
+    "VTWEG": "Distribution channel",
+    "DWERK": "Delivering plant",
+    "KTGRM": "Account assignment group",
+    "MTPOS": "Item category group",
+    "VRKME": "",
+    "SCMNG": "",
+    "AUMNG": "",
+    "PRODH": "",
+    "VMSTA": "Sales status",
+    "VMSTD": "Valid-from date",
+    "KONDM": "Material pricing group"
+   },
+   "sources": [
+    "13_MD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "NAST": {
+   "description": "Output (old output control)",
+   "keys": [
+    "KAPPL",
+    "OBJKY",
+    "KSCHL",
+    "SPRAS",
+    "PARNR",
+    "PARVW",
+    "ERDAT",
+    "ERUHR"
+   ],
+   "fields": {
+    "KAPPL": "",
+    "OBJKY": "",
+    "KSCHL": "",
+    "SPRAS": "",
+    "PARNR": "",
+    "PARVW": "",
+    "ERDAT": "",
+    "ERUHR": "",
+    "VSZTP": "",
+    "VSTAT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "NRIV": {
+   "description": "Number range intervals",
+   "keys": [
+    "OBJECT",
+    "SUBOBJECT",
+    "NRRANGENR",
+    "TOYEAR"
+   ],
+   "fields": {
+    "OBJECT": "",
+    "SUBOBJECT": "",
+    "NRRANGENR": "",
+    "TOYEAR": "",
+    "FROMNUMBER": "",
+    "TONUMBER": "",
+    "NRLEVEL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "ORDIM_C": {
+   "description": "Confirmed warehouse tasks",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "ORDIM_O": {
+   "description": "Open warehouse tasks",
+   "keys": [
+    "HU"
+   ],
+   "fields": {
+    "HU": ""
+   },
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "PA0000": {
+   "description": "Actions",
+   "keys": [
+    "PERNR",
+    "SUBTY",
+    "OBJPS",
+    "SPRPS",
+    "ENDDA",
+    "BEGDA",
+    "SEQNR"
+   ],
+   "fields": {
+    "PERNR": "",
+    "SUBTY": "",
+    "OBJPS": "",
+    "SPRPS": "",
+    "ENDDA": "",
+    "BEGDA": "",
+    "SEQNR": "",
+    "MASSN": "",
+    "MASSG": "",
+    "STAT2": "",
+    "AEDTM": ""
+   },
+   "sources": [
+    "11_HR_HCM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PA0001": {
+   "description": "Organizational assignment",
+   "keys": [],
+   "fields": {
+    "BUKRS": "",
+    "WERKS": "",
+    "PERSG": "",
+    "PERSK": "",
+    "KOSTL": "",
+    "ORGEH": "",
+    "PLANS": "",
+    "STELL": "",
+    "PERNR": "",
+    "BTRTL": ""
+   },
+   "sources": [
+    "11_HR_HCM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PA0002": {
+   "description": "Personal data",
+   "keys": [],
+   "fields": {
+    "NACHN": "",
+    "VORNA": "",
+    "GBDAT": "",
+    "GESCH": "",
+    "PERNR": "",
+    "NATIO": "",
+    "SPRSL": ""
+   },
+   "sources": [
+    "11_HR_HCM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PA0006": {
+   "description": "Addresses",
+   "keys": [],
+   "fields": {
+    "PERNR": "",
+    "ANSSA": "",
+    "STRAS": "",
+    "ORT01": "",
+    "PSTLZ": "",
+    "LAND1": "",
+    "REGIO": ""
+   },
+   "sources": [
+    "11_HR_HCM.md"
+   ]
+  },
+  "PA0007": {
+   "description": "Planned Working Time",
+   "keys": [],
+   "fields": {
+    "PERNR": "",
+    "SCHKZ": "",
+    "WOSTD": "",
+    "EMPCT": "",
+    "TEILK": ""
+   },
+   "sources": [
+    "11_HR_HCM.md"
+   ]
+  },
+  "PA0008": {
+   "description": "Basic pay",
+   "keys": [],
+   "fields": {
+    "TRFAR": "",
+    "TRFGB": "",
+    "BETRG": "",
+    "PERNR": "",
+    "TRFGR": "",
+    "TRFST": ""
+   },
+   "sources": [
+    "11_HR_HCM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PA0105": {
+   "description": "Communications",
+   "keys": [],
+   "fields": {
+    "PERNR": "",
+    "SUBTY": "",
+    "USRID": "",
+    "USRID_LONG": ""
+   },
+   "sources": [
+    "11_HR_HCM.md"
+   ]
+  },
+  "PAYR": {
+   "description": "Check register",
+   "keys": [
+    "ZBUKR",
+    "HBKID",
+    "HKTID",
+    "RZAWE",
+    "CHECT"
+   ],
+   "fields": {
+    "ZBUKR": "",
+    "HBKID": "",
+    "HKTID": "",
+    "RZAWE": "",
+    "CHECT": "",
+    "VBLNR": "",
+    "GJAHR": "",
+    "RWBTR": "",
+    "ZALDT": "",
+    "VOIDR": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PKHD": {
+   "description": "Kanban control cycle / containers",
+   "keys": [
+    "PKNUM",
+    "PKPOS"
+   ],
+   "fields": {
+    "PKNUM": "",
+    "PKPOS": "",
+    "MATNR": "",
+    "WERKS": "",
+    "PRVBE": "",
+    "PKBST": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PKPS": {
+   "description": "Kanban control cycle / containers",
+   "keys": [
+    "PKNUM",
+    "PKPOS"
+   ],
+   "fields": {
+    "PKNUM": "",
+    "PKPOS": "",
+    "MATNR": "",
+    "WERKS": "",
+    "PRVBE": "",
+    "PKBST": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PLAF": {
+   "description": "Planned order",
+   "keys": [
+    "PLNUM"
+   ],
+   "fields": {
+    "PLNUM": "",
+    "MATNR": "",
+    "PLWRK": "",
+    "PWWRK": "",
+    "GSMNG": "",
+    "PSTTR": "",
+    "PEDTR": "",
+    "PAART": "",
+    "BESKZ": "",
+    "VERID": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PLAS": {
+   "description": "Task list sequence ↔ operation",
+   "keys": [
+    "PLNTY",
+    "PLNNR",
+    "PLNAL",
+    "PLNFL",
+    "PLNKN",
+    "ZAEHL"
+   ],
+   "fields": {
+    "PLNTY": "",
+    "PLNNR": "",
+    "PLNAL": "",
+    "PLNFL": "",
+    "PLNKN": "",
+    "ZAEHL": "",
+    "LOEKZ": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PLKO": {
+   "description": "Task list (routing) header",
+   "keys": [
+    "PLNTY",
+    "PLNNR",
+    "PLNAL",
+    "ZAEHL"
+   ],
+   "fields": {
+    "PLNTY": "",
+    "PLNNR": "",
+    "PLNAL": "",
+    "ZAEHL": "",
+    "DATUV": "",
+    "WERKS": "",
+    "VERWE": "",
+    "STATU": "",
+    "LOSVN": "",
+    "LOSBS": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PLPO": {
+   "description": "Task list operation",
+   "keys": [
+    "PLNTY",
+    "PLNNR",
+    "PLNKN",
+    "ZAEHL"
+   ],
+   "fields": {
+    "PLNTY": "",
+    "PLNNR": "",
+    "PLNKN": "",
+    "ZAEHL": "",
+    "VORNR": "",
+    "ARBID": "",
+    "STEUS": "",
+    "LTXA1": "",
+    "BMSCH": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PRCD_ELEMENTS": {
+   "description": "Document pricing elements (replaces KONV)",
+   "keys": [
+    "KNUMV",
+    "KPOSN",
+    "STUNR",
+    "ZAEHK"
+   ],
+   "fields": {
+    "KNUMV": "Pricing document",
+    "KPOSN": "Pricing item",
+    "STUNR": "Pricing procedure step",
+    "ZAEHK": "Condition counter",
+    "KSCHL": "Condition type",
+    "KBETR": "Condition rate",
+    "KPEIN": "Pricing unit",
+    "KMEIN": "Condition unit",
+    "KWERT": "Condition value",
+    "WAERS": "Currency",
+    "KAWRT": "Condition base value",
+    "KINAK": "Inactive condition indicator",
+    "KSTAT": "Statistical condition",
+    "KNUMH": "Condition record number",
+    "KOAID": "",
+    "KNTYP": "Condition category",
+    "KHERK": "Condition origin"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PRDI": {
+   "description": "Inbound delivery integration",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "PRDO": {
+   "description": "Outbound delivery integration",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "PRHI": {
+   "description": "WBS hierarchy",
+   "keys": [
+    "POSNR"
+   ],
+   "fields": {
+    "POSNR": "",
+    "PSPHI": "",
+    "UP": "",
+    "DOWN": "",
+    "LEFT": "",
+    "RIGHT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PROJ": {
+   "description": "Project definition",
+   "keys": [
+    "PSPNR"
+   ],
+   "fields": {
+    "PSPNR": "",
+    "PSPID": "",
+    "VBUKR": "",
+    "OBJNR": ""
+   },
+   "sources": [
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PROP": {
+   "description": "Forecast data",
+   "keys": [
+    "MATNR",
+    "WERKS"
+   ],
+   "fields": {
+    "MATNR": "",
+    "WERKS": "",
+    "PNUM1": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "PRPS": {
+   "description": "WBS element master",
+   "keys": [
+    "PSPNR"
+   ],
+   "fields": {
+    "PSPNR": "",
+    "POSID": "",
+    "PSPHI": "",
+    "OBJNR": "",
+    "PBUKR": "",
+    "PRCTR": "",
+    "STUFE": ""
+   },
+   "sources": [
+    "10_PS.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QALS": {
+   "description": "Inspection lot",
+   "keys": [
+    "PRUEFLOS"
+   ],
+   "fields": {
+    "PRUEFLOS": "",
+    "ART": "",
+    "HERKUNFT": "",
+    "MATNR": "",
+    "WERK": "",
+    "CHARG": "",
+    "LOSMENGE": "",
+    "MENGENEINH": "",
+    "EBELN": "",
+    "EBELP": "",
+    "MBLNR": "",
+    "MJAHR": "",
+    "ZEILE": "",
+    "AUFNR": "",
+    "KDAUF": "",
+    "PASTRTERM": "",
+    "ENSTEHDAT": "",
+    "OBJNR": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QAMR": {
+   "description": "Characteristic results",
+   "keys": [
+    "PRUEFLOS",
+    "VORGLFNR",
+    "MERKNR"
+   ],
+   "fields": {
+    "PRUEFLOS": "",
+    "VORGLFNR": "",
+    "MERKNR": "",
+    "MITTELWERT": "",
+    "ANZFEHLER": "",
+    "MBEWERTG": "",
+    "ATTRIBUT": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QAMV": {
+   "description": "Inspection characteristic specs",
+   "keys": [
+    "PRUEFLOS",
+    "VORGLFNR",
+    "MERKNR"
+   ],
+   "fields": {
+    "PRUEFLOS": "",
+    "VORGLFNR": "",
+    "MERKNR": "",
+    "VERWMERKM": "",
+    "KURZTEXT": "",
+    "SOLLWERT": "",
+    "TOLERANZOB": "",
+    "TOLERANZUN": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QASE": {
+   "description": "Sample results (single values)",
+   "keys": [
+    "PRUEFLOS",
+    "VORGLFNR",
+    "MERKNR",
+    "DETAILERG"
+   ],
+   "fields": {
+    "PRUEFLOS": "",
+    "VORGLFNR": "",
+    "MERKNR": "",
+    "DETAILERG": "",
+    "MESSWERT": "",
+    "MBEWERTG": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QAVE": {
+   "description": "Usage decision",
+   "keys": [
+    "PRUEFLOS",
+    "KZART",
+    "ZAEHLER"
+   ],
+   "fields": {
+    "PRUEFLOS": "",
+    "KZART": "",
+    "ZAEHLER": "",
+    "VCODE": "",
+    "VCODEGRP": "",
+    "VBEWERTUNG": "",
+    "VDATUM": "",
+    "VNAME": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QINF": {
+   "description": "Q-info record (procurement)",
+   "keys": [
+    "MATNR",
+    "LIEFERANT",
+    "WERK"
+   ],
+   "fields": {
+    "MATNR": "",
+    "LIEFERANT": "",
+    "WERK": "",
+    "FREI_DAT": "",
+    "NOINSP": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QMEL": {
+   "description": "Notification header (PM and QM)",
+   "keys": [
+    "QMNUM"
+   ],
+   "fields": {
+    "QMNUM": "",
+    "QMART": "",
+    "QMTXT": "",
+    "EQUNR": "",
+    "TPLNR": "",
+    "MATNR": "",
+    "PRUEFLOS": "",
+    "AUFNR": "",
+    "PRIOK": "",
+    "QMDAT": "",
+    "STRMN": "",
+    "LTRMN": "",
+    "OBJNR": "",
+    "ERNAM": "",
+    "ERDAT": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QMFE": {
+   "description": "Notification items (defects)",
+   "keys": [
+    "QMNUM",
+    "FENUM"
+   ],
+   "fields": {
+    "QMNUM": "",
+    "FENUM": "",
+    "FEKAT": "",
+    "FEGRP": "",
+    "FECOD": "",
+    "OTGRP": "",
+    "OTEIL": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QMIH": {
+   "description": "Maintenance notification data",
+   "keys": [
+    "QMNUM"
+   ],
+   "fields": {
+    "QMNUM": "",
+    "EQUNR": "",
+    "ILOAN": "",
+    "AUSVN": "",
+    "AUSBS": "",
+    "MSAUS": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QMMA": {
+   "description": "Notification activities",
+   "keys": [
+    "QMNUM",
+    "MANUM"
+   ],
+   "fields": {
+    "QMNUM": "",
+    "MANUM": "",
+    "MNKAT": "",
+    "MNGRP": "",
+    "MNCOD": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QMSM": {
+   "description": "Notification tasks",
+   "keys": [
+    "QMNUM",
+    "MANUM"
+   ],
+   "fields": {
+    "QMNUM": "",
+    "MANUM": "",
+    "MNKAT": "",
+    "MNGRP": "",
+    "MNCOD": "",
+    "PSTER": "",
+    "PETER": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QMUR": {
+   "description": "Notification causes",
+   "keys": [
+    "QMNUM",
+    "FENUM",
+    "URNUM"
+   ],
+   "fields": {
+    "QMNUM": "",
+    "FENUM": "",
+    "URNUM": "",
+    "URKAT": "",
+    "URGRP": "",
+    "URCOD": ""
+   },
+   "sources": [
+    "06_QM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QPMK": {
+   "description": "Master inspection characteristics",
+   "keys": [
+    "ZAEHLER",
+    "MKMNR",
+    "VERSION"
+   ],
+   "fields": {
+    "ZAEHLER": "",
+    "MKMNR": "",
+    "VERSION": "",
+    "KURZTEXT": "",
+    "STEUERKZ": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "QUAN": {
+   "description": "Quant",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "RBCO": {
+   "description": "Invoice account assignment",
+   "keys": [
+    "BELNR",
+    "GJAHR",
+    "BUZEI",
+    "COBL_NR"
+   ],
+   "fields": {
+    "BELNR": "",
+    "GJAHR": "",
+    "BUZEI": "",
+    "COBL_NR": "",
+    "SAKNR": "",
+    "KOSTL": "",
+    "AUFNR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "RBKP": {
+   "description": "Supplier invoice header (MIRO)",
+   "keys": [
+    "BELNR",
+    "GJAHR"
+   ],
+   "fields": {
+    "BELNR": "Invoice document",
+    "GJAHR": "Fiscal year",
+    "BUKRS": "",
+    "LIFNR": "Supplier",
+    "BLDAT": "Document date",
+    "BUDAT": "Posting date",
+    "XBLNR": "Reference",
+    "RMWWR": "Gross invoice amount",
+    "WMWST1": "",
+    "WAERS": "Currency",
+    "RBSTAT": "",
+    "ZTERM": "Payment terms",
+    "STBLG": "",
+    "RBKP": "`BELNR`, `GJAHR`",
+    "RSEG": "`BELNR`, `GJAHR`,",
+    "BUZEI": "`MATNR`, `WERKS`,",
+    "BLART": "Document type",
+    "CPUDT": "Entry date",
+    "IVTYP": "Invoice type"
+   },
+   "sources": [
+    "03_MM.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "REGUH": {
+   "description": "Payment run header data",
+   "keys": [
+    "LAUFD",
+    "LAUFI",
+    "XVORL",
+    "ZBUKR",
+    "LIFNR",
+    "KUNNR",
+    "EMPFG",
+    "VBLNR"
+   ],
+   "fields": {
+    "LAUFD": "",
+    "LAUFI": "",
+    "XVORL": "",
+    "ZBUKR": "",
+    "LIFNR": "",
+    "KUNNR": "",
+    "EMPFG": "",
+    "VBLNR": "",
+    "RWBTR": "",
+    "WAERS": "",
+    "ZALDT": "",
+    "RZAWE": "",
+    "HBKID": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "REGUP": {
+   "description": "Payment run items",
+   "keys": [
+    "LAUFD",
+    "LAUFI",
+    "XVORL",
+    "ZBUKR",
+    "LIFNR",
+    "KUNNR",
+    "EMPFG",
+    "VBLNR",
+    "BUKRS",
+    "BELNR",
+    "GJAHR",
+    "BUZEI"
+   ],
+   "fields": {
+    "LAUFD": "",
+    "LAUFI": "",
+    "XVORL": "",
+    "ZBUKR": "",
+    "LIFNR": "",
+    "KUNNR": "",
+    "EMPFG": "",
+    "VBLNR": "",
+    "BUKRS": "",
+    "BELNR": "",
+    "GJAHR": "",
+    "BUZEI": "",
+    "DMBTR": "",
+    "WRBTR": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "RESB": {
+   "description": "Reservations / dependent requirements",
+   "keys": [
+    "RSNUM",
+    "RSPOS",
+    "RSART"
+   ],
+   "fields": {
+    "RSNUM": "",
+    "RSPOS": "",
+    "RSART": "",
+    "MATNR": "",
+    "WERKS": "",
+    "LGORT": "",
+    "BDMNG": "",
+    "ENMNG": "",
+    "BDTER": "",
+    "AUFNR": "",
+    "BWART": "",
+    "XLOEK": "",
+    "KZEAR": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "07_PM_EAM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "RKPF": {
+   "description": "Reservation header",
+   "keys": [
+    "RSNUM"
+   ],
+   "fields": {
+    "RSNUM": "",
+    "BDTER": "",
+    "KOSTL": "",
+    "AUFNR": "",
+    "BWART": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "RSEG": {
+   "description": "Supplier invoice item",
+   "keys": [
+    "BELNR",
+    "GJAHR",
+    "BUZEI"
+   ],
+   "fields": {
+    "BELNR": "Invoice document",
+    "GJAHR": "Year",
+    "BUZEI": "Item",
+    "EBELN": "PO",
+    "EBELP": "PO item",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "WRBTR": "Amount",
+    "MENGE": "Quantity",
+    "BSTME": "",
+    "MWSKZ": "Tax code",
+    "LFBNR": "Reference document",
+    "LFGJA": "Reference year",
+    "LFPOS": "Reference item",
+    "BPMNG": "PO price quantity",
+    "SHKZG": "Debit/credit"
+   },
+   "sources": [
+    "03_MM.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SCMTMS": {
+   "description": "Transportation order root/item/stop-related persistence",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "09_TM.md"
+   ]
+  },
+  "SCWM": {
+   "description": "Storage bins",
+   "keys": [
+    "HU"
+   ],
+   "fields": {
+    "HU": ""
+   },
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "SETHEADER": {
+   "description": "Sets and groups (cost center groups, etc.)",
+   "keys": [
+    "SETCLASS",
+    "SUBCLASS",
+    "SETNAME"
+   ],
+   "fields": {
+    "SETCLASS": "",
+    "SUBCLASS": "",
+    "SETNAME": "",
+    "VALFROM": "",
+    "VALTO": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SETLEAF": {
+   "description": "Sets and groups (cost center groups, etc.)",
+   "keys": [
+    "SETCLASS",
+    "SUBCLASS",
+    "SETNAME"
+   ],
+   "fields": {
+    "SETCLASS": "",
+    "SUBCLASS": "",
+    "SETNAME": "",
+    "VALFROM": "",
+    "VALTO": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SETNODE": {
+   "description": "Sets and groups (cost center groups, etc.)",
+   "keys": [
+    "SETCLASS",
+    "SUBCLASS",
+    "SETNAME"
+   ],
+   "fields": {
+    "SETCLASS": "",
+    "SUBCLASS": "",
+    "SETNAME": "",
+    "VALFROM": "",
+    "VALTO": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SKA1": {
+   "description": "G/L account (chart of accounts)",
+   "keys": [
+    "KTOPL",
+    "SAKNR"
+   ],
+   "fields": {
+    "KTOPL": "Chart of accounts",
+    "SAKNR": "G/L account",
+    "XBILK": "Balance sheet account indicator",
+    "GVTYP": "P&L statement account type",
+    "KTOKS": "Account group",
+    "GLACCOUNT_TYPE": "",
+    "XSPEB": "Posting block",
+    "XSPEA": "Creation block"
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SKAT": {
+   "description": "G/L account texts",
+   "keys": [
+    "SPRAS",
+    "KTOPL",
+    "SAKNR"
+   ],
+   "fields": {
+    "SPRAS": "Language",
+    "KTOPL": "Chart of accounts",
+    "SAKNR": "G/L account",
+    "TXT20": "Short text",
+    "TXT50": "Long text"
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SKB1": {
+   "description": "G/L account (company code)",
+   "keys": [
+    "BUKRS",
+    "SAKNR"
+   ],
+   "fields": {
+    "BUKRS": "Company code",
+    "SAKNR": "G/L account",
+    "WAERS": "Account currency",
+    "XOPVW": "Open item management",
+    "XKRES": "",
+    "MITKZ": "Reconciliation account type",
+    "FSTAG": "",
+    "ZUAWA": "",
+    "BEGRU": "Authorization group",
+    "BUSAB": "Accounting clerk",
+    "XINTB": "Post automatically only",
+    "XSPEB": "Posting block"
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SOFFCONT1": {
+   "description": "Office documents / content",
+   "keys": [
+    "OBJTP",
+    "OBJYR",
+    "OBJNO"
+   ],
+   "fields": {
+    "OBJTP": "",
+    "OBJYR": "",
+    "OBJNO": "",
+    "OBJDES": "",
+    "FILE_EXT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SOOD": {
+   "description": "Office documents / content",
+   "keys": [
+    "OBJTP",
+    "OBJYR",
+    "OBJNO"
+   ],
+   "fields": {
+    "OBJTP": "",
+    "OBJYR": "",
+    "OBJNO": "",
+    "OBJDES": "",
+    "FILE_EXT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SRGBTBREL": {
+   "description": "GOS object relationships (attachments)",
+   "keys": [
+    "BRELGUID"
+   ],
+   "fields": {
+    "BRELGUID": "",
+    "INSTID_A": "",
+    "TYPEID_A": "",
+    "INSTID_B": "",
+    "TYPEID_B": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "STAS": {
+   "description": "BOM item selection",
+   "keys": [
+    "STLTY",
+    "STLNR",
+    "STLAL",
+    "STLKN",
+    "STASZ"
+   ],
+   "fields": {
+    "STLTY": "",
+    "STLNR": "",
+    "STLAL": "",
+    "STLKN": "",
+    "STASZ": "",
+    "DATUV": "",
+    "LKENZ": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "STKO": {
+   "description": "BOM header",
+   "keys": [
+    "STLTY",
+    "STLNR",
+    "STLAL",
+    "STKOZ"
+   ],
+   "fields": {
+    "STLTY": "",
+    "STLNR": "",
+    "STLAL": "",
+    "STKOZ": "",
+    "DATUV": "",
+    "BMENG": "",
+    "BMEIN": "",
+    "STLST": "",
+    "LOEKZ": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "STPO": {
+   "description": "BOM item",
+   "keys": [
+    "STLTY",
+    "STLNR",
+    "STLKN",
+    "STPOZ",
+    "BOM"
+   ],
+   "fields": {
+    "STLTY": "",
+    "STLNR": "",
+    "STLKN": "",
+    "STPOZ": "",
+    "IDNRK": "",
+    "POSNR": "",
+    "POSTP": "",
+    "MENGE": "",
+    "MEINS": "",
+    "DATUV": "",
+    "AUSCH": "",
+    "SANKA": "",
+    "LGORT": "",
+    "ALPGR": "",
+    "BOM": ""
+   },
+   "sources": [
+    "05_PP.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "STXH": {
+   "description": "SAPscript text header",
+   "keys": [
+    "TDOBJECT",
+    "TDNAME",
+    "TDID",
+    "TDSPRAS"
+   ],
+   "fields": {
+    "TDOBJECT": "",
+    "TDNAME": "",
+    "TDID": "",
+    "TDSPRAS": "",
+    "TDFUSER": "",
+    "TDFDATE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "STXL": {
+   "description": "SAPscript text lines (compressed)",
+   "keys": [
+    "RELID",
+    "TDOBJECT",
+    "TDNAME",
+    "TDID",
+    "TDSPRAS",
+    "SRTF2"
+   ],
+   "fields": {
+    "RELID": "",
+    "TDOBJECT": "",
+    "TDNAME": "",
+    "TDID": "",
+    "TDSPRAS": "",
+    "SRTF2": "",
+    "CLUSTD": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SWWWIHEAD": {
+   "description": "Workflow work item header",
+   "keys": [
+    "WI_ID"
+   ],
+   "fields": {
+    "WI_ID": "",
+    "WI_TYPE": "",
+    "WI_STAT": "",
+    "WI_CD": "",
+    "WI_CT": "",
+    "WI_AAGENT": "",
+    "TOP_WI_ID": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "SWW_CONTOB": {
+   "description": "Workflow container objects",
+   "keys": [
+    "WI_ID",
+    "ELEMENT",
+    "TAB_INDEX"
+   ],
+   "fields": {
+    "WI_ID": "",
+    "ELEMENT": "",
+    "TAB_INDEX": "",
+    "OBJTYPE": "",
+    "OBJKEY": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T000": {
+   "description": "Clients",
+   "keys": [],
+   "fields": {
+    "MTEXT": "",
+    "CCCATEGORY": "",
+    "LOGSYS": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T001": {
+   "description": "Company code",
+   "keys": [
+    "BUKRS"
+   ],
+   "fields": {
+    "BUKRS": "Company code",
+    "BUTXT": "Company name",
+    "ORT01": "",
+    "LAND1": "Country",
+    "WAERS": "Local currency",
+    "KTOPL": "Chart of accounts",
+    "PERIV": "Fiscal year variant",
+    "RCOMP": "",
+    "SPRAS": "",
+    "OPVAR": "Posting period variant",
+    "ADRNR": "Address number"
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T001B": {
+   "description": "Posting period variant (open periods)",
+   "keys": [
+    "BUKRS",
+    "MKOAR",
+    "BKONT"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "MKOAR": "",
+    "BKONT": "",
+    "FRYE1": "",
+    "FRPE1": "",
+    "TOYE1": "",
+    "TOPE1": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T001K": {
+   "description": "Valuation area",
+   "keys": [
+    "BWKEY"
+   ],
+   "fields": {
+    "BWKEY": "",
+    "BUKRS": "",
+    "MLBWA": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T001L": {
+   "description": "Storage location",
+   "keys": [
+    "WERKS",
+    "LGORT"
+   ],
+   "fields": {
+    "WERKS": "",
+    "LGORT": "",
+    "LGOBE": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T001W": {
+   "description": "Plant",
+   "keys": [
+    "WERKS"
+   ],
+   "fields": {
+    "WERKS": "",
+    "NAME1": "",
+    "BWKEY": "",
+    "VKORG": "",
+    "LAND1": "",
+    "REGIO": "",
+    "FABKL": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T003": {
+   "description": "Accounting document types",
+   "keys": [
+    "BLART"
+   ],
+   "fields": {
+    "BLART": "",
+    "NUMKR": "",
+    "KOARS": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T004": {
+   "description": "Chart of accounts",
+   "keys": [
+    "KTOPL"
+   ],
+   "fields": {
+    "KTOPL": "",
+    "DSPRA": "",
+    "MAESSION": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T005": {
+   "description": "Countries",
+   "keys": [
+    "LAND1"
+   ],
+   "fields": {
+    "LAND1": "",
+    "INTCA": "",
+    "WAERS": "",
+    "XEGLD": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T005S": {
+   "description": "Regions",
+   "keys": [
+    "LAND1",
+    "BLAND"
+   ],
+   "fields": {
+    "LAND1": "",
+    "BLAND": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T006": {
+   "description": "Units of measure",
+   "keys": [
+    "MSEHI"
+   ],
+   "fields": {
+    "MSEHI": "",
+    "DIMID": "",
+    "ZAEHL": "",
+    "NENNR": "",
+    "ISOCODE": ""
+   },
+   "sources": [
+    "13_MD.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T006A": {
+   "description": "Unit descriptions",
+   "keys": [
+    "SPRAS",
+    "MSEHI"
+   ],
+   "fields": {
+    "SPRAS": "",
+    "MSEHI": ""
+   },
+   "sources": [
+    "13_MD.md"
+   ]
+  },
+  "T009": {
+   "description": "Fiscal year variant",
+   "keys": [
+    "PERIV"
+   ],
+   "fields": {
+    "PERIV": "",
+    "XKALE": "",
+    "ANZBP": "",
+    "ANZSP": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T009B": {
+   "description": "Fiscal year periods",
+   "keys": [
+    "PERIV",
+    "BUMON",
+    "BUTAG"
+   ],
+   "fields": {
+    "PERIV": "",
+    "BUMON": "",
+    "BUTAG": ""
+   },
+   "sources": [
+    "01_FI.md"
+   ]
+  },
+  "T012": {
+   "description": "House banks",
+   "keys": [
+    "BUKRS",
+    "HBKID"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "HBKID": "",
+    "BANKS": "",
+    "BANKL": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T012K": {
+   "description": "House bank accounts",
+   "keys": [
+    "BUKRS",
+    "HBKID",
+    "HKTID"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "HBKID": "",
+    "HKTID": "",
+    "BANKN": "",
+    "WAERS": "",
+    "HKONT": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T023": {
+   "description": "Material groups",
+   "keys": [
+    "MATKL"
+   ],
+   "fields": {
+    "MATKL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T024": {
+   "description": "Purchasing group",
+   "keys": [
+    "EKGRP"
+   ],
+   "fields": {
+    "EKGRP": "",
+    "EKNAM": "",
+    "EKTEL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T024E": {
+   "description": "Purchasing organization",
+   "keys": [
+    "EKORG"
+   ],
+   "fields": {
+    "EKORG": "",
+    "EKOTX": "",
+    "BUKRS": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T024W": {
+   "description": "Plant ↔ purchasing org",
+   "keys": [
+    "WERKS",
+    "EKORG"
+   ],
+   "fields": {
+    "WERKS": "",
+    "EKORG": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T030": {
+   "description": "Automatic account determination",
+   "keys": [
+    "KTOPL",
+    "KTOSL",
+    "BWMOD",
+    "KOMOK",
+    "BKLAS"
+   ],
+   "fields": {
+    "KTOPL": "",
+    "KTOSL": "",
+    "BWMOD": "",
+    "KOMOK": "",
+    "BKLAS": "",
+    "KONTS": "",
+    "KONTH": ""
+   },
+   "sources": [
+    "01_FI.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T093": {
+   "description": "Depreciation areas / company code settings",
+   "keys": [
+    "AFAPL",
+    "AFABER",
+    "BUKRS"
+   ],
+   "fields": {
+    "AFAPL": "",
+    "AFABER": "",
+    "BUKRS": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T093C": {
+   "description": "Depreciation areas / company code settings",
+   "keys": [
+    "AFAPL",
+    "AFABER",
+    "BUKRS"
+   ],
+   "fields": {
+    "AFAPL": "",
+    "AFABER": "",
+    "BUKRS": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T134": {
+   "description": "Material types",
+   "keys": [
+    "MTART"
+   ],
+   "fields": {
+    "MTART": "",
+    "KKREF": "",
+    "MTREF": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T156": {
+   "description": "Movement types",
+   "keys": [
+    "BWART"
+   ],
+   "fields": {
+    "BWART": "",
+    "SHKZG": "",
+    "XSTBW": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T161": {
+   "description": "Purchasing document types",
+   "keys": [
+    "BSTYP",
+    "BSART"
+   ],
+   "fields": {
+    "BSTYP": "",
+    "BSART": "",
+    "NUMKI": "",
+    "NUMKE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T500P": {
+   "description": "",
+   "keys": [
+    "PERSA"
+   ],
+   "fields": {
+    "PERSA": ""
+   },
+   "sources": [
+    "11_HR_HCM.md"
+   ]
+  },
+  "T527X": {
+   "description": "",
+   "keys": [
+    "SPRSL",
+    "ORGEH"
+   ],
+   "fields": {
+    "SPRSL": "",
+    "ORGEH": ""
+   },
+   "sources": [
+    "11_HR_HCM.md"
+   ]
+  },
+  "T683S": {
+   "description": "Pricing procedure steps",
+   "keys": [
+    "KVEWE",
+    "KAPPL",
+    "KALSM",
+    "STUNR",
+    "ZAEHK"
+   ],
+   "fields": {
+    "KVEWE": "",
+    "KAPPL": "",
+    "KALSM": "",
+    "STUNR": "",
+    "ZAEHK": "",
+    "KSCHL": "",
+    "KOFRM": "",
+    "KOFRA": "",
+    "KSTAT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T685": {
+   "description": "Condition types",
+   "keys": [
+    "KVEWE",
+    "KAPPL",
+    "KSCHL"
+   ],
+   "fields": {
+    "KVEWE": "",
+    "KAPPL": "",
+    "KSCHL": "",
+    "KRECH": "",
+    "KOAID": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T685A": {
+   "description": "Condition types",
+   "keys": [
+    "KVEWE",
+    "KAPPL",
+    "KSCHL"
+   ],
+   "fields": {
+    "KVEWE": "",
+    "KAPPL": "",
+    "KSCHL": "",
+    "KRECH": "",
+    "KOAID": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "T880": {
+   "description": "Company (consolidation)",
+   "keys": [
+    "RCOMP"
+   ],
+   "fields": {
+    "RCOMP": "",
+    "NAME1": "",
+    "CURR": "",
+    "CNTRY": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TBSL": {
+   "description": "Posting keys",
+   "keys": [
+    "BSCHL"
+   ],
+   "fields": {
+    "BSCHL": "",
+    "SHKZG": "",
+    "KOART": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TBTCO": {
+   "description": "Background job header",
+   "keys": [
+    "JOBNAME",
+    "JOBCOUNT"
+   ],
+   "fields": {
+    "JOBNAME": "",
+    "JOBCOUNT": "",
+    "STATUS": "",
+    "SDLSTRTDT": "",
+    "STRTDATE": "",
+    "ENDDATE": "",
+    "SDLUNAME": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TCURC": {
+   "description": "Currency codes",
+   "keys": [
+    "WAERS"
+   ],
+   "fields": {
+    "WAERS": "",
+    "ISOCD": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TCURR": {
+   "description": "Exchange rates",
+   "keys": [
+    "KURST",
+    "FCURR",
+    "TCURR",
+    "GDATU"
+   ],
+   "fields": {
+    "KURST": "",
+    "FCURR": "",
+    "TCURR": "",
+    "GDATU": "",
+    "UKURS": "",
+    "FFACT": "",
+    "TFACT": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TCURX": {
+   "description": "Currency decimals",
+   "keys": [
+    "CURRKEY"
+   ],
+   "fields": {
+    "CURRKEY": "",
+    "CURRDEC": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TFACD": {
+   "description": "Factory calendar",
+   "keys": [
+    "IDENT"
+   ],
+   "fields": {
+    "IDENT": "",
+    "VJAHR": "",
+    "BJAHR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TJ02T": {
+   "description": "System status texts",
+   "keys": [
+    "ISTAT",
+    "SPRAS"
+   ],
+   "fields": {
+    "ISTAT": "",
+    "SPRAS": "",
+    "TXT04": "",
+    "TXT30": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TJ30T": {
+   "description": "User status texts",
+   "keys": [
+    "STSMA",
+    "ESTAT",
+    "SPRAS"
+   ],
+   "fields": {
+    "STSMA": "",
+    "ESTAT": "",
+    "SPRAS": "",
+    "TXT04": "",
+    "TXT30": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TKA01": {
+   "description": "Controlling area",
+   "keys": [
+    "KOKRS"
+   ],
+   "fields": {
+    "KOKRS": "",
+    "BEZEI": "",
+    "WAERS": "",
+    "KTOPL": "",
+    "LMONA": ""
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TKA02": {
+   "description": "Company code → controlling area",
+   "keys": [
+    "BUKRS",
+    "GSBER"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "GSBER": "",
+    "KOKRS": ""
+   },
+   "sources": [
+    "02_CO.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TOA01": {
+   "description": "ArchiveLink links",
+   "keys": [
+    "SAP_OBJECT",
+    "OBJECT_ID",
+    "ARCHIV_ID",
+    "ARC_DOC_ID"
+   ],
+   "fields": {
+    "SAP_OBJECT": "",
+    "OBJECT_ID": "",
+    "ARCHIV_ID": "",
+    "ARC_DOC_ID": "",
+    "AR_OBJECT": "",
+    "AR_DATE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TOA02": {
+   "description": "ArchiveLink links",
+   "keys": [
+    "SAP_OBJECT",
+    "OBJECT_ID",
+    "ARCHIV_ID",
+    "ARC_DOC_ID"
+   ],
+   "fields": {
+    "SAP_OBJECT": "",
+    "OBJECT_ID": "",
+    "ARCHIV_ID": "",
+    "ARC_DOC_ID": "",
+    "AR_OBJECT": "",
+    "AR_DATE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TOA03": {
+   "description": "ArchiveLink links",
+   "keys": [
+    "SAP_OBJECT",
+    "OBJECT_ID",
+    "ARCHIV_ID",
+    "ARC_DOC_ID"
+   ],
+   "fields": {
+    "SAP_OBJECT": "",
+    "OBJECT_ID": "",
+    "ARCHIV_ID": "",
+    "ARC_DOC_ID": "",
+    "AR_OBJECT": "",
+    "AR_DATE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TOAHR": {
+   "description": "ArchiveLink links",
+   "keys": [
+    "SAP_OBJECT",
+    "OBJECT_ID",
+    "ARCHIV_ID",
+    "ARC_DOC_ID"
+   ],
+   "fields": {
+    "SAP_OBJECT": "",
+    "OBJECT_ID": "",
+    "ARCHIV_ID": "",
+    "ARC_DOC_ID": "",
+    "AR_OBJECT": "",
+    "AR_DATE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TSPA": {
+   "description": "Division",
+   "keys": [
+    "SPART"
+   ],
+   "fields": {
+    "SPART": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVAK": {
+   "description": "Sales document types",
+   "keys": [
+    "AUART"
+   ],
+   "fields": {
+    "AUART": "",
+    "VBTYP": "",
+    "NUMKI": "",
+    "NUMKE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVAP": {
+   "description": "Item categories",
+   "keys": [
+    "PSTYV"
+   ],
+   "fields": {
+    "PSTYV": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVBUR": {
+   "description": "Sales office",
+   "keys": [
+    "VKBUR"
+   ],
+   "fields": {
+    "VKBUR": "",
+    "ADRNR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVKGR": {
+   "description": "Sales group",
+   "keys": [
+    "VKGRP"
+   ],
+   "fields": {
+    "VKGRP": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVKO": {
+   "description": "Sales organization",
+   "keys": [
+    "VKORG"
+   ],
+   "fields": {
+    "VKORG": "",
+    "WAERS": "",
+    "BUKRS": "",
+    "KUNNR": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVKOV": {
+   "description": "Sales org + distribution channel",
+   "keys": [
+    "VKORG",
+    "VTWEG"
+   ],
+   "fields": {
+    "VKORG": "",
+    "VTWEG": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVST": {
+   "description": "Shipping point",
+   "keys": [
+    "VSTEL"
+   ],
+   "fields": {
+    "VSTEL": "",
+    "ADRNR": "",
+    "FABKL": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVTA": {
+   "description": "Sales area",
+   "keys": [
+    "VKORG",
+    "VTWEG",
+    "SPART"
+   ],
+   "fields": {
+    "VKORG": "",
+    "VTWEG": "",
+    "SPART": "",
+    "VKORGV": "",
+    "VTWEGV": "",
+    "SPARTV": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "TVTW": {
+   "description": "Distribution channel",
+   "keys": [
+    "VTWEG"
+   ],
+   "fields": {
+    "VTWEG": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "UKMBP_CMS": {
+   "description": "Credit profile (BP)",
+   "keys": [
+    "PARTNER"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "RISK_CLASS": "",
+    "CHECK_RULE": "",
+    "CREDIT_SCORE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "UKMBP_CMS_SGM": {
+   "description": "Credit limit per segment",
+   "keys": [
+    "PARTNER",
+    "CREDIT_SGMNT"
+   ],
+   "fields": {
+    "PARTNER": "",
+    "CREDIT_SGMNT": "",
+    "CREDIT_LIMIT": "",
+    "XBLOCKED": "",
+    "LIMIT_VALID_DATE": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "USR02": {
+   "description": "User logon data",
+   "keys": [
+    "BNAME"
+   ],
+   "fields": {
+    "BNAME": "",
+    "USTYP": "",
+    "GLTGV": "",
+    "GLTGB": "",
+    "UFLAG": "",
+    "TRDAT": "",
+    "LTIME": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "USR21": {
+   "description": "User ↔ address",
+   "keys": [
+    "BNAME"
+   ],
+   "fields": {
+    "BNAME": "",
+    "PERSNUMBER": "",
+    "ADDRNUMBER": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBAK": {
+   "description": "Sales document header (inquiry, quotation, order, contract)",
+   "keys": [
+    "VBELN"
+   ],
+   "fields": {
+    "VBELN": "Sales document number",
+    "AUART": "Sales document type",
+    "VBTYP": "SD document category",
+    "VKORG": "Sales organization",
+    "VTWEG": "Distribution channel",
+    "SPART": "Division",
+    "VKBUR": "Sales office",
+    "VKGRP": "Sales group",
+    "KUNNR": "Sold-to party",
+    "ERDAT": "Created on",
+    "ERZET": "",
+    "ERNAM": "Created by",
+    "AUDAT": "Document date",
+    "VDATU": "Requested delivery date",
+    "BSTNK": "Customer purchase order reference",
+    "BSTDK": "Customer PO date",
+    "NETWR": "Net value",
+    "WAERK": "Document currency",
+    "KNUMV": "Number of document conditions",
+    "VSBED": "",
+    "AUGRU": "Order reason",
+    "LIFSK": "Delivery block",
+    "FAKSK": "Billing block",
+    "GBSTK": "Overall processing status",
+    "ABSTK": "",
+    "CMGST": "",
+    "BESTK": "",
+    "LFSTK": "Delivery status",
+    "FKSAK": "",
+    "FKSTK": "Billing status",
+    "AUTLF": "Complete delivery indicator"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBAKUK": {
+   "description": "Compat views for old VBUK/VBUP access",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBAP": {
+   "description": "Sales document item",
+   "keys": [
+    "VBELN",
+    "POSNR"
+   ],
+   "fields": {
+    "VBELN": "Sales document",
+    "POSNR": "Item number",
+    "MATNR": "Material",
+    "ARKTX": "Short text",
+    "PSTYV": "Sales document item",
+    "UEPOS": "",
+    "ABGRU": "Reason for rejection",
+    "KWMENG": "Cumulative order",
+    "VRKME": "Sales unit",
+    "KLMENG": "",
+    "MEINS": "",
+    "NETWR": "Net item value",
+    "NETPR": "Net price",
+    "WAERK": "Currency",
+    "WERKS": "Plant",
+    "LGORT": "Storage location",
+    "VSTEL": "Shipping point",
+    "ROUTE": "Route",
+    "CHARG": "Batch",
+    "PRCTR": "",
+    "VGBEL": "Reference document",
+    "VGPOS": "Reference item",
+    "GBSTA": "Overall item status",
+    "LFSTA": "Delivery status",
+    "FKSAA": "",
+    "ABSTA": "",
+    "MATKL": "Material group",
+    "KPEIN": "Pricing unit",
+    "KMEIN": "Condition unit",
+    "FAKSP": "Billing block at item",
+    "LIFSP": "Delivery block at item",
+    "FKREL": "Billing relevance",
+    "FKSTA": "Billing status",
+    "POSEX": "Customer PO item",
+    "KNUMV": "Pricing document number"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBAPUK": {
+   "description": "Compat views for old VBUK/VBUP access",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBEP": {
+   "description": "Schedule lines",
+   "keys": [
+    "VBELN",
+    "POSNR",
+    "ETENR"
+   ],
+   "fields": {
+    "VBELN": "Sales document",
+    "POSNR": "Sales document item",
+    "ETENR": "Schedule line",
+    "EDATU": "Schedule line date",
+    "WMENG": "Order quantity in schedule line",
+    "BMENG": "Confirmed quantity",
+    "LMENG": "Required delivery quantity",
+    "ETTYP": "Schedule line category",
+    "MBDAT": "Material availability date",
+    "LDDAT": "Loading date",
+    "WADAT": "Goods issue date, where relevant",
+    "TDDAT": "Transportation planning date",
+    "BDART": "Requirements type",
+    "PLART": "Planning type",
+    "ETART": "Schedule line category"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBFA": {
+   "description": "Document flow",
+   "keys": [
+    "RUUID",
+    "POSNV",
+    "VBELN",
+    "POSNN",
+    "VBTYP_N",
+    "VBELV",
+    "VBTYP_V"
+   ],
+   "fields": {
+    "RUUID": "",
+    "POSNV": "Preceding item",
+    "VBELN": "Subsequent document",
+    "POSNN": "Subsequent item",
+    "VBTYP_N": "Subsequent document category",
+    "VBTYP_V": "Preceding document category",
+    "RFMNG": "Referenced quantity",
+    "MEINS": "Base unit",
+    "RFWRT": "",
+    "ERDAT": "Created on",
+    "BWART": "",
+    "VBELV": "Preceding document",
+    "PLMIN": "Sign indicator",
+    "ERZET": "Created at"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBKD": {
+   "description": "Business data",
+   "keys": [
+    "VBELN",
+    "POSNR"
+   ],
+   "fields": {
+    "VBELN": "",
+    "POSNR": "",
+    "ZTERM": "",
+    "INCO1": "",
+    "INCO2": "",
+    "BSTKD": "",
+    "KURSK": "",
+    "PRSDT": "",
+    "FKDAT": "",
+    "KDGRP": "",
+    "KONDA": "",
+    "PLTYP": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBPA": {
+   "description": "Partners",
+   "keys": [
+    "VBELN",
+    "POSNR",
+    "PARVW",
+    "PARZA"
+   ],
+   "fields": {
+    "VBELN": "Sales document",
+    "POSNR": "Item; `000000` commonly represents header partner",
+    "PARVW": "Partner function (`AG`, `WE`, `RE`, `RG`, etc.)",
+    "KUNNR": "Customer number",
+    "LIFNR": "Supplier number, where applicable",
+    "PERNR": "Personnel number",
+    "PARNR": "",
+    "ADRNR": "Address number",
+    "PARZA": "Partner counter",
+    "LAND1": "Country",
+    "ABLAD": "Unloading point",
+    "KNREF": "Customer reference"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBRK": {
+   "description": "Billing document header",
+   "keys": [
+    "VBELN"
+   ],
+   "fields": {
+    "VBELN": "Billing document",
+    "FKART": "Billing type",
+    "FKTYP": "",
+    "VBTYP": "SD document category",
+    "VKORG": "Sales organization",
+    "VTWEG": "Distribution channel",
+    "FKDAT": "Billing date",
+    "KUNRG": "Payer",
+    "KUNAG": "Sold-to party",
+    "NETWR": "Net value",
+    "MWSBK": "",
+    "WAERK": "Document currency",
+    "KNUMV": "Pricing document number",
+    "BUKRS": "Company code",
+    "RFBSK": "Accounting transfer/status",
+    "FKSTO": "Cancellation indicator",
+    "SFAKN": "Cancelled billing document",
+    "XBLNR": "Reference document",
+    "ZTERM": "Payment terms",
+    "ERDAT": "Created on",
+    "ERNAM": "Created by",
+    "SPART": "Division",
+    "BELNR": "Accounting document reference in",
+    "GJAHR": "Fiscal year in applicable scenarios",
+    "LAND1": "Country"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VBRP": {
+   "description": "Billing document item",
+   "keys": [
+    "VBELN",
+    "POSNR"
+   ],
+   "fields": {
+    "VBELN": "Billing document",
+    "POSNR": "Billing item",
+    "MATNR": "Material",
+    "FKIMG": "Billing quantity",
+    "VRKME": "Sales unit",
+    "NETWR": "Net item value",
+    "MWSBP": "Tax amount in applicable pricing",
+    "WERKS": "Plant",
+    "AUBEL": "Sales order",
+    "AUPOS": "Sales order item",
+    "VGBEL": "Reference document",
+    "VGPOS": "Reference item",
+    "PRCTR": "",
+    "KOSTL": "",
+    "ARKTX": "Item text",
+    "VGTYP": "Preceding document category",
+    "CHARG": "Batch",
+    "KNUMV": "Pricing document reference, where",
+    "PRODH": "Product hierarchy",
+    "PSTYV": "Sales document item category",
+    "FKLMG": "Billing quantity in stockkeeping",
+    "MEINS": "Base unit",
+    "LGORT": "Storage location"
+   },
+   "sources": [
+    "04_SD.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md",
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VEDA": {
+   "description": "Contract data",
+   "keys": [
+    "VBELN",
+    "VPOSN"
+   ],
+   "fields": {
+    "VBELN": "",
+    "VPOSN": "",
+    "VBEGDAT": "",
+    "VENDDAT": "",
+    "VKUESCH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VEKP": {
+   "description": "Handling units header / items",
+   "keys": [
+    "VENUM",
+    "VEPOS"
+   ],
+   "fields": {
+    "VENUM": "",
+    "VEPOS": "",
+    "EXIDV": "",
+    "VHILM": "",
+    "BRGEW": "",
+    "VBELN": "",
+    "POSNR": "",
+    "MATNR": "",
+    "VEMNG": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VEPO": {
+   "description": "Handling units header / items",
+   "keys": [
+    "VENUM",
+    "VEPOS"
+   ],
+   "fields": {
+    "VENUM": "",
+    "VEPOS": "",
+    "EXIDV": "",
+    "VHILM": "",
+    "BRGEW": "",
+    "VBELN": "",
+    "POSNR": "",
+    "MATNR": "",
+    "VEMNG": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VTTK": {
+   "description": "Shipment header / items",
+   "keys": [
+    "TKNUM",
+    "TPNUM"
+   ],
+   "fields": {
+    "TKNUM": "",
+    "TPNUM": "",
+    "SHTYP": "",
+    "TDLNR": "",
+    "DTABF": "",
+    "VBELN": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "VTTP": {
+   "description": "Shipment header / items",
+   "keys": [
+    "TKNUM",
+    "TPNUM"
+   ],
+   "fields": {
+    "TKNUM": "",
+    "TPNUM": "",
+    "SHTYP": "",
+    "TDLNR": "",
+    "DTABF": "",
+    "VBELN": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  },
+  "WHO": {
+   "description": "Warehouse orders",
+   "keys": [],
+   "fields": {},
+   "sources": [
+    "08_EWM.md"
+   ]
+  },
+  "WITH_ITEM": {
+   "description": "Withholding tax items",
+   "keys": [
+    "BUKRS",
+    "BELNR",
+    "GJAHR",
+    "BUZEI",
+    "WITHT"
+   ],
+   "fields": {
+    "BUKRS": "",
+    "BELNR": "",
+    "GJAHR": "",
+    "BUZEI": "",
+    "WITHT": "",
+    "WT_WITHCD": "",
+    "WT_QSSHH": "",
+    "WT_QBSHH": ""
+   },
+   "sources": [
+    "s4hana_tables_cds_reference.md"
+   ]
+  }
+ },
+ "views": {
+  "I_Address_2": {
+   "table": "ADRC",
+   "keys": [
+    "AddressID",
+    "AddressPersonID",
+    "AddressRepresentationCode"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Asset": {
+   "table": "",
+   "keys": [
+    "asset",
+    "subnumber"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_AssetClass": {
+   "table": "ANKA",
+   "keys": [
+    "AssetClass"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_AssetDepreciationArea": {
+   "table": "",
+   "keys": [
+    "Asset"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_Batch": {
+   "table": "MCH1",
+   "keys": [
+    "Material",
+    "BatchIdentifyingPlant",
+    "Batch"
+   ],
+   "fields": {},
+   "description": "Batch",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_BillOfMaterial": {
+   "table": "MAST",
+   "keys": [
+    "Material",
+    "Plant",
+    "BillOfMaterialVariantUsage",
+    "BillOfMaterial",
+    "BillOfMaterialVariant"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_BillOfMaterialItem": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_BillOfMaterialItemBasic": {
+   "table": "STPO",
+   "keys": [
+    "BillOfMaterialCategory",
+    "BillOfMaterial",
+    "BillOfMaterialItemNodeNumber",
+    "BOMItemInternalChangeCount"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_BillingDocument": {
+   "table": "VBRK",
+   "keys": [
+    "BillingDocument"
+   ],
+   "fields": {},
+   "description": "Billing header",
+   "docs": [
+    "04_SD_CDS.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ],
+   "elements": [
+    "BillingDocument",
+    "BillingDocumentType",
+    "BillingDocumentDate",
+    "CompanyCode",
+    "PayerParty",
+    "SoldToParty",
+    "TransactionCurrency",
+    "TotalNetAmount",
+    "AccountingDocument",
+    "FiscalYear",
+    "CancelledBillingDocument"
+   ],
+   "associations": [
+    "_Item",
+    "_PayerParty",
+    "_SoldToParty",
+    "_CompanyCode",
+    "_BillingDocument",
+    "_Product",
+    "_ReferenceSDDocument",
+    "_SalesOrderItem"
+   ]
+  },
+  "I_BillingDocumentItem": {
+   "table": "VBRP",
+   "keys": [
+    "BillingDocument",
+    "BillingDocumentItem"
+   ],
+   "fields": {},
+   "description": "Billing item",
+   "docs": [
+    "04_SD_CDS.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ],
+   "elements": [
+    "BillingDocument",
+    "BillingDocumentItem",
+    "Material",
+    "BillingQuantity",
+    "BillingQuantityUnit",
+    "NetAmount",
+    "TaxAmount",
+    "Plant",
+    "ReferenceSDDocument",
+    "ReferenceSDDocumentItem",
+    "SalesDocument",
+    "SalesDocumentItem"
+   ],
+   "associations": [
+    "_Item",
+    "_PayerParty",
+    "_SoldToParty",
+    "_CompanyCode",
+    "_BillingDocument",
+    "_Product",
+    "_ReferenceSDDocument",
+    "_SalesOrderItem"
+   ]
+  },
+  "I_BillingDocumentItemBasic": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_BillingDocumentItemPrcgElmnt": {
+   "table": "PRCD_ELEMENTS",
+   "keys": [
+    "BillingDocument",
+    "BillingDocumentItem",
+    "PricingProcedureStep",
+    "PricingProcedureCounter"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_BusinessPartner": {
+   "table": "BUT000",
+   "keys": [
+    "BusinessPartner"
+   ],
+   "fields": {
+    "PARTNER": "BusinessPartner",
+    "PARTNER_GUID": "BusinessPartnerUUID",
+    "TYPE": "BusinessPartnerCategory",
+    "BU_GROUP": "BusinessPartnerGrouping",
+    "NAME_ORG1": "OrganizationBPName1",
+    "NAME_FIRST": "FirstName",
+    "NAME_LAST": "LastName",
+    "BU_SORT1": "SearchTerm1",
+    "XBLCK": "BusinessPartnerIsBlocked",
+    "CRDAT": "CreationDate"
+   },
+   "description": "BP general data",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md",
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_BusinessPartnerAddress": {
+   "table": "BUT020",
+   "keys": [
+    "BusinessPartner",
+    "AddressID"
+   ],
+   "fields": {},
+   "description": "BP address",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_BusinessPartnerAddressUsage": {
+   "table": "BUT020",
+   "keys": [
+    "BusinessPartner",
+    "AddressID"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_BusinessPartnerBank": {
+   "table": "BUT0BK",
+   "keys": [
+    "BusinessPartner",
+    "BankIdentification"
+   ],
+   "fields": {},
+   "description": "BP bank details",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_BusinessPartnerRole": {
+   "table": "BUT100",
+   "keys": [
+    "BusinessPartner",
+    "BusinessPartnerRole"
+   ],
+   "fields": {},
+   "description": "BP roles",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_BusinessUser": {
+   "table": "USR02",
+   "keys": [],
+   "fields": {},
+   "description": ""
+  },
+  "I_ChangeDocument": {
+   "table": "CDHDR",
+   "keys": [
+    "ChangeDocObjectClass",
+    "ChangeDocObject",
+    "ChangeDocument"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ChangeDocumentItem": {
+   "table": "CDHDR",
+   "keys": [
+    "ChangeDocObjectClass",
+    "ChangeDocObject",
+    "ChangeDocument"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_CompanyCode": {
+   "table": "T001",
+   "keys": [
+    "CompanyCode"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_ControllingArea": {
+   "table": "TKA01",
+   "keys": [
+    "ControllingArea"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_CostCenter": {
+   "table": "CSKS",
+   "keys": [
+    "ControllingArea",
+    "CostCenter",
+    "ValidityEndDate"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_CostCenterText": {
+   "table": "CSKT",
+   "keys": [
+    "ControllingArea",
+    "CostCenter",
+    "ValidityEndDate",
+    "Language"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Country": {
+   "table": "T005",
+   "keys": [
+    "Country"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Currency": {
+   "table": "TCURC",
+   "keys": [
+    "Currency"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Customer": {
+   "table": "KNA1",
+   "keys": [
+    "Customer"
+   ],
+   "fields": {},
+   "description": "Customer semantic entity",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md",
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_CustomerCompany": {
+   "table": "KNB1",
+   "keys": [
+    "Customer",
+    "CompanyCode"
+   ],
+   "fields": {},
+   "description": "Customer company-code segment candidate",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_CustomerSalesArea": {
+   "table": "KNVV",
+   "keys": [
+    "Customer",
+    "SalesOrganization",
+    "DistributionChannel",
+    "Division"
+   ],
+   "fields": {},
+   "description": "Customer sales area candidate",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_DeliveryDocument": {
+   "table": "LIKP",
+   "keys": [
+    "DeliveryDocument"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_DeliveryDocumentItem": {
+   "table": "LIPS",
+   "keys": [
+    "DeliveryDocument",
+    "DeliveryDocumentItem"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_DistributionChannel": {
+   "table": "TVTW",
+   "keys": [
+    "DistributionChannel"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Division": {
+   "table": "TSPA",
+   "keys": [
+    "Division"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_EnterpriseProject": {
+   "table": "PROJ",
+   "keys": [
+    "Project"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Equipment": {
+   "table": "EQUI",
+   "keys": [
+    "Equipment"
+   ],
+   "fields": {},
+   "description": "Equipment master",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_ExchangeRateRawData": {
+   "table": "TCURR",
+   "keys": [
+    "ExchangeRateType",
+    "SourceCurrency",
+    "TargetCurrency",
+    "ValidityStartDate"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_FiscalCalendarDate": {
+   "table": "T009",
+   "keys": [
+    "FiscalYearVariant"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_FiscalYearPeriodForVariant": {
+   "table": "T009",
+   "keys": [
+    "FiscalYearVariant"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_FiscalYearVariant": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_FixedAsset": {
+   "table": "ANLA",
+   "keys": [
+    "CompanyCode",
+    "MasterFixedAsset",
+    "FixedAsset"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_FixedAssetAssgmt": {
+   "table": "ANLZ",
+   "keys": [
+    "CompanyCode",
+    "MasterFixedAsset",
+    "FixedAsset",
+    "ValidityEndDate"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_FunctionalLocation": {
+   "table": "IFLOT",
+   "keys": [
+    "FunctionalLocation"
+   ],
+   "fields": {},
+   "description": "Functional location",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_GLAccountInChartOfAccounts": {
+   "table": "SKA1",
+   "keys": [
+    "ChartOfAccounts",
+    "GLAccount"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_GLAccountInCompanyCode": {
+   "table": "SKB1",
+   "keys": [
+    "CompanyCode",
+    "GLAccount"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_GLAccountLineItem": {
+   "table": "ACDOCA",
+   "keys": [
+    "SourceLedger",
+    "CompanyCode",
+    "FiscalYear",
+    "AccountingDocument",
+    "LedgerGLLineItem",
+    "Ledger"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_GLAccountText": {
+   "table": "SKAT",
+   "keys": [
+    "ChartOfAccounts",
+    "GLAccount",
+    "Language"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_GLAccountTextRawData": {
+   "table": "SKAT",
+   "keys": [
+    "ChartOfAccounts",
+    "GLAccount",
+    "Language"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_GLAcctBalanceCube": {
+   "table": "ACDOCA",
+   "keys": [],
+   "fields": {},
+   "description": ""
+  },
+  "I_InspLotUsageDecision": {
+   "table": "QAVE",
+   "keys": [
+    "InspectionLot"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_InspectionCharacteristic": {
+   "table": "QAMV",
+   "keys": [
+    "InspectionLot",
+    "InspPlanOperationInternalID",
+    "InspectionCharacteristic"
+   ],
+   "fields": {},
+   "description": "Inspection characteristic",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_InspectionLot": {
+   "table": "QALS",
+   "keys": [
+    "InspectionLot"
+   ],
+   "fields": {},
+   "description": "Inspection lot",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_InspectionLotUsageDecision": {
+   "table": "",
+   "keys": [
+    "InspectionLot"
+   ],
+   "fields": {},
+   "description": "Usage decision candidate",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_InspectionResult": {
+   "table": "QAMR",
+   "keys": [
+    "InspectionLot",
+    "InspPlanOperationInternalID",
+    "InspectionCharacteristic"
+   ],
+   "fields": {},
+   "description": "Inspection result",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_InternalOrder": {
+   "table": "AUFK",
+   "keys": [
+    "InternalOrder"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_JournalEntry": {
+   "table": "BKPF",
+   "keys": [
+    "CompanyCode",
+    "FiscalYear",
+    "AccountingDocument"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_JournalEntryItem": {
+   "table": "ACDOCA",
+   "keys": [
+    "SourceLedger",
+    "CompanyCode",
+    "FiscalYear",
+    "AccountingDocument",
+    "LedgerGLLineItem",
+    "Ledger"
+   ],
+   "fields": {
+    "RLDNR": "SourceLedger",
+    "RBUKRS": "CompanyCode",
+    "GJAHR": "FiscalYear",
+    "BELNR": "AccountingDocument",
+    "DOCLN": "LedgerGLLineItem",
+    "BUZEI": "AccountingDocumentItem",
+    "RACCT": "GLAccount",
+    "KTOPL": "ChartOfAccounts",
+    "BUDAT": "PostingDate",
+    "BLDAT": "DocumentDate",
+    "BLART": "AccountingDocumentType",
+    "POPER": "FiscalPeriod",
+    "FISCYEARPER": "FiscalYearPeriod",
+    "DRCRK": "DebitCreditCode",
+    "TSL": "AmountInTransactionCurrency",
+    "RTCUR": "TransactionCurrency",
+    "HSL": "AmountInCompanyCodeCurrency",
+    "RHCUR": "CompanyCodeCurrency",
+    "KSL": "AmountInGlobalCurrency",
+    "RKCUR": "GlobalCurrency",
+    "MSL": "Quantity",
+    "RUNIT": "BaseUnit",
+    "RCNTR": "CostCenter",
+    "PRCTR": "ProfitCenter",
+    "SEGMENT": "Segment",
+    "RFAREA": "FunctionalArea",
+    "RBUSA": "BusinessArea",
+    "KUNNR": "Customer",
+    "LIFNR": "Supplier",
+    "MATNR": "Product",
+    "WERKS": "Plant",
+    "AUFNR": "OrderID",
+    "PS_PSP_PNR": "WBSElementInternalID",
+    "ANLN1": "MasterFixedAsset",
+    "ANLN2": "FixedAsset",
+    "AWTYP": "ReferenceDocumentType",
+    "AWREF": "ReferenceDocument",
+    "AUGBL": "ClearingJournalEntry",
+    "AUGDT": "ClearingDate"
+   },
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_Ledger": {
+   "table": "FINSC_LEDGER",
+   "keys": [
+    "Ledger"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_MaintenanceItem": {
+   "table": "MPOS",
+   "keys": [
+    "MaintenanceItem"
+   ],
+   "fields": {},
+   "description": "Maintenance item",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_MaintenanceNotification": {
+   "table": "QMEL",
+   "keys": [
+    "MaintenanceNotification"
+   ],
+   "fields": {},
+   "description": "Maintenance notification",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_MaintenanceOrder": {
+   "table": "AUFK",
+   "keys": [
+    "MaintenanceOrder"
+   ],
+   "fields": {},
+   "description": "Maintenance order",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_MaintenanceOrderOperation": {
+   "table": "",
+   "keys": [
+    "Order",
+    "operation"
+   ],
+   "fields": {},
+   "description": "Order operation",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_MaintenancePlan": {
+   "table": "MPLA",
+   "keys": [
+    "MaintenancePlan"
+   ],
+   "fields": {},
+   "description": "Maintenance plan",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_ManufacturingOrder": {
+   "table": "AUFK",
+   "keys": [
+    "ManufacturingOrder"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ManufacturingOrderItem": {
+   "table": "AFPO",
+   "keys": [
+    "ManufacturingOrder",
+    "ManufacturingOrderItem"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ManufacturingOrderOperation": {
+   "table": "AFVC",
+   "keys": [
+    "ManufacturingOrder",
+    "ManufacturingOrderSequence",
+    "ManufacturingOrderOperation"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Material": {
+   "table": "MARA",
+   "keys": [
+    "Material"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_MaterialBOMLink": {
+   "table": "MAST",
+   "keys": [
+    "Material",
+    "Plant",
+    "BillOfMaterialVariantUsage",
+    "BillOfMaterial",
+    "BillOfMaterialVariant"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_MaterialDocumentHeader": {
+   "table": "",
+   "keys": [
+    "MaterialDocument",
+    "Year"
+   ],
+   "fields": {},
+   "description": "Material document header",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_MaterialDocumentHeader_2": {
+   "table": "MATDOC",
+   "keys": [
+    "MaterialDocumentYear",
+    "MaterialDocument"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_MaterialDocumentItem": {
+   "table": "",
+   "keys": [
+    "MaterialDocument",
+    "Year",
+    "Item"
+   ],
+   "fields": {},
+   "description": "Material document item",
+   "docs": [
+    "03_MM_CDS.md"
+   ],
+   "elements": [
+    "MaterialDocument",
+    "MaterialDocumentYear",
+    "MaterialDocumentItem",
+    "GoodsMovementType",
+    "PostingDate",
+    "DocumentDate",
+    "Product",
+    "Plant",
+    "StorageLocation",
+    "Batch",
+    "InventoryStockType",
+    "SpecialStockType",
+    "Supplier",
+    "Customer",
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "ManufacturingOrder",
+    "QuantityInBaseUnit",
+    "MaterialBaseUnit",
+    "AmountInCompanyCodeCurrency",
+    "CompanyCodeCurrency",
+    "DebitCreditCode"
+   ],
+   "associations": [
+    "_MaterialDocumentHeader",
+    "_Product",
+    "_Plant",
+    "_StorageLocation",
+    "_Batch",
+    "_PurchaseOrder",
+    "_PurchaseOrderItem",
+    "_Supplier",
+    "_Customer",
+    "_ManufacturingOrder"
+   ]
+  },
+  "I_MaterialDocumentItem_2": {
+   "table": "MATDOC",
+   "keys": [
+    "MaterialDocumentYear",
+    "MaterialDocument",
+    "MaterialDocumentItem"
+   ],
+   "fields": {
+    "MBLNR": "MaterialDocument",
+    "MJAHR": "MaterialDocumentYear",
+    "ZEILE": "MaterialDocumentItem",
+    "BWART": "GoodsMovementType",
+    "MATNR": "Material",
+    "WERKS": "Plant",
+    "LGORT": "StorageLocation",
+    "CHARG": "Batch",
+    "SOBKZ": "InventorySpecialStockType",
+    "SHKZG": "DebitCreditCode",
+    "ERFMG": "QuantityInEntryUnit",
+    "ERFME": "EntryUnit",
+    "MENGE": "QuantityInBaseUnit",
+    "MEINS": "MaterialBaseUnit",
+    "DMBTR": "TotalGoodsMvtAmtInCCCrcy",
+    "BUDAT": "PostingDate",
+    "EBELN": "PurchaseOrder",
+    "EBELP": "PurchaseOrderItem",
+    "AUFNR": "ManufacturingOrder",
+    "LIFNR": "Supplier",
+    "KUNNR": "Customer",
+    "SMBLN": "ReversedMaterialDocument"
+   },
+   "description": ""
+  },
+  "I_MaterialStock_2": {
+   "table": "MATDOC",
+   "keys": [
+    "Material",
+    "Plant",
+    "StorageLocation",
+    "Batch",
+    "Supplier",
+    "SDDocument",
+    "SDDocumentItem",
+    "WBSElementInternalID",
+    "Customer",
+    "SpecialStockIdfgStockOwner",
+    "InventoryStockType",
+    "InventorySpecialStockType",
+    "MaterialBaseUnit"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_MeasurementDocument": {
+   "table": "",
+   "keys": [
+    "MeasurementDocument"
+   ],
+   "fields": {},
+   "description": "Measurement reading",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_MeasuringPoint": {
+   "table": "",
+   "keys": [
+    "MeasuringPoint"
+   ],
+   "fields": {},
+   "description": "Measuring point",
+   "docs": [
+    "07_PM_EAM_CDS.md"
+   ]
+  },
+  "I_MfgOrderConfirmation": {
+   "table": "AFRU",
+   "keys": [
+    "MfgOrderConfirmationGroup",
+    "MfgOrderConfirmation"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Network": {
+   "table": "",
+   "keys": [
+    "Network"
+   ],
+   "fields": {},
+   "description": "Network header",
+   "docs": [
+    "10_PS_CDS.md"
+   ]
+  },
+  "I_NetworkActivity": {
+   "table": "",
+   "keys": [
+    "Network",
+    "Activity"
+   ],
+   "fields": {},
+   "description": "Network activity",
+   "docs": [
+    "10_PS_CDS.md"
+   ]
+  },
+  "I_OperationalAcctgDocItem": {
+   "table": "BSEG",
+   "keys": [
+    "CompanyCode",
+    "AccountingDocument",
+    "FiscalYear",
+    "AccountingDocumentItem"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md"
+   ]
+  },
+  "I_OutboundDelivery": {
+   "table": "",
+   "keys": [
+    "OutboundDelivery"
+   ],
+   "fields": {},
+   "description": "Delivery header",
+   "docs": [
+    "04_SD_CDS.md"
+   ],
+   "elements": [
+    "OutboundDelivery",
+    "DeliveryDocumentType",
+    "ShippingPoint",
+    "SalesOrganization",
+    "ShipToParty",
+    "ActualGoodsMovementDate",
+    "PlannedGoodsMovementDate",
+    "OverallGoodsMovementStatus",
+    "OverallPickingStatus"
+   ],
+   "associations": [
+    "_Item",
+    "_OutboundDelivery",
+    "_ReferenceSDDocument",
+    "_Product",
+    "_Plant",
+    "_StorageLocation",
+    "_Batch"
+   ]
+  },
+  "I_OutboundDeliveryItem": {
+   "table": "",
+   "keys": [
+    "Delivery",
+    "item"
+   ],
+   "fields": {},
+   "description": "Delivery item",
+   "docs": [
+    "04_SD_CDS.md"
+   ],
+   "elements": [
+    "OutboundDelivery",
+    "OutboundDeliveryItem",
+    "ReferenceSDDocument",
+    "ReferenceSDDocumentItem",
+    "Material",
+    "Plant",
+    "StorageLocation",
+    "Batch",
+    "ActualDeliveryQuantity",
+    "DeliveryQuantityUnit",
+    "HigherLevelItem"
+   ],
+   "associations": [
+    "_Item",
+    "_OutboundDelivery",
+    "_ReferenceSDDocument",
+    "_Product",
+    "_Plant",
+    "_StorageLocation",
+    "_Batch"
+   ]
+  },
+  "I_PlannedOrder": {
+   "table": "PLAF",
+   "keys": [
+    "PlannedOrder"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Plant": {
+   "table": "T001W",
+   "keys": [
+    "Plant"
+   ],
+   "fields": {},
+   "description": "Plant",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_PricingConditionRecord": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "Condition record candidate",
+   "docs": [
+    "04_SD_CDS.md"
+   ]
+  },
+  "I_Product": {
+   "table": "MARA",
+   "keys": [
+    "Product"
+   ],
+   "fields": {
+    "MATNR": "Product",
+    "MTART": "ProductType",
+    "MATKL": "ProductGroup",
+    "MEINS": "BaseUnit",
+    "BRGEW": "GrossWeight",
+    "NTGEW": "NetWeight",
+    "GEWEI": "WeightUnit",
+    "ERSDA": "CreationDate",
+    "LVORM": "IsMarkedForDeletion",
+    "XCHPF": "IsBatchManagementRequired",
+    "PRDHA": "ProductHierarchy",
+    "SPART": "Division"
+   },
+   "description": "Product master",
+   "docs": [
+    "03_MM_CDS.md",
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductDescription": {
+   "table": "MAKT",
+   "keys": [
+    "Product",
+    "Language"
+   ],
+   "fields": {},
+   "description": "Product text",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductPlant": {
+   "table": "MARC",
+   "keys": [
+    "Product",
+    "Plant"
+   ],
+   "fields": {},
+   "description": "Product by plant",
+   "docs": [
+    "03_MM_CDS.md",
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductPlantBasic": {
+   "table": "MARC",
+   "keys": [
+    "Product",
+    "Plant"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ProductSales": {
+   "table": "",
+   "keys": [
+    "Product",
+    "SalesOrganization",
+    "DistributionChannel"
+   ],
+   "fields": {},
+   "description": "Product sales data",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductSalesDelivery": {
+   "table": "MVKE",
+   "keys": [
+    "Product",
+    "ProductSalesOrg",
+    "ProductDistributionChnl"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ProductStorageLocation": {
+   "table": "",
+   "keys": [
+    "Product",
+    "Plant",
+    "StorageLocation"
+   ],
+   "fields": {},
+   "description": "Product by storage location",
+   "docs": [
+    "03_MM_CDS.md",
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductStorageLocationBasic": {
+   "table": "MARD",
+   "keys": [
+    "Product",
+    "Plant",
+    "StorageLocation"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ProductUnitOfMeasure": {
+   "table": "",
+   "keys": [
+    "Product",
+    "unit"
+   ],
+   "fields": {},
+   "description": "Alternative units",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductUnitsOfMeasure": {
+   "table": "MARM",
+   "keys": [
+    "Product",
+    "AlternativeUnit"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ProductValuation": {
+   "table": "",
+   "keys": [
+    "Product",
+    "ValuationArea",
+    "ValuationType"
+   ],
+   "fields": {},
+   "description": "Product valuation",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_ProductValuationBasic": {
+   "table": "MBEW",
+   "keys": [
+    "Product",
+    "ValuationArea",
+    "ValuationType"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ProductionOrder": {
+   "table": "",
+   "keys": [
+    "ManufacturingOrder"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_ProductionOrderComponent": {
+   "table": "",
+   "keys": [
+    "Order"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_ProductionOrderItem": {
+   "table": "",
+   "keys": [
+    "Order",
+    "item"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_ProductionOrderOperation": {
+   "table": "",
+   "keys": [
+    "Order"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_ProductionVersion": {
+   "table": "MKAL",
+   "keys": [
+    "Material",
+    "Plant",
+    "ProductionVersion"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ProfitCenter": {
+   "table": "CEPC",
+   "keys": [
+    "ControllingArea",
+    "ProfitCenter",
+    "ValidityEndDate"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Project": {
+   "table": "PROJ",
+   "keys": [
+    "Project"
+   ],
+   "fields": {},
+   "description": "Project definition",
+   "docs": [
+    "10_PS_CDS.md"
+   ]
+  },
+  "I_ProjectElement": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "Project element candidate",
+   "docs": [
+    "10_PS_CDS.md"
+   ]
+  },
+  "I_ProjectStatus": {
+   "table": "",
+   "keys": [
+    "status"
+   ],
+   "fields": {},
+   "description": "Project status candidate",
+   "docs": [
+    "10_PS_CDS.md"
+   ]
+  },
+  "I_PurOrdAccountAssignmentAPI01": {
+   "table": "EKKN",
+   "keys": [
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "AccountAssignmentNumber"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurOrdScheduleLineAPI01": {
+   "table": "EKET",
+   "keys": [
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "ScheduleLine"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchaseOrder": {
+   "table": "",
+   "keys": [
+    "PurchaseOrder"
+   ],
+   "fields": {},
+   "description": "PO header",
+   "docs": [
+    "03_MM_CDS.md"
+   ],
+   "elements": [
+    "PurchaseOrder",
+    "PurchaseOrderType",
+    "PurchaseOrderDate",
+    "CompanyCode",
+    "PurchasingOrganization",
+    "PurchasingGroup",
+    "Supplier",
+    "DocumentCurrency",
+    "PaymentTerms",
+    "IncotermsClassification",
+    "IncotermsLocation1",
+    "CreatedByUser",
+    "CreationDate",
+    "ReleaseIsNotCompleted",
+    "PurchasingDocumentDeletionCode"
+   ],
+   "associations": [
+    "_PurchaseOrderItem",
+    "_Supplier",
+    "_CompanyCode",
+    "_PurchasingOrganization",
+    "_PurchasingGroup",
+    "_PurchaseOrderType",
+    "_Currency"
+   ]
+  },
+  "I_PurchaseOrderAPI01": {
+   "table": "EKKO",
+   "keys": [
+    "PurchaseOrder"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_PurchaseOrderHistory": {
+   "table": "",
+   "keys": [
+    "PO",
+    "item"
+   ],
+   "fields": {},
+   "description": "PO history",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_PurchaseOrderHistoryAPI01": {
+   "table": "EKBE",
+   "keys": [
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "AccountAssignmentNumber",
+    "PurchasingHistoryDocumentType",
+    "PurchasingHistoryDocumentYear",
+    "PurchasingHistoryDocument",
+    "PurchasingHistoryDocumentItem"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchaseOrderItem": {
+   "table": "",
+   "keys": [
+    "PurchaseOrder",
+    "PurchaseOrderItem"
+   ],
+   "fields": {},
+   "description": "PO item",
+   "docs": [
+    "03_MM_CDS.md"
+   ],
+   "elements": [
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "Material",
+    "MaterialGroup",
+    "Plant",
+    "StorageLocation",
+    "PurchaseOrderItemText",
+    "OrderQuantity",
+    "PurchaseOrderQuantityUnit",
+    "NetPriceAmount",
+    "DocumentCurrency",
+    "NetAmount",
+    "PurchaseOrderItemCategory",
+    "AccountAssignmentCategory",
+    "IsCompletelyDelivered",
+    "InvoiceIsExpected",
+    "GoodsReceiptIsExpected",
+    "SupplierMaterialNumber",
+    "PurchaseRequisition",
+    "PurchaseRequisitionItem"
+   ],
+   "associations": [
+    "_PurchaseOrder",
+    "_ScheduleLine",
+    "_AccountAssignment",
+    "_PurchaseOrderHistory",
+    "_Product",
+    "_Plant",
+    "_StorageLocation",
+    "_Supplier",
+    "_PurchaseRequisitionItem"
+   ]
+  },
+  "I_PurchaseOrderItemAPI01": {
+   "table": "EKPO",
+   "keys": [
+    "PurchaseOrder",
+    "PurchaseOrderItem"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_PurchaseOrderScheduleLine": {
+   "table": "",
+   "keys": [
+    "PO",
+    "item"
+   ],
+   "fields": {},
+   "description": "PO schedule line",
+   "docs": [
+    "03_MM_CDS.md"
+   ],
+   "elements": [
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "ScheduleLine",
+    "ScheduleLineDeliveryDate",
+    "ScheduleLineOrderQuantity",
+    "ScheduleLineOpenQuantity",
+    "GoodsReceiptQuantity",
+    "PurchaseOrderQuantityUnit"
+   ],
+   "associations": [
+    "_PurchaseOrderItem",
+    "_PurchaseOrder",
+    "_Product",
+    "_Plant"
+   ]
+  },
+  "I_PurchaseOrderScheduleLineAPI01": {
+   "table": "EKET",
+   "keys": [
+    "PurchaseOrder",
+    "PurchaseOrderItem",
+    "ScheduleLine"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchaseRequisition": {
+   "table": "",
+   "keys": [
+    "PurchaseRequisition",
+    "Item"
+   ],
+   "fields": {},
+   "description": "Requisition header/item semantic model",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_PurchaseRequisitionItem": {
+   "table": "EBAN",
+   "keys": [
+    "PurchaseRequisition",
+    "PurchaseRequisitionItem"
+   ],
+   "fields": {},
+   "description": "Requisition item",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_PurchaseRequisitionItemAPI01": {
+   "table": "EBAN",
+   "keys": [
+    "PurchaseRequisition",
+    "PurchaseRequisitionItem"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchasingGroup": {
+   "table": "T024",
+   "keys": [
+    "PurchasingGroup"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchasingInfoRecord": {
+   "table": "",
+   "keys": [
+    "InfoRecord"
+   ],
+   "fields": {},
+   "description": "Info record",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_PurchasingInfoRecordApi01": {
+   "table": "EINA",
+   "keys": [
+    "PurchasingInfoRecord"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchasingOrganization": {
+   "table": "T024E",
+   "keys": [
+    "PurchasingOrganization"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurchasingSourceList": {
+   "table": "EORD",
+   "keys": [
+    "Material",
+    "Plant",
+    "SourceListRecord"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_PurgInfoRecdOrgPlantDataApi01": {
+   "table": "EINE",
+   "keys": [
+    "PurchasingInfoRecord",
+    "PurchasingInfoRecordCategory",
+    "PurchasingOrganization",
+    "Plant"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_QualityNotification": {
+   "table": "",
+   "keys": [
+    "QualityNotification"
+   ],
+   "fields": {},
+   "description": "Quality notification",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_QualityNotificationItem": {
+   "table": "",
+   "keys": [
+    "Notification",
+    "item"
+   ],
+   "fields": {},
+   "description": "Notification defect/item",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_QualityNotificationTask": {
+   "table": "",
+   "keys": [
+    "Notification",
+    "task"
+   ],
+   "fields": {},
+   "description": "Notification task",
+   "docs": [
+    "06_QM_CDS.md"
+   ]
+  },
+  "I_Reservation": {
+   "table": "RESB",
+   "keys": [
+    "Reservation",
+    "ReservationItem",
+    "RecordType"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_ReservationDocumentItem": {
+   "table": "RESB",
+   "keys": [
+    "Reservation",
+    "ReservationItem",
+    "RecordType"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Routing": {
+   "table": "",
+   "keys": [
+    "group"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_RoutingOperation": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  },
+  "I_SDDocumentMultiLevelProcFlow": {
+   "table": "VBFA",
+   "keys": [],
+   "fields": {},
+   "description": ""
+  },
+  "I_SDDocumentProcessFlow": {
+   "table": "VBFA",
+   "keys": [],
+   "fields": {},
+   "description": ""
+  },
+  "I_SalesDocument": {
+   "table": "VBAK",
+   "keys": [
+    "SalesDocument"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_SalesDocumentFlow": {
+   "table": "",
+   "keys": [],
+   "fields": {},
+   "description": "Document flow candidate",
+   "docs": [
+    "04_SD_CDS.md"
+   ]
+  },
+  "I_SalesDocumentItem": {
+   "table": "VBAK",
+   "keys": [
+    "SalesDocument"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ]
+  },
+  "I_SalesOrder": {
+   "table": "VBAK",
+   "keys": [
+    "SalesOrder"
+   ],
+   "fields": {},
+   "description": "Sales order header",
+   "docs": [
+    "04_SD_CDS.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ],
+   "elements": [
+    "SalesOrder",
+    "SalesOrderType",
+    "SalesOrganization",
+    "DistributionChannel",
+    "OrganizationDivision",
+    "SoldToParty",
+    "ShipToParty",
+    "SalesOrderDate",
+    "RequestedDeliveryDate",
+    "TransactionCurrency",
+    "TotalNetAmount",
+    "CustomerPurchaseOrderReference",
+    "OverallSDProcessStatus",
+    "OverallDeliveryStatus",
+    "OverallBillingStatus",
+    "CreatedByUser"
+   ],
+   "associations": [
+    "_Item",
+    "_Partner",
+    "_SoldToParty",
+    "_ShipToParty",
+    "_SalesOrganization",
+    "_DistributionChannel",
+    "_OrganizationDivision",
+    "_Currency"
+   ]
+  },
+  "I_SalesOrderItem": {
+   "table": "VBAP",
+   "keys": [
+    "SalesOrder",
+    "SalesOrderItem"
+   ],
+   "fields": {},
+   "description": "Sales order item",
+   "docs": [
+    "04_SD_CDS.md",
+    "S4HANA_Sales_Delivery_Billing_Data_Dictionary.md"
+   ],
+   "elements": [
+    "SalesOrder",
+    "SalesOrderItem",
+    "Material",
+    "MaterialByCustomer",
+    "SalesOrderItemCategory",
+    "SalesOrderItemText",
+    "RequestedQuantity",
+    "RequestedQuantityUnit",
+    "NetAmount",
+    "TransactionCurrency",
+    "Plant",
+    "StorageLocation",
+    "ShippingPoint",
+    "HigherLevelItem",
+    "ReferenceSDDocument",
+    "ReferenceSDDocumentItem",
+    "OverallDeliveryStatus",
+    "OverallBillingStatus"
+   ],
+   "associations": [
+    "_SalesOrder",
+    "_ScheduleLine",
+    "_Product",
+    "_Plant",
+    "_StorageLocation",
+    "_ShippingPoint",
+    "_Partner",
+    "_PricingElement"
+   ]
+  },
+  "I_SalesOrderItemPricingElement": {
+   "table": "PRCD_ELEMENTS",
+   "keys": [
+    "SalesOrder",
+    "SalesOrderItem",
+    "PricingProcedureStep",
+    "PricingProcedureCounter"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_SalesOrderPartner": {
+   "table": "VBPA",
+   "keys": [
+    "SalesOrder",
+    "PartnerFunction"
+   ],
+   "fields": {},
+   "description": "Sales order partners",
+   "docs": [
+    "04_SD_CDS.md"
+   ]
+  },
+  "I_SalesOrderScheduleLine": {
+   "table": "VBEP",
+   "keys": [
+    "SalesOrder",
+    "SalesOrderItem",
+    "ScheduleLine"
+   ],
+   "fields": {},
+   "description": "Schedule line",
+   "docs": [
+    "04_SD_CDS.md"
+   ]
+  },
+  "I_SalesOrganization": {
+   "table": "TVKO",
+   "keys": [
+    "SalesOrganization"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Segment": {
+   "table": "FAGL_SEGM",
+   "keys": [
+    "Segment"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_StockQuantityCurrentValue": {
+   "table": "",
+   "keys": [
+    "Product"
+   ],
+   "fields": {},
+   "description": "Current stock quantity",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_StockQuantityCurrentValue_2": {
+   "table": "MATDOC_EXTRACT",
+   "keys": [
+    "Product",
+    "Plant",
+    "StorageLocation",
+    "Batch"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_StorageLocation": {
+   "table": "T001L",
+   "keys": [
+    "Plant",
+    "StorageLocation"
+   ],
+   "fields": {},
+   "description": "Storage location",
+   "docs": [
+    "13_MD_CDS.md"
+   ]
+  },
+  "I_SuplrInvcItemPurOrdRefAPI01": {
+   "table": "RSEG",
+   "keys": [
+    "SupplierInvoice",
+    "FiscalYear",
+    "SupplierInvoiceItem"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_Supplier": {
+   "table": "LFA1",
+   "keys": [
+    "Supplier"
+   ],
+   "fields": {},
+   "description": "Supplier",
+   "docs": [
+    "01_FI.md",
+    "01_FI_CDS.md",
+    "03_MM_CDS.md",
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_SupplierCompany": {
+   "table": "LFB1",
+   "keys": [
+    "Supplier",
+    "CompanyCode"
+   ],
+   "fields": {},
+   "description": "Supplier company-code segment candidate",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_SupplierInvoice": {
+   "table": "",
+   "keys": [
+    "SupplierInvoice",
+    "FiscalYear"
+   ],
+   "fields": {},
+   "description": "Supplier invoice header",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_SupplierInvoiceAPI01": {
+   "table": "RBKP",
+   "keys": [
+    "SupplierInvoice",
+    "FiscalYear"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_SupplierInvoiceItem": {
+   "table": "",
+   "keys": [
+    "SupplierInvoice",
+    "FiscalYear",
+    "Item"
+   ],
+   "fields": {},
+   "description": "Supplier invoice item",
+   "docs": [
+    "03_MM_CDS.md"
+   ]
+  },
+  "I_SupplierPurchasingOrg": {
+   "table": "LFM1",
+   "keys": [
+    "Supplier",
+    "PurchasingOrganization"
+   ],
+   "fields": {},
+   "description": "Supplier purchasing segment candidate",
+   "docs": [
+    "12_BP_CDS.md"
+   ]
+  },
+  "I_UnitOfMeasure": {
+   "table": "T006",
+   "keys": [
+    "UnitOfMeasure"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_User": {
+   "table": "USR02",
+   "keys": [],
+   "fields": {},
+   "description": ""
+  },
+  "I_WBSElement": {
+   "table": "PRPS",
+   "keys": [
+    "WBSElementInternalID"
+   ],
+   "fields": {},
+   "description": "WBS element",
+   "docs": [
+    "10_PS_CDS.md"
+   ]
+  },
+  "I_WBSElementBasicData": {
+   "table": "PRPS",
+   "keys": [
+    "WBSElementInternalID"
+   ],
+   "fields": {},
+   "description": ""
+  },
+  "I_WorkCenter": {
+   "table": "CRHD",
+   "keys": [
+    "WorkCenterInternalID",
+    "WorkCenterTypeCode"
+   ],
+   "fields": {},
+   "description": "",
+   "docs": [
+    "05_PP_CDS.md"
+   ]
+  }
+ }
+}

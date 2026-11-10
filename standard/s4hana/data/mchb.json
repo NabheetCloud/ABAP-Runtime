@@ -1,0 +1,14 @@
+[
+  {"matnr": "RM12", "werks": "1010", "lgort": "101A", "charg": "1010120001", "clabs": 50.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "1010", "lgort": "101A", "charg": "1010120002", "clabs": 75.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1010", "lgort": "101A", "charg": "1010130001", "clabs": 50.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1010", "lgort": "101A", "charg": "1010130002", "clabs": 75.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "1710", "lgort": "171A", "charg": "1710120001", "clabs": 50.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "1710", "lgort": "171A", "charg": "1710120002", "clabs": 75.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1710", "lgort": "171A", "charg": "1710130001", "clabs": 50.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "1710", "lgort": "171A", "charg": "1710130002", "clabs": 75.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "4110", "lgort": "411A", "charg": "4110120001", "clabs": 50.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM12", "werks": "4110", "lgort": "411A", "charg": "4110120002", "clabs": 75.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "4110", "lgort": "411A", "charg": "4110130001", "clabs": 50.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"},
+  {"matnr": "RM13", "werks": "4110", "lgort": "411A", "charg": "4110130002", "clabs": 75.0, "cinsm": 0.0, "cspem": "0.0", "ersda": "20260115"}
+]

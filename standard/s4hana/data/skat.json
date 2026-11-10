@@ -1,0 +1,18 @@
+[
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0010010000", "txt20": "Bank 1", "txt50": "Bank 1 - Main account"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0012100000", "txt20": "Receivables", "txt50": "Receivables domestic"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0013100000", "txt20": "Inventory trading", "txt50": "Inventory - trading goods"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0013200000", "txt20": "Inventory finished", "txt50": "Inventory - finished goods"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0016100000", "txt20": "Input tax", "txt50": "Input tax"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0021100000", "txt20": "Payables", "txt50": "Payables domestic"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0021500000", "txt20": "GR/IR clearing", "txt50": "GR/IR clearing - own production"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0022000000", "txt20": "Output tax", "txt50": "Output tax"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0041000000", "txt20": "Revenue domestic", "txt50": "Revenue domestic - product"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0041000100", "txt20": "Revenue foreign", "txt50": "Revenue foreign - product"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0050000100", "txt20": "COGS", "txt50": "Cost of goods sold"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0061000000", "txt20": "Office supplies", "txt50": "Office supplies expense"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0061003000", "txt20": "IT services", "txt50": "IT services expense"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0063000000", "txt20": "Salaries", "txt50": "Salaries and wages"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0065000000", "txt20": "Rent", "txt50": "Rent and leases"},
+  {"spras": "E", "ktopl": "YCOA", "saknr": "0065300000", "txt20": "Travel", "txt50": "Travel expenses"}
+]

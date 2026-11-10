@@ -1,0 +1,83 @@
+managed implementation in class zbp_r_salesorder unique;
+strict ( 2 );
+
+define behavior for ZR_SalesOrder alias SalesOrder
+persistent table zsalesorder_a
+lock master
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  create;
+  update ( features : instance );
+  delete ( features : instance );
+  association _Item { create ( features : instance ); }
+
+  field ( numbering : managed, readonly ) OrderUUID;
+  field ( readonly ) OrderID, GrossAmount, OverallStatus,
+                     CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+  field ( mandatory ) CustomerID, DeliveryDate, CurrencyCode;
+
+  action ( features : instance ) releaseOrder result [1] $self;
+  action ( features : instance ) cancelOrder result [1] $self;
+  internal action recalcGrossAmount;
+
+  determination setInitialValues  on modify { create; }
+  determination calculateGross    on modify { field CurrencyCode; }
+  determination calculateOrderID  on save   { create; }
+
+  validation validateCustomer on save { create; field CustomerID; }
+  validation validateDates    on save { create; field OrderDate, DeliveryDate; }
+
+  mapping for zsalesorder_a
+  {
+    OrderUUID          = order_uuid;
+    OrderID            = order_id;
+    CustomerID         = customer_id;
+    Description        = description;
+    OrderDate          = order_date;
+    DeliveryDate       = delivery_date;
+    GrossAmount        = gross_amount;
+    CurrencyCode       = currency_code;
+    OverallStatus      = overall_status;
+    CreatedBy          = created_by;
+    CreatedAt          = created_at;
+    LastChangedBy      = last_changed_by;
+    LastChangedAt      = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for ZR_SalesOrderItem alias Item
+persistent table zsoitem_a
+lock dependent by _SalesOrder
+authorization dependent by _SalesOrder
+etag master LocalLastChangedAt
+{
+  update;
+  delete;
+  association _SalesOrder;
+
+  field ( numbering : managed, readonly ) ItemUUID;
+  field ( readonly ) OrderUUID, ItemNo, NetAmount, CurrencyCode, LocalLastChangedAt;
+  field ( mandatory ) ProductID, Quantity;
+
+  determination setItemDefaults on modify { create; field ProductID, Quantity, UnitPrice; }
+  determination calculateGross  on modify { delete; }
+
+  validation validateProduct  on save { create; field ProductID; }
+  validation validateQuantity on save { create; field Quantity; }
+
+  mapping for zsoitem_a
+  {
+    ItemUUID           = item_uuid;
+    OrderUUID          = parent_uuid;
+    ItemNo             = item_no;
+    ProductID          = product_id;
+    Quantity           = quantity;
+    QuantityUnit       = quantity_unit;
+    UnitPrice          = unit_price;
+    NetAmount          = net_amount;
+    CurrencyCode       = currency_code;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

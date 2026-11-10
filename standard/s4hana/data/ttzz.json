@@ -1,0 +1,12 @@
+[
+  {"tzone": "UTC", "zonerule": "UTC", "dstrule": "", "flagactive": "X"},
+  {"tzone": "CET", "zonerule": "UTC+1", "dstrule": "EU", "flagactive": "X"},
+  {"tzone": "EST", "zonerule": "UTC-5", "dstrule": "USA", "flagactive": "X"},
+  {"tzone": "CST", "zonerule": "UTC-6", "dstrule": "USA", "flagactive": "X"},
+  {"tzone": "PST", "zonerule": "UTC-8", "dstrule": "USA", "flagactive": "X"},
+  {"tzone": "INDIA", "zonerule": "UTC+53", "dstrule": "", "flagactive": "X"},
+  {"tzone": "JAPAN", "zonerule": "UTC+9", "dstrule": "", "flagactive": "X"},
+  {"tzone": "CHINA", "zonerule": "UTC+8", "dstrule": "", "flagactive": "X"},
+  {"tzone": "GMTUK", "zonerule": "UTC", "dstrule": "EU", "flagactive": "X"},
+  {"tzone": "AUSNSW", "zonerule": "UTC+10", "dstrule": "AUSNSW", "flagactive": "X"}
+]

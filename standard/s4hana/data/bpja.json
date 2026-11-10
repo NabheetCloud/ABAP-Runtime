@@ -1,0 +1,20 @@
+[
+  {"lednr": "0001", "objnr": "PR00000002", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtjhr": "150000.0", "wljhr": "150000.0"},
+  {"lednr": "0001", "objnr": "PR00000002", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtjhr": "100000.0", "wljhr": "100000.0"},
+  {"lednr": "0001", "objnr": "PR00000003", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtjhr": "240000.0", "wljhr": "240000.0"},
+  {"lednr": "0001", "objnr": "PR00000003", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtjhr": "160000.0", "wljhr": "160000.0"},
+  {"lednr": "0001", "objnr": "PR00000004", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtjhr": "540000.0", "wljhr": "540000.0"},
+  {"lednr": "0001", "objnr": "PR00000004", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtjhr": "360000.0", "wljhr": "360000.0"},
+  {"lednr": "0001", "objnr": "PR00000012", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtjhr": "150000.0", "wljhr": "150000.0"},
+  {"lednr": "0001", "objnr": "PR00000012", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtjhr": "100000.0", "wljhr": "100000.0"},
+  {"lednr": "0001", "objnr": "PR00000013", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtjhr": "240000.0", "wljhr": "240000.0"},
+  {"lednr": "0001", "objnr": "PR00000013", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtjhr": "160000.0", "wljhr": "160000.0"},
+  {"lednr": "0001", "objnr": "PR00000014", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtjhr": "540000.0", "wljhr": "540000.0"},
+  {"lednr": "0001", "objnr": "PR00000014", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtjhr": "360000.0", "wljhr": "360000.0"},
+  {"lednr": "0001", "objnr": "PR00000022", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtjhr": "12510000.0", "wljhr": "12510000.0"},
+  {"lednr": "0001", "objnr": "PR00000022", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtjhr": "8340000.0", "wljhr": "8340000.0"},
+  {"lednr": "0001", "objnr": "PR00000023", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtjhr": "20016000.0", "wljhr": "20016000.0"},
+  {"lednr": "0001", "objnr": "PR00000023", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtjhr": "13344000.0", "wljhr": "13344000.0"},
+  {"lednr": "0001", "objnr": "PR00000024", "trgkz": "B", "wrttp": "41", "gjahr": "2026", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtjhr": "45036000.0", "wljhr": "45036000.0"},
+  {"lednr": "0001", "objnr": "PR00000024", "trgkz": "B", "wrttp": "41", "gjahr": "2027", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtjhr": "30024000.0", "wljhr": "30024000.0"}
+]

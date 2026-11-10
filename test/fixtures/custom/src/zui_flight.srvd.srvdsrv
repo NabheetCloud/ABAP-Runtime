@@ -1,0 +1,6 @@
+define service ZUI_FLIGHT {
+  expose ZCE_Flight as Flight;
+  expose ZI_FlightByCity as FlightByCity;
+  expose ZI_NYFlight as NYFlight;
+  expose ZTF_CarrierRevenue as CarrierRevenue;
+}

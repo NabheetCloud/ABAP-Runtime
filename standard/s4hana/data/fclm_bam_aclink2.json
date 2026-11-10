@@ -1,0 +1,5 @@
+[
+  {"acc_id": "BAM1010", "bukrs": "1010", "hbkid": "DEUT1", "hktid": "CHK01", "bankn": "1234567", "waers": "EUR"},
+  {"acc_id": "BAM1710", "bukrs": "1710", "hbkid": "CITI1", "hktid": "CHK01", "bankn": "9876543", "waers": "USD"},
+  {"acc_id": "BAM4110", "bukrs": "4110", "hbkid": "HDFC1", "hktid": "CHK01", "bankn": "50100012345678", "waers": "INR"}
+]

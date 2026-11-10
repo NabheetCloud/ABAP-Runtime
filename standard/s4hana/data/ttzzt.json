@@ -1,0 +1,12 @@
+[
+  {"langu": "E", "tzone": "UTC", "descript": "Coordinated Universal Time"},
+  {"langu": "E", "tzone": "CET", "descript": "Central Europe"},
+  {"langu": "E", "tzone": "EST", "descript": "Eastern Time (USA)"},
+  {"langu": "E", "tzone": "CST", "descript": "Central Time (USA)"},
+  {"langu": "E", "tzone": "PST", "descript": "Pacific Time (USA)"},
+  {"langu": "E", "tzone": "INDIA", "descript": "India"},
+  {"langu": "E", "tzone": "JAPAN", "descript": "Japan"},
+  {"langu": "E", "tzone": "CHINA", "descript": "China"},
+  {"langu": "E", "tzone": "GMTUK", "descript": "United Kingdom"},
+  {"langu": "E", "tzone": "AUSNSW", "descript": "New South Wales"}
+]

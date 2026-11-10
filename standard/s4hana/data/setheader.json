@@ -1,0 +1,5 @@
+[
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-ALL", "valfrom": "", "valto": "", "descript": "All cost centers", "settype": "B"},
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-ADM", "valfrom": "", "valto": "", "descript": "Administration", "settype": "S"},
+  {"setclass": "0101", "subclass": "A000", "setname": "A000-PRD", "valfrom": "", "valto": "", "descript": "Production", "settype": "S"}
+]

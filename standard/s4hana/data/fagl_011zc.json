@@ -1,0 +1,8 @@
+[
+  {"versn": "YCOA", "ergsl": "ASSETS", "vonkt": "0010010000", "biskt": "0010010000"},
+  {"versn": "YCOA", "ergsl": "ASSETS", "vonkt": "0012100000", "biskt": "0012100000"},
+  {"versn": "YCOA", "ergsl": "ASSETS", "vonkt": "0013100000", "biskt": "0013100000"},
+  {"versn": "YCOA", "ergsl": "LIABS", "vonkt": "0021100000", "biskt": "0021100000"},
+  {"versn": "YCOA", "ergsl": "REVENUE", "vonkt": "0041000000", "biskt": "0041000000"},
+  {"versn": "YCOA", "ergsl": "EXPENSES", "vonkt": "0050000100", "biskt": "0050000100"}
+]

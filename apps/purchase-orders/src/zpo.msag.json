@@ -1,0 +1,7 @@
+{
+  "001": "Purchase order &1 created",
+  "002": "Purchase order &1 does not exist",
+  "003": "Purchase order &1 is locked by another user",
+  "004": "Purchase order &1 released",
+  "005": "Purchase order &1 cannot be released in status &2"
+}

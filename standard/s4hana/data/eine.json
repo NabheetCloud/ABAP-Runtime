@@ -1,0 +1,14 @@
+[
+  {"infnr": "5300000001", "ekorg": "1010", "esokz": "0", "werks": "1010", "netpr": 23.56, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "EUR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000002", "ekorg": "1010", "esokz": "0", "werks": "1010", "netpr": 39.68, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "EUR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000003", "ekorg": "1010", "esokz": "0", "werks": "1010", "netpr": 713.0, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "EUR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000004", "ekorg": "1010", "esokz": "0", "werks": "1010", "netpr": 1.12, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "EUR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000005", "ekorg": "1710", "esokz": "0", "werks": "1710", "netpr": 25.44, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "USD", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000006", "ekorg": "1710", "esokz": "0", "werks": "1710", "netpr": 1265.54, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "USD", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000007", "ekorg": "1710", "esokz": "0", "werks": "1710", "netpr": 260.47, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "USD", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000008", "ekorg": "1710", "esokz": "0", "werks": "1710", "netpr": 15.07, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "USD", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000009", "ekorg": "4110", "esokz": "0", "werks": "4110", "netpr": 3575.17, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "INR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000010", "ekorg": "4110", "esokz": "0", "werks": "4110", "netpr": 35137.2, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "INR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000011", "ekorg": "4110", "esokz": "0", "werks": "4110", "netpr": 1390.96, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "INR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"},
+  {"infnr": "5300000012", "ekorg": "4110", "esokz": "0", "werks": "4110", "netpr": 1256.89, "peinh": 1, "aplfz": 7, "norbm": 100.0, "minbm": 10.0, "waers": "INR", "bprme": "PC", "ekgrp": "001", "mwskz": "V1"}
+]

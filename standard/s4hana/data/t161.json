@@ -1,0 +1,7 @@
+[
+  {"bstyp": "F", "bsart": "NB", "numki": "45", "numke": "", "batxt": "Standard PO"},
+  {"bstyp": "F", "bsart": "FO", "numki": "45", "numke": "", "batxt": "Framework order"},
+  {"bstyp": "B", "bsart": "NB", "numki": "45", "numke": "", "batxt": "Purchase requisition"},
+  {"bstyp": "K", "bsart": "MK", "numki": "45", "numke": "", "batxt": "Quantity contract"},
+  {"bstyp": "L", "bsart": "LP", "numki": "45", "numke": "", "batxt": "Scheduling agreement"}
+]

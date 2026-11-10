@@ -1,0 +1,9 @@
+[
+  {"kokrs": "A000", "kostl": "10101101", "datbi": "99991231", "datab": "20200101", "bukrs": "1010", "prctr": "YB101", "kosar": "E", "verak": "Anna Weber", "waers": "EUR", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""},
+  {"kokrs": "A000", "kostl": "10101201", "datbi": "99991231", "datab": "20200101", "bukrs": "1010", "prctr": "YB900", "kosar": "W", "verak": "Peter Braun", "waers": "EUR", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""},
+  {"kokrs": "A000", "kostl": "10101301", "datbi": "99991231", "datab": "20200101", "bukrs": "1010", "prctr": "YB102", "kosar": "F", "verak": "Klaus Meier", "waers": "EUR", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""},
+  {"kokrs": "A000", "kostl": "17101101", "datbi": "99991231", "datab": "20200101", "bukrs": "1710", "prctr": "YB101", "kosar": "E", "verak": "Laura Smith", "waers": "USD", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""},
+  {"kokrs": "A000", "kostl": "17101201", "datbi": "99991231", "datab": "20200101", "bukrs": "1710", "prctr": "YB900", "kosar": "W", "verak": "John Miller", "waers": "USD", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""},
+  {"kokrs": "A000", "kostl": "41101101", "datbi": "99991231", "datab": "20200101", "bukrs": "4110", "prctr": "YB101", "kosar": "E", "verak": "Priya Sharma", "waers": "INR", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""},
+  {"kokrs": "A000", "kostl": "41101301", "datbi": "99991231", "datab": "20200101", "bukrs": "4110", "prctr": "YB103", "kosar": "L", "verak": "Ravi Kumar", "waers": "INR", "khinr": "", "func_area": "", "gsber": "", "abtei": "", "ktext": ""}
+]

@@ -1,0 +1,8 @@
+[
+  {"bname": "CB9980000010", "persnumber": "0000000100", "addrnumber": "0000000200", "techdesc": "Administrator"},
+  {"bname": "CB9980000020", "persnumber": "0000000101", "addrnumber": "0000000201", "techdesc": "Batch User"},
+  {"bname": "ANNA.BECKER", "persnumber": "0000000102", "addrnumber": "0000000202", "techdesc": "Anna Becker"},
+  {"bname": "JOHN.MILLER", "persnumber": "0000000103", "addrnumber": "0000000203", "techdesc": "John Miller"},
+  {"bname": "PRIYA.SHARMA", "persnumber": "0000000104", "addrnumber": "0000000204", "techdesc": "Priya Sharma"},
+  {"bname": "MARCO.ROSSI", "persnumber": "0000000105", "addrnumber": "0000000205", "techdesc": "Marco Rossi"}
+]

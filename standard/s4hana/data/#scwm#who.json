@@ -1,0 +1,11 @@
+[
+  {"lgnum": "1010", "who": "0000000001", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260112", "lsd": "20260114"},
+  {"lgnum": "1010", "who": "0000000002", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260315", "lsd": "20260317"},
+  {"lgnum": "1010", "who": "0000000003", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260518", "lsd": "20260520"},
+  {"lgnum": "1710", "who": "0000000001", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260212", "lsd": "20260214"},
+  {"lgnum": "1710", "who": "0000000002", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260415", "lsd": "20260417"},
+  {"lgnum": "1710", "who": "0000000003", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260618", "lsd": "20260620"},
+  {"lgnum": "4110", "who": "0000000001", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260312", "lsd": "20260314"},
+  {"lgnum": "4110", "who": "0000000002", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "RF-USER-1", "status": "C", "wcr": "PICK", "created_at": "20260515", "lsd": "20260517"},
+  {"lgnum": "4110", "who": "0000000003", "queue": "OUTB-PICK", "areawho": "0010", "rsrc": "", "status": "", "wcr": "PICK", "created_at": "20260718", "lsd": "20260720"}
+]

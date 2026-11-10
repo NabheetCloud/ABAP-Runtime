@@ -1,0 +1,6 @@
+[
+  {"kvewe": "A", "kappl": "V", "kalsm": "RVAA01", "stunr": "010", "zaehk": "001", "kschl": "PR00", "kofrm": "", "kofra": "", "kstat": "", "vtext": "Price"},
+  {"kvewe": "A", "kappl": "V", "kalsm": "RVAA01", "stunr": "020", "zaehk": "001", "kschl": "K004", "kofrm": "", "kofra": "", "kstat": "", "vtext": "Material discount"},
+  {"kvewe": "A", "kappl": "V", "kalsm": "RVAA01", "stunr": "030", "zaehk": "001", "kschl": "K007", "kofrm": "", "kofra": "", "kstat": "", "vtext": "Customer discount"},
+  {"kvewe": "A", "kappl": "V", "kalsm": "RVAA01", "stunr": "100", "zaehk": "001", "kschl": "MWST", "kofrm": "", "kofra": "", "kstat": "", "vtext": "Output tax"}
+]

@@ -1,0 +1,9 @@
+[
+  {"lifnr": "0010300001", "ekorg": "1010", "waers": "EUR", "zterm": "NT30", "inco1": "FCA", "inco2": "Hamburg", "webre": "X", "verkf": "Sales desk", "telf1": "+49 40 7788 01", "loevm": "", "kalsk": "", "sperm": ""},
+  {"lifnr": "0010300002", "ekorg": "1010", "waers": "EUR", "zterm": "NT30", "inco1": "FCA", "inco2": "Freiburg", "webre": "X", "verkf": "Sales desk", "telf1": "+49 761 3344 02", "loevm": "", "kalsk": "", "sperm": ""},
+  {"lifnr": "0017300001", "ekorg": "1710", "waers": "USD", "zterm": "NT30", "inco1": "FCA", "inco2": "Hayward", "webre": "X", "verkf": "Sales desk", "telf1": "+1 510 555 0201", "loevm": "", "kalsk": "", "sperm": ""},
+  {"lifnr": "0017300002", "ekorg": "1710", "waers": "USD", "zterm": "NT30", "inco1": "FCA", "inco2": "Chicago", "webre": "X", "verkf": "Sales desk", "telf1": "+1 312 555 0202", "loevm": "", "kalsk": "", "sperm": ""},
+  {"lifnr": "0041300001", "ekorg": "4110", "waers": "INR", "zterm": "NT30", "inco1": "FCA", "inco2": "Bengaluru", "webre": "X", "verkf": "Sales desk", "telf1": "+91 80 4900 0001", "loevm": "", "kalsk": "", "sperm": ""},
+  {"lifnr": "0041300002", "ekorg": "4110", "waers": "INR", "zterm": "NT30", "inco1": "FCA", "inco2": "Mumbai", "webre": "X", "verkf": "Sales desk", "telf1": "+91 22 4033 0002", "loevm": "", "kalsk": "", "sperm": ""},
+  {"lifnr": "0041300003", "ekorg": "4110", "waers": "INR", "zterm": "NT30", "inco1": "FCA", "inco2": "Gurugram", "webre": "X", "verkf": "Sales desk", "telf1": "+91 124 456 0003", "loevm": "", "kalsk": "", "sperm": ""}
+]

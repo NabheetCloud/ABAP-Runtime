@@ -1,0 +1,5 @@
+[
+  {"ekgrp": "001", "eknam": "Group 001 IT", "tel_number": "+49 30 1234 100", "smtp_addr": "purchasing.it@example.com", "ektel": ""},
+  {"ekgrp": "002", "eknam": "Group 002 Office", "tel_number": "+49 30 1234 200", "smtp_addr": "purchasing.office@example.com", "ektel": ""},
+  {"ekgrp": "003", "eknam": "Group 003 Production", "tel_number": "+1 650 555 0300", "smtp_addr": "purchasing.production@example.com", "ektel": ""}
+]

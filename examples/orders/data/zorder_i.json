@@ -1,0 +1,2 @@
+[ { "order_id": "0000000001", "item_no": "0001", "product": "Laptop", "quantity": 1, "unit_price": 1200, "currency": "EUR", "amount": 1200 },
+  { "order_id": "0000000001", "item_no": "0002", "product": "Docking station", "quantity": 2, "unit_price": 150, "currency": "EUR", "amount": 300 } ]

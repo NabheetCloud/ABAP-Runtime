@@ -1,0 +1,14 @@
+[
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300001", "matnr": "RM12", "ekorg": "1010", "werks": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000010"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300002", "matnr": "RM13", "ekorg": "1010", "werks": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000012"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300001", "matnr": "TG11", "ekorg": "1010", "werks": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000014"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0010300002", "matnr": "PK01", "ekorg": "1010", "werks": "1010", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000016"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300001", "matnr": "RM12", "ekorg": "1710", "werks": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000018"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300002", "matnr": "TG12", "ekorg": "1710", "werks": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000020"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300001", "matnr": "TG13", "ekorg": "1710", "werks": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000022"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0017300002", "matnr": "OS01", "ekorg": "1710", "werks": "1710", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000024"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300001", "matnr": "RM13", "ekorg": "4110", "werks": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000026"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300002", "matnr": "TG14", "ekorg": "4110", "werks": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000028"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300003", "matnr": "TG15", "ekorg": "4110", "werks": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000030"},
+  {"kappl": "M", "kschl": "PB00", "lifnr": "0041300001", "matnr": "OS01", "ekorg": "4110", "werks": "4110", "esokz": "0", "datbi": "99991231", "datab": "20260101", "knumh": "0000000032"}
+]

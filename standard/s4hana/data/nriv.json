@@ -1,0 +1,7 @@
+[
+  {"object": "RV_BELEG", "subobject": "", "nrrangenr": "01", "toyear": "0000", "fromnumber": "0000001000", "tonumber": "0009999999", "nrlevel": "0000001016", "externind": ""},
+  {"object": "RV_BELEG", "subobject": "", "nrrangenr": "17", "toyear": "0000", "fromnumber": "0080000000", "tonumber": "0089999999", "nrlevel": "0080000012", "externind": ""},
+  {"object": "RF_BELEG", "subobject": "1010", "nrrangenr": "01", "toyear": "2026", "fromnumber": "0100000000", "tonumber": "0199999999", "nrlevel": "0100000010", "externind": ""},
+  {"object": "EINKBELEG", "subobject": "", "nrrangenr": "45", "toyear": "0000", "fromnumber": "4500000000", "tonumber": "4599999999", "nrlevel": "4500000009", "externind": ""},
+  {"object": "MATBELEG", "subobject": "", "nrrangenr": "01", "toyear": "0000", "fromnumber": "4900000000", "tonumber": "4999999999", "nrlevel": "4900000040", "externind": ""}
+]

@@ -1,0 +1,10 @@
+[
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0010", "mittelwert": 119.907, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260220", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0020", "mittelwert": 0.0, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260220", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0010", "mittelwert": 119.8, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260421", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0020", "mittelwert": 0.0, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260421", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0010", "mittelwert": 119.905, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260622", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0020", "mittelwert": 0.0, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260622", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0010", "mittelwert": 119.946, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260307", "pruefer": "JOHN.MILLER"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0020", "mittelwert": 0.0, "anzfehler": "", "mbewertg": "A", "attribut": "", "anzwertg": 5, "pruefdatuv": "20260307", "pruefer": "JOHN.MILLER"}
+]

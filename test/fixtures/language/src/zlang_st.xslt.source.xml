@@ -1,0 +1,14 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+  <tt:root name="ROWS"/>
+  <tt:template>
+    <Rows>
+      <tt:loop ref=".ROWS" name="r">
+        <Row>
+          <tt:attribute name="id" value-ref="$r.ID"/>
+          <Name><tt:value ref="$r.NAME"/></Name>
+        </Row>
+      </tt:loop>
+    </Rows>
+  </tt:template>
+</tt:transform>

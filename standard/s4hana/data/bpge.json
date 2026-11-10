@@ -1,0 +1,11 @@
+[
+  {"lednr": "0001", "objnr": "PR00000002", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtges": "250000.0", "wlges": "250000.0"},
+  {"lednr": "0001", "objnr": "PR00000003", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtges": "400000.0", "wlges": "400000.0"},
+  {"lednr": "0001", "objnr": "PR00000004", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "EUR", "wtges": "900000.0", "wlges": "900000.0"},
+  {"lednr": "0001", "objnr": "PR00000012", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtges": "250000.0", "wlges": "250000.0"},
+  {"lednr": "0001", "objnr": "PR00000013", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtges": "400000.0", "wlges": "400000.0"},
+  {"lednr": "0001", "objnr": "PR00000014", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "USD", "wtges": "900000.0", "wlges": "900000.0"},
+  {"lednr": "0001", "objnr": "PR00000022", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtges": "20850000.0", "wlges": "20850000.0"},
+  {"lednr": "0001", "objnr": "PR00000023", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtges": "33360000.000000004", "wlges": "33360000.000000004"},
+  {"lednr": "0001", "objnr": "PR00000024", "trgkz": "B", "wrttp": "41", "geber": "", "versn": "000", "vorga": "KBUD", "twaer": "INR", "wtges": "75060000.0", "wlges": "75060000.0"}
+]

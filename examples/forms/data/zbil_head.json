@@ -1,0 +1,4 @@
+[
+  { "billing_doc": "0090000001", "status": "F", "customer_name": "Schmidt Maschinenbau GmbH", "street": "Industriestraße 12", "postal_code": "69190", "city": "Walldorf", "country": "DE", "billing_date": "20261104", "due_date": "20261204", "currency": "EUR", "tax_rate": 19 },
+  { "billing_doc": "0090000002", "status": "D", "customer_name": "Northwind Traders Ltd", "street": "12 Harbour Road", "postal_code": "SW1A 1AA", "city": "London", "country": "GB", "billing_date": "20261105", "due_date": "20261205", "currency": "EUR", "tax_rate": 0 }
+]

@@ -1,0 +1,21 @@
+[
+  {"spras": "E", "msehi": "EA", "mseh3": "EA", "mseh6": "ea", "msehl": "Each"},
+  {"spras": "E", "msehi": "PC", "mseh3": "PC", "mseh6": "pc", "msehl": "Piece"},
+  {"spras": "E", "msehi": "KG", "mseh3": "KG", "mseh6": "kg", "msehl": "Kilogram"},
+  {"spras": "E", "msehi": "G", "mseh3": "G", "mseh6": "g", "msehl": "Gram"},
+  {"spras": "E", "msehi": "TO", "mseh3": "TO", "mseh6": "t", "msehl": "Ton"},
+  {"spras": "E", "msehi": "L", "mseh3": "L", "mseh6": "l", "msehl": "Liter"},
+  {"spras": "E", "msehi": "ML", "mseh3": "ML", "mseh6": "ml", "msehl": "Milliliter"},
+  {"spras": "E", "msehi": "M3", "mseh3": "M3", "mseh6": "m3", "msehl": "Cubic meter"},
+  {"spras": "E", "msehi": "M", "mseh3": "M", "mseh6": "m", "msehl": "Meter"},
+  {"spras": "E", "msehi": "CM", "mseh3": "CM", "mseh6": "cm", "msehl": "Centimeter"},
+  {"spras": "E", "msehi": "MM", "mseh3": "MM", "mseh6": "mm", "msehl": "Millimeter"},
+  {"spras": "E", "msehi": "M2", "mseh3": "M2", "mseh6": "m2", "msehl": "Square meter"},
+  {"spras": "E", "msehi": "H", "mseh3": "H", "mseh6": "h", "msehl": "Hour"},
+  {"spras": "E", "msehi": "MIN", "mseh3": "MIN", "mseh6": "min", "msehl": "Minute"},
+  {"spras": "E", "msehi": "DAY", "mseh3": "DAY", "mseh6": "day", "msehl": "Day"},
+  {"spras": "E", "msehi": "BOX", "mseh3": "BOX", "mseh6": "box", "msehl": "Box"},
+  {"spras": "E", "msehi": "CS", "mseh3": "CS", "mseh6": "cs", "msehl": "Case"},
+  {"spras": "E", "msehi": "PAL", "mseh3": "PAL", "mseh6": "pal", "msehl": "Pallet"},
+  {"spras": "E", "msehi": "PAA", "mseh3": "PAA", "mseh6": "pr", "msehl": "Pair"}
+]

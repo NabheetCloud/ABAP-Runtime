@@ -1,0 +1,6 @@
+@EndUserText.label: 'Billing document (form data provider)'
+@ObjectModel.leadingEntity.name: 'ZI_BILLINGDOC'
+define service ZFDP_BILLINGDOC {
+  expose ZI_BillingDoc as BillingDoc;
+  expose ZI_BillingDocItem as BillingDocItem;
+}

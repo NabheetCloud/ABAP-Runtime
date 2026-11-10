@@ -1,0 +1,77 @@
+{
+  "title": "Goods receipt confirmation {ponumber:alpha}",
+  "dataProvider": "ZFDP_PURCHASEORDER",
+  "locale": "de_DE",
+  "interactive": true,
+  "variables": { "receiptdate": "if HasValue(receivedon) then receivedon else sy.datum endif" },
+  "page": { "size": "A4", "margin": { "top": "15mm", "right": "18mm", "bottom": "18mm", "left": "20mm" } },
+  "styles": {
+    "h1": { "size": 18, "bold": true, "color": "#0a3d7a" },
+    "th": { "size": 8.5, "bold": true, "color": "#0a3d7a" },
+    "small": { "size": 7.5, "color": "#64748b" }
+  },
+  "header": [ { "text": "{companycodename} · Goods receipt confirmation for purchase order {ponumber:alpha}", "style": "small" } ],
+  "footer": [ { "text": "Please return the completed and signed form to {buyeremail} · Page {page} of {pages}", "style": "small", "align": "center" } ],
+  "content": [
+    { "columns": [
+      { "width": 4, "items": [
+        { "text": "Goods receipt confirmation", "style": "h1" },
+        { "fields": [
+          ["Purchase order", "{ponumber:alpha} of {orderdate:date}"],
+          ["Supplier", "{suppliername} ({supplier:alpha})"],
+          ["Ship-to plant", "{plant} {plantname}, {plantcity}"],
+          ["Planned delivery", "{deliverydate:date}"],
+          ["Buyer", "{buyername}, {buyerphone}"],
+          ["Items", "{=Count(_item.itemno)}"]
+        ], "size": 9 }
+      ] },
+      { "width": 1, "items": [ { "barcode": "qr", "value": "{ponumber}", "size": 70 } ] }
+    ] },
+    { "text": "Confirmed by {receivedby} on {receivedon:date}{=if issigned = 'X' then ' · digitally signed: ' & signer else '' endif}",
+      "if": "HasValue(receivedby)", "bold": true, "color": "#15803d", "size": 9 },
+    { "space": 8 },
+    { "line": true, "color": "#0a3d7a" },
+    { "columns": [
+      { "width": 8, "items": [ { "text": "Item", "style": "th" } ] },
+      { "width": 12, "items": [ { "text": "Material", "style": "th" } ] },
+      { "width": 34, "items": [ { "text": "Description", "style": "th" } ] },
+      { "width": 18, "items": [ { "text": "Ordered", "style": "th", "align": "right" } ] },
+      { "width": 22, "items": [ { "text": "Received quantity", "style": "th" } ] }
+    ], "gap": 6 },
+    { "line": true, "color": "#0a3d7a" },
+    { "repeat": "_item", "items": [
+      { "keepTogether": true, "columns": [
+        { "width": 8, "items": [ { "text": "{itemno:alpha}", "size": 9 } ] },
+        { "width": 12, "items": [ { "text": "{product}", "size": 9 } ] },
+        { "width": 34, "items": [ { "text": "{description}", "size": 9 } ] },
+        { "width": 18, "items": [ { "text": "{quantity:number} {unit}", "size": 9, "align": "right" } ] },
+        { "width": 22, "items": [ { "input": "received_{itemno}", "type": "text", "value": "{=Str(if HasValue(receivedquantity) then receivedquantity else quantity endif, 0)}", "maxLength": 12 } ] }
+      ], "gap": 6 }
+    ] },
+    { "line": true, "color": "#cbd5e1" },
+    { "space": 10 },
+    { "input": "complete", "label": "Goods received complete, in the ordered quantity and undamaged", "type": "checkbox", "value": "{iscomplete}" },
+    { "space": 6 },
+    { "input": "remark", "label": "Remark (shortfalls, damage, deviations)", "type": "multiline", "height": "28mm", "value": "{remark}" },
+    { "space": 10 },
+    { "columns": [
+      { "width": 1, "items": [
+        { "input": "received_by", "label": "Received by (name)", "required": true, "value": "{receivedby}" },
+        { "input": "received_on", "label": "Date of receipt", "value": "{receiptdate:date}" }
+      ] },
+      { "width": 1, "items": [
+        { "input": "signature", "label": "Signature warehouse", "type": "signature", "height": "22mm" }
+      ] }
+    ], "gap": 16 }
+  ],
+  "sample": {
+    "ponumber": "4500009999", "companycodename": "Company Code 1010", "plant": "1010", "plantname": "Plant 1010 Hamburg", "plantcity": "Hamburg",
+    "supplier": "0010300001", "suppliername": "Inlandslieferant DE 1", "buyername": "Anna Becker", "buyerphone": "+49 30 1234 100", "buyeremail": "purchasing.it@example.com",
+    "orderdate": "20261102", "deliverydate": "20261116",
+    "receivedby": "", "receivedon": "", "iscomplete": "", "remark": "", "issigned": "", "signer": "",
+    "_item": [
+      { "itemno": "00010", "product": "TG11", "description": "Laptop Pro 14", "quantity": 2, "unit": "PC", "receivedquantity": 2 },
+      { "itemno": "00020", "product": "TG13", "description": "Monitor 27\" 4K", "quantity": 2, "unit": "PC", "receivedquantity": 1 }
+    ]
+  }
+}

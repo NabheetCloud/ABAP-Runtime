@@ -1,0 +1,11 @@
+[
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0001", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300001", "member_name": "Priya Sharma", "member_email": "priya.sharma@example.com", "loan_date": "20260915", "due_date": "20260929", "return_date": "20260927", "local_last_changed_at": 20260927140000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0002", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300001", "member_name": "Lukas Becker", "member_email": "lukas.becker@example.de", "loan_date": "20261026", "due_date": "20261109", "local_last_changed_at": 20261026100000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0003", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300002", "member_name": "Emma Wilson", "member_email": "emma.wilson@example.co.uk", "loan_date": "20261010", "due_date": "20261024", "local_last_changed_at": 20261010113000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0004", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300002", "member_name": "Arjun Mehta", "loan_date": "20261029", "due_date": "20261112", "local_last_changed_at": 20261029160000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0005", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300003", "member_name": "Sofia Rossi", "loan_date": "20260920", "due_date": "20261004", "return_date": "20261003", "local_last_changed_at": 20261003090000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0006", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300004", "member_name": "Lukas Becker", "member_email": "lukas.becker@example.de", "loan_date": "20261012", "due_date": "20261026", "local_last_changed_at": 20261012150000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0007", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300005", "member_name": "Mia Chen", "loan_date": "20261001", "due_date": "20261015", "return_date": "20261020", "local_last_changed_at": 20261020120000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0008", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300005", "member_name": "Priya Sharma", "member_email": "priya.sharma@example.com", "loan_date": "20261101", "due_date": "20261115", "local_last_changed_at": 20261101100000 },
+  { "loan_uuid": "1A0B2C3D4E5F4A6B8C9D0E1F2A3B0009", "parent_uuid": "B00C0A1E5D2F4E3A9B7C6D5E4F300006", "member_name": "Noah Fischer", "loan_date": "20261022", "due_date": "20261105", "local_last_changed_at": 20261022093000 }
+]

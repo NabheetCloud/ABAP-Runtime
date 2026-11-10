@@ -1,0 +1,36 @@
+<mvc:View controllerName="z.travels.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core">
+  <App id="app"><pages>
+  <Page title="Travels (freestyle SAPUI5)">
+    <headerContent>
+      <SearchField width="16rem" search=".onSearch" placeholder="Search travels"/>
+    </headerContent>
+    <Table id="travels" growing="true" growingThreshold="20"
+      items="{ path: '/Travel', parameters: { $count: true, $orderby: 'TravelID desc' } }">
+      <headerToolbar>
+        <OverflowToolbar>
+          <Title text="Travels" level="H2"/>
+        </OverflowToolbar>
+      </headerToolbar>
+      <columns>
+        <Column><Text text="Travel"/></Column>
+        <Column><Text text="Customer"/></Column>
+        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Description"/></Column>
+        <Column hAlign="End"><Text text="Total"/></Column>
+        <Column><Text text="Status"/></Column>
+        <Column hAlign="End"><Text text=""/></Column>
+      </columns>
+      <items>
+        <ColumnListItem>
+          <ObjectIdentifier title="{= parseInt(${TravelID}, 10) }" text="{BeginDate} – {EndDate}"/>
+          <Text text="{CustomerName}"/>
+          <Text text="{Description}"/>
+          <ObjectNumber number="{TotalPrice}" unit="{CurrencyCode}"/>
+          <ObjectStatus text="{StatusText}" state="{= %{StatusCriticality} === 3 ? 'Success' : %{StatusCriticality} === 1 ? 'Error' : 'Warning' }"/>
+          <Button text="Accept" type="Accept" press=".onAccept" enabled="{= %{OverallStatus} !== 'A' }"/>
+        </ColumnListItem>
+      </items>
+    </Table>
+  </Page>
+  </pages></App>
+</mvc:View>

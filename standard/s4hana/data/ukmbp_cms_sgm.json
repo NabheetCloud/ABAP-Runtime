@@ -1,0 +1,12 @@
+[
+  {"partner": "0010100001", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0010100002", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0010100003", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0017100001", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0017100002", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0017100003", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0041100001", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0041100002", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0041100003", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""},
+  {"partner": "0010100004", "credit_sgmnt": "1000", "credit_limit": 50000.0, "xblocked": "", "limit_valid_date": ""}
+]

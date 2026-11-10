@@ -1,0 +1,5 @@
+[
+  {"bukrs": "1010", "butxt": "Company Code 1010", "ort01": "Berlin", "land1": "DE", "waers": "EUR", "spras": "D", "ktopl": "YCOA", "periv": "K4", "rcomp": "1010", "adrnr": "", "stceg": "DE10109988776", "opvar": ""},
+  {"bukrs": "1710", "butxt": "Company Code 1710", "ort01": "Palo Alto", "land1": "US", "waers": "USD", "spras": "E", "ktopl": "YCOA", "periv": "K4", "rcomp": "1710", "adrnr": "", "stceg": "US17109988776", "opvar": ""},
+  {"bukrs": "4110", "butxt": "Company Code 4110", "ort01": "Bengaluru", "land1": "IN", "waers": "INR", "spras": "E", "ktopl": "YCOA", "periv": "V3", "rcomp": "4110", "adrnr": "", "stceg": "IN41109988776", "opvar": ""}
+]

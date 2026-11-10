@@ -1,0 +1,6 @@
+[
+  {"pstyv": "TAN", "fkrel": "J", "prsfd": "X", "vtext": "Standard Item"},
+  {"pstyv": "TAD", "fkrel": "J", "prsfd": "X", "vtext": "Service"},
+  {"pstyv": "REN", "fkrel": "J", "prsfd": "X", "vtext": "Returns"},
+  {"pstyv": "AGN", "fkrel": "", "prsfd": "X", "vtext": "Quotation Item"}
+]

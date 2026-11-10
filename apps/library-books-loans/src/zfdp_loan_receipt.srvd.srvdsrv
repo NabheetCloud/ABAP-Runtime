@@ -1,0 +1,5 @@
+@EndUserText.label: 'Loan Receipt - Form Data Provider'
+@ObjectModel.leadingEntity.name: 'ZI_LOANRECEIPT'
+define service ZFDP_LOAN_RECEIPT {
+  expose ZI_LoanReceipt as LoanReceipt;
+}

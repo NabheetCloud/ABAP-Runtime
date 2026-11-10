@@ -1,0 +1,5 @@
+[
+  {"docnum": "0000000000000001", "status": "03", "direct": "1", "mestyp": "INVOIC", "idoctp": "INVOIC02", "rcvprn": "0010100001", "sndprn": "S4HCLNT100", "credat": "20260116", "cretim": "071600", "rcvprt": "KU", "upddat": "20260116"},
+  {"docnum": "0000000000000002", "status": "03", "direct": "1", "mestyp": "INVOIC", "idoctp": "INVOIC02", "rcvprn": "0010100002", "sndprn": "S4HCLNT100", "credat": "20260319", "cretim": "071600", "rcvprt": "KU", "upddat": "20260319"},
+  {"docnum": "0000000000000003", "status": "03", "direct": "1", "mestyp": "INVOIC", "idoctp": "INVOIC02", "rcvprn": "0010100003", "sndprn": "S4HCLNT100", "credat": "20260522", "cretim": "071600", "rcvprt": "KU", "upddat": "20260522"}
+]

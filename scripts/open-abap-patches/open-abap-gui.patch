@@ -1,0 +1,549 @@
+diff --git a/converter/src/api.ts b/converter/src/api.ts
+index adb2481..b527592 100644
+--- a/converter/src/api.ts
++++ b/converter/src/api.ts
+@@ -1,4 +1,5 @@
+ import fs from "node:fs/promises";
++import { readFileSync } from "node:fs";
+ import { normalizeOptions, defaultClassName, fullClassName, defaultTransactionCode,normalizeObjectName, normalizeTransactionCode } from "./options.js";
+ import { diagnostic, sortDiagnostics } from "./diagnostics.js";
+ import { resolveSources, systemIncludeUse } from "./source-resolver.js";
+@@ -353,6 +354,37 @@ function textPoolLookup(textPool: unknown): (key: unknown) => string | undefined
+   return () => undefined;
+ }
+ 
++// The dictionary label of a selection element without a selection text, as SAP's "Dictionary reference":
++// PARAMETERS p TYPE zdtel, PARAMETERS p LIKE ztab-field, SELECT-OPTIONS s FOR ztab-field.
++function dictionaryLabel(raw: unknown, files: ConvertOptions["dictionaryFiles"]): string | undefined {
++  const text = String(raw ?? "");
++  const m = /\bFOR\s+([\w/]+)-([\w/]+)/i.exec(text) ?? /\b(?:TYPE|LIKE)\s+([\w/]+)(?:-([\w/]+))?/i.exec(text);
++  if (!m || !files?.length) return undefined;
++  const read = (name: string, suffix: string): string | undefined => {
++    const want = `${name.toLowerCase().replaceAll("/", "#")}${suffix}`;
++    for (const file of files) {
++      const filename = typeof file === "string" ? file : file.filename;
++      if (filename.split(/[\\/]/).pop()?.toLowerCase() !== want) continue;
++      try { return typeof file === "string" ? readFileSync(file, "utf8") : file.source ?? readFileSync(file.filename, "utf8"); } catch { return undefined; }
++    }
++    return undefined;
++  };
++  const tag = (xml: string | undefined, name: string) => xml ? new RegExp(`<${name}>([^<]*)</${name}>`).exec(xml)?.[1]?.trim() : undefined;
++  const element = (name: string) => {
++    const xml = read(name, ".dtel.xml");
++    return tag(xml, "SCRTEXT_M") || tag(xml, "SCRTEXT_L") || tag(xml, "DDTEXT") || undefined;
++  };
++  if (!m[2]) return element(m[1]);
++  const table = read(m[1], ".tabl.xml");
++  const field = table ? [...table.matchAll(/<DD03P>([\s\S]*?)<\/DD03P>/g)].map((x) => x[1])
++    .find((x) => tag(x, "FIELDNAME")?.toUpperCase() === m[2].toUpperCase()) : undefined;
++  if (!field) return undefined;
++  const rollname = tag(field, "ROLLNAME");
++  const label = rollname ? element(rollname) : undefined;
++  const own = tag(field, "DDTEXT");
++  return label || (own && own.toUpperCase() !== m[2].toUpperCase() ? own : undefined);
++}
++
+ function applyTextPool(ir: ReportIR, options: NormalizedOptions): void {
+   const lookup = textPoolLookup(metadataTextPool(ir, options));
+   const apply = (items: Metadata[] | undefined) => {
+@@ -370,6 +402,11 @@ function applyTextPool(ir: ReportIR, options: NormalizedOptions): void {
+   };
+   for (const screen of ir.selections) {
+     apply(screen.elements);
++    for (const item of screen.elements ?? []) {
++      if ((item.kind !== "parameter" && item.kind !== "select-option") || item.text !== item.name) continue;
++      const label = dictionaryLabel(item.raw, options.dictionaryFiles);
++      if (label) item.text = label;
++    }
+   }
+   for (const screen of [...(ir.screenMetadata?.screens ?? []), ...(ir.dynproMetadata?.screens ?? [])]) {
+     if (typeof screen.title === "string") screen.title = lookup(screen.title) ?? screen.title;
+diff --git a/converter/src/emit/class-source.ts b/converter/src/emit/class-source.ts
+index 2af6b45..857beeb 100644
+--- a/converter/src/emit/class-source.ts
++++ b/converter/src/emit/class-source.ts
+@@ -1466,6 +1466,16 @@ function elementaryType(raw: string | undefined): string | undefined {
+   return ast && name?.get() instanceof Expressions.TypeName ? ast.source(name).toUpperCase() : undefined;
+ }
+ 
++// The elementary type of a declaration through the report's own TYPES aliases (TYPES ty_amount TYPE p LENGTH 6
++// DECIMALS 2. DATA gv_salary TYPE ty_amount.), so such a field is a screen field like one typed directly.
++function resolvedElementaryType(ir: ReportIR, raw: string | undefined, depth = 0): string | undefined {
++  const type = elementaryType(raw);
++  if (!type || STATE_TYPES.has(type) || depth > 8) return type;
++  const alias = (ir.declarations ?? []).find((item) => item.kind === "type" && !item.complex && !item.component
++    && declaredName(item.raw)?.toUpperCase() === type);
++  return alias ? resolvedElementaryType(ir, alias.raw, depth + 1) : type;
++}
++
+ function dynproStateComponents(ir: ReportIR): { name: string; member: string }[] {
+   const components: { name: string; member: string }[] = [];
+   const seen = new Set<string>();
+@@ -1483,7 +1493,22 @@ function dynproStateComponents(ir: ReportIR): { name: string; member: string }[]
+         || declaration.component) continue;
+     // A screen field holds an elementary value.
+     const name = declaredName(declaration.raw);
+-    if (name && STATE_TYPES.has(elementaryType(declaration.raw) ?? "")) add(name);
++    if (name && STATE_TYPES.has(resolvedElementaryType(ir, declaration.raw) ?? "")) add(name);
++  }
++  // A screen field that is a component of a global structure or a TABLES work area (GS_HEAD-EBELN,
++  // ZPO_HEAD-LIFNR): the screen exchanges the component. Fields of table controls go through their rows.
++  for (const screen of ir.dynproMetadata?.screens ?? []) {
++    for (const element of screen.elements ?? []) {
++      const full = String(element?.name ?? "").trim().toUpperCase();
++      if (!/^[A-Z_][\w/]*(-[A-Z_0-9][\w/]*)+$/.test(full) || seen.has(full)) continue;
++      if (["text", "frame", "pushbutton", "subscreen", "okcode"].includes(String(element.kind ?? ""))) continue;
++      if (String(element.attributes?.contType ?? "SCREEN").toUpperCase() !== "SCREEN") continue;
++      const [base, ...path] = full.split("-");
++      const member = reportMember(ir, base);
++      if (!member) continue;
++      seen.add(full);
++      components.push({ name: full, member: [member, ...path.map((part) => part.toLowerCase())].join("-") });
++    }
+   }
+   for (const statement of ir.statements ?? []) {
+     if (statement.kind !== "Controls") continue;
+@@ -1522,7 +1547,7 @@ function screenInputField(metadata: Metadata | undefined): (name: string) => boo
+ // A string field goes into the screen value as it is.
+ function stringDeclared(ir: ReportIR, name: string): boolean {
+   return (ir.declarations ?? []).some((item) => (item.names ?? []).some((declared) => declared.toUpperCase() === name)
+-    && elementaryType(item.raw) === "STRING");
++    && resolvedElementaryType(ir, item.raw) === "STRING");
+ }
+ 
+ function dynproStateFlush(ir: ReportIR, valuesName = "ct_values"): string[] {
+@@ -1610,6 +1635,9 @@ function dynproDataType(element: Metadata): string {
+   ];
+   const decimals = ({ QUAN: 3, CURR: 2 } as Record<string, number>)[format];
+   if (decimals !== undefined) fields.push("decimals = " + decimals);
++  // the data element of a field with a dictionary reference: its domain's fixed values are the field's value help
++  const rollname = String(attributes.rollname ?? "").trim().toUpperCase();
++  if (/^[A-Z_][\w/]*$/.test(rollname)) fields.push("rollname = '" + rollname + "'");
+   return "VALUE #( " + fields.join(" ") + " )";
+ }
+ 
+@@ -1880,15 +1908,27 @@ function dynproTableHydrate(bindings: Metadata[]): string[] {
+ 
+ // The table line a module works on: its row of the table control inside the
+ // loop, none outside it.
+-function dynproTableCurrentRow(bindings: Metadata[]): string[] {
+-  return bindings.flatMap((table) => [
+-    `IF is_context-table_control = '${table.name}' AND is_context-row > 0.`,
+-    `  ${table.name.toLowerCase()}-current_line = is_context-row.`,
+-    `  READ TABLE ${table.tableVariable} INTO ${table.rowPrefix.toLowerCase()} INDEX is_context-row.`,
+-    "ELSEIF is_context-row = 0.",
+-    `  CLEAR ${table.rowPrefix.toLowerCase()}.`,
+-    "ENDIF.",
+-  ]);
++// In PAI the work area is the screen row as the user left it: the table line (if there is one) with the values of
++// the row's input fields on top, so a row typed below the table's lines reaches the module (which APPENDs it) and an
++// empty row is empty, not the previous row.
++function dynproTableCurrentRow(bindings: Metadata[], input = false): string[] {
++  return bindings.flatMap((table) => {
++    const wa = table.rowPrefix.toLowerCase();
++    const fromScreen = input ? table.columns.filter((column: Metadata) => column.input).flatMap((column: Metadata) => [
++      `  IF line_exists( ct_values[ container = '${table.name}' name = '${column.name}' row = is_context-row ] ).`,
++      `    ${wa}-${column.name.toLowerCase()} = CONV #( ct_values[ container = '${table.name}' name = '${column.name}' row = is_context-row ]-value ).`,
++      "  ENDIF.",
++    ]) : [];
++    return [
++      `IF is_context-table_control = '${table.name}' AND is_context-row > 0.`,
++      `  ${table.name.toLowerCase()}-current_line = is_context-row.`,
++      `  READ TABLE ${table.tableVariable} INTO ${wa} INDEX is_context-row.`,
++      ...(input ? ["  IF sy-subrc <> 0.", `    CLEAR ${wa}.`, "  ENDIF.", ...fromScreen] : []),
++      "ELSEIF is_context-row = 0.",
++      `  CLEAR ${wa}.`,
++      "ENDIF.",
++    ];
++  });
+ }
+ 
+ // Table controls and their TABLEVIEW structures exchange values with the
+@@ -1897,7 +1937,7 @@ function dynproExchangeDefinitions(ir: ReportIR, metadata: Metadata | undefined)
+   if (!metadata || !(dynproTableBindings(metadata).length || tableViews(ir).length)) return [];
+   return [
+     "METHODS table_values_in\n  IMPORTING\n    it_values TYPE zif_gg_dynpro_types_v1=>ty_values.",
+-    "METHODS table_values_out\n  CHANGING\n    ct_values TYPE zif_gg_dynpro_types_v1=>ty_values.",
++    "METHODS table_values_out\n  IMPORTING\n    iv_input TYPE abap_bool DEFAULT abap_false\n  CHANGING\n    ct_values TYPE zif_gg_dynpro_types_v1=>ty_values.",
+   ];
+ }
+ 
+@@ -1945,7 +1985,13 @@ function dynproTableFlush(bindings: Metadata[]): string[] {
+   for (const [tableIndex, table] of bindings.entries()) {
+     const rowSymbol = `<ls_table${tableIndex + 1}_flush_row>`;
+     const rowIndex = `lv_table${tableIndex + 1}_flush_row`;
+-    lines.push(`DELETE ct_values WHERE container = '${table.name}'.`);
++    // In PAI the rows below the table's lines keep what the user typed: the module for such a row (later in the
++    // LOOP) appends it
++    lines.push("IF iv_input = abap_true.");
++    lines.push(`  DELETE ct_values WHERE container = '${table.name}' AND row <= lines( ${table.tableVariable} ).`);
++    lines.push("ELSE.");
++    lines.push(`  DELETE ct_values WHERE container = '${table.name}'.`);
++    lines.push("ENDIF.");
+     lines.push(`LOOP AT ${table.tableVariable} ASSIGNING FIELD-SYMBOL(${rowSymbol}).`);
+     lines.push(`  DATA(${rowIndex}) = sy-tabix.`);
+     for (const column of table.columns) {
+@@ -2252,7 +2298,10 @@ function dynproMethods(ir: ReportIR, metadata: Metadata | undefined = ir.dynproM
+         menu.items ?? []
+       ).map((item: Metadata) => `( ucomm = '${String(item.ucomm ?? "").toUpperCase()}' text = ${literal(String(item.text ?? ""))}${item.separator ? " separator = abap_true" : ""} )`).join(" ")} ) )`).join(" ")} )`);
+     }
+-    statusLines.push(`IF is_context-screen = '${screenNumber(screen)}'.`);
++    // The screen's status as the program sets it, before its first PBO module only: a status set by a module
++    // (SET PF-STATUS) stays in force for the modules after it, as on SAP.
++    const firstModule = String(flowLogic.find((flow) => screenNumber(flow.screen) === screenNumber(screen))?.pbo?.[0]?.name ?? "").toUpperCase();
++    statusLines.push(`IF is_context-screen = '${screenNumber(screen)}'${firstModule ? ` AND is_context-module = '${firstModule}'` : ""}.`);
+     statusLines.push(`io_session->get_dialog( )->set_status( VALUE #( ${fields.join(" ")} ) ).`);
+     statusLines.push("ENDIF.");
+   }
+@@ -2329,8 +2378,8 @@ function dynproMethods(ir: ReportIR, metadata: Metadata | undefined = ir.dynproM
+       : [], [...stateFlush, ...tableFlush])])),
+     // A screen without PAI modules has nothing to read or write back.
+     method(interfaceMethod("process_input_module"), inputModules.length
+-      ? hoistDeclarations([...dynproStateHydrate(ir, "ct_values", screenInputField(metadata)), ...tableHydrate, ...tableContext, ...keptOnUnwind(
+-        [moduleCall("input_modules", false)], [...stateFlush, ...tableFlush])])
++      ? hoistDeclarations([...dynproStateHydrate(ir, "ct_values", screenInputField(metadata)), ...tableHydrate, ...dynproTableCurrentRow(tableBindings, true), ...keptOnUnwind(
++        [moduleCall("input_modules", false)], [...stateFlush, ...(exchange ? ["table_values_out( EXPORTING iv_input = abap_true CHANGING ct_values = ct_values )."] : [])])])
+       : ["RETURN."]),
+     method(interfaceMethod("process_on_value_request"), hoistDeclarations(valueRequest)),
+     method(interfaceMethod("process_on_help_request"), hoistDeclarations(helpRequest)),
+diff --git a/converter/src/passes/lower-statements.ts b/converter/src/passes/lower-statements.ts
+index 712d080..d053ac0 100644
+--- a/converter/src/passes/lower-statements.ts
++++ b/converter/src/passes/lower-statements.ts
+@@ -1088,11 +1088,20 @@ function parseFormat(raw: string, context: LoweringContext): string {
+   const constant = LIST_COLOR_CONSTANTS[colorText as keyof typeof LIST_COLOR_CONSTANTS];
+   if (constant) fields.push(`color = zif_gg_list_processing_types_v1=>${constant}`);
+   if (colorText === "=" && operand) fields.push(`color = ${valueExpression(ast.source(operand).toUpperCase(), context)}`);
++  // COLOR OFF: no color (the background)
++  if (colorText === "OFF") fields.push("color = zif_gg_list_processing_types_v1=>color_background");
++  // INTENSIFIED [ON|OFF|= flag]: the keyword alone switches it on
++  const tokens = ast.tokens().map((token) => token.token.getStr().toUpperCase());
+   for (const [keyword, field] of [["INTENSIFIED", "intensified"], ["INVERSE", "inverse"], ["HOTSPOT", "hotspot"], ["INPUT", "input"]]) {
+-    const value = ast.after(keyword, ast.node);
+-    const word = value ? ast.source(value).toUpperCase() : "";
+-    if (word === "ON" || word === "OFF") fields.push(`${field} = abap_${word === "ON" ? "true" : "false"}`);
+-  }
++    const at = tokens.indexOf(keyword);
++    if (at < 0) continue;
++    const word = tokens[at + 1] ?? "";
++    if (word === "OFF") fields.push(`${field} = abap_false`);
++    else if (word === "=" && tokens[at + 2]) fields.push(`${field} = xsdbool( ${valueExpression(ast.tokens()[at + 2].token.getStr(), context)} IS NOT INITIAL )`);
++    else fields.push(`${field} = abap_true`);
++  }
++  // a FORMAT that changes nothing the list writer keeps (FRAMES, RESET of single options) leaves the format as it is
++  if (!fields.length) return "lo_writer->set_format( lo_writer->get_format( ) ).";
+   return `lo_writer->set_format( VALUE #( BASE lo_writer->get_format( ) ${fields.join(" ")} ) ).`;
+ }
+ 
+@@ -2230,8 +2239,19 @@ export function lowerStatements(statements: Statement[], context: LoweringContex
+     supported: false,
+   });
+   for (const item of output) item.text = mergeAdjacentTemplates(item.text);
++  // GGCONV_SOURCE_LINES=1: each executable statement's lowered code between comment lines naming its source line
++  // (*@src file:line ... *@src -), so a debugger can put a breakpoint of the program on the generated statements
++  if (process.env.GGCONV_SOURCE_LINES === "1") {
++    for (const item of output) {
++      const line = item.statement?.span?.start?.line;
++      if (!line || isCommentOnly(item.text) || SOURCE_LINE_PASSIVE.test(item.statement.kind ?? "")) continue;
++      const file = String(item.statement.filename ?? "").split(/[\\/]/).pop();
++      item.text = `*@src ${file}:${line}\n${item.text}\n*@src -`;
++    }
++  }
+   return output;
+ }
++const SOURCE_LINE_PASSIVE = /^(Data|DataBegin|DataEnd|Type|TypeBegin|TypeEnd|Constant|ConstantBegin|ConstantEnd|FieldSymbol|Static|StaticBegin|StaticEnd|Tables|Ranges|Parameter|SelectOption|SelectionScreen|Controls|Define|EndOfDefinition)$/;
+ 
+ // |a| && |b| written over two lines comes out as one line; one template says
+ // the same.
+diff --git a/converter/test/unit/converter.test.mjs b/converter/test/unit/converter.test.mjs
+index c141392..3645911 100644
+--- a/converter/test/unit/converter.test.mjs
++++ b/converter/test/unit/converter.test.mjs
+@@ -3068,7 +3068,7 @@ test("resolves dictionary-typed selection fields to their built-in types through
+   assert.deepEqual(field("S_DATE"), { typ: "D", length: 8, rollname: "ZEXAMPLE_DATE" });
+   // The class state keeps the dictionary type; only the screen needs the built-in one.
+   assert.match(resolved.classSource, /DATA mv_p_count TYPE zexample_count\./);
+-  assert.match(resolved.classSource, /name = 'P_COUNT' text = 'P_COUNT' data_type = VALUE #\( rollname = 'ZEXAMPLE_COUNT' typ = 'I' \)/);
++  assert.match(resolved.classSource, /name = 'P_COUNT' text = 'Number of runs' data_type = VALUE #\( rollname = 'ZEXAMPLE_COUNT' typ = 'I' \)/);
+ 
+   // Sources may be passed in memory, and a domain is found through its data element.
+   const inMemory = await convertProgram({
+@@ -3338,3 +3338,85 @@ test("skips the kernel's system includes unless the generated class uses their c
+   const unknown = await convert(["INCLUDE <cntain>.", "START-OF-SELECTION."]);
+   assert.deepEqual(codesOf(unknown), ["GGCONV-E102"]);
+ });
++
++test("sets a screen's GUI status before its first PBO module only, so later modules keep the status a module set", async () => {
++  const converted = await convertProgram({
++    source: "PROGRAM zstatusorder.\nDATA gv_dept TYPE c LENGTH 4.\nMODULE status_0100 OUTPUT.\n  SET PF-STATUS 'MAIN'.\nENDMODULE.\nMODULE fill_list OUTPUT.\n  CLEAR gv_dept.\nENDMODULE.\n",
++    filename: "zstatusorder.prog.abap",
++    dynproMetadata: {
++      initialScreen: "0100",
++      screens: [{ number: "0100", title: "Order", elements: [], containers: [] }],
++      statuses: { "0100": { status: "MAIN", activeUcomm: ["SAVE"] } },
++      flowLogic: [{ screen: "0100", pbo: [{ name: "STATUS_0100" }, { name: "FILL_LIST" }], pai: [] }],
++    },
++  });
++  assert.match(converted.classSource, /IF is_context-screen = '0100' AND is_context-module = 'STATUS_0100'\./);
++  assert.doesNotMatch(converted.classSource, /IF is_context-screen = '0100'\.\s*io_session->get_dialog\( \)->set_status/);
++});
++
++test("exchanges a screen field typed through a TYPES alias of the program like one typed directly", async () => {
++  const element = { kind: "input-output", type: "TEMPLATE", name: "GV_SALARY", elementOf: "SCREEN", line: 1, column: 1, length: 13, height: 1,
++    position: { line: 1, column: 1, width: 13, height: 1 }, input: true, output: true, attributes: { format: "DEC" } };
++  const converted = await convertProgram({
++    source: "PROGRAM zalias.\nTYPES ty_amount TYPE p LENGTH 6 DECIMALS 2.\nTYPES ty_salary TYPE ty_amount.\nDATA gv_salary TYPE ty_salary.\nMODULE status_0100 OUTPUT.\nENDMODULE.\n",
++    filename: "zalias.prog.abap",
++    dynproMetadata: {
++      initialScreen: "0100",
++      screens: [{ number: "0100", title: "Alias", elements: [element], containers: [] }],
++      flowLogic: [{ screen: "0100", pbo: [{ name: "STATUS_0100" }], pai: [] }],
++    },
++  });
++  assert.match(flat(converted.classSource), /gv_salary = CONV #\( ct_values\[ name = 'GV_SALARY' \]-value \)/);
++  assert.match(flat(converted.classSource), /ct_values\[ name = 'GV_SALARY' \]-value = CONV string\( gv_salary \)/);
++});
++
++test("exchanges screen fields that are components of a global structure or a TABLES work area, not table control columns", async () => {
++  const field = (name, extra = {}) => ({ kind: "input-output", type: "TEMPLATE", name, line: 1, column: 1, length: 10, height: 1,
++    position: { line: 1, column: 1, width: 10, height: 1 }, input: true, output: true, attributes: { contType: "SCREEN", contName: "SCREEN", format: "CHAR" }, ...extra });
++  const converted = await convertProgram({
++    source: "PROGRAM zstruct.\nTABLES sflight.\nTYPES: BEGIN OF ty_head, ebeln TYPE c LENGTH 10, lifnr TYPE c LENGTH 10, END OF ty_head.\nDATA gs_head TYPE ty_head.\nDATA gs_item TYPE ty_head.\nDATA gt_items TYPE STANDARD TABLE OF ty_head WITH DEFAULT KEY.\nMODULE status_0100 OUTPUT.\nENDMODULE.\nMODULE user_command_0100 INPUT.\nENDMODULE.\n",
++    filename: "zstruct.prog.abap",
++    dynproMetadata: {
++      initialScreen: "0100",
++      screens: [{ number: "0100", title: "Struct", elements: [field("GS_HEAD-EBELN"), field("GS_HEAD-LIFNR", { kind: "output", input: false }), field("SFLIGHT-CARRID"),
++        field("GS_ITEM-LIFNR", { attributes: { contType: "TABLE_CTRL", contName: "TC_ITEMS" } })], containers: [] }],
++      flowLogic: [{ screen: "0100", pbo: [{ name: "STATUS_0100" }], pai: [{ name: "USER_COMMAND_0100" }] }],
++    },
++  });
++  const source = flat(converted.classSource);
++  assert.match(source, /gs_head-ebeln = CONV #\( ct_values\[ name = 'GS_HEAD-EBELN' \]-value \)/);
++  assert.match(source, /ct_values\[ name = 'GS_HEAD-LIFNR' \]-value = CONV string\( gs_head-lifnr \)/);
++  assert.match(source, /sflight-carrid = CONV #\( ct_values\[ name = 'SFLIGHT-CARRID' \]-value \)/);
++  assert.doesNotMatch(source, /gs_item-lifnr = CONV/);
++});
++
++test("GGCONV_SOURCE_LINES=1 marks the code of each executable statement with its source line", async () => {
++  process.env.GGCONV_SOURCE_LINES = "1";
++  try {
++    const converted = await convertProgram({ source: "REPORT zsrc.\nDATA gv_x TYPE i.\nSTART-OF-SELECTION.\n  gv_x = 1.\n  WRITE: / 'a', gv_x.\n", filename: "zsrc.prog.abap" });
++    assert.match(converted.classSource, /\*@src zsrc\.prog\.abap:4\n\s*gv_x = 1\.\n\*@src -/);
++    assert.equal((converted.classSource.match(/\*@src zsrc\.prog\.abap:5\n/g) || []).length, 2);
++    assert.doesNotMatch(converted.classSource, /\*@src zsrc\.prog\.abap:2\n/);
++  } finally { delete process.env.GGCONV_SOURCE_LINES; }
++});
++
++test("lowers FORMAT COLOR OFF, INTENSIFIED without ON/OFF and INTENSIFIED = flag", async () => {
++  const converted = await convertProgram({ source: "REPORT zfmt.\nDATA gv_x TYPE c LENGTH 1.\nSTART-OF-SELECTION.\n  FORMAT COLOR OFF.\n  FORMAT INTENSIFIED INVERSE OFF.\n  FORMAT HOTSPOT = gv_x.\n  FORMAT FRAMES OFF.\n  WRITE / 'x'.\n", filename: "zfmt.prog.abap" });
++  assert.equal(converted.supported, true);
++  const source = flat(converted.classSource);
++  assert.match(source, /color = zif_gg_list_processing_types_v1=>color_background/);
++  assert.match(source, /intensified = abap_true inverse = abap_false/);
++  assert.match(source, /hotspot = xsdbool\( \w+ IS NOT INITIAL \)/);
++  assert.match(source, /lo_writer->set_format\( lo_writer->get_format\( \) \)/);
++});
++
++test("passes a screen field's data element (ROLLNAME) to the builder: its domain's fixed values are its value help", async () => {
++  const element = { kind: "input-output", type: "TEMPLATE", name: "GV_STAT", line: 1, column: 1, length: 1, height: 1,
++    position: { line: 1, column: 1, width: 1, height: 1 }, input: true, output: true, attributes: { format: "CHAR", rollname: "ZPO_STAT", contType: "SCREEN" } };
++  const converted = await convertProgram({
++    source: "PROGRAM zroll.\nDATA gv_stat TYPE c LENGTH 1.\nMODULE status_0100 OUTPUT.\nENDMODULE.\n",
++    filename: "zroll.prog.abap",
++    dynproMetadata: { initialScreen: "0100", screens: [{ number: "0100", title: "R", elements: [element], containers: [] }], flowLogic: [{ screen: "0100", pbo: [{ name: "STATUS_0100" }], pai: [] }] },
++  });
++  assert.match(flat(converted.classSource), /name = 'GV_STAT' [^)]*\) \) data_type = VALUE #\( typ = 'C' length = 1 rollname = 'ZPO_STAT' \)/);
++});
+diff --git a/framework/host/zcl_gg_host_dynpro.clas.abap b/framework/host/zcl_gg_host_dynpro.clas.abap
+index b504ee8..50c956c 100644
+--- a/framework/host/zcl_gg_host_dynpro.clas.abap
++++ b/framework/host/zcl_gg_host_dynpro.clas.abap
+@@ -90,6 +90,9 @@ CLASS zcl_gg_host_dynpro DEFINITION PUBLIC FINAL CREATE PUBLIC.
+ * them, and LOOP AT SCREEN changes them from there.
+     CLASS-DATA mt_static_states TYPE zif_gg_dynpro_types_v1=>ty_states.
+     CLASS-DATA mt_static_controls TYPE zcl_gg_host_dynpro_builder=>ty_controls.
++* The screen fields the user changed in this dialog step: a module ON REQUEST runs only when one of its
++* fields (or of its CHAIN) is among them.
++    CLASS-DATA mt_changed TYPE string_table.
+ 
+     TYPES: BEGIN OF ty_active_subscreen,
+              area   TYPE zif_gg_dynpro_types_v1=>ty_field_name,
+@@ -578,14 +581,21 @@ CLASS zcl_gg_host_dynpro IMPLEMENTATION.
+       CHANGING
+         ct_values  = lt_values ).
+ 
++    CLEAR mt_changed.
+     LOOP AT it_values INTO ls_input_value.
+       READ TABLE lt_values ASSIGNING <ls_value>
+         WITH KEY container = ls_input_value-container
+                  name = ls_input_value-name
+                  row = ls_input_value-row.
+       IF sy-subrc = 0.
++        IF <ls_value>-value <> ls_input_value-value.
++          APPEND to_upper( ls_input_value-name ) TO mt_changed.
++        ENDIF.
+         <ls_value>-value = ls_input_value-value.
+       ELSE.
++        IF ls_input_value-value IS NOT INITIAL.
++          APPEND to_upper( ls_input_value-name ) TO mt_changed.
++        ENDIF.
+         INSERT ls_input_value INTO TABLE lt_values.
+       ENDIF.
+     ENDLOOP.
+@@ -1132,6 +1142,17 @@ CLASS zcl_gg_host_dynpro IMPLEMENTATION.
+               IF ls_step-module-at_exit_command = abap_true AND lv_exit_command = abap_false.
+                 CONTINUE.
+               ENDIF.
++              IF ls_step-module-on_request = abap_true AND lv_table_control IS INITIAL.
++                DATA(lv_requested) = abap_false.
++                LOOP AT field_context( it_steps = lt_steps is_step = ls_step ) INTO DATA(lv_request_field).
++                  IF line_exists( mt_changed[ table_line = to_upper( lv_request_field ) ] ).
++                    lv_requested = abap_true.
++                  ENDIF.
++                ENDLOOP.
++                IF lv_requested = abap_false.
++                  CONTINUE.
++                ENDIF.
++              ENDIF.
+               io_session->set_field_context( field_context( it_steps = lt_steps
+                                                             is_step  = ls_step ) ).
+               execute_input_step(
+diff --git a/framework/host/zcl_gg_host_list.clas.abap b/framework/host/zcl_gg_host_list.clas.abap
+index 9a9cc04..1a05878 100644
+--- a/framework/host/zcl_gg_host_list.clas.abap
++++ b/framework/host/zcl_gg_host_list.clas.abap
+@@ -871,6 +871,11 @@ CLASS zcl_gg_host_list IMPLEMENTATION.
+         DATA(lv_day) = substring( val = lv_date
+                                   off = 6
+                                   len = 2 ).
++* An initial date is a blank field in the list, as in the ALV grid and on screens.
++        IF lv_date CO '0 '.
++          rv_text = repeat( val = ` ` occ = 10 ).
++          RETURN.
++        ENDIF.
+         CASE iv_date_mask.
+           WHEN 'USER'.
+             rv_text = |{ CONV d( iv_value ) DATE = USER }|.
+diff --git a/framework/http/zcl_gg_http_handler.clas.abap b/framework/http/zcl_gg_http_handler.clas.abap
+index ce0071b..e7ec497 100644
+--- a/framework/http/zcl_gg_http_handler.clas.abap
++++ b/framework/http/zcl_gg_http_handler.clas.abap
+@@ -794,6 +794,11 @@ CLASS zcl_gg_http_handler IMPLEMENTATION.
+         ENDCASE.
+       ENDIF.
+     ENDLOOP.
++    " an empty select-option line is not a condition (as in SAP GUI)
++    LOOP AT rt_values ASSIGNING <ls_value>.
++      DELETE <ls_value>-ranges WHERE low IS INITIAL AND high IS INITIAL
++        AND ( option = zif_gg_selection_screen_types=>option_eq OR option = 'BT' OR option IS INITIAL ).
++    ENDLOOP.
+   ENDMETHOD.
+ 
+   METHOD dynamic_values_from_fields.
+diff --git a/framework/zcl_gg_host_renderer.clas.abap b/framework/zcl_gg_host_renderer.clas.abap
+index 4ccb9d5..d6e6c98 100644
+--- a/framework/zcl_gg_host_renderer.clas.abap
++++ b/framework/zcl_gg_host_renderer.clas.abap
+@@ -307,6 +307,15 @@ CLASS zcl_gg_host_renderer DEFINITION PUBLIC FINAL CREATE PUBLIC.
+       RETURNING
+         VALUE(rv_html) TYPE string.
+ 
++* The fixed values of the domain of a field's data element as a list the input
++* offers (the browser's suggestion list stands for F4 on such a field).
++    CLASS-METHODS fixed_values_list
++      IMPORTING
++        iv_id          TYPE string
++        iv_rollname    TYPE csequence
++      RETURNING
++        VALUE(rv_html) TYPE string.
++
+ * Renders the search help affordance for one input: a magnifier button that the
+ * stylesheet reveals only while the surrounding field has focus, and that the
+ * shell's F4 key presses for the focused field.
+@@ -791,8 +800,13 @@ CLASS zcl_gg_host_renderer IMPLEMENTATION.
+             lv_focus_attrs = ` autofocus`.
+             lv_initial_focus = abap_true.
+           ENDIF.
++          DATA(lv_values_html) = fixed_values_list( iv_id       = lv_element_id
++                                                    iv_rollname = ls_element-data_type-rollname ).
++          IF lv_values_html IS NOT INITIAL.
++            lv_state_attrs = lv_state_attrs && | list="{ zcl_gg_host_html=>escape_attribute( lv_element_id ) }-values"|.
++          ENDIF.
+           lv_body = lv_body && |<div class="gg-field gg-parameter { lv_state_class }"{ lv_field_root_attrs }><label for="{ zcl_gg_host_html=>escape_attribute( lv_element_id ) }">{ zcl_gg_host_html=>escape_text( ls_element-text ) }</label><input type="{ COND string( WHEN ls_state-password = abap_true THEN `password` ELSE `text` ) }" id="{ zcl_gg_host_html=>escape_attribute( lv_element_id ) }" name="{ zcl_gg_host_html=>escape_attribute( CONV string( ls_element-name ) ) }" data-abap-name="{ zcl_gg_host_html=>escape_attribute( CONV string( ls_element-name ) ) }" value="{ zcl_gg_host_html=>escape_attribute( lv_display_value ) }"{ lv_type_attrs }{ lv_external_attrs }{ lv_focus_attrs }{ COND string( WHEN iv_help_name = ls_element-name AND iv_help_text IS NOT INITIAL THEN ` aria-describedby="gg-help-text"` ELSE `` ) }{ lv_state_attrs }{ lv_message_attrs }>|.
+-          lv_body = lv_body && value_help_button( iv_name       = CONV string( ls_element-name )
++          lv_body = lv_body && lv_values_html && value_help_button( iv_name       = CONV string( ls_element-name )
+                                                   iv_label      = ls_element-text
+                                                   iv_value_help = xsdbool( ls_element-value_help = abap_true OR ls_state-value_help = abap_true ) ).
+           lv_body = lv_body && |</div>|.
+@@ -1529,6 +1543,12 @@ CLASS zcl_gg_host_renderer IMPLEMENTATION.
+           iv_type  = is_control-data_type-typ ).
+         lv_field_attrs = field_message_attrs( it_messages = it_messages
+                                               iv_name     = CONV string( is_control-name ) ).
++        DATA(lv_input_values) = fixed_values_list( iv_id       = iv_id
++                                                   iv_rollname = is_control-data_type-rollname ).
++        IF lv_input_values IS NOT INITIAL.
++          lv_field_attrs = lv_field_attrs && | list="{ zcl_gg_host_html=>escape_attribute( iv_id ) }-values"|.
++          lv_help_html = lv_help_html && lv_input_values.
++        ENDIF.
+         rv_html = |<span class="gg-dynpro-control gg-dynpro-field { iv_state_class }" style="{ iv_style }"><label for="{ zcl_gg_host_html=>escape_attribute( iv_id ) }"><span class="gg-visually-hidden">{ zcl_gg_host_html=>escape_text( COND string( WHEN is_control-text IS INITIAL THEN CONV string( is_control-name ) ELSE is_control-text ) ) }</span><input id="{ zcl_gg_host_html=>escape_attribute( iv_id ) }" name="{ zcl_gg_host_html=>escape_attribute( CONV string( is_control-name ) ) }" data-abap-name="{ zcl_gg_host_html=>escape_attribute( CONV string( is_control-name ) ) }"{ COND string( WHEN is_control-context_menu = abap_true THEN ` data-context-menu="true"` ELSE `` ) } value="{ zcl_gg_host_html=>escape_attribute( lv_display_value ) }"{ COND string( WHEN is_control-password = abap_true THEN ` type="password"` ELSE ` type="text"` ) }{ lv_type_attrs }{ lv_external_attrs }{ iv_attrs }{ lv_field_attrs }></label>{ lv_help_html }</span>|.
+       WHEN 'OUTPUT'.
+         lv_output_class = data_type_class(
+@@ -1861,6 +1881,22 @@ CLASS zcl_gg_host_renderer IMPLEMENTATION.
+     ENDIF.
+   ENDMETHOD.
+ 
++  METHOD fixed_values_list.
++    DATA lt_values TYPE zif_gg_selection_screen_types=>ty_fixed_values.
++    IF iv_rollname IS INITIAL.
++      RETURN.
++    ENDIF.
++    lt_values = zcl_gg_host_compatibility=>domain_fixed_values( iv_rollname ).
++    IF lt_values IS INITIAL.
++      RETURN.
++    ENDIF.
++    rv_html = |<datalist id="{ zcl_gg_host_html=>escape_attribute( iv_id ) }-values">|.
++    LOOP AT lt_values INTO DATA(ls_value).
++      rv_html = rv_html && |<option value="{ zcl_gg_host_html=>escape_attribute( ls_value-key ) }">{ zcl_gg_host_html=>escape_text( ls_value-text ) }</option>|.
++    ENDLOOP.
++    rv_html = rv_html && |</datalist>|.
++  ENDMETHOD.
++
+   METHOD value_help_button.
+     IF iv_value_help = abap_false.
+       RETURN.
+diff --git a/src/cl_gui_control.clas.abap b/src/cl_gui_control.clas.abap
+index 00b59b8..27a2240 100644
+--- a/src/cl_gui_control.clas.abap
++++ b/src/cl_gui_control.clas.abap
+@@ -721,7 +721,10 @@ CLASS cl_gui_control IMPLEMENTATION.
+     result = iv_value.
+     CASE to_upper( iv_type ).
+       WHEN 'D'.
+-        IF strlen( iv_value ) = 8 AND iv_value CO '0123456789'.
++* An initial date is a blank cell.
++        IF iv_value = '00000000'.
++          result = ``.
++        ELSEIF strlen( iv_value ) = 8 AND iv_value CO '0123456789'.
+           lv_first = substring(
+             val = iv_value
+             off = 6
+diff --git a/src/salv/cl_salv_table.clas.abap b/src/salv/cl_salv_table.clas.abap
+index bf23afa..9bffccd 100644
+--- a/src/salv/cl_salv_table.clas.abap
++++ b/src/salv/cl_salv_table.clas.abap
+@@ -602,9 +602,14 @@ CLASS cl_salv_table IMPLEMENTATION.
+       IF ls_fieldcat-scrtext_s IS INITIAL.
+         ls_fieldcat-scrtext_s = ls_ddic-scrtext_s.
+       ENDIF.
++* The heading: a text the program set (long, medium, short), else the data element's medium label, then its
++* long and short one; without any the column name stays.
+       ls_fieldcat-coltext = COND #(
+-        WHEN ls_fieldcat-scrtext_l IS NOT INITIAL THEN ls_fieldcat-scrtext_l
++        WHEN ls_column-r_column->get_long_text( ) IS NOT INITIAL THEN ls_column-r_column->get_long_text( )
++        WHEN ls_column-r_column->get_medium_text( ) IS NOT INITIAL THEN ls_column-r_column->get_medium_text( )
++        WHEN ls_column-r_column->get_short_text( ) IS NOT INITIAL THEN ls_column-r_column->get_short_text( )
+         WHEN ls_fieldcat-scrtext_m IS NOT INITIAL THEN ls_fieldcat-scrtext_m
++        WHEN ls_fieldcat-scrtext_l IS NOT INITIAL THEN ls_fieldcat-scrtext_l
+         ELSE ls_fieldcat-scrtext_s ).
+       ls_fieldcat-tooltip = ls_column-r_column->get_tooltip( ).
+       ls_fieldcat-outputlen = ls_column-r_column->get_output_length( ).

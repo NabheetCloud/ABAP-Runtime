@@ -1,0 +1,11 @@
+[
+  {"rldnr": "0L", "rbukrs": "1010", "gjahr": "2026", "belnr": "PL10100001", "docln": "000001", "category": "PLN", "budat": "20261231", "hsl": -250000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0041000000", "rcntr": "10101101", "rhcur": "EUR"},
+  {"rldnr": "0L", "rbukrs": "1010", "gjahr": "2026", "belnr": "PL10100001", "docln": "000002", "category": "PLN", "budat": "20261231", "hsl": 160000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0050000100", "rcntr": "10101101", "rhcur": "EUR"},
+  {"rldnr": "0L", "rbukrs": "1010", "gjahr": "2026", "belnr": "PL10100001", "docln": "000003", "category": "PLN", "budat": "20261231", "hsl": 50000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0063000000", "rcntr": "10101101", "rhcur": "EUR"},
+  {"rldnr": "0L", "rbukrs": "1710", "gjahr": "2026", "belnr": "PL17100001", "docln": "000001", "category": "PLN", "budat": "20261231", "hsl": -250000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0041000000", "rcntr": "17101101", "rhcur": "USD"},
+  {"rldnr": "0L", "rbukrs": "1710", "gjahr": "2026", "belnr": "PL17100001", "docln": "000002", "category": "PLN", "budat": "20261231", "hsl": 160000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0050000100", "rcntr": "17101101", "rhcur": "USD"},
+  {"rldnr": "0L", "rbukrs": "1710", "gjahr": "2026", "belnr": "PL17100001", "docln": "000003", "category": "PLN", "budat": "20261231", "hsl": 50000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0063000000", "rcntr": "17101101", "rhcur": "USD"},
+  {"rldnr": "0L", "rbukrs": "4110", "gjahr": "2026", "belnr": "PL41100001", "docln": "000001", "category": "PLN", "budat": "20261231", "hsl": -250000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0041000000", "rcntr": "41101101", "rhcur": "INR"},
+  {"rldnr": "0L", "rbukrs": "4110", "gjahr": "2026", "belnr": "PL41100001", "docln": "000002", "category": "PLN", "budat": "20261231", "hsl": 160000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0050000100", "rcntr": "41101101", "rhcur": "INR"},
+  {"rldnr": "0L", "rbukrs": "4110", "gjahr": "2026", "belnr": "PL41100001", "docln": "000003", "category": "PLN", "budat": "20261231", "hsl": 50000.0, "plevl": "Y1", "poper": "012", "prctr": "YB101", "racct": "0063000000", "rcntr": "41101101", "rhcur": "INR"}
+]

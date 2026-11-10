@@ -1,0 +1,77 @@
+managed implementation in class zbp_r_book unique;
+strict ( 2 );
+
+define behavior for ZR_Book alias Book
+persistent table zbook_a
+lock master
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete ( features : instance );
+  association _Loan { create; }
+
+  field ( numbering : managed, readonly ) BookUUID;
+  field ( readonly ) CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+  field ( mandatory ) Title, Author;
+
+  determination setDefaultCopies on modify { create; }
+
+  validation validateCopies on save { create; field Copies; }
+  validation validateISBN   on save { create; field ISBN; }
+
+  mapping for zbook_a
+  {
+    BookUUID           = book_uuid;
+    Title              = title;
+    Author             = author;
+    ISBN               = isbn;
+    Genre              = genre;
+    Copies             = copies;
+    CreatedBy          = created_by;
+    CreatedAt          = created_at;
+    LastChangedBy      = last_changed_by;
+    LastChangedAt      = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}
+
+define behavior for ZR_Loan alias Loan
+persistent table zloan_a
+lock dependent by _Book
+authorization dependent by _Book
+etag master LocalLastChangedAt
+{
+  update ( features : instance );
+  delete;
+  association _Book;
+
+  field ( numbering : managed, readonly ) LoanUUID;
+  field ( readonly ) BookUUID, ReturnDate, LocalLastChangedAt, ReceiptPdf, ReceiptMimeType, ReceiptFileName;
+  field ( mandatory ) MemberName;
+
+  action ( features : instance ) returnBook result [1] $self;
+  action printReceipt result [1] $self;
+
+  determination setLoanDefaults on modify { create; field LoanDate; }
+
+  validation validateDates        on save { create; field LoanDate, DueDate; }
+  validation validateAvailability on save { create; }
+  validation validateEmail        on save { create; field MemberEmail; }
+
+  mapping for zloan_a
+  {
+    LoanUUID           = loan_uuid;
+    BookUUID           = parent_uuid;
+    MemberName         = member_name;
+    MemberEmail        = member_email;
+    LoanDate           = loan_date;
+    DueDate            = due_date;
+    ReturnDate         = return_date;
+    ReceiptPdf         = receipt_pdf;
+    ReceiptMimeType    = receipt_mimetype;
+    ReceiptFileName    = receipt_filename;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

@@ -1,0 +1,7 @@
+[
+  {"spras": "E", "zterm": "0001", "vtext": "Pay immediately w/o deduction"},
+  {"spras": "E", "zterm": "0002", "vtext": "Within 14 days 2% cash discoun"},
+  {"spras": "E", "zterm": "NT30", "vtext": "Within 30 days due net"},
+  {"spras": "E", "zterm": "NT45", "vtext": "Within 45 days due net"},
+  {"spras": "E", "zterm": "NT60", "vtext": "Within 60 days due net"}
+]

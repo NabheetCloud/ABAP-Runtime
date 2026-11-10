@@ -1,0 +1,7 @@
+[
+  {"stlty": "M", "stlnr": "00000001", "stlkn": "00000001", "stpoz": "00000001", "bom": "", "idnrk": "SG23", "posnr": "000010", "postp": "L", "menge": 1.0, "meins": "PC", "datuv": "20250601", "ausch": 0.0, "sanka": "X", "lgort": "", "alpgr": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"stlty": "M", "stlnr": "00000001", "stlkn": "00000002", "stpoz": "00000002", "bom": "", "idnrk": "RM12", "posnr": "000020", "postp": "L", "menge": 2.0, "meins": "PC", "datuv": "20250601", "ausch": 0.0, "sanka": "X", "lgort": "", "alpgr": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"stlty": "M", "stlnr": "00000001", "stlkn": "00000003", "stpoz": "00000003", "bom": "", "idnrk": "PK01", "posnr": "000030", "postp": "L", "menge": 1.0, "meins": "PC", "datuv": "20250601", "ausch": 0.0, "sanka": "X", "lgort": "", "alpgr": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"stlty": "M", "stlnr": "00000002", "stlkn": "00000001", "stpoz": "00000001", "bom": "", "idnrk": "RM12", "posnr": "000010", "postp": "L", "menge": 1.0, "meins": "PC", "datuv": "20250601", "ausch": 0.0, "sanka": "X", "lgort": "", "alpgr": "", "andat": "20250601", "annam": "CB9980000010"},
+  {"stlty": "M", "stlnr": "00000002", "stlkn": "00000002", "stpoz": "00000002", "bom": "", "idnrk": "RM13", "posnr": "000020", "postp": "L", "menge": 4.0, "meins": "PC", "datuv": "20250601", "ausch": 0.0, "sanka": "X", "lgort": "", "alpgr": "", "andat": "20250601", "annam": "CB9980000010"}
+]

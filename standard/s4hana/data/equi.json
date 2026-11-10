@@ -1,0 +1,6 @@
+[
+  {"equnr": "000000000010000001", "eqtyp": "M", "eqart": "PRESS", "herst": "Schuler AG", "serge": "SN-519969", "matnr": "", "sernr": "", "baujj": "2018", "objnr": "IE000000000010000001", "inbdt": "20190115", "erdat": "20250301", "ernam": "CB9980000010"},
+  {"equnr": "000000000010000002", "eqtyp": "M", "eqart": "CONVEYOR", "herst": "Interroll GmbH", "serge": "SN-857619", "matnr": "", "sernr": "", "baujj": "2019", "objnr": "IE000000000010000002", "inbdt": "20200215", "erdat": "20250301", "ernam": "CB9980000010"},
+  {"equnr": "000000000010000003", "eqtyp": "M", "eqart": "COMPRESSOR", "herst": "Atlas Copco", "serge": "SN-772754", "matnr": "", "sernr": "", "baujj": "2020", "objnr": "IE000000000010000003", "inbdt": "20210315", "erdat": "20250301", "ernam": "CB9980000010"},
+  {"equnr": "000000000010000004", "eqtyp": "M", "eqart": "ROBOT", "herst": "KUKA AG", "serge": "SN-482692", "matnr": "", "sernr": "", "baujj": "2021", "objnr": "IE000000000010000004", "inbdt": "20220415", "erdat": "20250301", "ernam": "CB9980000010"}
+]

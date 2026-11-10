@@ -1,0 +1,11 @@
+[
+  {"kalnr": "000000000001", "matnr": "TG11", "bwkey": "1010", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000002", "matnr": "TG12", "bwkey": "1010", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000003", "matnr": "FG126", "bwkey": "1010", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000004", "matnr": "TG11", "bwkey": "1710", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000005", "matnr": "TG12", "bwkey": "1710", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000006", "matnr": "FG126", "bwkey": "1710", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000007", "matnr": "TG11", "bwkey": "4110", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000008", "matnr": "TG12", "bwkey": "4110", "bwtar": "", "abrechdat": "20260930", "mlast": "3"},
+  {"kalnr": "000000000009", "matnr": "FG126", "bwkey": "4110", "bwtar": "", "abrechdat": "20260930", "mlast": "3"}
+]

@@ -1,0 +1,16 @@
+[
+  {"kappl": "V3", "objky": "0090000001", "kschl": "RD00", "spras": "E", "parnr": "0010100001", "parvw": "RE", "erdat": "20260116", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000002", "kschl": "RD00", "spras": "E", "parnr": "0010100002", "parvw": "RE", "erdat": "20260319", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000003", "kschl": "RD00", "spras": "E", "parnr": "0010100003", "parvw": "RE", "erdat": "20260522", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000004", "kschl": "RD00", "spras": "E", "parnr": "0017100001", "parvw": "RE", "erdat": "20260216", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000005", "kschl": "RD00", "spras": "E", "parnr": "0017100002", "parvw": "RE", "erdat": "20260419", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000006", "kschl": "RD00", "spras": "E", "parnr": "0017100003", "parvw": "RE", "erdat": "20260622", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000007", "kschl": "RD00", "spras": "E", "parnr": "0041100001", "parvw": "RE", "erdat": "20260316", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V3", "objky": "0090000008", "kschl": "RD00", "spras": "E", "parnr": "0041100002", "parvw": "RE", "erdat": "20260519", "eruhr": "071500", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "1"},
+  {"kappl": "V1", "objky": "0000001001", "kschl": "BA00", "spras": "E", "parnr": "0010100001", "parvw": "AG", "erdat": "20260105", "eruhr": "094000", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "5"},
+  {"kappl": "V1", "objky": "0000001002", "kschl": "BA00", "spras": "E", "parnr": "0010100002", "parvw": "AG", "erdat": "20260308", "eruhr": "094000", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "5"},
+  {"kappl": "V1", "objky": "0000001003", "kschl": "BA00", "spras": "E", "parnr": "0010100003", "parvw": "AG", "erdat": "20260511", "eruhr": "094000", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "5"},
+  {"kappl": "V1", "objky": "0000001004", "kschl": "BA00", "spras": "E", "parnr": "0010100004", "parvw": "AG", "erdat": "20260714", "eruhr": "094000", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "5"},
+  {"kappl": "V1", "objky": "0000001005", "kschl": "BA00", "spras": "E", "parnr": "0017100001", "parvw": "AG", "erdat": "20260205", "eruhr": "094000", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "5"},
+  {"kappl": "V1", "objky": "0000001006", "kschl": "BA00", "spras": "E", "parnr": "0017100002", "parvw": "AG", "erdat": "20260408", "eruhr": "094000", "vsztp": "", "vstat": "1", "anzal": 1, "nacha": "5"}
+]

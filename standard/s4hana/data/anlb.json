@@ -1,0 +1,20 @@
+[
+  {"bukrs": "1010", "anln1": "000010000001", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 10, "ndper": 0, "afabg": "20240201"},
+  {"bukrs": "1010", "anln1": "000010000001", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 10, "ndper": 0, "afabg": "20240201"},
+  {"bukrs": "1010", "anln1": "000010000002", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 6, "ndper": 0, "afabg": "20240301"},
+  {"bukrs": "1010", "anln1": "000010000002", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 6, "ndper": 0, "afabg": "20240301"},
+  {"bukrs": "1010", "anln1": "000010000003", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 4, "ndper": 0, "afabg": "20240401"},
+  {"bukrs": "1010", "anln1": "000010000003", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 4, "ndper": 0, "afabg": "20240401"},
+  {"bukrs": "1710", "anln1": "000010000001", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 10, "ndper": 0, "afabg": "20240201"},
+  {"bukrs": "1710", "anln1": "000010000001", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 10, "ndper": 0, "afabg": "20240201"},
+  {"bukrs": "1710", "anln1": "000010000002", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 6, "ndper": 0, "afabg": "20240301"},
+  {"bukrs": "1710", "anln1": "000010000002", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 6, "ndper": 0, "afabg": "20240301"},
+  {"bukrs": "1710", "anln1": "000010000003", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 4, "ndper": 0, "afabg": "20240401"},
+  {"bukrs": "1710", "anln1": "000010000003", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 4, "ndper": 0, "afabg": "20240401"},
+  {"bukrs": "4110", "anln1": "000010000001", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 10, "ndper": 0, "afabg": "20240201"},
+  {"bukrs": "4110", "anln1": "000010000001", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 10, "ndper": 0, "afabg": "20240201"},
+  {"bukrs": "4110", "anln1": "000010000002", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 6, "ndper": 0, "afabg": "20240301"},
+  {"bukrs": "4110", "anln1": "000010000002", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 6, "ndper": 0, "afabg": "20240301"},
+  {"bukrs": "4110", "anln1": "000010000003", "anln2": "0000", "afabe": "01", "bdatu": "99991231", "afasl": "LINA", "ndjar": 4, "ndper": 0, "afabg": "20240401"},
+  {"bukrs": "4110", "anln1": "000010000003", "anln2": "0000", "afabe": "15", "bdatu": "99991231", "afasl": "LINA", "ndjar": 4, "ndper": 0, "afabg": "20240401"}
+]

@@ -1,0 +1,5 @@
+[
+  {"otype": "S", "objid": "50000101", "plvar": "01", "rsign": "A", "relat": "003", "istat": "1", "priox": "00", "begda": "20250101", "endda": "99991231", "varyf": "O50000001", "seqnr": "000", "sclas": "O", "sobid": "50000001"},
+  {"otype": "S", "objid": "50000102", "plvar": "01", "rsign": "A", "relat": "003", "istat": "1", "priox": "00", "begda": "20250101", "endda": "99991231", "varyf": "O50000002", "seqnr": "000", "sclas": "O", "sobid": "50000002"},
+  {"otype": "S", "objid": "50000101", "plvar": "01", "rsign": "B", "relat": "007", "istat": "1", "priox": "00", "begda": "20250101", "endda": "99991231", "varyf": "C50000201", "seqnr": "000", "sclas": "C", "sobid": "50000201"}
+]

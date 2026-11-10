@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="RAP Studio" APIVersion="3.6.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+<subform name="Form" layout="tb" locale="en_US" restoreState="auto">
+<pageSet>
+<pageArea name="Page1" id="Page1">
+<contentArea x="15mm" y="22mm" w="180mm" h="258mm"/>
+<medium stock="a4" short="210mm" long="297mm"/>
+<draw name="Title" x="15mm" y="8mm" w="180mm" h="10mm">
+  <ui><textEdit/></ui><value><text>Purchase order</text></value>
+  <font typeface="Arial" size="16pt" weight="bold"/><para vAlign="middle"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="1pt"/><edge presence="hidden"/></border>
+</draw>
+<field name="PageNumber" w="15mm" h="5mm" presence="hidden" id="PageNumber"><ui><numericEdit/></ui><value><integer/></value><calculate><script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);</script></calculate><bind match="none"/></field>
+<field name="PageCount" w="15mm" h="5mm" presence="hidden" id="PageCount"><ui><numericEdit/></ui><value><integer/></value><calculate><script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();</script></calculate><bind match="none"/></field>
+<draw name="PageOfPages" x="155mm" y="284mm" w="40mm" h="6mm">
+  <ui><textEdit/></ui>
+  <value><exData contentType="text/html"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-align:right">Page <span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#PageNumber"/> of <span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#PageCount"/></p></body></exData></value>
+  <font typeface="Arial" size="8pt"/><para hAlign="right" vAlign="middle"/>
+</draw>
+</pageArea>
+</pageSet>
+<subform name="IS_HEADER" layout="tb" w="180mm"><bind match="none"/>
+<draw name="IS_HEADERTitle" w="180mm" h="9mm">
+  <ui><textEdit/></ui><value><text>Header</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><margin topInset="3mm" bottomInset="1mm" leftInset="1mm" rightInset="0mm"/><para vAlign="bottom"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border>
+</draw>
+<field name="EBELN" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>EBELN</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.IS_HEADER.EBELN"/>
+</field>
+<field name="BUKRS" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>BUKRS</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.IS_HEADER.BUKRS"/>
+</field>
+<field name="LIFNR" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>LIFNR</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.IS_HEADER.LIFNR"/>
+</field>
+<field name="BEDAT" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><dateTimeEdit><border presence="hidden"/><margin/></dateTimeEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>BEDAT</text></value></caption>
+  <value><date/></value>
+  <format><picture>date{DD.MM.YYYY}</picture></format>
+  <bind match="dataRef" ref="$.IS_HEADER.BEDAT"/>
+</field>
+<field name="NETWR" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><numericEdit><border presence="hidden"/><margin/></numericEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>NETWR</text></value></caption>
+  <value><decimal fracDigits="2"/></value>
+  <format><picture>num{z,zzz,zzz,zz9.99}</picture></format>
+  <bind match="dataRef" ref="$.IS_HEADER.NETWR"/>
+</field>
+<field name="WAERS" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>WAERS</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.IS_HEADER.WAERS"/>
+</field>
+<field name="STATUS" x="0mm" w="180mm" h="7mm" access="readOnly">
+  <ui><textEdit><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <caption reserve="50mm"><font typeface="Arial" size="9pt" weight="bold"/><para vAlign="middle"/><value><text>STATUS</text></value></caption>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.IS_HEADER.STATUS"/>
+</field>
+</subform>
+<subform name="IT_ITEMSSection" layout="tb" w="180mm"><bind match="none"/>
+<draw name="IT_ITEMSTitle" w="180mm" h="9mm">
+  <ui><textEdit/></ui><value><text>IT ITEMS</text></value>
+  <font typeface="Arial" size="11pt" weight="bold"/><margin topInset="3mm" bottomInset="1mm" leftInset="1mm" rightInset="0mm"/><para vAlign="bottom"/>
+  <border><edge presence="hidden"/><edge presence="hidden"/><edge thickness="0.5pt"/><edge presence="hidden"/></border>
+</draw>
+<subform name="IT_ITEMS" layout="table" columnWidths="25mm 20mm 45mm 32.5mm 20mm 37.5mm"><bind match="none"/>
+<subform name="HeaderRow" layout="row"><assist role="TH"/>
+<draw name="EBELNHead" w="25mm" h="7mm">
+  <ui><textEdit/></ui><value><text>EBELN</text></value>
+  <font typeface="Arial" size="9pt" weight="bold"/><margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <border><edge thickness="0.5pt"/><fill><color value="230,234,240"/></fill></border>
+</draw>
+<draw name="EBELPHead" w="20mm" h="7mm">
+  <ui><textEdit/></ui><value><text>EBELP</text></value>
+  <font typeface="Arial" size="9pt" weight="bold"/><margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <border><edge thickness="0.5pt"/><fill><color value="230,234,240"/></fill></border>
+</draw>
+<draw name="MATNRHead" w="45mm" h="7mm">
+  <ui><textEdit/></ui><value><text>MATNR</text></value>
+  <font typeface="Arial" size="9pt" weight="bold"/><margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <border><edge thickness="0.5pt"/><fill><color value="230,234,240"/></fill></border>
+</draw>
+<draw name="MENGEHead" w="32.5mm" h="7mm">
+  <ui><textEdit/></ui><value><text>MENGE</text></value>
+  <font typeface="Arial" size="9pt" weight="bold"/><margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle" hAlign="right"/>
+  <border><edge thickness="0.5pt"/><fill><color value="230,234,240"/></fill></border>
+</draw>
+<draw name="MEINSHead" w="20mm" h="7mm">
+  <ui><textEdit/></ui><value><text>MEINS</text></value>
+  <font typeface="Arial" size="9pt" weight="bold"/><margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle"/>
+  <border><edge thickness="0.5pt"/><fill><color value="230,234,240"/></fill></border>
+</draw>
+<draw name="NETPRHead" w="37.5mm" h="7mm">
+  <ui><textEdit/></ui><value><text>NETPR</text></value>
+  <font typeface="Arial" size="9pt" weight="bold"/><margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/><para vAlign="middle" hAlign="right"/>
+  <border><edge thickness="0.5pt"/><fill><color value="230,234,240"/></fill></border>
+</draw>
+</subform>
+<subform name="Row" layout="row"><occur min="0" max="-1"/><bind match="dataRef" ref="$.IT_ITEMS.DATA[*]"/>
+<field name="EBELN" x="0mm" w="25mm" minH="6mm" access="readOnly">
+  <border><edge thickness="0.5pt"/></border>
+  <ui><textEdit multiLine="1"><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.EBELN"/>
+</field>
+<field name="EBELP" x="0mm" w="20mm" minH="6mm" access="readOnly">
+  <border><edge thickness="0.5pt"/></border>
+  <ui><textEdit multiLine="1"><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.EBELP"/>
+</field>
+<field name="MATNR" x="0mm" w="45mm" minH="6mm" access="readOnly">
+  <border><edge thickness="0.5pt"/></border>
+  <ui><textEdit multiLine="1"><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.MATNR"/>
+</field>
+<field name="MENGE" x="0mm" w="32.5mm" minH="6mm" access="readOnly">
+  <border><edge thickness="0.5pt"/></border>
+  <ui><numericEdit><border presence="hidden"/><margin/></numericEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle" hAlign="right"/>
+  <value><decimal fracDigits="3"/></value>
+  <format><picture>num{z,zzz,zzz,zz9.999}</picture></format>
+  <bind match="dataRef" ref="$.MENGE"/>
+</field>
+<field name="MEINS" x="0mm" w="20mm" minH="6mm" access="readOnly">
+  <border><edge thickness="0.5pt"/></border>
+  <ui><textEdit multiLine="1"><border presence="hidden"/><margin/></textEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle"/>
+  <value><text/></value>
+  <bind match="dataRef" ref="$.MEINS"/>
+</field>
+<field name="NETPR" x="0mm" w="37.5mm" minH="6mm" access="readOnly">
+  <border><edge thickness="0.5pt"/></border>
+  <ui><numericEdit><border presence="hidden"/><margin/></numericEdit></ui>
+  <font typeface="Arial" size="9pt"/>
+  <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="1mm" rightInset="1mm"/>
+  <para vAlign="middle" hAlign="right"/>
+  <value><decimal fracDigits="2"/></value>
+  <format><picture>num{z,zzz,zzz,zz9.99}</picture></format>
+  <bind match="dataRef" ref="$.NETPR"/>
+</field>
+</subform>
+</subform>
+</subform>
+</subform>
+</template>
+</xdp:xdp>

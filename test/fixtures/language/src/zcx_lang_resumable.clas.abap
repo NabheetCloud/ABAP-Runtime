@@ -1,0 +1,5 @@
+CLASS zcx_lang_resumable DEFINITION PUBLIC INHERITING FROM cx_static_check CREATE PUBLIC.
+ENDCLASS.
+
+CLASS zcx_lang_resumable IMPLEMENTATION.
+ENDCLASS.

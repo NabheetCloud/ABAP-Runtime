@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAP Studio</title>
+  <link rel="stylesheet" href="ui/style.css">
+</head>
+<body>
+  <header class="shell">
+    <a class="brand" href="#/"><span class="logo">R</span> RAP Studio</a>
+    <nav>
+      <a href="#/" data-nav="apps">Apps</a>
+      <a href="#/_workspace" data-nav="workspace">Workspace</a>
+    </nav>
+    <span class="status" id="status"></span>
+    <button class="btn ghost" id="userBtn" title="Current user (draft locks are per user)">👤 <span id="userName"></span></button>
+  </header>
+  <div id="banner"></div>
+  <main id="app"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog"></dialog>
+  <script type="module" src="ui/app.js"></script>
+</body>
+</html>

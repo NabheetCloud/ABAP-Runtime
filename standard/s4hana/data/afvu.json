@@ -1,0 +1,23 @@
+[
+  {"aufpl": "0000000001", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Assemble", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0000000001", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Pack", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0000000002", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Assemble", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0000000002", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Pack", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0000000003", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Assemble", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0000000003", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Pack", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0003000001", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Isolate and inspect", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0003000001", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Replace part", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0003000001", "aplzl": "00000003", "usr00": "Shift A", "usr01": "Test run", "usr04": "5.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0003000002", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Isolate and inspect", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0003000002", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Replace part", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0003000002", "aplzl": "00000003", "usr00": "Shift A", "usr01": "Test run", "usr04": "5.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000001", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Engineering work", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000001", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Procurement work", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000001", "aplzl": "00000003", "usr00": "Shift A", "usr01": "Construction work", "usr04": "5.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000002", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Engineering work", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000002", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Procurement work", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000002", "aplzl": "00000003", "usr00": "Shift A", "usr01": "Construction work", "usr04": "5.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000003", "aplzl": "00000001", "usr00": "Shift A", "usr01": "Engineering work", "usr04": "3.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000003", "aplzl": "00000002", "usr00": "Shift B", "usr01": "Procurement work", "usr04": "4.0", "use04": "H", "usr08": "20260815"},
+  {"aufpl": "0005000003", "aplzl": "00000003", "usr00": "Shift A", "usr01": "Construction work", "usr04": "5.0", "use04": "H", "usr08": "20260815"}
+]

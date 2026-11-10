@@ -1,0 +1,14 @@
+[
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000001", "messwert": 119.716, "mbewertg": "A"},
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000002", "messwert": 119.771, "mbewertg": "A"},
+  {"prueflos": "010000000001", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000003", "messwert": 119.98, "mbewertg": "A"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000001", "messwert": 120.183, "mbewertg": "A"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000002", "messwert": 119.909, "mbewertg": "A"},
+  {"prueflos": "010000000002", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000003", "messwert": 120.226, "mbewertg": "A"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000001", "messwert": 120.32, "mbewertg": "A"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000002", "messwert": 119.698, "mbewertg": "A"},
+  {"prueflos": "010000000003", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000003", "messwert": 119.68, "mbewertg": "A"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000001", "messwert": 119.936, "mbewertg": "A"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000002", "messwert": 119.769, "mbewertg": "A"},
+  {"prueflos": "010000000004", "vorglfnr": "00000001", "merknr": "0010", "detailerg": "000003", "messwert": 119.623, "mbewertg": "A"}
+]

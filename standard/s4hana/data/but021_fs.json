@@ -1,0 +1,19 @@
+[
+  {"partner": "0010100001", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000001", "valid_from": "20200101"},
+  {"partner": "0010100002", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000002", "valid_from": "20200101"},
+  {"partner": "0010100003", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000003", "valid_from": "20200101"},
+  {"partner": "0017100001", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000004", "valid_from": "20200101"},
+  {"partner": "0017100002", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000005", "valid_from": "20200101"},
+  {"partner": "0017100003", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000006", "valid_from": "20200101"},
+  {"partner": "0041100001", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000007", "valid_from": "20200101"},
+  {"partner": "0041100002", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000008", "valid_from": "20200101"},
+  {"partner": "0041100003", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000009", "valid_from": "20200101"},
+  {"partner": "0010100004", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000010", "valid_from": "20200101"},
+  {"partner": "0010300001", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000011", "valid_from": "20200101"},
+  {"partner": "0010300002", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000012", "valid_from": "20200101"},
+  {"partner": "0017300001", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000013", "valid_from": "20200101"},
+  {"partner": "0017300002", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000014", "valid_from": "20200101"},
+  {"partner": "0041300001", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000015", "valid_from": "20200101"},
+  {"partner": "0041300002", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000016", "valid_from": "20200101"},
+  {"partner": "0041300003", "adr_kind": "XXDEFAULT", "valid_to": "99991231", "addrnumber": "9000000017", "valid_from": "20200101"}
+]

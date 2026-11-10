@@ -1,0 +1,21 @@
+[
+  {"land1": "DE", "bland": "BW"},
+  {"land1": "DE", "bland": "BY"},
+  {"land1": "DE", "bland": "BE"},
+  {"land1": "DE", "bland": "HH"},
+  {"land1": "DE", "bland": "NW"},
+  {"land1": "US", "bland": "CA"},
+  {"land1": "US", "bland": "NY"},
+  {"land1": "US", "bland": "TX"},
+  {"land1": "US", "bland": "IL"},
+  {"land1": "US", "bland": "PA"},
+  {"land1": "IN", "bland": "13"},
+  {"land1": "IN", "bland": "10"},
+  {"land1": "IN", "bland": "07"},
+  {"land1": "IN", "bland": "22"},
+  {"land1": "IN", "bland": "06"},
+  {"land1": "IN", "bland": "11"},
+  {"land1": "GB", "bland": "LDN"},
+  {"land1": "CA", "bland": "ON"},
+  {"land1": "AU", "bland": "NSW"}
+]

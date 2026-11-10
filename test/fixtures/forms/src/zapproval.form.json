@@ -1,0 +1,12 @@
+{
+  "title": "Approval {requester}",
+  "content": [
+    { "text": "Expense approval", "size": 16, "bold": true },
+    { "fields": [["Requester", "{requester}"], ["Amount", "{amount:amount}"]] },
+    { "input": "remark", "label": "Remark", "type": "multiline", "value": "{remark}" },
+    { "input": "urgent", "label": "Urgent", "type": "checkbox", "value": "{urgent}" },
+    { "input": "decision", "label": "Decision", "type": "dropdown", "options": ["Approved", "Rejected"], "value": "Approved" },
+    { "input": "approval", "label": "Approver", "type": "signature", "width": 220 }
+  ],
+  "sample": { "requester": "ALICE", "amount": 1200, "remark": "Trip", "urgent": "X" }
+}

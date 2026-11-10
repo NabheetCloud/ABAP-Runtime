@@ -1,0 +1,20 @@
+managed implementation in class zbp_r_note unique;
+strict ( 2 );
+with collaborative draft;
+
+define behavior for ZR_Note alias Note
+persistent table znote_a
+draft table znote_d
+lock master total etag ChangedAt
+authorization master ( instance )
+etag master ChangedAt
+{
+  create;
+  update;
+  delete;
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+}

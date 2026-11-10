@@ -1,0 +1,4 @@
+define service ZUI_LANG {
+  expose ZI_EmployeeHier as EmployeeTree;
+  expose ZI_Employee as Employee;
+}

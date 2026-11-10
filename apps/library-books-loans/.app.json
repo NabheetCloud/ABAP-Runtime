@@ -1,0 +1,5 @@
+{
+ "title": "Library: Books and Loans",
+ "prompt": "RAP app built by the agent from one sentence: books, members and loans with a due date, a return action and validations.",
+ "flavor": "rap"
+}

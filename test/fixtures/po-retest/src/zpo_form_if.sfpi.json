@@ -1,0 +1,13 @@
+{
+ "description": "PO print interface",
+ "parameters": [
+  {
+   "name": "IS_HEADER",
+   "type": "ZPO_S_HEADER"
+  },
+  {
+   "name": "IT_ITEMS",
+   "type": "ZPO_T_ITEM"
+  }
+ ]
+}

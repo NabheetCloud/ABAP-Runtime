@@ -1,0 +1,5 @@
+[
+  {"spras": "E", "kurst": "M", "curvw": "Standard translation at average rate"},
+  {"spras": "E", "kurst": "B", "curvw": "Standard translation at bank selling rate"},
+  {"spras": "E", "kurst": "G", "curvw": "Standard translation at bank buying rate"}
+]

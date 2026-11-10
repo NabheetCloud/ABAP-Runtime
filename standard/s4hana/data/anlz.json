@@ -1,0 +1,11 @@
+[
+  {"bukrs": "1010", "anln1": "000010000001", "anln2": "0000", "bdatu": "99991231", "adatu": "20240201", "kostl": "10101101", "werks": "1010", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "1010", "anln1": "000010000002", "anln2": "0000", "bdatu": "99991231", "adatu": "20240301", "kostl": "10101101", "werks": "1010", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "1010", "anln1": "000010000003", "anln2": "0000", "bdatu": "99991231", "adatu": "20240401", "kostl": "10101101", "werks": "1010", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "1710", "anln1": "000010000001", "anln2": "0000", "bdatu": "99991231", "adatu": "20240201", "kostl": "17101101", "werks": "1710", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "1710", "anln1": "000010000002", "anln2": "0000", "bdatu": "99991231", "adatu": "20240301", "kostl": "17101101", "werks": "1710", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "1710", "anln1": "000010000003", "anln2": "0000", "bdatu": "99991231", "adatu": "20240401", "kostl": "17101101", "werks": "1710", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "4110", "anln1": "000010000001", "anln2": "0000", "bdatu": "99991231", "adatu": "20240201", "kostl": "41101101", "werks": "4110", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "4110", "anln1": "000010000002", "anln2": "0000", "bdatu": "99991231", "adatu": "20240301", "kostl": "41101101", "werks": "4110", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""},
+  {"bukrs": "4110", "anln1": "000010000003", "anln2": "0000", "bdatu": "99991231", "adatu": "20240401", "kostl": "41101101", "werks": "4110", "gsber": "", "prctr": "YB101", "stort": "", "pernr": "", "raumn": ""}
+]

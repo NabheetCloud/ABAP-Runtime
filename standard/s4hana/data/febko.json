@@ -1,0 +1,7 @@
+[
+  {"kukey": "00000001", "anwnd": "", "absnd": "", "aznum": "00001", "azdat": "20260205", "waers": "EUR", "ssbtr": 0.0, "esbtr": "", "astat": "8", "bukrs": "1010", "hbkid": "DEUT1", "hktid": "CHK01", "sumha": 371.99, "sumso": 0.0},
+  {"kukey": "00000002", "anwnd": "", "absnd": "", "aznum": "00002", "azdat": "20260611", "waers": "EUR", "ssbtr": 0.0, "esbtr": "", "astat": "8", "bukrs": "1010", "hbkid": "DEUT1", "hktid": "CHK01", "sumha": 40084.17, "sumso": 0.0},
+  {"kukey": "00000003", "anwnd": "", "absnd": "", "aznum": "00003", "azdat": "20260308", "waers": "USD", "ssbtr": 0.0, "esbtr": "", "astat": "8", "bukrs": "1710", "hbkid": "CITI1", "hktid": "CHK01", "sumha": 8536.36, "sumso": 0.0},
+  {"kukey": "00000004", "anwnd": "", "absnd": "", "aznum": "00004", "azdat": "20260712", "waers": "USD", "ssbtr": 0.0, "esbtr": "", "astat": "8", "bukrs": "1710", "hbkid": "CITI1", "hktid": "CHK01", "sumha": 3294.76, "sumso": 0.0},
+  {"kukey": "00000005", "anwnd": "", "absnd": "", "aznum": "00005", "azdat": "20260405", "waers": "INR", "ssbtr": 0.0, "esbtr": "", "astat": "8", "bukrs": "4110", "hbkid": "HDFC1", "hktid": "CHK01", "sumha": 44316.08, "sumso": 0.0}
+]

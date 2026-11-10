@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travels</title>
+  <script>
+    if (!location.hash) location.hash = '#app-display';
+    window['sap-ushell-config'] = {
+      defaultRenderer: 'fiori2',
+      renderers: { fiori2: { componentData: { config: { enableSearch: false, rootIntent: 'app-display' } } } },
+      applications: {
+        'app-display': { title: "Travels", description: 'Overview Page', additionalInformation: 'SAPUI5.Component=z.travelovp', applicationType: 'URL', url: './' }
+      }
+    };
+  </script>
+  <script id="sap-ushell-bootstrap" src="https://ui5.sap.com/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
+  <script id="sap-ui-bootstrap"
+    src="https://ui5.sap.com/resources/sap-ui-core.js"
+    data-sap-ui-libs="sap.m, sap.ui.core, sap.ushell, sap.ovp"
+    data-sap-ui-theme="sap_horizon"
+    data-sap-ui-resource-roots='{ "z.travelovp": "./" }'
+    data-sap-ui-compat-version="edge"
+    data-sap-ui-async="true"
+    data-sap-ui-frame-options="allow"></script>
+  <script>
+    sap.ui.getCore().attachInit(function () { sap.ushell.Container.createRenderer().placeAt('content'); });
+  </script>
+</head>
+<body class="sapUiBody" id="content"></body>
+</html>

@@ -1,0 +1,10 @@
+[
+  {"objek": "000000000000000001", "atinn": "0000000001", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "", "atflv": 99.5, "atflb": ""},
+  {"objek": "000000000000000001", "atinn": "0000000002", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "WHITE", "atflv": 0.0, "atflb": ""},
+  {"objek": "000000000000000002", "atinn": "0000000001", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "", "atflv": 99.0, "atflb": ""},
+  {"objek": "000000000000000002", "atinn": "0000000002", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "GREY", "atflv": 0.0, "atflb": ""},
+  {"objek": "000000000000000003", "atinn": "0000000001", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "", "atflv": 98.5, "atflb": ""},
+  {"objek": "000000000000000003", "atinn": "0000000002", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "WHITE", "atflv": 0.0, "atflb": ""},
+  {"objek": "000000000000000004", "atinn": "0000000001", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "", "atflv": 98.0, "atflb": ""},
+  {"objek": "000000000000000004", "atinn": "0000000002", "atzhl": "0001", "mafid": "O", "klart": "023", "adzhl": "0000", "atwrt": "GREY", "atflv": 0.0, "atflb": ""}
+]

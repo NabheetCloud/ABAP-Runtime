@@ -1,0 +1,8 @@
+[
+  {"bname": "CB9980000010", "ustyp": "A", "gltgv": "20250101", "gltgb": "99991231", "uflag": "0", "trdat": "20261103", "ltime": "081500", "class": "EMPLOYEES"},
+  {"bname": "CB9980000020", "ustyp": "B", "gltgv": "20250101", "gltgb": "99991231", "uflag": "0", "trdat": "20261103", "ltime": "081500", "class": "EMPLOYEES"},
+  {"bname": "ANNA.BECKER", "ustyp": "A", "gltgv": "20250101", "gltgb": "99991231", "uflag": "0", "trdat": "20261103", "ltime": "081500", "class": "EMPLOYEES"},
+  {"bname": "JOHN.MILLER", "ustyp": "A", "gltgv": "20250101", "gltgb": "99991231", "uflag": "0", "trdat": "20261103", "ltime": "081500", "class": "EMPLOYEES"},
+  {"bname": "PRIYA.SHARMA", "ustyp": "A", "gltgv": "20250101", "gltgb": "99991231", "uflag": "0", "trdat": "20261103", "ltime": "081500", "class": "EMPLOYEES"},
+  {"bname": "MARCO.ROSSI", "ustyp": "A", "gltgv": "20250101", "gltgb": "99991231", "uflag": "0", "trdat": "20261103", "ltime": "081500", "class": "EMPLOYEES"}
+]
