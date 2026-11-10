@@ -474,7 +474,8 @@ app.all('*', async (req, res) => {
   let pending = null;
   res.send = body => { pending = { body }; return res; };
   const flush = () => { res.send = sendNow; if (pending && !res.headersSent) sendNow.call(res, pending.body); pending = null; };
-  try { await debug.request(program || req.path, () => session.run(step, () => shim.run({ req, res, class: 'ZCL_GG_HTTP_HANDLER' }))); await db()?.commit?.(); flush(); }
+  // (inside the debugged step: the page is out before a debug session reports that it ended, which reloads the preview)
+  try { await debug.request(program || req.path, () => session.run(step, async () => { await shim.run({ req, res, class: 'ZCL_GG_HTTP_HANDLER' }); await db()?.commit?.(); flush(); })); }
   catch (e) {
     await db()?.rollback?.();
     res.send = sendNow; pending = null;
