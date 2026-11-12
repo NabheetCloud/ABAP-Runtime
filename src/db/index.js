@@ -44,7 +44,12 @@ class SqliteAdapter {
     this.db.function('division', { deterministic: true }, (a, b, d) => (b == 0 ? null : Number((Number(a) / Number(b)).toFixed(Number(d)))));
   }
   setSessionUser(u) { this.sessionUser = u; }
-  prepare(sql) { return this.db.prepare(sql); }
+  // values with a database form of their own (exact packed numbers: their decimal text) are bound as that
+  prepare(sql) {
+    const st = this.db.prepare(sql);
+    const p = a => a.map(dbParam);
+    return Object.assign(Object.create(st), { all: (...a) => st.all(...p(a)), get: (...a) => st.get(...p(a)), run: (...a) => st.run(...p(a)), iterate: (...a) => st.iterate(...p(a)) });
+  }
   exec(sql) { return this.db.exec(sql); }
   close() { this.db.close(); }
   tableExists(name) { return !!this.db.prepare(`SELECT name FROM sqlite_master WHERE type = 'table' AND name = ?`).get(name); }
@@ -115,8 +120,9 @@ class PostgresAdapter {
 function pgParam(v) {
   if (v === undefined) return null;
   if (typeof v === 'boolean') return v ? 'X' : '';
-  return v;
+  return dbParam(v);
 }
+function dbParam(v) { return v !== null && typeof v === 'object' && typeof v.toDb === 'function' ? v.toDb() : v; }
 // "?" -> $1, $2 ... (outside string literals and quoted identifiers)
 function toPgPlaceholders(sql) {
   let out = '', n = 0, q = null;

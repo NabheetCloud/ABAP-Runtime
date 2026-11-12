@@ -296,6 +296,7 @@ export class AbapRuntime {
   }
   n(v) {
     if (typeof v === 'number') return v;
+    if (v instanceof Dec) return v.toNumber();
     if (v === undefined || v === null || v === '' || v === true || v === false) return v === true ? 1 : 0;
     if (typeof v === 'string') {
       const s = v.trim();
@@ -311,10 +312,15 @@ export class AbapRuntime {
   s(v) {
     if (v === undefined || v === null) return '';
     if (typeof v === 'number') return fmtNumber(v);
+    if (v instanceof Dec) return v.toString();
     if (typeof v === 'object') return JSON.stringify(v);
     return String(v);
   }
   arith(op, a, b, ct) {
+    if (ct !== 'f' && ct !== 'i' && ct !== 'int8' && ['+', '-', '*', '/'].includes(op) && (bigDigits(a) || bigDigits(b))) {
+      const r = decArith(op, a, b);
+      if (r) return r.normal();
+    }
     const x = this.n(a), y = this.n(b);
     if (ct === 'f') {   // binary floating point: no decimal rounding
       if ((op === '/' || op === 'DIV' || op === 'MOD') && y === 0) { if (x === 0) return 0; throw this.new('cx_sy_zerodivide', { text: 'Division by zero' }); }
@@ -349,6 +355,10 @@ export class AbapRuntime {
     return a < b ? -1 : a > b ? 1 : 0;
   }
   cmp(a, b) {
+    if (a instanceof Dec || b instanceof Dec) {
+      const x = Dec.of(a ?? 0) ?? Dec.of(0), y = Dec.of(b ?? 0) ?? Dec.of(0);
+      return x.cmp(y);
+    }
     if (a && typeof a === 'object' || b && typeof b === 'object') return deepEqual(a, b, this) ? 0 : 1;
     if (a === undefined || a === null) a = typeof b === 'number' ? 0 : '';
     if (b === undefined || b === null) b = typeof a === 'number' ? 0 : '';
@@ -373,6 +383,7 @@ export class AbapRuntime {
   }
   initial(v) {
     if (v === undefined || v === null || v === '' || v === 0 || v === false) return true;
+    if (v instanceof Dec) return v.m === 0n;
     if (v instanceof DataRef) return false;
     if (typeof v === 'string') return /^ *$/.test(v);
     if (Array.isArray(v)) return v.length === 0;
@@ -405,6 +416,7 @@ export class AbapRuntime {
   newTab(line, sort) { const a = []; Object.defineProperty(a, '$line', { value: line, enumerable: false }); if (sort) Object.defineProperty(a, '$sort', { value: sort, enumerable: false }); return a; }
   // ABAP rounds half away from zero (commercial rounding)
   round(x, dec = 0) {
+    if (x instanceof Dec) return x.round(dec).normal();
     const a = Math.abs(x);
     if (!Number.isFinite(a) || a >= 2 ** 52) return x;
     // shift by the exponent in the number's text, so 2.675 rounds to 2.68 (not 2.67 as 2.675 * 100 would)
@@ -438,6 +450,18 @@ export class AbapRuntime {
   // CX_SY_CONVERSION_OVERFLOW), fixed-length text c (cut at the length; a number right-aligned with its sign),
   // numeric text n (digits, zero-padded, the rightmost ones kept), bytes x (hex, padded with zero bytes) and xstring
   cv(t, v, calc) {
+    if (v instanceof Dec) {
+      if (t.k === 'string') return v.toString();
+      if (t.k === 'c') { const s = v.toString(); return t.len ? s.slice(0, t.len) : s; }
+      if (t.k !== 'p') return this.cv(t, t.k === 'n' ? v.toString().replace(/\D/g, '') : v.toNumber(), calc);
+    }
+    if (t.k === 'p' && (v instanceof Dec || bigDigits(v))) {
+      const d = Dec.of(v).round(t.dec ?? 0);
+      const intDigits = 2 * (t.len ?? 8) - 1 - (t.dec ?? 0);
+      const a = (d.m < 0n ? -d.m : d.m).toString();
+      if (a.length - d.scale > intDigits && a.slice(0, a.length - d.scale).replace(/^0+/, '').length > intDigits) throw this.new(calc ? 'cx_sy_arithmetic_overflow' : 'cx_sy_conversion_overflow', { text: `Overflow converting ${d.toString()} to type P${t.len ? ` length ${t.len}` : ''}` });
+      return d.normal();
+    }
     if (v === undefined || (v !== null && typeof v === 'object')) return v;
     const overflow = () => this.new(calc ? 'cx_sy_arithmetic_overflow' : 'cx_sy_conversion_overflow', { text: `Overflow converting ${this.s(v).trim()} to type ${t.k.toUpperCase()}${t.len ? ` length ${t.len}` : ''}` });
     // text into a number: i, int8 and p take no scientific notation, f no blank between sign and digits
@@ -788,6 +812,7 @@ export class AbapRuntime {
   // a packed number as text with the decimals of its type: 600 -> '600.00' (trailing: '600.00-' as in a c field)
   pstr(v, dec, trailing) {
     if (v === null || v === undefined || (typeof v === 'string' && v.trim() === '')) return v;
+    if (v instanceof Dec || bigDigits(v)) { const d = Dec.of(v).round(dec); const t = d.m < 0n ? new Dec(-d.m, d.scale).toString() : d.toString(); return d.m < 0n ? (trailing ? `${t}-` : `-${t}`) : t; }
     const x = typeof v === 'number' ? v : this.n(v);
     if (!Number.isFinite(x)) return v;
     const s = this.round(Math.abs(x), dec).toFixed(dec);
@@ -805,6 +830,7 @@ export class AbapRuntime {
       if (opts.case === 'UPPER') s = s.toUpperCase();
       if (opts.case === 'LOWER') s = s.toLowerCase();
       if (opts.decimals !== undefined && typeof v === 'number') s = this.round(v, Number(opts.decimals)).toFixed(Number(opts.decimals));
+      if (opts.decimals !== undefined && v instanceof Dec) s = v.round(Number(opts.decimals)).toString();
     }
     return s;
   }
@@ -1079,6 +1105,64 @@ function fmtNumber(v) {
 }
 // data reference (REF #( ), GET REFERENCE, CREATE DATA, NEW for data types, REFERENCE INTO): points at a variable,
 // a table row or an anonymous data object; dref->* reads and writes the referenced data
+// Exact packed numbers: a double holds 15-17 significant digits, a P field up to 31. A packed value with more than 15
+// significant digits is a Dec (a BigInt scaled by 10^scale, immutable); every smaller value stays a plain number.
+export class Dec {
+  constructor(m, scale) { this.m = m; this.scale = scale; Object.freeze(this); }
+  // exact decimal of a number, a numeric text (sign left or right) or a Dec; null when it is no number
+  static of(v) {
+    if (v instanceof Dec) return v;
+    if (typeof v === 'number') { if (!Number.isFinite(v)) return null; v = fmtNumber(v); }
+    if (typeof v !== 'string') return null;
+    let t = v.trim();
+    if (/^[+-]?\d*\.?\d+[eE]/.test(t)) return Number.isFinite(Number(t)) ? Dec.of(Number(t).toFixed(Math.min(100, Math.max(0, -Math.floor(Math.log10(Math.abs(Number(t)) || 1)) + 20)))) : null;
+    let neg = false;
+    if (/-$/.test(t)) { neg = true; t = t.slice(0, -1).trim(); } else if (/\+$/.test(t)) t = t.slice(0, -1).trim();
+    if (/^[-+]/.test(t)) { neg = t[0] === '-'; t = t.slice(1).trim(); }
+    const m = /^(\d*)(?:\.(\d*))?$/.exec(t);
+    if (!m || (!m[1] && !m[2])) return t === '' ? new Dec(0n, 0) : null;
+    const frac = m[2] || '';
+    const big = BigInt((m[1] || '0') + frac);
+    return new Dec(neg ? -big : big, frac.length);
+  }
+  // significant digits (without leading and trailing zeros)
+  get digits() { const a = (this.m < 0n ? -this.m : this.m).toString().replace(/0+$/, ''); return a === '0' || a === '' ? 0 : a.length; }
+  // rounded (half away from zero) or padded to `scale` decimals
+  round(scale) {
+    if (scale >= this.scale) return new Dec(this.m * 10n ** BigInt(scale - this.scale), scale);
+    const f = 10n ** BigInt(this.scale - scale), a = this.m < 0n ? -this.m : this.m;
+    const q = a / f + ((a % f) * 2n >= f ? 1n : 0n);
+    return new Dec(this.m < 0n ? -q : q, scale);
+  }
+  static align(a, b) { const s = Math.max(a.scale, b.scale); return [a.round(s), b.round(s), s]; }
+  cmp(o) { const [a, b] = Dec.align(this, o); return a.m < b.m ? -1 : a.m > b.m ? 1 : 0; }
+  toString() {
+    const a = (this.m < 0n ? -this.m : this.m).toString().padStart(this.scale + 1, '0');
+    const s = this.scale ? `${a.slice(0, a.length - this.scale)}.${a.slice(a.length - this.scale)}` : a;
+    return this.m < 0n ? `-${s}` : s;
+  }
+  toNumber() { return Number(this.toString()); }
+  valueOf() { return this.toNumber(); }
+  toJSON() { return this.toNumber(); }
+  toDb() { return this.toString(); }
+  // the plain number when it holds the value exactly (at most 15 significant digits), else this Dec
+  normal() { return this.digits <= 15 ? this.toNumber() : this; }
+}
+// +, -, * exactly; / with 31 decimals (the target's conversion rounds); null when an operand is no number
+function decArith(op, a, b) {
+  const x = Dec.of(a), y = Dec.of(b);
+  if (!x || !y) return null;
+  if (op === '+' || op === '-') { const [p, q, s] = Dec.align(x, y); return new Dec(op === '+' ? p.m + q.m : p.m - q.m, s); }
+  if (op === '*') return new Dec(x.m * y.m, x.scale + y.scale);
+  if (op === '/') {
+    if (y.m === 0n) return null;
+    const s = 31, num = x.m * 10n ** BigInt(s + y.scale + 1), den = y.m * 10n ** BigInt(x.scale);
+    return new Dec(num / den, s + 1).round(s);
+  }
+  return null;
+}
+const bigDigits = v => (v instanceof Dec) || (typeof v === 'string' && (v.replace(/[^0-9]/g, '').replace(/^0+/, '').replace(/0+$/, '').length > 15) && Dec.of(v) !== null);
+
 export class DataRef {
   #get; #set;
   constructor(get, set) { this.#get = get; this.#set = set; }
@@ -1513,7 +1597,7 @@ function installBuiltinClasses(rt) {
   const show = v => (v !== null && typeof v === 'object' ? JSON.stringify(v) : rt.s(v));
   // references (object instances, data references) are equal only when they point to the same object; structures
   // and tables compare by value
-  const isRef = v => v !== null && typeof v === 'object' && !Array.isArray(v) && Object.getPrototypeOf(v) !== Object.prototype && Object.getPrototypeOf(v) !== null;
+  const isRef = v => v !== null && typeof v === 'object' && !Array.isArray(v) && !(v instanceof Dec) && Object.getPrototypeOf(v) !== Object.prototype && Object.getPrototypeOf(v) !== null;
   const same = (a, b) => {
     if (Array.isArray(a) || Array.isArray(b)) return Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every((x, i) => same(x, b[i]));
     if (isRef(a) || isRef(b)) return a === b;

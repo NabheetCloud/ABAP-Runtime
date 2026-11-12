@@ -216,6 +216,14 @@ async function main() {
 const dbUrl = flag('--db') || process.env.RAP_DB;
 const ws = new Workspace(dir, { lint: !process.argv.includes('--no-lint'), ...(cmd === 'check' || cmd === 'test' ? { dbUrl: dbUrl?.startsWith('postgres') ? dbUrl : (dbUrl?.startsWith('pglite') ? 'pglite:memory' : 'sqlite:memory') } : dbUrl ? { dbUrl } : {}) });
 const d = ws.app.diagnostics;
+// rap check: also what runs here but would not activate or run on an SAP system (unknown customer types, objects not
+// released for ABAP Cloud, COMMIT WORK in behavior pools) - warnings, the local activation itself is unchanged
+if (cmd === 'check' && !process.argv.includes('--no-lint')) {
+  try {
+    const { sapReadiness } = await import('../src/check/atc.js');
+    for (const f of sapReadiness(dir, { knownObjects: ws.knownObjects() })) d.warnings.push({ file: f.file, line: f.line, message: `${f.message} [${f.rule}]` });
+  } catch (e) { d.warnings.push({ file: '', line: null, message: `The SAP readiness checks could not run: ${e.message}` }); }
+}
 const s = ws.summary().objects;
 console.log(`[rap] activated ${path.resolve(dir)} in ${ws.activationMs} ms: ${s.tables.length} tables, ${s.views.length} views, ${s.behaviors.length} behavior definitions, ${s.classes.length} classes, ${s.services.length} services; ${d.errors.length} error(s), ${d.warnings.length} warning(s)`);
 print(d);

@@ -11,6 +11,8 @@ CLASS zcl_fb DEFINITION PUBLIC CREATE PUBLIC.
     CLASS-METHODS p_max RETURNING VALUE(rv) TYPE string.
     CLASS-METHODS zero_date RETURNING VALUE(rv) TYPE string.
     CLASS-METHODS range_body RETURNING VALUE(rv) TYPE string.
+    CLASS-METHODS sort_by_value RETURNING VALUE(rv) TYPE string.
+    CLASS-METHODS p_exact RETURNING VALUE(rv) TYPE string.
 ENDCLASS.
 
 CLASS zcl_fb IMPLEMENTATION.
@@ -69,5 +71,33 @@ CLASS zcl_fb IMPLEMENTATION.
     ENDLOOP.
     DATA(c) = lines( r[] ).
     rv = |{ c }/{ s }/{ COND #( WHEN 6 IN r[] THEN 'in' ELSE 'out' ) }/{ COND #( WHEN r[] IS NOT INITIAL THEN 'full' ELSE 'empty' ) }|.
+  ENDMETHOD.
+
+  METHOD sort_by_value.
+    TYPES: BEGIN OF ty_s, comp1 TYPE i, comp2 TYPE c LENGTH 1, END OF ty_s.
+    DATA it TYPE STANDARD TABLE OF ty_s WITH EMPTY KEY.
+    it = VALUE #( ( comp1 = 2 comp2 = 'b' ) ( comp1 = 3 comp2 = 'a' ) ( comp1 = 1 comp2 = 'c' ) ).
+    SORT it BY VALUE abap_sortorder_tab( ( name = `COMP1` descending = 'X' ) ).
+    DATA(first) = REDUCE string( INIT t = `` FOR r IN it NEXT t = t && |{ r-comp1 }| ).
+    DATA(names) = VALUE string_table( ( `comp2` ) ).
+    SORT it BY VALUE abap_sortorder_tab( FOR n IN names ( name = condense( to_upper( n ) ) ) ).
+    DATA(second) = REDUCE string( INIT t = `` FOR r IN it NEXT t = t && r-comp2 ).
+    rv = |{ first }/{ second }|.
+  ENDMETHOD.
+
+  METHOD p_exact.
+    DATA p TYPE p LENGTH 16 DECIMALS 6.
+    DATA q TYPE p LENGTH 16 DECIMALS 6.
+    p = '9999999999999999999999999.999999'.
+    q = '-1234567890123456789012345.123456'.
+    DATA(s1) = |{ p }|.
+    q = q + '0.000001'.
+    DATA r TYPE p LENGTH 16 DECIMALS 6.
+    r = p - '0.000001'.
+    DATA(cmp) = COND string( WHEN r < p THEN `lt` ELSE `ge` ).
+    DATA z TYPE p LENGTH 16 DECIMALS 6.
+    z = p - p.
+    DATA(zero) = COND string( WHEN z IS INITIAL THEN `0` ELSE `x` ).
+    rv = |{ s1 }/{ q }/{ r }/{ cmp }/{ zero }/{ CONV string( p ) }|.
   ENDMETHOD.
 ENDCLASS.

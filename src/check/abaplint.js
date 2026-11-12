@@ -53,7 +53,7 @@ export function syntaxCheck(dir, { version = 'Cloud', knownObjects = new Set() }
 }
 
 // valid ABAP that abaplint cannot parse yet: our compiler is the judge for these statements
-const ABAPLINT_GAPS = [/\bENTITIES\s+OPERATIONS\b/i, /CORRESPONDING\s+#\(.*\bFROM\b.*\bUSING\b/i];
+const ABAPLINT_GAPS = [/\bENTITIES\s+OPERATIONS\b/i, /CORRESPONDING\s+#\(.*\bFROM\b.*\bUSING\b/i, /^\s*SORT\b[^.]*\bBY\s+VALUE\s+[\w\/]+\(/i];
 function parserGap(reg, file, line) {
   const src = reg.getFileByName?.(file)?.getRaw?.() || '';
   const stmt = src.split('\n').slice(Math.max(0, line - 1), line + 3).join(' ');

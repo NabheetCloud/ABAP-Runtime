@@ -1,0 +1,14 @@
+CLASS zcl_sapchk DEFINITION PUBLIC CREATE PUBLIC.
+  PUBLIC SECTION.
+    METHODS run.
+ENDCLASS.
+
+CLASS zcl_sapchk IMPLEMENTATION.
+  METHOD run.
+    DATA x TYPE zunknown_type.
+    DATA ok TYPE abap_bool.
+    DATA s TYPE string_table.
+    SELECT SINGLE matnr FROM mara INTO @DATA(m).
+    COMMIT WORK.
+  ENDMETHOD.
+ENDCLASS.

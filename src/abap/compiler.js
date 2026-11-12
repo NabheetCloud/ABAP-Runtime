@@ -1904,6 +1904,11 @@ ${b}
         const u = w[k];
         if (u === 'ASCENDING' || u === 'DESCENDING') { if (keys.length) keys[keys.length - 1].desc = u === 'DESCENDING'; continue; }
         if (u === 'AS' && w[k + 1] === 'TEXT') { k++; continue; }
+        // BY VALUE abap_sortorder_tab( ... ): the sort order as an expression (the rest of the statement)
+        if (u === 'VALUE' && st[k + 1]?.t === 'id' && st[k + 2]?.v === '(' && !st[k + 2].ws) {
+          keys.push({ dyn: new Expr(st.slice(k), this).value().js, desc });
+          break;
+        }
         // a dynamic component: (name) is a field holding the component's name, or a table of type abap_sortorder_tab
         if (st[k].v === '(') {
           let e = k + 1, depth = 1;

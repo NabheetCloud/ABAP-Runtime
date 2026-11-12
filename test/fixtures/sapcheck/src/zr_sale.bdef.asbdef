@@ -1,0 +1,11 @@
+managed implementation in class zbp_r_sale unique;
+strict ( 2 );
+
+define behavior for ZR_Sale alias Sale
+persistent table zsale_a
+lock master
+authorization master ( global )
+{
+  update;
+  field ( readonly ) SaleId, Owner, IsMine;
+}

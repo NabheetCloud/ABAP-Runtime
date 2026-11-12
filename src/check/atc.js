@@ -17,7 +17,7 @@ export const KNOWLEDGE = path.join(ROOT, 'knowledge');
 const STDLIB = path.join(path.dirname(fileURLToPath(import.meta.url)), 'stdlib');
 const RAP_FILES = /\.(clas\.abap|clas\.locals_imp\.abap|clas\.locals_def\.abap|clas\.testclasses\.abap|intf\.abap|ddls\.asddls|bdef\.asbdef|srvd\.srvdsrv|ddlx\.asddlxs)$/i;
 const CLASSIC_FILES = /\.(prog\.abap|prog\.screen_\d+\.abap|fugr\.[^/]+\.abap)$/i;
-const OWN_RULES = new Set(['released_api', 'modern_syntax']);
+const OWN_RULES = new Set(['released_api', 'modern_syntax', 'rap_commit']);
 // rules that need the whole system (standard classes, DDIC) and are not run on classic programs
 const CLASSIC_SKIP = new Set(['check_syntax', 'uncaught_exception', 'implement_methods', 'released_api', 'sy_read_restriction', 'unknown_types']);
 const SEVERITY_ORDER = { error: 0, warning: 1, info: 2 };
@@ -125,7 +125,7 @@ function ddicContext(dir) {
 // file: report only the findings of this object (Check in the editor)
 export function runAtc(dir, { variant = 'default', knownObjects = new Set(), overrides, file } = {}) {
   const t0 = Date.now();
-  const v = loadVariant(dir, variant);
+  const v = typeof variant === 'object' ? variant : loadVariant(dir, variant);
   const src = sourcesOf(dir, overrides);
   const appFunctions = new Set();
   for (const f of listSources(dir)) {
@@ -164,6 +164,7 @@ export function runAtc(dir, { variant = 'default', knownObjects = new Set(), ove
   run(false);
   run(true);
   if (v.rules.has('released_api')) findings.push(...releasedApi(src, v.rules.get('released_api'), knownObjects));
+  if (v.rules.has('rap_commit')) findings.push(...rapCommit(src, v.rules.get('rap_commit')));
   if (file) findings.splice(0, findings.length, ...findings.filter(f => f.file === file));
   findings.sort((a, b) => SEVERITY_ORDER[a.severity] - SEVERITY_ORDER[b.severity] || a.file.localeCompare(b.file) || a.line - b.line);
   const count = s => findings.filter(f => f.severity === s).length;
@@ -199,6 +200,33 @@ function modernSyntax(reg, src, r) {
     }
   }
   return out;
+}
+
+// COMMIT WORK / ROLLBACK WORK in a behavior pool (the class FOR BEHAVIOR OF and its local handler and saver
+// classes): RAP saves itself; on an SAP system the statement ends in the runtime error BEHAVIOR_ILLEGAL_STATEMENT
+function rapCommit(src, r) {
+  const pools = new Set();
+  for (const [name, s] of src) if (/\.clas\.abap$/.test(name) && /\bFOR\s+BEHAVIOR\s+OF\b/i.test(s.text)) pools.add(name.split('.')[0]);
+  const out = [];
+  for (const [name, s] of src) {
+    if (s.classic || !pools.has(name.split('.')[0])) continue;
+    s.text.split('\n').forEach((line, i) => {
+      const code = line.replace(/^\*.*$/, '').replace(/".*$/, '');
+      const m = /(?:^|\.)\s*(COMMIT|ROLLBACK)\s+WORK\b/i.exec(code);
+      if (m) out.push({ file: s.rel, line: i + 1, column: m.index + 1, rule: 'rap_commit', category: r.category, severity: r.severity,
+        message: `${m[1].toUpperCase()} WORK is not allowed in a RAP behavior implementation: RAP saves the transaction itself (on SAP: runtime error BEHAVIOR_ILLEGAL_STATEMENT)`, fix: false });
+    });
+  }
+  return out;
+}
+
+// What rap check reports in addition to activation: code that runs here but would not activate or run on an SAP
+// system (BTP ABAP environment, S/4HANA Cloud): unknown types of the customer namespace (abaplint unknown_types with
+// the app's dictionary), objects not released for ABAP Cloud, COMMIT WORK / ROLLBACK WORK in behavior pools
+export function sapReadiness(dir, { knownObjects = new Set() } = {}) {
+  const rule = (id) => [id, { rule: id, severity: 'warning', category: 'SAP system', settings: {} }];
+  const variant = { id: 'sap-readiness', title: 'SAP readiness', rules: new Map([rule('unknown_types'), rule('released_api'), rule('rap_commit')]) };
+  return runAtc(dir, { variant, knownObjects }).findings.filter(f => variant.rules.has(f.rule));
 }
 
 // SAP objects that are not released for ABAP Cloud, used in RAP code: name the released successor
