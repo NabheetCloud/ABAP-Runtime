@@ -355,6 +355,11 @@ imports (actions, draft) and links the `$metadata`.
 
 ## Code quality: checks, ABAP cleaner, conformance
 
+> **`rap check` and `rap test` are a local runner and test bed, not a promise that code activates on SAP.**
+> They compile and run your code here and catch real bugs fast, but they do not know your SAP system: an unknown type,
+> `SELECT FROM mara` or `COMMIT WORK` inside RAP code can pass here and still fail activation or the ABAP Cloud checks
+> on SAP BTP or S/4HANA. Run `rap atc` for the ABAP Cloud checks, and activate on a real system before you rely on it.
+
 - **Code checks** (like ATC): `node bin/rap.js atc <dir> [--fix]` and the studio's **Problems** tab run a check
   variant written in markdown (`knowledge/checks/variants/default.md`: categories Syntax and correctness, ABAP Cloud
   readiness, Security, Performance, Robustness, Clean ABAP, each check with a severity). The checks are

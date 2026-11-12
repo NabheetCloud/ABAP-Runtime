@@ -821,6 +821,17 @@ class MethodCtx {
       const k = st.findIndex((t, q) => isKw(t, 'IN') && isKw(st[q + 1], 'CHARACTER', 'BYTE') && isKw(st[q + 2], 'MODE'));
       if (k > 0) { st = [...st.slice(0, k), ...st.slice(k + 3)]; stmts = [...stmts]; stmts[i] = st; }
     }
+    // ADD a TO b / SUBTRACT a FROM b / MULTIPLY b BY a / DIVIDE b BY a (obsolete, still valid): b += a, -=, *=, /=
+    if (st[0]?.t === 'id' && /^(ADD|SUBTRACT|MULTIPLY|DIVIDE)$/i.test(st[0].v) && st[1] && !(st[1].t === 'p' && /=$/.test(st[1].v))) {
+      const k0 = String(st[0].v).toUpperCase();
+      const k = st.findIndex((t, q) => q > 1 && isKw(t, { ADD: 'TO', SUBTRACT: 'FROM', MULTIPLY: 'BY', DIVIDE: 'BY' }[k0]));
+      if (k > 1 && k < st.length - 1) {
+        const additive = k0 === 'ADD' || k0 === 'SUBTRACT';
+        const operand = additive ? st.slice(1, k) : st.slice(k + 1), target = additive ? st.slice(k + 1) : st.slice(1, k);
+        st = [...target, { ...st[0], t: 'p', v: { ADD: '+=', SUBTRACT: '-=', MULTIPLY: '*=', DIVIDE: '/=' }[k0] }, ...operand];
+        stmts = [...stmts]; stmts[i] = st;
+      }
+    }
     const w = st.map(t => (t.t === 'id' ? t.v.toUpperCase() : t.v));
     const kw = w[0];
     const line = st[0].line;
@@ -1242,6 +1253,13 @@ class MethodCtx {
     }
     // method call statement
     if (st[0].t === 'id' && (st[1]?.v === '(' && !st[1].ws)) return [tag + this.callStatement(st, st, false), i + 1];
+    // a method call on a constructor expression: CAST zif( NEW zcl( ) )->m( ). / NEW zcl( )->m( ).
+    if (isKw(st[0], 'CAST', 'NEW') && st.some(t => t.t === 'sel' && t.v.startsWith('->')) && st.at(-1)?.v === ')') {
+      const ex = new Expr(st, this);
+      const v = ex.value();
+      if (!ex.done()) this.err(`Unexpected '${ex.peek().v}' in expression`, st);
+      return [`${tag}${v.js};`, i + 1];
+    }
     this.err(`Unsupported statement '${w.slice(0, 3).join(' ')}'`, st);
   }
 
@@ -1260,6 +1278,8 @@ class MethodCtx {
       const js = this.declare(toks[2].v);
       return { kind: 'var', js, read: js };
     }
+    // itab[] as a target is the table itself
+    if (toks.length === 3 && toks[0].t === 'id' && toks[1].v === '[' && !toks[1].ws && toks[2].v === ']') toks = [toks[0]];
     // table expressions as targets: itab[ idx ] = v, m[ i ][ j ] = v, itab[ key = x ]-comp = v
     if (toks.length > 1 && toks[0].t === 'id' && toks[1].t === 'p' && toks[1].v === '[' && !toks[1].ws) {
       const ex = new Expr(toks, this);
@@ -2547,14 +2567,21 @@ function splitTopLevelWord(toks, word) {
 }
 
 // split a token list at top-level keywords: returns { '': [...], KW: [...] }
+// a word that is a keyword elsewhere is a component name when an operator follows it (WHERE reference = 'B')
+const OPERAND_FOLLOWS = /^(=|<>|<|>|<=|>=|EQ|NE|LT|GT|LE|GE|IS|IN|BETWEEN|CO|CN|CA|NA|CS|NS|CP|NP)$/i;
 function splitByKeywords(toks, kws) {
   const out = { '': [] };
   let cur = '';
   let depth = 0;
-  for (const t of toks) {
+  for (let q = 0; q < toks.length; q++) {
+    const t = toks[q];
     if (t.t === 'p' && (t.v === '(' || t.v === '[')) depth++;
     if (t.t === 'p' && (t.v === ')' || t.v === ']')) depth--;
-    if (depth === 0 && t.t === 'id' && kws.includes(t.v.toUpperCase()) && !(cur === 'TRANSPORTING' && t.v.toUpperCase() === 'FIELDS') && !(cur === 'REFERENCE' && t.v.toUpperCase() === 'INTO' && !out.REFERENCE.length)) {
+    const u = t.t === 'id' ? t.v.toUpperCase() : '';
+    const next = toks[q + 1];
+    // REFERENCE is the keyword only in REFERENCE INTO; inside WHERE a keyword followed by an operator is a component
+    const component = (u === 'REFERENCE' && !isKw(next, 'INTO')) || (cur === 'WHERE' && next && OPERAND_FOLLOWS.test(String(next.v)) && !(next.t === 'str'));
+    if (depth === 0 && t.t === 'id' && kws.includes(u) && !component && !(cur === 'TRANSPORTING' && u === 'FIELDS') && !(cur === 'REFERENCE' && u === 'INTO' && !out.REFERENCE.length)) {
       cur = t.v.toUpperCase();
       out[cur] = [];
       continue;
@@ -2657,7 +2684,9 @@ class Expr {
       const what = this.next().v.toUpperCase();
       let js;
       // a string is initial only when empty (blanks count)
-      if (what === 'INITIAL') js = lv.etype === 'string' ? `($rt.s(${l}) === '')` : `$rt.initial(${l})`;
+      // d, t and n are initial when all zeros ('00000000' IS INITIAL for a date)
+      const zk = ['d', 't', 'n'].includes(lv.etype) ? lv.etype : ['d', 't', 'n'].includes(lv.spec?.k) ? lv.spec.k : null;
+      if (what === 'INITIAL') js = lv.etype === 'string' ? `($rt.s(${l}) === '')` : zk ? `$rt.initialDigits(${l})` : `$rt.initial(${l})`;
       else if (what === 'BOUND') js = `(${l} != null)`;
       else if (what === 'ASSIGNED') js = `(${l} !== undefined)`;
       else if (what === 'SUPPLIED') { const nm = this.toks[this.i - 3].v.toLowerCase(); js = `($p${prop(nm)} !== undefined)`; }
@@ -2775,6 +2804,8 @@ class Expr {
   postfix(v) {
     for (;;) {
       const t = this.peek();
+      // itab[]: the table body (with or without a header line it is the table itself), not a row
+      if (t && t.t === 'p' && t.v === '[' && !t.ws && this.peek(1)?.v === ']' && this.peek(1)?.t === 'p') { this.next(); this.next(); continue; }
       // chained table expressions: m[ i ][ j ]
       if (t && t.t === 'p' && t.v === '[' && !t.ws && v.kind !== 'prim') return this.tableExpr(v.js);
       // substring access dobj+off(len) / dobj(len): no blanks allowed around + and (
@@ -2896,6 +2927,12 @@ class Expr {
       let rspec;
       try { rspec = rsig?.returning?.typeToks?.length && !rsig.returning.like ? specIn(this.mc, owner, rsig.returning.typeToks) : undefined; } catch { rspec = undefined; }
       return { js: this.callJs(objJs, mname, true), kind: 'fresh', ...(rspec ? { spec: rspec, etype: rspec.k !== 'struct' && rspec.k !== 'table' ? rspec.k : undefined } : {}) };
+    }
+    // itab[]: the table body, i.e. the table itself
+    if (this.isP('[') && !this.peek().ws && this.isP(']', 1)) {
+      this.next(); this.next();
+      const sp = splitPath(t.v).every((x, k) => !k || x.op === '-') ? this.mc.specOfName(t.v) : null;
+      return this.postfix({ js: this.pathJs(t.v), kind: 'ref', spec: sp || undefined });
     }
     // table expression
     if (this.isP('[') && !this.peek().ws) {

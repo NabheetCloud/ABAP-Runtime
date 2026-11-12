@@ -1,0 +1,6 @@
+@EndUserText.label: 'Feedback projection: inherits, default false'
+@MappingRole: true
+define role ZC_FBDOC {
+  grant select on ZC_FbDoc
+    where inheriting conditions from entity ZI_FbDoc default false;
+}

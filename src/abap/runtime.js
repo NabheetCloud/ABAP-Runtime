@@ -382,6 +382,8 @@ export class AbapRuntime {
     }
     return false;
   }
+  // d, t, n: all zeros (or blanks) is the initial value
+  initialDigits(v) { return v === undefined || v === null || v === 0 || (typeof v === 'string' && /^[0 ]*$/.test(v)); }
   initialOf(v) {
     if (Array.isArray(v)) { const a = []; for (const m of ['$line', '$sort']) if (v[m]) Object.defineProperty(a, m, { value: v[m], enumerable: false }); return a; }
     if (v && typeof v === 'object') {
@@ -452,7 +454,14 @@ export class AbapRuntime {
       }
       case 'p': {
         const x = this.round(this.n(v ?? 0), t.dec ?? 0);
-        if (Math.abs(x) >= 10 ** (2 * (t.len ?? 8) - 1 - (t.dec ?? 0))) throw overflow();
+        // value range: 2*len-1 digits, dec of them after the point. Packed numbers are doubles here, which round the
+        // largest values up to the limit (P(31,6): 25 nines + .999999 is 1e25), so text is judged by its digits and
+        // a number only when it is beyond the limit by more than rounding
+        const intDigits = 2 * (t.len ?? 8) - 1 - (t.dec ?? 0), limit = 10 ** intDigits;
+        let over = Math.abs(x) >= limit;
+        if (over && typeof v === 'string') over = (/^[-+]?\s*0*(\d*)/.exec(v.trim())?.[1] || '').length > intDigits;
+        else if (over && intDigits > 15) over = Math.abs(x) > limit * (1 + 8 * Number.EPSILON);
+        if (over) throw overflow();
         return x === 0 ? 0 : x;
       }
       case 'f': return this.n(v ?? 0);
@@ -1502,8 +1511,12 @@ function installBuiltinClasses(rt) {
   const aunit = def('cx_aunit_failure', class extends cxNo {});
   def('cx_aunit_skip', class extends cxNo {});
   const show = v => (v !== null && typeof v === 'object' ? JSON.stringify(v) : rt.s(v));
+  // references (object instances, data references) are equal only when they point to the same object; structures
+  // and tables compare by value
+  const isRef = v => v !== null && typeof v === 'object' && !Array.isArray(v) && Object.getPrototypeOf(v) !== Object.prototype && Object.getPrototypeOf(v) !== null;
   const same = (a, b) => {
     if (Array.isArray(a) || Array.isArray(b)) return Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every((x, i) => same(x, b[i]));
+    if (isRef(a) || isRef(b)) return a === b;
     if (a && b && typeof a === 'object' && typeof b === 'object') return [...new Set([...Object.keys(a), ...Object.keys(b)])].filter(k => !k.startsWith('$')).every(k => same(a[k], b[k]));
     return rt.eq(a, b);
   };

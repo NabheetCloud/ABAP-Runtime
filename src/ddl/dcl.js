@@ -1,6 +1,7 @@
 // CDS access control (DCL, .dcls.asdcls): define role ... { grant select on <entity> [where <condition>]; }
 // Conditions: element comparisons with literals, "= aspect user", "= aspect pfcg_auth( object, field, ACTVT = '03' )"
-// (also with element lists), "inheriting conditions from entity <e>", and/or/not/parentheses, true/false.
+// (also with element lists), "inheriting conditions from entity <e> [default true|false]", and/or/not/parentheses,
+// true/false. DEFAULT says what the inherited condition is when <e> has no access control of its own (true if omitted).
 // Each request turns the grants of an entity into an SQL condition for the current user's authorizations.
 import { tokenize, TokenStream } from './lexer.js';
 import { valueAllowed } from '../server/auth.js';
@@ -47,7 +48,13 @@ function parsePrimary(s) {
   if (s.is('false') && !s.is('=', 1)) { s.next(); return { k: 'false' }; }
   if (s.isSeq('inheriting', 'conditions')) {
     s.next(); s.next(); s.expect('from'); s.expect('entity');
-    return { k: 'inherit', entity: s.ident().toLowerCase() };
+    const entity = s.ident().toLowerCase();
+    let dflt = true;
+    if (s.accept('default')) {
+      if (s.accept('false')) dflt = false;
+      else s.expect('true');
+    }
+    return { k: 'inherit', entity, default: dflt };
   }
   // ( a, b ) = aspect pfcg_auth(...)  or a parenthesised condition
   if (s.is('(')) {
@@ -130,7 +137,7 @@ export function grantsSql(grants, { auths, user, col, inherited, depth = 0 }) {
       case 'inherit': {
         if (depth > 5) throw new Error('Access conditions inherit in a cycle');
         const s = grantsSql(inherited(x.entity), { auths, user, col, inherited, depth: depth + 1 });
-        return s === null ? '1=1' : s;
+        return s === null ? (x.default === false ? '1=0' : '1=1') : s;
       }
       case 'pfcg': {
         if (auths === null) return '1=1';

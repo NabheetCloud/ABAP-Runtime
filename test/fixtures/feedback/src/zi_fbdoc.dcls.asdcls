@@ -1,0 +1,6 @@
+@EndUserText.label: 'Feedback documents: own references'
+@MappingRole: true
+define role ZI_FBDOC {
+  grant select on ZI_FbDoc
+    where Reference = aspect user;
+}
