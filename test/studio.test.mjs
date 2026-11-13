@@ -166,3 +166,27 @@ test('freestyle SAPUI5 apps are components: Component.js, manifest with OData V4
   assert.match(read('controller/Detail.controller.js'), /com\.sap\.gateway\.srvd\.zui_travel\.v0001\./);
   ws.close();
 });
+
+test('apps kept from the chat (GenUI5): listed on the studio home with their URLs; GenUI5 not running is no error', async () => {
+  const http = await import('node:http');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'rap-studio-kept-'));
+  const g5 = http.createServer((req, res) => {
+    res.writeHead(req.url === '/genui/apps' ? 200 : 404, { 'content-type': 'application/json' });
+    res.end(JSON.stringify({ apps: [
+      { id: 'orders-to-approve-ab12', title: 'Orders to approve', created: '2026-11-13T10:00:00.000Z', service: 'po' },
+      { id: '../evil', title: 'Bad id' },
+      { id: 'no-title-1234', title: { x: 1 } },
+    ] }));
+  });
+  await new Promise(r => g5.listen(0, '127.0.0.1', r));
+  try {
+    const s = new Studio(dir, { port: 4999, genuiUrl: `http://127.0.0.1:${g5.address().port}/genui` });
+    const r = await s.chatApps();
+    assert.equal(r.available, true);
+    assert.equal(r.launchpad, `http://127.0.0.1:${g5.address().port}/genui/apps/`);
+    assert.deepEqual(r.apps, [{ id: 'orders-to-approve-ab12', title: 'Orders to approve', created: '2026-11-13T10:00:00.000Z', url: `http://127.0.0.1:${g5.address().port}/genui/apps/orders-to-approve-ab12/` }]);
+    g5.close();
+    const off = await new Studio(dir, { port: 4999, genuiUrl: 'http://127.0.0.1:9/genui' }).chatApps();
+    assert.deepEqual(off, { available: false, apps: [] });
+  } finally { g5.close(); }
+});

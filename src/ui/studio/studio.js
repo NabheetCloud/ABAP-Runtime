@@ -205,6 +205,17 @@ function ago(t) {
   return new Date(t).toLocaleDateString();
 }
 // an app card: what it is (RAP / Classic), what it holds, when it last changed
+// screens kept as apps from a GenUI5 conversation: their own page on the GenUI5 server, live data, changes confirmed
+async function renderChatApps() {
+  let r;
+  try { r = await api('GET', '/studio/api/chatapps'); } catch { return; }
+  const el = $('#chatApps');
+  if (!el || !r.available || !r.apps.length) return;
+  el.innerHTML = `<div class="apps-head"><h2>Kept from the chat <span class="count">${r.apps.length}</span></h2><span class="hint">Screens from a GenUI5 conversation, with live data.</span><span class="spacer"></span><a class="btn sm ghost" href="${esc(r.launchpad)}" target="_blank" rel="noopener">All kept apps ↗</a></div>
+    <div class="app-grid">${r.apps.map(a => `<a class="app-card" href="${esc(a.url)}" target="_blank" rel="noopener"><span class="card-top"><span class="n">${esc(a.title)}</span><span class="ex-kind ex-chat">From chat</span></span>
+      <span class="d">Kept from a GenUI5 conversation</span><span class="facts">Live data · changes need your confirmation</span><span class="when">${a.created ? `Kept ${esc(ago(a.created))}` : '&nbsp;'}</span></a>`).join('')}</div>`;
+  el.hidden = false;
+}
 function appCard(a) {
   const facts = [
     a.services && plural(a.services, 'service'), a.uiApps && plural(a.uiApps, 'UI app'), a.programs && plural(a.programs, 'program'),
@@ -301,12 +312,14 @@ async function renderHome() {
       </div>
       <div class="app-grid" id="appGrid"></div>
     </section>` : ''}
+    <section class="apps" id="chatApps" hidden></section>
     ${system.length ? `<section class="apps"><div class="apps-head"><h2>System</h2></div><div class="app-grid">${system.map(appCard).join('')}</div></section>` : ''}
     ${archived.length ? `<section class="apps"><details class="archived-apps" id="archivedApps"${S.homeArchived ? ' open' : ''}>
       <summary class="apps-head"><h2>Archived <span class="count">${archived.length}</span></h2><span class="hint">Hidden from Your apps. Their tables stay available to the other apps; restore or delete them here.</span></summary>
       <div class="app-grid">${archived.map(appCard).join('')}</div></details></section>` : ''}
   </div>`;
   $('#archivedApps')?.addEventListener('toggle', e => { S.homeArchived = e.target.open; });
+  renderChatApps();
   root.querySelector('.home').addEventListener('click', async e => {
     const b = e.target.closest('[data-archive],[data-restore],[data-delete]');
     if (!b) return;

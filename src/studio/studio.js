@@ -2,6 +2,8 @@
 //   /                         studio UI (chat, preview, code, problems, data, console)
 //   /studio/api/...           studio API (apps, chat, events, files, download)
 //   /a/<app>/...              the app itself: Fiori-like UI, OData, workspace API (see server/server.js)
+// Apps kept from the chat by GenUI5 (its "Keep as app") show on the home page too: GET /studio/api/chatapps asks the
+// GenUI5 server (option genuiUrl, env RAP_GENUI5_URL, default http://127.0.0.1:4130/genui) for its list.
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -53,8 +55,9 @@ const TEMPLATE = path.join(HERE, 'template', 'CLAUDE.md');
 const NAME_RE = /^[a-z][a-z0-9-]{1,40}$/;
 
 export class Studio {
-  constructor(appsDir, { port = 4004, model, host = '127.0.0.1' } = {}) {
+  constructor(appsDir, { port = 4004, model, host = '127.0.0.1', genuiUrl = process.env.RAP_GENUI5_URL || 'http://127.0.0.1:4130/genui' } = {}) {
     this.host = host;
+    this.genuiUrl = String(genuiUrl).replace(/\/+$/, '');
     this.dir = path.resolve(appsDir);
     this.port = port;
     this.model = model;
@@ -66,6 +69,22 @@ export class Studio {
     this.agents = new Map();
     this.streams = new Map(); // app -> Set(res)
     this.exercises = new Exercises(this.dir);
+  }
+
+  // the apps GenUI5 kept from the chat: { available, launchpad, apps: [{id, title, created, url}] }; GenUI5 not
+  // running (or answering something else) is no error, the section just stays away
+  async chatApps() {
+    try {
+      const r = await fetch(`${this.genuiUrl}/apps`, { headers: { accept: 'application/json' }, signal: AbortSignal.timeout(1500) });
+      if (!r.ok) return { available: false, apps: [] };
+      const d = await r.json();
+      const launchpad = `${this.genuiUrl}/apps/`;
+      const apps = (Array.isArray(d?.apps) ? d.apps : [])
+        .filter(a => a && /^[a-z0-9][a-z0-9-]{0,47}$/.test(String(a.id)) && typeof a.title === 'string' && a.title.length <= 120)
+        .slice(0, 50)
+        .map(a => ({ id: a.id, title: a.title, created: typeof a.created === 'string' ? a.created : null, url: `${launchpad}${a.id}/` }));
+      return { available: true, launchpad, apps };
+    } catch { return { available: false, apps: [] }; }
   }
 
   apps() {
@@ -419,6 +438,7 @@ li a:hover{border-color:var(--brand)}li small{display:block;color:var(--muted)}p
     // studio API
     if (p === '/studio/api/apps' && req.method === 'GET') return send(res, 200, { apps: this.apps(), port: this.port });
     if (p === '/studio/api/standard' && req.method === 'GET') return send(res, 200, this.standardCatalog());
+    if (p === '/studio/api/chatapps' && req.method === 'GET') { this.chatApps().then(r => send(res, 200, r), e => sendError(res, e)); return; }
     if (p === '/studio/api/standard/rows' && req.method === 'GET') return send(res, 200, this.standardRows(url.searchParams.get('view'), Number(url.searchParams.get('top') || 25)));
     if (p === '/studio/api/user') return userRoute(req, res, body, this.dir);
     if (p === '/studio/api/apps' && req.method === 'POST') return send(res, 201, this.create(json()));

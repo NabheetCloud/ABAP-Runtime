@@ -246,7 +246,8 @@ select.input { border: 1px solid var(--border); border-radius: 6px; padding: 5px
 .empty { color: var(--muted); }
 .ex-kind { flex: none; font-size: 11px; font-weight: 700; letter-spacing: .02em; padding: 1px 7px; border-radius: 99px; background: var(--brand-soft); color: var(--brand); }
 .ex-classic { background: #fde7c7; color: #8a4b00; } .ex-both { background: #e6f4ea; color: #1e6b35; } .ex-sys { background: var(--panel-2); color: var(--muted); border: 1px solid var(--border); }
-@media (prefers-color-scheme: dark) { .ex-classic { background: #3b2a12; color: #f6c27a; } .ex-both { background: #14301e; color: #8fd6a4; } }
+.ex-chat { background: #ede7fb; color: #5b34b8; }
+@media (prefers-color-scheme: dark) { .ex-classic { background: #3b2a12; color: #f6c27a; } .ex-both { background: #14301e; color: #8fd6a4; } .ex-chat { background: #2a1f45; color: #c5b3f5; } }
 
 /* ---------------------------------------------------------------- header: one line at any width */
 .top { gap: 10px; white-space: nowrap; min-width: 0; }
